@@ -14,6 +14,7 @@
 
 - `barcelona`: バルセロナ
 - `madrid`: マドリード
+- `granada`: グラナダ
 
 ## ローカル確認
 

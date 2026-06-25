@@ -29,6 +29,18 @@
         "lng": -3.7038,
         "zoom": 13
       }
+    },
+    {
+      "id": "granada",
+      "name": "グラナダ",
+      "country": "Spain",
+      "description": "グラナダ市内の飲食店候補",
+      "data_url": "regions/granada.json",
+      "map_center": {
+        "lat": 37.1773,
+        "lng": -3.5986,
+        "zoom": 14
+      }
     }
   ]
 }
