@@ -1,0 +1,34 @@
+{
+  "dataset_name": "spain_restaurant_region_index",
+  "generated_at": "2026-06-20",
+  "language": "ja",
+  "default_region_id": "barcelona",
+  "regions": [
+    {
+      "id": "barcelona",
+      "name": "バルセロナ",
+      "country": "Spain",
+      "description": "バルセロナ市内の飲食店候補",
+      "data_url": "regions/barcelona.json",
+      "landmark_data_url": "landmarks/barcelona.json",
+      "map_center": {
+        "lat": 41.3902,
+        "lng": 2.17,
+        "zoom": 13
+      }
+    },
+    {
+      "id": "madrid",
+      "name": "マドリード",
+      "country": "Spain",
+      "description": "マドリード市内の飲食店候補",
+      "data_url": "regions/madrid.json",
+      "landmark_data_url": "landmarks/madrid.json",
+      "map_center": {
+        "lat": 40.4168,
+        "lng": -3.7038,
+        "zoom": 13
+      }
+    }
+  ]
+}

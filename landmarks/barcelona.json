@@ -1,0 +1,46 @@
+{
+  "dataset_name": "barcelona_landmarks",
+  "generated_at": "2026-06-13",
+  "language": "ja",
+  "region_id": "barcelona",
+  "region_name": "バルセロナ",
+  "title": "バルセロナ予定地",
+  "landmarks": [
+    {
+      "id": "sercotel_hotel_rosellon",
+      "name": "Sercotel Hotel Rosellon",
+      "type": "宿泊地",
+      "map_position": {
+        "lat": 41.404804,
+        "lng": 2.172734767690848
+      }
+    },
+    {
+      "id": "sagrada_familia",
+      "name": "Sagrada Família",
+      "type": "予定地",
+      "map_position": {
+        "lat": 41.40363,
+        "lng": 2.174356
+      }
+    },
+    {
+      "id": "recinte_modernista_de_sant_pau",
+      "name": "Recinte Modernista de Sant Pau",
+      "type": "予定地",
+      "map_position": {
+        "lat": 41.411705,
+        "lng": 2.174191
+      }
+    },
+    {
+      "id": "park_guell",
+      "name": "Park Güell",
+      "type": "予定地",
+      "map_position": {
+        "lat": 41.413447,
+        "lng": 2.152622
+      }
+    }
+  ]
+}

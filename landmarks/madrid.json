@@ -1,0 +1,55 @@
+{
+  "dataset_name": "madrid_landmarks",
+  "generated_at": "2026-06-13",
+  "language": "ja",
+  "region_id": "madrid",
+  "region_name": "マドリード",
+  "title": "マドリード予定地",
+  "landmarks": [
+    {
+      "id": "gran_hotel_ingles",
+      "name": "Gran Hotel Inglés",
+      "type": "宿泊地",
+      "map_position": {
+        "lat": 40.415967,
+        "lng": -3.699667
+      }
+    },
+    {
+      "id": "palacio_real_de_madrid",
+      "name": "マドリード王宮 / Palacio Real de Madrid",
+      "type": "観光",
+      "map_position": {
+        "lat": 40.417953,
+        "lng": -3.714312
+      }
+    },
+    {
+      "id": "museo_nacional_del_prado",
+      "name": "プラド美術館 / Museo Nacional del Prado",
+      "type": "美術館",
+      "map_position": {
+        "lat": 40.41378,
+        "lng": -3.692127
+      }
+    },
+    {
+      "id": "museo_reina_sofia",
+      "name": "ソフィア王妃芸術センター / Museo Reina Sofía",
+      "type": "美術館",
+      "map_position": {
+        "lat": 40.407913,
+        "lng": -3.694557
+      }
+    },
+    {
+      "id": "el_rastro",
+      "name": "ラストロ / El Rastro",
+      "type": "市場・街歩き",
+      "map_position": {
+        "lat": 40.408623,
+        "lng": -3.707338
+      }
+    }
+  ]
+}
