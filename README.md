@@ -1,9 +1,10 @@
 # Kozu Tabi Restaurant Map
 
-スペイン旅行用の飲食店・予定地マップです。表示UIは隣接する `common_web_map` の共通コードを使います。
+スペイン旅行用の飲食店・予定地マップです。表示UIは `common_web_map` の共通コードを使います。
 
 ## ファイル構成
 
+- `index.html`: 本番用HTML。`https://common-web-map.vercel.app/` の `map_app.css` / `map_app.js` を参照します。
 - `index_dev.html`: ローカル開発用HTML。`../common_web_map/` の `map_app.css` / `map_app.js` を参照します。
 - `store_data.json`: 地域一覧と、地域別JSON・ランドマークJSONへの参照を管理します。
 - `regions/*.json`: 地域ごとの店舗データ本体です。
@@ -29,10 +30,20 @@ python3 -m http.server 8300 --bind 0.0.0.0
 http://127.0.0.1:8300/index_dev.html
 ```
 
+本番用HTMLの参照先も確認する場合は、同じサーバーで次のURLを開きます。
+
+```text
+http://127.0.0.1:8300/index.html
+```
+
 コンテナ外のホストから確認する場合は、ポートフォワード後に次のURLを開きます。
 
 ```text
 http://192.168.1.2:8300/index_dev.html
+```
+
+```text
+http://192.168.1.2:8300/index.html
 ```
 
 ## 店舗データ形式
