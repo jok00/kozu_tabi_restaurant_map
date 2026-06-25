@@ -1,0 +1,429 @@
+{
+  "dataset_name": "granada_restaurants",
+  "generated_at": "2026-06-25",
+  "language": "ja",
+  "region_id": "granada",
+  "region_name": "グラナダ",
+  "title": "グラナダ飲食店候補",
+  "notes": {
+    "coordinate_format": "WGS84 decimal degrees",
+    "google_maps": "正式なGoogle Maps Place IDは未取得。各店舗の検索URLを付与。",
+    "openstreetmap_overpass": "OSM由来座標が確認できた店舗のみmap_positionに採用。",
+    "foursquare_places_api": "APIキーが必要なため未取得。",
+    "opentripmap_api": "APIキーが必要なため未取得。",
+    "map_position_policy": "正確なPOI座標を確認できた場合のみlat/lngを設定。不明な場合はnull。"
+  },
+  "landmarks": [
+    {
+      "id": "restaurante_parador_de_granada",
+      "name": "Restaurante Parador de Granada",
+      "type": "飲食店",
+      "subtype": "ホテルレストラン・カフェ",
+      "summary": "アルハンブラ観光後に移動せず休める、旅程上もっとも安心な昼食スポット。",
+      "address": "Real de la Alhambra, s/n, 18009 Granada, Spain",
+      "area": "アルハンブラ",
+      "recommended_timing": "12:30〜15:00",
+      "map_position": {
+        "lat": null,
+        "lng": null
+      },
+      "coordinate_status": "requested_sources_not_confirmed",
+      "google_maps": {
+        "place_id": null,
+        "search_url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Parador%20de%20Granada%2C%20Real%20de%20la%20Alhambra%2C%20s%2Fn%2C%2018009%20Granada%2C%20Spain"
+      },
+      "poi_sources": {
+        "openstreetmap_overpass": null,
+        "foursquare": null,
+        "opentripmap": null
+      }
+    },
+    {
+      "id": "cafe_4_gatos",
+      "name": "Café 4 Gatos",
+      "type": "飲食店",
+      "subtype": "カフェ・軽食",
+      "summary": "アルバイシン散策前に、坂道と暑さをリセットできる眺めのよいカフェ。",
+      "address": "Placeta Cruz Verde 6, Granada, 18010, Spain",
+      "area": "アルバイシン",
+      "recommended_timing": "15:00〜16:00",
+      "map_position": {
+        "lat": 37.17911,
+        "lng": -3.59497
+      },
+      "coordinate_status": "confirmed_osm",
+      "google_maps": {
+        "place_id": null,
+        "search_url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%204%20Gatos%2C%20Placeta%20Cruz%20Verde%206%2C%2018010%20Granada%2C%20Spain"
+      },
+      "poi_sources": {
+        "openstreetmap_overpass": {
+          "osm_type": "node",
+          "osm_id": "3364853748",
+          "osm_feature": "amenity=cafe",
+          "lat": 37.17911,
+          "lng": -3.59497,
+          "source_url": "https://mapcarta.com/N3364853748"
+        },
+        "foursquare": null,
+        "opentripmap": null
+      }
+    },
+    {
+      "id": "bar_aixa",
+      "name": "Bar Aixa",
+      "type": "飲食店",
+      "subtype": "バル・タパス",
+      "summary": "サン・ニコラス展望台の前後に寄りやすい、アルバイシンらしい気軽なバル。",
+      "address": "Plaza Larga 5, 18010 Granada, Spain",
+      "area": "アルバイシン / Plaza Larga",
+      "recommended_timing": "18:30前後",
+      "map_position": {
+        "lat": 37.18272,
+        "lng": -3.59315
+      },
+      "coordinate_status": "confirmed_osm_from_previous_lookup",
+      "google_maps": {
+        "place_id": null,
+        "search_url": "https://www.google.com/maps/search/?api=1&query=Bar%20Aixa%2C%20Plaza%20Larga%205%2C%2018010%20Granada%2C%20Spain"
+      },
+      "poi_sources": {
+        "openstreetmap_overpass": {
+          "osm_type": "node",
+          "osm_id": "2141462591",
+          "osm_feature": "amenity=pub",
+          "lat": 37.18272,
+          "lng": -3.59315
+        },
+        "foursquare": null,
+        "opentripmap": null
+      }
+    },
+    {
+      "id": "el_huerto_de_juan_ranas",
+      "name": "El Huerto de Juan Ranas",
+      "type": "飲食店",
+      "subtype": "眺望レストラン",
+      "summary": "アルハンブラを正面に眺めながら夕食を楽しめる、景色重視の本命レストラン。",
+      "address": "Callejón Atarazana Vieja 6, 18010 Granada, Spain",
+      "area": "サン・ニコラス展望台周辺",
+      "recommended_timing": "21:30以降",
+      "map_position": {
+        "lat": 37.181,
+        "lng": -3.59221
+      },
+      "coordinate_status": "confirmed_osm",
+      "google_maps": {
+        "place_id": null,
+        "search_url": "https://www.google.com/maps/search/?api=1&query=El%20Huerto%20de%20Juan%20Ranas%2C%20Callej%C3%B3n%20Atarazana%20Vieja%206%2C%2018010%20Granada%2C%20Spain"
+      },
+      "poi_sources": {
+        "openstreetmap_overpass": {
+          "osm_type": "node",
+          "osm_id": "549453712",
+          "osm_feature": "amenity=restaurant",
+          "lat": 37.181,
+          "lng": -3.59221,
+          "source_url": "https://mapcarta.com/N549453712"
+        },
+        "foursquare": null,
+        "opentripmap": null
+      }
+    },
+    {
+      "id": "estrellas_de_san_nicolas",
+      "name": "Estrellas de San Nicolás",
+      "type": "飲食店",
+      "subtype": "眺望レストラン",
+      "summary": "サン・ニコラス展望台のすぐ近くで、夕景後の食事にそのままつなげやすい一軒。",
+      "address": "Callejón Atarazana Vieja 1, 18010 Granada, Spain",
+      "area": "サン・ニコラス展望台周辺",
+      "recommended_timing": "21:30以降",
+      "map_position": {
+        "lat": null,
+        "lng": null
+      },
+      "coordinate_status": "requested_sources_not_confirmed",
+      "google_maps": {
+        "place_id": null,
+        "search_url": "https://www.google.com/maps/search/?api=1&query=Estrellas%20de%20San%20Nicol%C3%A1s%2C%20Callej%C3%B3n%20Atarazana%20Vieja%201%2C%2018010%20Granada%2C%20Spain"
+      },
+      "poi_sources": {
+        "openstreetmap_overpass": null,
+        "foursquare": null,
+        "opentripmap": null
+      }
+    },
+    {
+      "id": "jardines_de_zoraya",
+      "name": "Jardines de Zoraya",
+      "type": "飲食店",
+      "subtype": "レストラン・フラメンコ",
+      "summary": "夕食とフラメンコを一度に楽しめる、グラナダの夜を体験型に変える店。",
+      "address": "Calle Panaderos 32, 18010 Granada, Spain",
+      "area": "アルバイシン",
+      "recommended_timing": "夕食・夜",
+      "map_position": {
+        "lat": 37.18243,
+        "lng": -3.59173
+      },
+      "coordinate_status": "confirmed_osm",
+      "google_maps": {
+        "place_id": null,
+        "search_url": "https://www.google.com/maps/search/?api=1&query=Jardines%20de%20Zoraya%2C%20Calle%20Panaderos%2032%2C%2018010%20Granada%2C%20Spain"
+      },
+      "poi_sources": {
+        "openstreetmap_overpass": {
+          "osm_type": "node",
+          "osm_id": "4382849989",
+          "osm_feature": "amenity=restaurant",
+          "lat": 37.18243,
+          "lng": -3.59173,
+          "source_url": "https://mapcarta.com/N4382849989"
+        },
+        "foursquare": null,
+        "opentripmap": null
+      }
+    },
+    {
+      "id": "restaurante_arrayanes",
+      "name": "Restaurante Arrayanes",
+      "type": "飲食店",
+      "subtype": "モロッコ料理",
+      "summary": "ナスル朝の余韻が残るアルバイシンで、土地の歴史に合うモロッコ料理を楽しめる店。",
+      "address": "Cuesta de Marañas 4, 18010 Granada, Spain",
+      "area": "アルバイシン / Calderería周辺",
+      "recommended_timing": "夕食",
+      "map_position": {
+        "lat": null,
+        "lng": null
+      },
+      "coordinate_status": "requested_sources_not_confirmed",
+      "google_maps": {
+        "place_id": null,
+        "search_url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Arrayanes%2C%20Cuesta%20de%20Mara%C3%B1as%204%2C%2018010%20Granada%2C%20Spain"
+      },
+      "poi_sources": {
+        "openstreetmap_overpass": null,
+        "foursquare": null,
+        "opentripmap": null
+      }
+    },
+    {
+      "id": "bodegas_castaneda",
+      "name": "Bodegas Castañeda",
+      "type": "飲食店",
+      "subtype": "老舗バル・タベルナ",
+      "summary": "グラナダ中心部でワイン、ベルモット、タパスを味わうなら外しにくい老舗バル。",
+      "address": "Calle Almireceros 1-3, 18010 Granada, Spain",
+      "area": "中心部 / カテドラル周辺",
+      "recommended_timing": "21:45以降",
+      "map_position": {
+        "lat": 37.17683,
+        "lng": -3.59699
+      },
+      "coordinate_status": "confirmed_osm_from_previous_lookup",
+      "google_maps": {
+        "place_id": null,
+        "search_url": "https://www.google.com/maps/search/?api=1&query=Bodegas%20Casta%C3%B1eda%2C%20Calle%20Almireceros%201%203%2C%2018010%20Granada%2C%20Spain"
+      },
+      "poi_sources": {
+        "openstreetmap_overpass": {
+          "osm_type": "node",
+          "osm_id": "2961214762",
+          "osm_feature": "amenity=restaurant",
+          "lat": 37.17683,
+          "lng": -3.59699
+        },
+        "foursquare": null,
+        "opentripmap": null
+      }
+    },
+    {
+      "id": "los_diamantes_plaza_nueva",
+      "name": "Los Diamantes - Plaza Nueva",
+      "type": "飲食店",
+      "subtype": "魚介タパス・バル",
+      "summary": "アルバイシン散策の起点・終点にしやすい、魚介フリットの人気バル。",
+      "address": "Plaza Nueva 13, 18010 Granada, Spain",
+      "area": "Plaza Nueva",
+      "recommended_timing": "昼・夜",
+      "map_position": {
+        "lat": null,
+        "lng": null
+      },
+      "coordinate_status": "requested_sources_not_confirmed",
+      "google_maps": {
+        "place_id": null,
+        "search_url": "https://www.google.com/maps/search/?api=1&query=Los%20Diamantes%20Plaza%20Nueva%2013%2C%2018010%20Granada%2C%20Spain"
+      },
+      "poi_sources": {
+        "openstreetmap_overpass": null,
+        "foursquare": null,
+        "opentripmap": null
+      }
+    },
+    {
+      "id": "los_diamantes_navas",
+      "name": "Los Diamantes - Navas",
+      "type": "飲食店",
+      "subtype": "魚介タパス・バル",
+      "summary": "揚げたて魚介と活気ある雰囲気で、グラナダのバル文化を体感できる定番店。",
+      "address": "Calle Navas 28, 18009 Granada, Spain",
+      "area": "Calle Navas / 中心部",
+      "recommended_timing": "夜のバル巡り",
+      "map_position": {
+        "lat": 37.17373,
+        "lng": -3.59833
+      },
+      "coordinate_status": "confirmed_osm",
+      "google_maps": {
+        "place_id": null,
+        "search_url": "https://www.google.com/maps/search/?api=1&query=Los%20Diamantes%20Navas%2C%20Calle%20Navas%2028%2C%2018009%20Granada%2C%20Spain"
+      },
+      "poi_sources": {
+        "openstreetmap_overpass": {
+          "osm_type": "node",
+          "osm_id": "3887661607",
+          "osm_feature": "amenity=pub",
+          "lat": 37.17373,
+          "lng": -3.59833,
+          "source_url": "https://mapcarta.com/N3887661607"
+        },
+        "foursquare": null,
+        "opentripmap": null
+      }
+    },
+    {
+      "id": "los_manueles_reyes_catolicos",
+      "name": "Los Manueles Reyes Católicos",
+      "type": "飲食店",
+      "subtype": "伝統料理・タパス",
+      "summary": "家族でも入りやすく、中心部でグラナダ料理を落ち着いて試せる万能レストラン。",
+      "address": "Reyes Católicos 61, 18010 Granada, Spain",
+      "area": "Plaza Nueva / 中心部",
+      "recommended_timing": "昼・夜",
+      "map_position": {
+        "lat": null,
+        "lng": null
+      },
+      "coordinate_status": "branch_specific_coordinate_not_confirmed",
+      "google_maps": {
+        "place_id": null,
+        "search_url": "https://www.google.com/maps/search/?api=1&query=Los%20Manueles%20Reyes%20Cat%C3%B3licos%2061%2C%2018010%20Granada%2C%20Spain"
+      },
+      "poi_sources": {
+        "openstreetmap_overpass": null,
+        "foursquare": null,
+        "opentripmap": null
+      }
+    },
+    {
+      "id": "la_autentica_carmela",
+      "name": "La Auténtica Carmela",
+      "type": "飲食店",
+      "subtype": "地中海料理・スペイン料理",
+      "summary": "混み合うバルより座って食べたい時に使いやすい、観光客にも入りやすい一軒。",
+      "address": "Calle Colcha 13, 18009 Granada, Spain",
+      "area": "Realejo / 中心部",
+      "recommended_timing": "夕食",
+      "map_position": {
+        "lat": null,
+        "lng": null
+      },
+      "coordinate_status": "requested_sources_not_confirmed",
+      "google_maps": {
+        "place_id": null,
+        "search_url": "https://www.google.com/maps/search/?api=1&query=La%20Aut%C3%A9ntica%20Carmela%2C%20Calle%20Colcha%2013%2C%2018009%20Granada%2C%20Spain"
+      },
+      "poi_sources": {
+        "openstreetmap_overpass": null,
+        "foursquare": null,
+        "opentripmap": null
+      }
+    },
+    {
+      "id": "taberna_la_tana",
+      "name": "Taberna La Tana",
+      "type": "飲食店",
+      "subtype": "ワインバー・タパス",
+      "summary": "ワイン好きなら寄りたい、大人向けの雰囲気で締められるタパスバー。",
+      "address": "Placeta del Agua 3, 18009 Granada, Spain",
+      "area": "Realejo / 中心部",
+      "recommended_timing": "夜",
+      "map_position": {
+        "lat": 37.17275,
+        "lng": -3.59609
+      },
+      "coordinate_status": "confirmed_osm",
+      "google_maps": {
+        "place_id": null,
+        "search_url": "https://www.google.com/maps/search/?api=1&query=Taberna%20La%20Tana%2C%20Placeta%20del%20Agua%203%2C%2018009%20Granada%2C%20Spain"
+      },
+      "poi_sources": {
+        "openstreetmap_overpass": {
+          "osm_type": "node",
+          "osm_id": "4068081062",
+          "osm_feature": "amenity=pub",
+          "lat": 37.17275,
+          "lng": -3.59609,
+          "source_url": "https://mapcarta.com/N4068081062"
+        },
+        "foursquare": null,
+        "opentripmap": null
+      }
+    },
+    {
+      "id": "la_riviera",
+      "name": "La Riviera",
+      "type": "飲食店",
+      "subtype": "タパスバー",
+      "summary": "中心部で気軽にタパス巡りを始めるなら使いやすい、にぎやかなバル候補。",
+      "address": "Calle Cetti Meriem 7, 18010 Granada, Spain",
+      "area": "中心部 / カテドラル周辺",
+      "recommended_timing": "夜のバル巡り",
+      "map_position": {
+        "lat": null,
+        "lng": null
+      },
+      "coordinate_status": "requested_sources_not_confirmed",
+      "google_maps": {
+        "place_id": null,
+        "search_url": "https://www.google.com/maps/search/?api=1&query=La%20Riviera%2C%20Calle%20Cetti%20Meriem%207%2C%2018010%20Granada%2C%20Spain"
+      },
+      "poi_sources": {
+        "openstreetmap_overpass": null,
+        "foursquare": null,
+        "opentripmap": null
+      }
+    },
+    {
+      "id": "la_qarmita",
+      "name": "La Qarmita - Libros, Café & Eventos",
+      "type": "飲食店",
+      "subtype": "ブックカフェ・軽食",
+      "summary": "本とカフェの落ち着いた雰囲気で、暑い午後にひと息つける休憩スポット。",
+      "address": "Calle Águila 20, 18002 Granada, Spain",
+      "area": "Centro / Ronda周辺",
+      "recommended_timing": "午後の休憩",
+      "map_position": {
+        "lat": 37.1729754,
+        "lng": -3.6025277
+      },
+      "coordinate_status": "confirmed_public_source_not_requested_api",
+      "google_maps": {
+        "place_id": null,
+        "search_url": "https://www.google.com/maps/search/?api=1&query=La%20Qarmita%20Libros%20Caf%C3%A9%20Eventos%2C%20Calle%20%C3%81guila%2020%2C%2018002%20Granada%2C%20Spain"
+      },
+      "poi_sources": {
+        "openstreetmap_overpass": null,
+        "foursquare": null,
+        "opentripmap": null,
+        "junta_de_andalucia": {
+          "lat": 37.1729754,
+          "lng": -3.6025277
+        }
+      }
+    }
+  ]
+}
