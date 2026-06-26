@@ -1,6 +1,6 @@
 {
   "dataset_name": "granada_restaurants",
-  "generated_at": "2026-06-25",
+  "generated_at": "2026-06-26",
   "language": "ja",
   "currency": "EUR",
   "region_id": "granada",
@@ -13,31 +13,59 @@
     "zoom": 14
   },
   "category_filters": {
-    "preferred_order": [],
-    "pinned": [],
+    "preferred_order": [
+      "おすすめ"
+    ],
+    "pinned": [
+      "EntreBrasas",
+      "CERVEZAS ALHAMBRA II / Bar Los Diamantes II",
+      "Restaurante La Botillería",
+      "Ávila Tapas II"
+    ],
     "forced": []
   },
   "notes": {
     "coordinate_format": "WGS84 decimal degrees",
-    "google_maps": "正式なGoogle Maps Place IDは未取得。各店舗の検索URLを付与。",
-    "openstreetmap_overpass": "OSM由来座標が確認できた店舗のみmap_positionに採用。",
+    "google_maps": "正式なGoogle Maps Place IDは未取得。各店舗の検索URLを付与。Google Maps座標はAPIなしでは原則採用しない。",
+    "openstreetmap_overpass": "OSM由来座標が確認できた店舗のみmap_positionに採用。MapcartaはOSM由来ページとして扱う。",
     "foursquare_places_api": "APIキーが必要なため未取得。",
     "opentripmap_api": "APIキーが必要なため未取得。",
-    "map_position_policy": "正確なPOI座標を確認できた場合のみlat/lngを設定。不明な場合はnull。"
+    "map_position_policy": "正確なPOI座標を確認できた場合のみlat/lngを設定。不明な場合はnull。アプリで必須の場合はnull店舗を別途APIまたは手動で確定すること。"
   },
   "summary": {
-    "input_store_count": 15,
-    "selected_store_count": 15,
-    "needs_confirmation_or_excluded_count": null,
-    "best_fit_store_names": [],
-    "total_count": 15,
-    "by_conversation_category": [],
-    "likely_good_candidates_from_chat_context": []
+    "input_store_count": 19,
+    "selected_store_count": 19,
+    "needs_confirmation_or_excluded_count": 5,
+    "best_fit_store_names": [
+      "EntreBrasas",
+      "CERVEZAS ALHAMBRA II / Bar Los Diamantes II",
+      "Restaurante La Botillería",
+      "Ávila Tapas II"
+    ],
+    "total_count": 19,
+    "by_conversation_category": [
+      {
+        "category": "おすすめ",
+        "count": 4
+      },
+      {
+        "category": "既存候補",
+        "count": 15
+      }
+    ],
+    "likely_good_candidates_from_chat_context": [
+      "EntreBrasas",
+      "CERVEZAS ALHAMBRA II / Bar Los Diamantes II",
+      "Restaurante La Botillería",
+      "Ávila Tapas II"
+    ]
   },
   "important_notes": [
     "海外店舗のため食べログ評価は原則null。現地評価や口コミ傾向からデータを補完。",
     "価格・営業時間・定休日・予約可否は変動するため、訪問前に店舗公式・予約サイトで確認すること。",
-    "位置情報は確認できた公開POI情報を地図表示用に反映。未確認店舗はlat/lngをnullに設定。"
+    "位置情報は確認できた公開POI情報を地図表示用に反映。未確認店舗はlat/lngをnullに設定。",
+    "おすすめ4店舗はcategoriesに『おすすめ』を追加して表現。JSON構造は変更していない。",
+    "Ávila Tapas IIは住所・店舗情報は複数公開ページで確認できたが、ChatGPT上で正確なOSM/Google POI座標を確認できなかったためlat/lngはnull。"
   ],
   "stores": [
     {
@@ -52,7 +80,7 @@
         "genre": [
           "ホテルレストラン・カフェ"
         ],
-        "google_map_query": "Restaurante Parador de Granada Granada",
+        "google_map_query": "Restaurante Parador de Granada Real de la Alhambra Granada",
         "google_rating_user_provided": null,
         "tabelog_rating": null,
         "tabelog_review_count": null,
@@ -63,15 +91,23 @@
         },
         "nearest_station_access": "アルハンブラ",
         "closed_days": "要確認",
-        "phone": null,
+        "phone": "+34 958 221 440",
         "saturday_hours": null,
         "saturday_hours_confidence": "unknown",
-        "saturday_hours_note": "おすすめ時間帯: 12:30〜15:00 / アルハンブラ観光後に移動せず休める、旅程上もっとも安心な昼食スポット。",
-        "saturday_hours_last_checked": "2026-06-25",
+        "saturday_hours_note": "おすすめ時間帯: 13:00〜15:00 / 20:30〜22:00 / アルハンブラ観光後に移動せず、庭園ビューとナスル朝風の料理で休める特別感ある一軒。",
+        "saturday_hours_last_checked": "2026-06-26",
         "saturday_hours_sources": [
           {
             "title": "Google Maps 検索",
-            "url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Parador%20de%20Granada%2C%20Real%20de%20la%20Alhambra%2C%20s%2Fn%2C%2018009%20Granada%2C%20Spain"
+            "url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Parador%20de%20Granada%20Real%20de%20la%20Alhambra%20Granada"
+          },
+          {
+            "title": "official_site_address_plus_public_gps",
+            "url": "https://www.paradorsofspain.com/parador-de-granada.aspx"
+          },
+          {
+            "title": "Paradores公式",
+            "url": "https://paradores.es/es/restaurante-del-parador-de-granada"
           }
         ],
         "sunday_hours": null,
@@ -79,26 +115,26 @@
         "last_order": null
       },
       "map_position": {
-        "lat": null,
-        "lng": null,
-        "source": "requested_sources_not_confirmed",
-        "source_url": "",
-        "confidence": "unknown",
-        "correction_note": "requested_sources_not_confirmed"
+        "lat": 37.176424,
+        "lng": -3.58768,
+        "source": "official_site_address_plus_public_gps",
+        "source_url": "https://www.paradorsofspain.com/parador-de-granada.aspx",
+        "confidence": "medium",
+        "correction_note": "restaurant_in_hotel_poi_used"
       },
       "google_maps_poi": {
         "place_id": null,
         "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Parador%20de%20Granada%2C%20Real%20de%20la%20Alhambra%2C%20s%2Fn%2C%2018009%20Granada%2C%20Spain"
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Parador%20de%20Granada%20Real%20de%20la%20Alhambra%20Granada"
       },
       "representative_menu_and_prices": [],
       "beer_price": null,
       "store_features": [
-        "アルハンブラ観光後に移動せず休める、旅程上もっとも安心な昼食スポット。",
-        "12:30〜15:00"
+        "アルハンブラ観光後に移動せず、庭園ビューとナスル朝風の料理で休める特別感ある一軒。",
+        "13:00〜15:00 / 20:30〜22:00"
       ],
       "review_trend_analysis": {
-        "summary": "アルハンブラ観光後に移動せず休める、旅程上もっとも安心な昼食スポット。"
+        "summary": "アルハンブラ観光後に移動せず、庭園ビューとナスル朝風の料理で休める特別感ある一軒。"
       },
       "space": {},
       "meta_scores": {},
@@ -108,18 +144,26 @@
       "weekend_hours": {
         "saturday": null,
         "sunday": null,
-        "notes": "12:30〜15:00"
+        "notes": "13:00〜15:00 / 20:30〜22:00"
       },
-      "one_line_pop": "アルハンブラ観光後に移動せず休める、旅程上もっとも安心な昼食スポット。",
+      "one_line_pop": "アルハンブラ観光後に移動せず、庭園ビューとナスル朝風の料理で休める特別感ある一軒。",
       "notes": {
         "original_type": "飲食店",
         "original_subtype": "ホテルレストラン・カフェ",
-        "coordinate_status": "requested_sources_not_confirmed"
+        "coordinate_status": "restaurant_in_hotel_poi_used"
       },
       "sources": [
         {
           "title": "Google Maps 検索",
-          "url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Parador%20de%20Granada%2C%20Real%20de%20la%20Alhambra%2C%20s%2Fn%2C%2018009%20Granada%2C%20Spain"
+          "url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Parador%20de%20Granada%20Real%20de%20la%20Alhambra%20Granada"
+        },
+        {
+          "title": "official_site_address_plus_public_gps",
+          "url": "https://www.paradorsofspain.com/parador-de-granada.aspx"
+        },
+        {
+          "title": "Paradores公式",
+          "url": "https://paradores.es/es/restaurante-del-parador-de-granada"
         }
       ]
     },
@@ -135,7 +179,7 @@
         "genre": [
           "カフェ・軽食"
         ],
-        "google_map_query": "Café 4 Gatos Granada",
+        "google_map_query": "Café 4 Gatos Placeta Cruz Verde 6 Granada",
         "google_rating_user_provided": null,
         "tabelog_rating": null,
         "tabelog_review_count": null,
@@ -150,11 +194,11 @@
         "saturday_hours": null,
         "saturday_hours_confidence": "unknown",
         "saturday_hours_note": "おすすめ時間帯: 15:00〜16:00 / アルバイシン散策前に、坂道と暑さをリセットできる眺めのよいカフェ。",
-        "saturday_hours_last_checked": "2026-06-25",
+        "saturday_hours_last_checked": "2026-06-26",
         "saturday_hours_sources": [
           {
             "title": "Google Maps 検索",
-            "url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%204%20Gatos%2C%20Placeta%20Cruz%20Verde%206%2C%2018010%20Granada%2C%20Spain"
+            "url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%204%20Gatos%20Placeta%20Cruz%20Verde%206%20Granada"
           },
           {
             "title": "openstreetmap_overpass",
@@ -170,13 +214,13 @@
         "lng": -3.59497,
         "source": "openstreetmap_overpass",
         "source_url": "https://mapcarta.com/N3364853748",
-        "confidence": "medium",
-        "correction_note": "confirmed_osm"
+        "confidence": "high",
+        "correction_note": "confirmed_osm_poi"
       },
       "google_maps_poi": {
         "place_id": null,
         "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%204%20Gatos%2C%20Placeta%20Cruz%20Verde%206%2C%2018010%20Granada%2C%20Spain"
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%204%20Gatos%20Placeta%20Cruz%20Verde%206%20Granada"
       },
       "representative_menu_and_prices": [],
       "beer_price": null,
@@ -201,12 +245,12 @@
       "notes": {
         "original_type": "飲食店",
         "original_subtype": "カフェ・軽食",
-        "coordinate_status": "confirmed_osm"
+        "coordinate_status": "confirmed_osm_poi"
       },
       "sources": [
         {
           "title": "Google Maps 検索",
-          "url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%204%20Gatos%2C%20Placeta%20Cruz%20Verde%206%2C%2018010%20Granada%2C%20Spain"
+          "url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9%204%20Gatos%20Placeta%20Cruz%20Verde%206%20Granada"
         },
         {
           "title": "openstreetmap_overpass",
@@ -226,7 +270,7 @@
         "genre": [
           "バル・タパス"
         ],
-        "google_map_query": "Bar Aixa Granada",
+        "google_map_query": "Bar Aixa Plaza Larga 5 Granada",
         "google_rating_user_provided": null,
         "tabelog_rating": null,
         "tabelog_review_count": null,
@@ -241,11 +285,15 @@
         "saturday_hours": null,
         "saturday_hours_confidence": "unknown",
         "saturday_hours_note": "おすすめ時間帯: 18:30前後 / サン・ニコラス展望台の前後に寄りやすい、アルバイシンらしい気軽なバル。",
-        "saturday_hours_last_checked": "2026-06-25",
+        "saturday_hours_last_checked": "2026-06-26",
         "saturday_hours_sources": [
           {
             "title": "Google Maps 検索",
-            "url": "https://www.google.com/maps/search/?api=1&query=Bar%20Aixa%2C%20Plaza%20Larga%205%2C%2018010%20Granada%2C%20Spain"
+            "url": "https://www.google.com/maps/search/?api=1&query=Bar%20Aixa%20Plaza%20Larga%205%20Granada"
+          },
+          {
+            "title": "openstreetmap_overpass",
+            "url": "https://mapcarta.com/N2141462591"
           }
         ],
         "sunday_hours": null,
@@ -256,14 +304,14 @@
         "lat": 37.18272,
         "lng": -3.59315,
         "source": "openstreetmap_overpass",
-        "source_url": "",
-        "confidence": "medium",
-        "correction_note": "confirmed_osm_from_previous_lookup"
+        "source_url": "https://mapcarta.com/N2141462591",
+        "confidence": "high",
+        "correction_note": "confirmed_osm_poi"
       },
       "google_maps_poi": {
         "place_id": null,
         "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Bar%20Aixa%2C%20Plaza%20Larga%205%2C%2018010%20Granada%2C%20Spain"
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Bar%20Aixa%20Plaza%20Larga%205%20Granada"
       },
       "representative_menu_and_prices": [],
       "beer_price": null,
@@ -288,12 +336,16 @@
       "notes": {
         "original_type": "飲食店",
         "original_subtype": "バル・タパス",
-        "coordinate_status": "confirmed_osm_from_previous_lookup"
+        "coordinate_status": "confirmed_osm_poi"
       },
       "sources": [
         {
           "title": "Google Maps 検索",
-          "url": "https://www.google.com/maps/search/?api=1&query=Bar%20Aixa%2C%20Plaza%20Larga%205%2C%2018010%20Granada%2C%20Spain"
+          "url": "https://www.google.com/maps/search/?api=1&query=Bar%20Aixa%20Plaza%20Larga%205%20Granada"
+        },
+        {
+          "title": "openstreetmap_overpass",
+          "url": "https://mapcarta.com/N2141462591"
         }
       ]
     },
@@ -309,7 +361,7 @@
         "genre": [
           "眺望レストラン"
         ],
-        "google_map_query": "El Huerto de Juan Ranas Granada",
+        "google_map_query": "El Huerto de Juan Ranas Callejón Atarazana Vieja 6 Granada",
         "google_rating_user_provided": null,
         "tabelog_rating": null,
         "tabelog_review_count": null,
@@ -324,11 +376,11 @@
         "saturday_hours": null,
         "saturday_hours_confidence": "unknown",
         "saturday_hours_note": "おすすめ時間帯: 21:30以降 / アルハンブラを正面に眺めながら夕食を楽しめる、景色重視の本命レストラン。",
-        "saturday_hours_last_checked": "2026-06-25",
+        "saturday_hours_last_checked": "2026-06-26",
         "saturday_hours_sources": [
           {
             "title": "Google Maps 検索",
-            "url": "https://www.google.com/maps/search/?api=1&query=El%20Huerto%20de%20Juan%20Ranas%2C%20Callej%C3%B3n%20Atarazana%20Vieja%206%2C%2018010%20Granada%2C%20Spain"
+            "url": "https://www.google.com/maps/search/?api=1&query=El%20Huerto%20de%20Juan%20Ranas%20Callej%C3%B3n%20Atarazana%20Vieja%206%20Granada"
           },
           {
             "title": "openstreetmap_overpass",
@@ -344,13 +396,13 @@
         "lng": -3.59221,
         "source": "openstreetmap_overpass",
         "source_url": "https://mapcarta.com/N549453712",
-        "confidence": "medium",
-        "correction_note": "confirmed_osm"
+        "confidence": "high",
+        "correction_note": "confirmed_osm_poi"
       },
       "google_maps_poi": {
         "place_id": null,
         "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=El%20Huerto%20de%20Juan%20Ranas%2C%20Callej%C3%B3n%20Atarazana%20Vieja%206%2C%2018010%20Granada%2C%20Spain"
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=El%20Huerto%20de%20Juan%20Ranas%20Callej%C3%B3n%20Atarazana%20Vieja%206%20Granada"
       },
       "representative_menu_and_prices": [],
       "beer_price": null,
@@ -375,12 +427,12 @@
       "notes": {
         "original_type": "飲食店",
         "original_subtype": "眺望レストラン",
-        "coordinate_status": "confirmed_osm"
+        "coordinate_status": "confirmed_osm_poi"
       },
       "sources": [
         {
           "title": "Google Maps 検索",
-          "url": "https://www.google.com/maps/search/?api=1&query=El%20Huerto%20de%20Juan%20Ranas%2C%20Callej%C3%B3n%20Atarazana%20Vieja%206%2C%2018010%20Granada%2C%20Spain"
+          "url": "https://www.google.com/maps/search/?api=1&query=El%20Huerto%20de%20Juan%20Ranas%20Callej%C3%B3n%20Atarazana%20Vieja%206%20Granada"
         },
         {
           "title": "openstreetmap_overpass",
@@ -400,7 +452,7 @@
         "genre": [
           "眺望レストラン"
         ],
-        "google_map_query": "Estrellas de San Nicolás Granada",
+        "google_map_query": "Estrellas de San Nicolás Callejón Atarazana Vieja Granada",
         "google_rating_user_provided": null,
         "tabelog_rating": null,
         "tabelog_review_count": null,
@@ -415,11 +467,15 @@
         "saturday_hours": null,
         "saturday_hours_confidence": "unknown",
         "saturday_hours_note": "おすすめ時間帯: 21:30以降 / サン・ニコラス展望台のすぐ近くで、夕景後の食事にそのままつなげやすい一軒。",
-        "saturday_hours_last_checked": "2026-06-25",
+        "saturday_hours_last_checked": "2026-06-26",
         "saturday_hours_sources": [
           {
             "title": "Google Maps 検索",
-            "url": "https://www.google.com/maps/search/?api=1&query=Estrellas%20de%20San%20Nicol%C3%A1s%2C%20Callej%C3%B3n%20Atarazana%20Vieja%201%2C%2018010%20Granada%2C%20Spain"
+            "url": "https://www.google.com/maps/search/?api=1&query=Estrellas%20de%20San%20Nicol%C3%A1s%20Callej%C3%B3n%20Atarazana%20Vieja%20Granada"
+          },
+          {
+            "title": "openstreetmap_overpass",
+            "url": "https://mapcarta.com/es/N505381169"
           }
         ],
         "sunday_hours": null,
@@ -427,17 +483,17 @@
         "last_order": null
       },
       "map_position": {
-        "lat": null,
-        "lng": null,
-        "source": "requested_sources_not_confirmed",
-        "source_url": "",
-        "confidence": "unknown",
-        "correction_note": "requested_sources_not_confirmed"
+        "lat": 37.18115,
+        "lng": -3.59236,
+        "source": "openstreetmap_overpass",
+        "source_url": "https://mapcarta.com/es/N505381169",
+        "confidence": "high",
+        "correction_note": "confirmed_osm_poi"
       },
       "google_maps_poi": {
         "place_id": null,
         "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Estrellas%20de%20San%20Nicol%C3%A1s%2C%20Callej%C3%B3n%20Atarazana%20Vieja%201%2C%2018010%20Granada%2C%20Spain"
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Estrellas%20de%20San%20Nicol%C3%A1s%20Callej%C3%B3n%20Atarazana%20Vieja%20Granada"
       },
       "representative_menu_and_prices": [],
       "beer_price": null,
@@ -462,12 +518,16 @@
       "notes": {
         "original_type": "飲食店",
         "original_subtype": "眺望レストラン",
-        "coordinate_status": "requested_sources_not_confirmed"
+        "coordinate_status": "confirmed_osm_poi"
       },
       "sources": [
         {
           "title": "Google Maps 検索",
-          "url": "https://www.google.com/maps/search/?api=1&query=Estrellas%20de%20San%20Nicol%C3%A1s%2C%20Callej%C3%B3n%20Atarazana%20Vieja%201%2C%2018010%20Granada%2C%20Spain"
+          "url": "https://www.google.com/maps/search/?api=1&query=Estrellas%20de%20San%20Nicol%C3%A1s%20Callej%C3%B3n%20Atarazana%20Vieja%20Granada"
+        },
+        {
+          "title": "openstreetmap_overpass",
+          "url": "https://mapcarta.com/es/N505381169"
         }
       ]
     },
@@ -483,7 +543,7 @@
         "genre": [
           "レストラン・フラメンコ"
         ],
-        "google_map_query": "Jardines de Zoraya Granada",
+        "google_map_query": "Jardines de Zoraya Calle Panaderos 32 Granada",
         "google_rating_user_provided": null,
         "tabelog_rating": null,
         "tabelog_review_count": null,
@@ -498,11 +558,11 @@
         "saturday_hours": null,
         "saturday_hours_confidence": "unknown",
         "saturday_hours_note": "おすすめ時間帯: 夕食・夜 / 夕食とフラメンコを一度に楽しめる、グラナダの夜を体験型に変える店。",
-        "saturday_hours_last_checked": "2026-06-25",
+        "saturday_hours_last_checked": "2026-06-26",
         "saturday_hours_sources": [
           {
             "title": "Google Maps 検索",
-            "url": "https://www.google.com/maps/search/?api=1&query=Jardines%20de%20Zoraya%2C%20Calle%20Panaderos%2032%2C%2018010%20Granada%2C%20Spain"
+            "url": "https://www.google.com/maps/search/?api=1&query=Jardines%20de%20Zoraya%20Calle%20Panaderos%2032%20Granada"
           },
           {
             "title": "openstreetmap_overpass",
@@ -518,13 +578,13 @@
         "lng": -3.59173,
         "source": "openstreetmap_overpass",
         "source_url": "https://mapcarta.com/N4382849989",
-        "confidence": "medium",
-        "correction_note": "confirmed_osm"
+        "confidence": "high",
+        "correction_note": "confirmed_osm_poi"
       },
       "google_maps_poi": {
         "place_id": null,
         "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Jardines%20de%20Zoraya%2C%20Calle%20Panaderos%2032%2C%2018010%20Granada%2C%20Spain"
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Jardines%20de%20Zoraya%20Calle%20Panaderos%2032%20Granada"
       },
       "representative_menu_and_prices": [],
       "beer_price": null,
@@ -549,12 +609,12 @@
       "notes": {
         "original_type": "飲食店",
         "original_subtype": "レストラン・フラメンコ",
-        "coordinate_status": "confirmed_osm"
+        "coordinate_status": "confirmed_osm_poi"
       },
       "sources": [
         {
           "title": "Google Maps 検索",
-          "url": "https://www.google.com/maps/search/?api=1&query=Jardines%20de%20Zoraya%2C%20Calle%20Panaderos%2032%2C%2018010%20Granada%2C%20Spain"
+          "url": "https://www.google.com/maps/search/?api=1&query=Jardines%20de%20Zoraya%20Calle%20Panaderos%2032%20Granada"
         },
         {
           "title": "openstreetmap_overpass",
@@ -574,7 +634,7 @@
         "genre": [
           "モロッコ料理"
         ],
-        "google_map_query": "Restaurante Arrayanes Granada",
+        "google_map_query": "Restaurante Arrayanes Cuesta de Marañas 4 Granada",
         "google_rating_user_provided": null,
         "tabelog_rating": null,
         "tabelog_review_count": null,
@@ -589,11 +649,11 @@
         "saturday_hours": null,
         "saturday_hours_confidence": "unknown",
         "saturday_hours_note": "おすすめ時間帯: 夕食 / ナスル朝の余韻が残るアルバイシンで、土地の歴史に合うモロッコ料理を楽しめる店。",
-        "saturday_hours_last_checked": "2026-06-25",
+        "saturday_hours_last_checked": "2026-06-26",
         "saturday_hours_sources": [
           {
             "title": "Google Maps 検索",
-            "url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Arrayanes%2C%20Cuesta%20de%20Mara%C3%B1as%204%2C%2018010%20Granada%2C%20Spain"
+            "url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Arrayanes%20Cuesta%20de%20Mara%C3%B1as%204%20Granada"
           }
         ],
         "sunday_hours": null,
@@ -606,12 +666,12 @@
         "source": "requested_sources_not_confirmed",
         "source_url": "",
         "confidence": "unknown",
-        "correction_note": "requested_sources_not_confirmed"
+        "correction_note": "unconfirmed_osm_poi"
       },
       "google_maps_poi": {
         "place_id": null,
         "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Arrayanes%2C%20Cuesta%20de%20Mara%C3%B1as%204%2C%2018010%20Granada%2C%20Spain"
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Arrayanes%20Cuesta%20de%20Mara%C3%B1as%204%20Granada"
       },
       "representative_menu_and_prices": [],
       "beer_price": null,
@@ -636,12 +696,12 @@
       "notes": {
         "original_type": "飲食店",
         "original_subtype": "モロッコ料理",
-        "coordinate_status": "requested_sources_not_confirmed"
+        "coordinate_status": "unconfirmed_osm_poi"
       },
       "sources": [
         {
           "title": "Google Maps 検索",
-          "url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Arrayanes%2C%20Cuesta%20de%20Mara%C3%B1as%204%2C%2018010%20Granada%2C%20Spain"
+          "url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Arrayanes%20Cuesta%20de%20Mara%C3%B1as%204%20Granada"
         }
       ]
     },
@@ -657,7 +717,7 @@
         "genre": [
           "老舗バル・タベルナ"
         ],
-        "google_map_query": "Bodegas Castañeda Granada",
+        "google_map_query": "Bodegas Castañeda Calle Almireceros Granada",
         "google_rating_user_provided": null,
         "tabelog_rating": null,
         "tabelog_review_count": null,
@@ -672,11 +732,15 @@
         "saturday_hours": null,
         "saturday_hours_confidence": "unknown",
         "saturday_hours_note": "おすすめ時間帯: 21:45以降 / グラナダ中心部でワイン、ベルモット、タパスを味わうなら外しにくい老舗バル。",
-        "saturday_hours_last_checked": "2026-06-25",
+        "saturday_hours_last_checked": "2026-06-26",
         "saturday_hours_sources": [
           {
             "title": "Google Maps 検索",
-            "url": "https://www.google.com/maps/search/?api=1&query=Bodegas%20Casta%C3%B1eda%2C%20Calle%20Almireceros%201%203%2C%2018010%20Granada%2C%20Spain"
+            "url": "https://www.google.com/maps/search/?api=1&query=Bodegas%20Casta%C3%B1eda%20Calle%20Almireceros%20Granada"
+          },
+          {
+            "title": "openstreetmap_overpass",
+            "url": "https://mapcarta.com/N2961214762"
           }
         ],
         "sunday_hours": null,
@@ -687,14 +751,14 @@
         "lat": 37.17683,
         "lng": -3.59699,
         "source": "openstreetmap_overpass",
-        "source_url": "",
-        "confidence": "medium",
-        "correction_note": "confirmed_osm_from_previous_lookup"
+        "source_url": "https://mapcarta.com/N2961214762",
+        "confidence": "high",
+        "correction_note": "confirmed_osm_poi"
       },
       "google_maps_poi": {
         "place_id": null,
         "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Bodegas%20Casta%C3%B1eda%2C%20Calle%20Almireceros%201%203%2C%2018010%20Granada%2C%20Spain"
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Bodegas%20Casta%C3%B1eda%20Calle%20Almireceros%20Granada"
       },
       "representative_menu_and_prices": [],
       "beer_price": null,
@@ -719,12 +783,16 @@
       "notes": {
         "original_type": "飲食店",
         "original_subtype": "老舗バル・タベルナ",
-        "coordinate_status": "confirmed_osm_from_previous_lookup"
+        "coordinate_status": "confirmed_osm_poi"
       },
       "sources": [
         {
           "title": "Google Maps 検索",
-          "url": "https://www.google.com/maps/search/?api=1&query=Bodegas%20Casta%C3%B1eda%2C%20Calle%20Almireceros%201%203%2C%2018010%20Granada%2C%20Spain"
+          "url": "https://www.google.com/maps/search/?api=1&query=Bodegas%20Casta%C3%B1eda%20Calle%20Almireceros%20Granada"
+        },
+        {
+          "title": "openstreetmap_overpass",
+          "url": "https://mapcarta.com/N2961214762"
         }
       ]
     },
@@ -740,7 +808,7 @@
         "genre": [
           "魚介タパス・バル"
         ],
-        "google_map_query": "Los Diamantes - Plaza Nueva Granada",
+        "google_map_query": "Los Diamantes Plaza Nueva 13 Granada",
         "google_rating_user_provided": null,
         "tabelog_rating": null,
         "tabelog_review_count": null,
@@ -755,11 +823,15 @@
         "saturday_hours": null,
         "saturday_hours_confidence": "unknown",
         "saturday_hours_note": "おすすめ時間帯: 昼・夜 / アルバイシン散策の起点・終点にしやすい、魚介フリットの人気バル。",
-        "saturday_hours_last_checked": "2026-06-25",
+        "saturday_hours_last_checked": "2026-06-26",
         "saturday_hours_sources": [
           {
             "title": "Google Maps 検索",
-            "url": "https://www.google.com/maps/search/?api=1&query=Los%20Diamantes%20Plaza%20Nueva%2013%2C%2018010%20Granada%2C%20Spain"
+            "url": "https://www.google.com/maps/search/?api=1&query=Los%20Diamantes%20Plaza%20Nueva%2013%20Granada"
+          },
+          {
+            "title": "official_site_address_only",
+            "url": "https://losdiamantes.es/ubicaciones/"
           }
         ],
         "sunday_hours": null,
@@ -769,15 +841,15 @@
       "map_position": {
         "lat": null,
         "lng": null,
-        "source": "requested_sources_not_confirmed",
-        "source_url": "",
+        "source": "official_site_address_only",
+        "source_url": "https://losdiamantes.es/ubicaciones/",
         "confidence": "unknown",
-        "correction_note": "requested_sources_not_confirmed"
+        "correction_note": "branch_specific_coordinate_not_confirmed"
       },
       "google_maps_poi": {
         "place_id": null,
         "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Los%20Diamantes%20Plaza%20Nueva%2013%2C%2018010%20Granada%2C%20Spain"
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Los%20Diamantes%20Plaza%20Nueva%2013%20Granada"
       },
       "representative_menu_and_prices": [],
       "beer_price": null,
@@ -802,12 +874,16 @@
       "notes": {
         "original_type": "飲食店",
         "original_subtype": "魚介タパス・バル",
-        "coordinate_status": "requested_sources_not_confirmed"
+        "coordinate_status": "branch_specific_coordinate_not_confirmed"
       },
       "sources": [
         {
           "title": "Google Maps 検索",
-          "url": "https://www.google.com/maps/search/?api=1&query=Los%20Diamantes%20Plaza%20Nueva%2013%2C%2018010%20Granada%2C%20Spain"
+          "url": "https://www.google.com/maps/search/?api=1&query=Los%20Diamantes%20Plaza%20Nueva%2013%20Granada"
+        },
+        {
+          "title": "official_site_address_only",
+          "url": "https://losdiamantes.es/ubicaciones/"
         }
       ]
     },
@@ -823,7 +899,7 @@
         "genre": [
           "魚介タパス・バル"
         ],
-        "google_map_query": "Los Diamantes - Navas Granada",
+        "google_map_query": "Los Diamantes Navas Calle Navas 28 Granada",
         "google_rating_user_provided": null,
         "tabelog_rating": null,
         "tabelog_review_count": null,
@@ -838,11 +914,11 @@
         "saturday_hours": null,
         "saturday_hours_confidence": "unknown",
         "saturday_hours_note": "おすすめ時間帯: 夜のバル巡り / 揚げたて魚介と活気ある雰囲気で、グラナダのバル文化を体感できる定番店。",
-        "saturday_hours_last_checked": "2026-06-25",
+        "saturday_hours_last_checked": "2026-06-26",
         "saturday_hours_sources": [
           {
             "title": "Google Maps 検索",
-            "url": "https://www.google.com/maps/search/?api=1&query=Los%20Diamantes%20Navas%2C%20Calle%20Navas%2028%2C%2018009%20Granada%2C%20Spain"
+            "url": "https://www.google.com/maps/search/?api=1&query=Los%20Diamantes%20Navas%20Calle%20Navas%2028%20Granada"
           },
           {
             "title": "openstreetmap_overpass",
@@ -858,13 +934,13 @@
         "lng": -3.59833,
         "source": "openstreetmap_overpass",
         "source_url": "https://mapcarta.com/N3887661607",
-        "confidence": "medium",
-        "correction_note": "confirmed_osm"
+        "confidence": "high",
+        "correction_note": "confirmed_osm_poi"
       },
       "google_maps_poi": {
         "place_id": null,
         "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Los%20Diamantes%20Navas%2C%20Calle%20Navas%2028%2C%2018009%20Granada%2C%20Spain"
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Los%20Diamantes%20Navas%20Calle%20Navas%2028%20Granada"
       },
       "representative_menu_and_prices": [],
       "beer_price": null,
@@ -889,12 +965,12 @@
       "notes": {
         "original_type": "飲食店",
         "original_subtype": "魚介タパス・バル",
-        "coordinate_status": "confirmed_osm"
+        "coordinate_status": "confirmed_osm_poi"
       },
       "sources": [
         {
           "title": "Google Maps 検索",
-          "url": "https://www.google.com/maps/search/?api=1&query=Los%20Diamantes%20Navas%2C%20Calle%20Navas%2028%2C%2018009%20Granada%2C%20Spain"
+          "url": "https://www.google.com/maps/search/?api=1&query=Los%20Diamantes%20Navas%20Calle%20Navas%2028%20Granada"
         },
         {
           "title": "openstreetmap_overpass",
@@ -904,17 +980,17 @@
     },
     {
       "id": "los_manueles_reyes_catolicos",
-      "store_name": "Los Manueles Reyes Católicos",
+      "store_name": "Los Manueles - Centro",
       "categories": [
         "伝統料理・タパス"
       ],
       "basic_info": {
-        "address": "Reyes Católicos 61, 18010 Granada, Spain",
-        "area": "Plaza Nueva / 中心部",
+        "address": "Granada Centro, Granada, Spain",
+        "area": "中心部 / カテドラル周辺",
         "genre": [
           "伝統料理・タパス"
         ],
-        "google_map_query": "Los Manueles Reyes Católicos Granada",
+        "google_map_query": "Los Manueles Granada Centro",
         "google_rating_user_provided": null,
         "tabelog_rating": null,
         "tabelog_review_count": null,
@@ -923,17 +999,21 @@
           "dinner": null,
           "confidence": "unknown"
         },
-        "nearest_station_access": "Plaza Nueva / 中心部",
+        "nearest_station_access": "中心部 / カテドラル周辺",
         "closed_days": "要確認",
         "phone": null,
         "saturday_hours": null,
         "saturday_hours_confidence": "unknown",
-        "saturday_hours_note": "おすすめ時間帯: 昼・夜 / 家族でも入りやすく、中心部でグラナダ料理を落ち着いて試せる万能レストラン。",
-        "saturday_hours_last_checked": "2026-06-25",
+        "saturday_hours_note": "おすすめ時間帯: 昼・夜 / 中心部でグラナダ料理とタパスを落ち着いて試せる、使い勝手のよい代表店。",
+        "saturday_hours_last_checked": "2026-06-26",
         "saturday_hours_sources": [
           {
             "title": "Google Maps 検索",
-            "url": "https://www.google.com/maps/search/?api=1&query=Los%20Manueles%20Reyes%20Cat%C3%B3licos%2061%2C%2018010%20Granada%2C%20Spain"
+            "url": "https://www.google.com/maps/search/?api=1&query=Los%20Manueles%20Granada%20Centro"
+          },
+          {
+            "title": "openstreetmap_overpass",
+            "url": "https://mapcarta.com/N10578852121"
           }
         ],
         "sunday_hours": null,
@@ -941,26 +1021,26 @@
         "last_order": null
       },
       "map_position": {
-        "lat": null,
-        "lng": null,
-        "source": "branch_specific_coordinate_not_confirmed",
-        "source_url": "",
-        "confidence": "unknown",
-        "correction_note": "branch_specific_coordinate_not_confirmed"
+        "lat": 37.17568,
+        "lng": -3.59986,
+        "source": "openstreetmap_overpass",
+        "source_url": "https://mapcarta.com/N10578852121",
+        "confidence": "medium",
+        "correction_note": "representative_centro_branch_selected"
       },
       "google_maps_poi": {
         "place_id": null,
         "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Los%20Manueles%20Reyes%20Cat%C3%B3licos%2061%2C%2018010%20Granada%2C%20Spain"
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Los%20Manueles%20Granada%20Centro"
       },
       "representative_menu_and_prices": [],
       "beer_price": null,
       "store_features": [
-        "家族でも入りやすく、中心部でグラナダ料理を落ち着いて試せる万能レストラン。",
+        "中心部でグラナダ料理とタパスを落ち着いて試せる、使い勝手のよい代表店。",
         "昼・夜"
       ],
       "review_trend_analysis": {
-        "summary": "家族でも入りやすく、中心部でグラナダ料理を落ち着いて試せる万能レストラン。"
+        "summary": "中心部でグラナダ料理とタパスを落ち着いて試せる、使い勝手のよい代表店。"
       },
       "space": {},
       "meta_scores": {},
@@ -972,16 +1052,20 @@
         "sunday": null,
         "notes": "昼・夜"
       },
-      "one_line_pop": "家族でも入りやすく、中心部でグラナダ料理を落ち着いて試せる万能レストラン。",
+      "one_line_pop": "中心部でグラナダ料理とタパスを落ち着いて試せる、使い勝手のよい代表店。",
       "notes": {
         "original_type": "飲食店",
         "original_subtype": "伝統料理・タパス",
-        "coordinate_status": "branch_specific_coordinate_not_confirmed"
+        "coordinate_status": "representative_centro_branch_selected"
       },
       "sources": [
         {
           "title": "Google Maps 検索",
-          "url": "https://www.google.com/maps/search/?api=1&query=Los%20Manueles%20Reyes%20Cat%C3%B3licos%2061%2C%2018010%20Granada%2C%20Spain"
+          "url": "https://www.google.com/maps/search/?api=1&query=Los%20Manueles%20Granada%20Centro"
+        },
+        {
+          "title": "openstreetmap_overpass",
+          "url": "https://mapcarta.com/N10578852121"
         }
       ]
     },
@@ -997,7 +1081,7 @@
         "genre": [
           "地中海料理・スペイン料理"
         ],
-        "google_map_query": "La Auténtica Carmela Granada",
+        "google_map_query": "La Auténtica Carmela Calle Colcha 13 Granada",
         "google_rating_user_provided": null,
         "tabelog_rating": null,
         "tabelog_review_count": null,
@@ -1008,15 +1092,23 @@
         },
         "nearest_station_access": "Realejo / 中心部",
         "closed_days": "要確認",
-        "phone": null,
+        "phone": "+34 958 22 57 94",
         "saturday_hours": null,
         "saturday_hours_confidence": "unknown",
         "saturday_hours_note": "おすすめ時間帯: 夕食 / 混み合うバルより座って食べたい時に使いやすい、観光客にも入りやすい一軒。",
-        "saturday_hours_last_checked": "2026-06-25",
+        "saturday_hours_last_checked": "2026-06-26",
         "saturday_hours_sources": [
           {
             "title": "Google Maps 検索",
-            "url": "https://www.google.com/maps/search/?api=1&query=La%20Aut%C3%A9ntica%20Carmela%2C%20Calle%20Colcha%2013%2C%2018009%20Granada%2C%20Spain"
+            "url": "https://www.google.com/maps/search/?api=1&query=La%20Aut%C3%A9ntica%20Carmela%20Calle%20Colcha%2013%20Granada"
+          },
+          {
+            "title": "official_and_tripadvisor_address_only",
+            "url": "https://restaurantescarmela.com/la-autentica/"
+          },
+          {
+            "title": "Tripadvisor",
+            "url": "https://www.tripadvisor.jp/Restaurant_Review-g187441-d3693887-Reviews-La_Autentica_Carmela-Granada_Province_of_Granada_Andalucia.html"
           }
         ],
         "sunday_hours": null,
@@ -1026,15 +1118,15 @@
       "map_position": {
         "lat": null,
         "lng": null,
-        "source": "requested_sources_not_confirmed",
-        "source_url": "",
+        "source": "official_and_tripadvisor_address_only",
+        "source_url": "https://restaurantescarmela.com/la-autentica/",
         "confidence": "unknown",
-        "correction_note": "requested_sources_not_confirmed"
+        "correction_note": "unconfirmed_poi_coordinate"
       },
       "google_maps_poi": {
         "place_id": null,
         "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=La%20Aut%C3%A9ntica%20Carmela%2C%20Calle%20Colcha%2013%2C%2018009%20Granada%2C%20Spain"
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=La%20Aut%C3%A9ntica%20Carmela%20Calle%20Colcha%2013%20Granada"
       },
       "representative_menu_and_prices": [],
       "beer_price": null,
@@ -1059,12 +1151,20 @@
       "notes": {
         "original_type": "飲食店",
         "original_subtype": "地中海料理・スペイン料理",
-        "coordinate_status": "requested_sources_not_confirmed"
+        "coordinate_status": "unconfirmed_poi_coordinate"
       },
       "sources": [
         {
           "title": "Google Maps 検索",
-          "url": "https://www.google.com/maps/search/?api=1&query=La%20Aut%C3%A9ntica%20Carmela%2C%20Calle%20Colcha%2013%2C%2018009%20Granada%2C%20Spain"
+          "url": "https://www.google.com/maps/search/?api=1&query=La%20Aut%C3%A9ntica%20Carmela%20Calle%20Colcha%2013%20Granada"
+        },
+        {
+          "title": "official_and_tripadvisor_address_only",
+          "url": "https://restaurantescarmela.com/la-autentica/"
+        },
+        {
+          "title": "Tripadvisor",
+          "url": "https://www.tripadvisor.jp/Restaurant_Review-g187441-d3693887-Reviews-La_Autentica_Carmela-Granada_Province_of_Granada_Andalucia.html"
         }
       ]
     },
@@ -1080,7 +1180,7 @@
         "genre": [
           "ワインバー・タパス"
         ],
-        "google_map_query": "Taberna La Tana Granada",
+        "google_map_query": "Taberna La Tana Placeta del Agua 3 Granada",
         "google_rating_user_provided": null,
         "tabelog_rating": null,
         "tabelog_review_count": null,
@@ -1095,11 +1195,11 @@
         "saturday_hours": null,
         "saturday_hours_confidence": "unknown",
         "saturday_hours_note": "おすすめ時間帯: 夜 / ワイン好きなら寄りたい、大人向けの雰囲気で締められるタパスバー。",
-        "saturday_hours_last_checked": "2026-06-25",
+        "saturday_hours_last_checked": "2026-06-26",
         "saturday_hours_sources": [
           {
             "title": "Google Maps 検索",
-            "url": "https://www.google.com/maps/search/?api=1&query=Taberna%20La%20Tana%2C%20Placeta%20del%20Agua%203%2C%2018009%20Granada%2C%20Spain"
+            "url": "https://www.google.com/maps/search/?api=1&query=Taberna%20La%20Tana%20Placeta%20del%20Agua%203%20Granada"
           },
           {
             "title": "openstreetmap_overpass",
@@ -1115,13 +1215,13 @@
         "lng": -3.59609,
         "source": "openstreetmap_overpass",
         "source_url": "https://mapcarta.com/N4068081062",
-        "confidence": "medium",
-        "correction_note": "confirmed_osm"
+        "confidence": "high",
+        "correction_note": "confirmed_osm_poi"
       },
       "google_maps_poi": {
         "place_id": null,
         "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Taberna%20La%20Tana%2C%20Placeta%20del%20Agua%203%2C%2018009%20Granada%2C%20Spain"
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Taberna%20La%20Tana%20Placeta%20del%20Agua%203%20Granada"
       },
       "representative_menu_and_prices": [],
       "beer_price": null,
@@ -1146,12 +1246,12 @@
       "notes": {
         "original_type": "飲食店",
         "original_subtype": "ワインバー・タパス",
-        "coordinate_status": "confirmed_osm"
+        "coordinate_status": "confirmed_osm_poi"
       },
       "sources": [
         {
           "title": "Google Maps 検索",
-          "url": "https://www.google.com/maps/search/?api=1&query=Taberna%20La%20Tana%2C%20Placeta%20del%20Agua%203%2C%2018009%20Granada%2C%20Spain"
+          "url": "https://www.google.com/maps/search/?api=1&query=Taberna%20La%20Tana%20Placeta%20del%20Agua%203%20Granada"
         },
         {
           "title": "openstreetmap_overpass",
@@ -1171,7 +1271,7 @@
         "genre": [
           "タパスバー"
         ],
-        "google_map_query": "La Riviera Granada",
+        "google_map_query": "La Riviera Calle Cetti Meriem 7 Granada",
         "google_rating_user_provided": null,
         "tabelog_rating": null,
         "tabelog_review_count": null,
@@ -1182,15 +1282,19 @@
         },
         "nearest_station_access": "中心部 / カテドラル周辺",
         "closed_days": "要確認",
-        "phone": null,
+        "phone": "+34 958 227969",
         "saturday_hours": null,
         "saturday_hours_confidence": "unknown",
         "saturday_hours_note": "おすすめ時間帯: 夜のバル巡り / 中心部で気軽にタパス巡りを始めるなら使いやすい、にぎやかなバル候補。",
-        "saturday_hours_last_checked": "2026-06-25",
+        "saturday_hours_last_checked": "2026-06-26",
         "saturday_hours_sources": [
           {
             "title": "Google Maps 検索",
-            "url": "https://www.google.com/maps/search/?api=1&query=La%20Riviera%2C%20Calle%20Cetti%20Meriem%207%2C%2018010%20Granada%2C%20Spain"
+            "url": "https://www.google.com/maps/search/?api=1&query=La%20Riviera%20Calle%20Cetti%20Meriem%207%20Granada"
+          },
+          {
+            "title": "public_address_only",
+            "url": "https://www.tour.ne.jp/w_review/GRX/restaurant/spot/159886/"
           }
         ],
         "sunday_hours": null,
@@ -1200,15 +1304,15 @@
       "map_position": {
         "lat": null,
         "lng": null,
-        "source": "requested_sources_not_confirmed",
-        "source_url": "",
+        "source": "public_address_only",
+        "source_url": "https://www.tour.ne.jp/w_review/GRX/restaurant/spot/159886/",
         "confidence": "unknown",
-        "correction_note": "requested_sources_not_confirmed"
+        "correction_note": "unconfirmed_poi_coordinate"
       },
       "google_maps_poi": {
         "place_id": null,
         "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=La%20Riviera%2C%20Calle%20Cetti%20Meriem%207%2C%2018010%20Granada%2C%20Spain"
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=La%20Riviera%20Calle%20Cetti%20Meriem%207%20Granada"
       },
       "representative_menu_and_prices": [],
       "beer_price": null,
@@ -1233,12 +1337,16 @@
       "notes": {
         "original_type": "飲食店",
         "original_subtype": "タパスバー",
-        "coordinate_status": "requested_sources_not_confirmed"
+        "coordinate_status": "unconfirmed_poi_coordinate"
       },
       "sources": [
         {
           "title": "Google Maps 検索",
-          "url": "https://www.google.com/maps/search/?api=1&query=La%20Riviera%2C%20Calle%20Cetti%20Meriem%207%2C%2018010%20Granada%2C%20Spain"
+          "url": "https://www.google.com/maps/search/?api=1&query=La%20Riviera%20Calle%20Cetti%20Meriem%207%20Granada"
+        },
+        {
+          "title": "public_address_only",
+          "url": "https://www.tour.ne.jp/w_review/GRX/restaurant/spot/159886/"
         }
       ]
     },
@@ -1254,7 +1362,7 @@
         "genre": [
           "ブックカフェ・軽食"
         ],
-        "google_map_query": "La Qarmita - Libros, Café & Eventos Granada",
+        "google_map_query": "La Qarmita Calle Águila 20 Granada",
         "google_rating_user_provided": null,
         "tabelog_rating": null,
         "tabelog_review_count": null,
@@ -1269,11 +1377,15 @@
         "saturday_hours": null,
         "saturday_hours_confidence": "unknown",
         "saturday_hours_note": "おすすめ時間帯: 午後の休憩 / 本とカフェの落ち着いた雰囲気で、暑い午後にひと息つける休憩スポット。",
-        "saturday_hours_last_checked": "2026-06-25",
+        "saturday_hours_last_checked": "2026-06-26",
         "saturday_hours_sources": [
           {
             "title": "Google Maps 検索",
-            "url": "https://www.google.com/maps/search/?api=1&query=La%20Qarmita%20Libros%20Caf%C3%A9%20Eventos%2C%20Calle%20%C3%81guila%2020%2C%2018002%20Granada%2C%20Spain"
+            "url": "https://www.google.com/maps/search/?api=1&query=La%20Qarmita%20Calle%20%C3%81guila%2020%20Granada"
+          },
+          {
+            "title": "junta_de_andalucia",
+            "url": "https://www.juntadeandalucia.es/cultura/agendaculturaldeandalucia/espacios/granada-la-qarmita"
           }
         ],
         "sunday_hours": null,
@@ -1284,14 +1396,14 @@
         "lat": 37.1729754,
         "lng": -3.6025277,
         "source": "junta_de_andalucia",
-        "source_url": "",
-        "confidence": "medium",
-        "correction_note": "confirmed_public_source_not_requested_api"
+        "source_url": "https://www.juntadeandalucia.es/cultura/agendaculturaldeandalucia/espacios/granada-la-qarmita",
+        "confidence": "high",
+        "correction_note": "confirmed_public_source"
       },
       "google_maps_poi": {
         "place_id": null,
         "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=La%20Qarmita%20Libros%20Caf%C3%A9%20Eventos%2C%20Calle%20%C3%81guila%2020%2C%2018002%20Granada%2C%20Spain"
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=La%20Qarmita%20Calle%20%C3%81guila%2020%20Granada"
       },
       "representative_menu_and_prices": [],
       "beer_price": null,
@@ -1316,12 +1428,412 @@
       "notes": {
         "original_type": "飲食店",
         "original_subtype": "ブックカフェ・軽食",
-        "coordinate_status": "confirmed_public_source_not_requested_api"
+        "coordinate_status": "confirmed_public_source"
       },
       "sources": [
         {
           "title": "Google Maps 検索",
-          "url": "https://www.google.com/maps/search/?api=1&query=La%20Qarmita%20Libros%20Caf%C3%A9%20Eventos%2C%20Calle%20%C3%81guila%2020%2C%2018002%20Granada%2C%20Spain"
+          "url": "https://www.google.com/maps/search/?api=1&query=La%20Qarmita%20Calle%20%C3%81guila%2020%20Granada"
+        },
+        {
+          "title": "junta_de_andalucia",
+          "url": "https://www.juntadeandalucia.es/cultura/agendaculturaldeandalucia/espacios/granada-la-qarmita"
+        }
+      ]
+    },
+    {
+      "id": "entrebrasas",
+      "store_name": "EntreBrasas",
+      "categories": [
+        "おすすめ",
+        "肉バル・タパス"
+      ],
+      "basic_info": {
+        "address": "Calle Navas 27, 18009 Granada, Spain",
+        "area": "Calle Navas / 中心部",
+        "genre": [
+          "おすすめ",
+          "肉バル・タパス"
+        ],
+        "google_map_query": "EntreBrasas Calle Navas 27 Granada",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": null,
+          "dinner": null,
+          "confidence": "unknown"
+        },
+        "nearest_station_access": "Calle Navas / 中心部",
+        "closed_days": "要確認",
+        "phone": null,
+        "saturday_hours": null,
+        "saturday_hours_confidence": "unknown",
+        "saturday_hours_note": "おすすめ時間帯: 昼・夜 / 肉バルらしい熱気と無料タパスを、カウンターで気軽に楽しめる中心部のおすすめ店。",
+        "saturday_hours_last_checked": "2026-06-26",
+        "saturday_hours_sources": [
+          {
+            "title": "Google Maps 検索",
+            "url": "https://www.google.com/maps/search/?api=1&query=EntreBrasas%20Calle%20Navas%2027%20Granada"
+          },
+          {
+            "title": "openstreetmap_overpass",
+            "url": "https://mapcarta.com/es/N4348178890"
+          }
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 37.17371,
+        "lng": -3.59845,
+        "source": "openstreetmap_overpass",
+        "source_url": "https://mapcarta.com/es/N4348178890",
+        "confidence": "high",
+        "correction_note": "confirmed_osm_poi_recommended"
+      },
+      "google_maps_poi": {
+        "place_id": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=EntreBrasas%20Calle%20Navas%2027%20Granada"
+      },
+      "representative_menu_and_prices": [],
+      "beer_price": null,
+      "store_features": [
+        "肉バルらしい熱気と無料タパスを、カウンターで気軽に楽しめる中心部のおすすめ店。",
+        "昼・夜"
+      ],
+      "review_trend_analysis": {
+        "summary": "肉バルらしい熱気と無料タパスを、カウンターで気軽に楽しめる中心部のおすすめ店。"
+      },
+      "space": {},
+      "meta_scores": {},
+      "overall_fit_for_3_person_drinking": null,
+      "saturday_lunch_alcohol": {},
+      "sunday_alcohol_assumption": {},
+      "weekend_hours": {
+        "saturday": null,
+        "sunday": null,
+        "notes": "昼・夜"
+      },
+      "one_line_pop": "肉バルらしい熱気と無料タパスを、カウンターで気軽に楽しめる中心部のおすすめ店。",
+      "notes": {
+        "original_type": "飲食店",
+        "original_subtype": "おすすめ / 肉バル・タパス",
+        "coordinate_status": "confirmed_osm_poi_recommended"
+      },
+      "sources": [
+        {
+          "title": "Google Maps 検索",
+          "url": "https://www.google.com/maps/search/?api=1&query=EntreBrasas%20Calle%20Navas%2027%20Granada"
+        },
+        {
+          "title": "openstreetmap_overpass",
+          "url": "https://mapcarta.com/es/N4348178890"
+        }
+      ]
+    },
+    {
+      "id": "cervezas_alhambra_ii_los_diamantes_ii",
+      "store_name": "CERVEZAS ALHAMBRA II / Bar Los Diamantes II",
+      "categories": [
+        "おすすめ",
+        "魚介タパス・バル"
+      ],
+      "basic_info": {
+        "address": "Calle Virgen del Rosario 12, 18009 Granada, Spain",
+        "area": "Realejo / Centro",
+        "genre": [
+          "おすすめ",
+          "魚介タパス・バル"
+        ],
+        "google_map_query": "Bar Los Diamantes II Calle Virgen del Rosario Granada",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": null,
+          "dinner": null,
+          "confidence": "unknown"
+        },
+        "nearest_station_access": "Realejo / Centro",
+        "closed_days": "要確認",
+        "phone": "+34 619 78 78 28",
+        "saturday_hours": null,
+        "saturday_hours_confidence": "unknown",
+        "saturday_hours_note": "おすすめ時間帯: 昼・夜 / 魚介フリットと一杯を合わせたい時に強い、地元感のある無料タパス候補。",
+        "saturday_hours_last_checked": "2026-06-26",
+        "saturday_hours_sources": [
+          {
+            "title": "Google Maps 検索",
+            "url": "https://www.google.com/maps/search/?api=1&query=Bar%20Los%20Diamantes%20II%20Calle%20Virgen%20del%20Rosario%20Granada"
+          },
+          {
+            "title": "openstreetmap_overpass",
+            "url": "https://mapcarta.com/es/N4690975390"
+          },
+          {
+            "title": "TodoBares",
+            "url": "https://www.todobares.com/bar/bar-los-diamantes-ii-granada/"
+          }
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 37.17263,
+        "lng": -3.59613,
+        "source": "openstreetmap_overpass",
+        "source_url": "https://mapcarta.com/es/N4690975390",
+        "confidence": "medium",
+        "correction_note": "confirmed_osm_poi_address_discrepancy_note"
+      },
+      "google_maps_poi": {
+        "place_id": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Bar%20Los%20Diamantes%20II%20Calle%20Virgen%20del%20Rosario%20Granada"
+      },
+      "representative_menu_and_prices": [],
+      "beer_price": null,
+      "store_features": [
+        "魚介フリットと一杯を合わせたい時に強い、地元感のある無料タパス候補。",
+        "昼・夜"
+      ],
+      "review_trend_analysis": {
+        "summary": "魚介フリットと一杯を合わせたい時に強い、地元感のある無料タパス候補。"
+      },
+      "space": {},
+      "meta_scores": {},
+      "overall_fit_for_3_person_drinking": null,
+      "saturday_lunch_alcohol": {},
+      "sunday_alcohol_assumption": {},
+      "weekend_hours": {
+        "saturday": null,
+        "sunday": null,
+        "notes": "昼・夜"
+      },
+      "one_line_pop": "魚介フリットと一杯を合わせたい時に強い、地元感のある無料タパス候補。",
+      "notes": {
+        "original_type": "飲食店",
+        "original_subtype": "おすすめ / 魚介タパス・バル",
+        "coordinate_status": "confirmed_osm_poi_address_discrepancy_note"
+      },
+      "sources": [
+        {
+          "title": "Google Maps 検索",
+          "url": "https://www.google.com/maps/search/?api=1&query=Bar%20Los%20Diamantes%20II%20Calle%20Virgen%20del%20Rosario%20Granada"
+        },
+        {
+          "title": "openstreetmap_overpass",
+          "url": "https://mapcarta.com/es/N4690975390"
+        },
+        {
+          "title": "TodoBares",
+          "url": "https://www.todobares.com/bar/bar-los-diamantes-ii-granada/"
+        }
+      ]
+    },
+    {
+      "id": "restaurante_la_botilleria",
+      "store_name": "Restaurante La Botillería",
+      "categories": [
+        "おすすめ",
+        "レストラン・バル"
+      ],
+      "basic_info": {
+        "address": "Calle Varela 10, 18009 Granada, Spain",
+        "area": "Realejo / Centro",
+        "genre": [
+          "おすすめ",
+          "レストラン・バル"
+        ],
+        "google_map_query": "Restaurante La Botillería Calle Varela 10 Granada",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": null,
+          "dinner": null,
+          "confidence": "unknown"
+        },
+        "nearest_station_access": "Realejo / Centro",
+        "closed_days": "要確認",
+        "phone": "+34 958 22 49 28",
+        "saturday_hours": null,
+        "saturday_hours_confidence": "unknown",
+        "saturday_hours_note": "おすすめ時間帯: 昼・夜 / カウンターで一杯とタパス、奥では食事もできる使い分けしやすいおすすめ店。",
+        "saturday_hours_last_checked": "2026-06-26",
+        "saturday_hours_sources": [
+          {
+            "title": "Google Maps 検索",
+            "url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20La%20Botiller%C3%ADa%20Calle%20Varela%2010%20Granada"
+          },
+          {
+            "title": "openstreetmap_overpass",
+            "url": "https://mapcarta.com/N4384814899"
+          }
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 37.17301,
+        "lng": -3.59625,
+        "source": "openstreetmap_overpass",
+        "source_url": "https://mapcarta.com/N4384814899",
+        "confidence": "high",
+        "correction_note": "confirmed_osm_poi_recommended"
+      },
+      "google_maps_poi": {
+        "place_id": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20La%20Botiller%C3%ADa%20Calle%20Varela%2010%20Granada"
+      },
+      "representative_menu_and_prices": [],
+      "beer_price": null,
+      "store_features": [
+        "カウンターで一杯とタパス、奥では食事もできる使い分けしやすいおすすめ店。",
+        "昼・夜"
+      ],
+      "review_trend_analysis": {
+        "summary": "カウンターで一杯とタパス、奥では食事もできる使い分けしやすいおすすめ店。"
+      },
+      "space": {},
+      "meta_scores": {},
+      "overall_fit_for_3_person_drinking": null,
+      "saturday_lunch_alcohol": {},
+      "sunday_alcohol_assumption": {},
+      "weekend_hours": {
+        "saturday": null,
+        "sunday": null,
+        "notes": "昼・夜"
+      },
+      "one_line_pop": "カウンターで一杯とタパス、奥では食事もできる使い分けしやすいおすすめ店。",
+      "notes": {
+        "original_type": "飲食店",
+        "original_subtype": "おすすめ / レストラン・バル",
+        "coordinate_status": "confirmed_osm_poi_recommended"
+      },
+      "sources": [
+        {
+          "title": "Google Maps 検索",
+          "url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20La%20Botiller%C3%ADa%20Calle%20Varela%2010%20Granada"
+        },
+        {
+          "title": "openstreetmap_overpass",
+          "url": "https://mapcarta.com/N4384814899"
+        }
+      ]
+    },
+    {
+      "id": "avila_tapas_ii",
+      "store_name": "Ávila Tapas II",
+      "categories": [
+        "おすすめ",
+        "タパスバー"
+      ],
+      "basic_info": {
+        "address": "Calle San Isidro 11, 18005 Granada, Spain",
+        "area": "Realejo / Centro",
+        "genre": [
+          "おすすめ",
+          "タパスバー"
+        ],
+        "google_map_query": "Ávila Tapas II Calle San Isidro 11 Granada",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": null,
+          "dinner": null,
+          "confidence": "unknown"
+        },
+        "nearest_station_access": "Realejo / Centro",
+        "closed_days": "要確認",
+        "phone": "+34 858 10 53 82",
+        "saturday_hours": null,
+        "saturday_hours_confidence": "unknown",
+        "saturday_hours_note": "おすすめ時間帯: 昼・夜 / 名物ハモン・アサード系のタパスで、地元バル感を味わいやすいおすすめ店。",
+        "saturday_hours_last_checked": "2026-06-26",
+        "saturday_hours_sources": [
+          {
+            "title": "Google Maps 検索",
+            "url": "https://www.google.com/maps/search/?api=1&query=%C3%81vila%20Tapas%20II%20Calle%20San%20Isidro%2011%20Granada"
+          },
+          {
+            "title": "public_address_only",
+            "url": "https://es.restaurantguru.com/Avila-Tapas-II-Granada"
+          },
+          {
+            "title": "InTravel",
+            "url": "https://intravel.net/es/granada/nightlife/avila-tapas-ii"
+          },
+          {
+            "title": "Tripadvisor",
+            "url": "https://www.tripadvisor.jp/Restaurant_Review-g187441-d7303564-Reviews-Avila_II_Bar_Tapas-Granada_Province_of_Granada_Andalucia.html"
+          }
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
+        "last_order": null
+      },
+      "map_position": {
+        "lat": null,
+        "lng": null,
+        "source": "public_address_only",
+        "source_url": "https://es.restaurantguru.com/Avila-Tapas-II-Granada",
+        "confidence": "unknown",
+        "correction_note": "exact_poi_coordinate_not_confirmed"
+      },
+      "google_maps_poi": {
+        "place_id": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=%C3%81vila%20Tapas%20II%20Calle%20San%20Isidro%2011%20Granada"
+      },
+      "representative_menu_and_prices": [],
+      "beer_price": null,
+      "store_features": [
+        "名物ハモン・アサード系のタパスで、地元バル感を味わいやすいおすすめ店。",
+        "昼・夜"
+      ],
+      "review_trend_analysis": {
+        "summary": "名物ハモン・アサード系のタパスで、地元バル感を味わいやすいおすすめ店。"
+      },
+      "space": {},
+      "meta_scores": {},
+      "overall_fit_for_3_person_drinking": null,
+      "saturday_lunch_alcohol": {},
+      "sunday_alcohol_assumption": {},
+      "weekend_hours": {
+        "saturday": null,
+        "sunday": null,
+        "notes": "昼・夜"
+      },
+      "one_line_pop": "名物ハモン・アサード系のタパスで、地元バル感を味わいやすいおすすめ店。",
+      "notes": {
+        "original_type": "飲食店",
+        "original_subtype": "おすすめ / タパスバー",
+        "coordinate_status": "exact_poi_coordinate_not_confirmed"
+      },
+      "sources": [
+        {
+          "title": "Google Maps 検索",
+          "url": "https://www.google.com/maps/search/?api=1&query=%C3%81vila%20Tapas%20II%20Calle%20San%20Isidro%2011%20Granada"
+        },
+        {
+          "title": "public_address_only",
+          "url": "https://es.restaurantguru.com/Avila-Tapas-II-Granada"
+        },
+        {
+          "title": "InTravel",
+          "url": "https://intravel.net/es/granada/nightlife/avila-tapas-ii"
+        },
+        {
+          "title": "Tripadvisor",
+          "url": "https://www.tripadvisor.jp/Restaurant_Review-g187441-d7303564-Reviews-Avila_II_Bar_Tapas-Granada_Province_of_Granada_Andalucia.html"
         }
       ]
     }
