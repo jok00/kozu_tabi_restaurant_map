@@ -62,14 +62,18 @@ http://192.168.1.2:8300/index.html
 - `basic_info.saturday_hours_last_checked`
 - `basic_info.saturday_hours_sources`
 - `map_position.lat` / `map_position.lng`
+- `map_position.source` / `map_position.confidence` / `map_position.correction_note`
+- `notes.coordinate_status`
 - `sources[].title` / `sources[].url`
 
 未確認の値もキー自体は省略せず、`null` または `[]` で明示します。
+
+座標は POI 由来を優先します。住所ジオコーディングや住所近傍から推定した座標は、`map_position.correction_note` と `notes.coordinate_status` にその旨を記録します。`index_dev.html` では、住所推定など精度に注意が必要な店舗に座標精度バッジを表示します。
 
 ## 検証
 
 ```bash
 python -m json.tool store_data.json >/tmp/kozu_store_data_check.json
 for f in regions/*.json landmarks/*.json; do python -m json.tool "$f" >/tmp/"$(basename "$f")".check; done
-node --check /root/common_web_map/map_app.js
+node --check /root/restaurant_map/common_web_map/map_app.js
 ```

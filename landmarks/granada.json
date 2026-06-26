@@ -1,0 +1,100 @@
+{
+  "dataset_name": "granada_day5_landmarks",
+  "generated_at": "2026-06-26",
+  "language": "ja",
+  "region_id": "granada",
+  "region_name": "グラナダ",
+  "title": "グラナダ5日目予定地",
+  "landmarks": [
+    {
+      "id": "parador_de_granada",
+      "name": "【グラナダ泊】パラドール・デ・グラナダ / Parador de Granada",
+      "type": "宿泊地",
+      "map_position": {
+        "lat": 37.176424,
+        "lng": -3.58768
+      }
+    },
+    {
+      "id": "alhambra",
+      "name": "アルハンブラ宮殿 / Alhambra",
+      "type": "観光",
+      "map_position": {
+        "lat": 37.17608,
+        "lng": -3.58814
+      }
+    },
+    {
+      "id": "palacios_nazaries",
+      "name": "ナスル朝宮殿 / Palacios Nazaríes",
+      "type": "観光",
+      "map_position": {
+        "lat": 37.17667,
+        "lng": -3.58956
+      }
+    },
+    {
+      "id": "free_time_granada",
+      "name": "フリータイム",
+      "type": "自由時間",
+      "map_position": {
+        "lat": null,
+        "lng": null
+      }
+    },
+    {
+      "id": "albaicin",
+      "name": "アルバイシン / Albaicín",
+      "type": "街歩き",
+      "map_position": {
+        "lat": 37.18095,
+        "lng": -3.59308
+      }
+    },
+    {
+      "id": "mirador_de_san_nicolas",
+      "name": "サン・ニコラス展望台 / Mirador de San Nicolás",
+      "type": "展望台",
+      "map_position": {
+        "lat": 37.18104,
+        "lng": -3.5923
+      }
+    },
+    {
+      "id": "mirador_de_san_miguel_alto",
+      "name": "サン・ミゲル・アルト展望台 / Mirador de San Miguel Alto",
+      "type": "展望台",
+      "map_position": {
+        "lat": 37.18476,
+        "lng": -3.58844
+      }
+    },
+    {
+      "id": "calle_navas",
+      "name": "カジェ・ナバス / Calle Navas",
+      "type": "バルストリート",
+      "map_position": {
+        "lat": 37.17373,
+        "lng": -3.59833
+      }
+    },
+    {
+      "id": "plaza_nueva_granada",
+      "name": "プラサ・ヌエバ / Plaza Nueva",
+      "type": "バルストリート",
+      "map_position": {
+        "lat": 37.17693,
+        "lng": -3.59583
+      }
+    },
+    {
+      "id": "calle_elvira",
+      "name": "カジェ・エルビラ / Calle Elvira",
+      "type": "バルストリート",
+      "map_position": {
+        "lat": 37.17859,
+        "lng": -3.59923
+      }
+    }
+  ]
+}

@@ -36,6 +36,7 @@
       "country": "Spain",
       "description": "グラナダ市内の飲食店候補",
       "data_url": "regions/granada.json",
+      "landmark_data_url": "landmarks/granada.json",
       "map_center": {
         "lat": 37.1773,
         "lng": -3.5986,

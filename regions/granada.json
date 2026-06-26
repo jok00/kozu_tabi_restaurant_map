@@ -30,7 +30,7 @@
     "openstreetmap_overpass": "OSM由来座標が確認できた店舗のみmap_positionに採用。MapcartaはOSM由来ページとして扱う。",
     "foursquare_places_api": "APIキーが必要なため未取得。",
     "opentripmap_api": "APIキーが必要なため未取得。",
-    "map_position_policy": "正確なPOI座標を確認できた場合のみlat/lngを設定。不明な場合はnull。アプリで必須の場合はnull店舗を別途APIまたは手動で確定すること。"
+    "map_position_policy": "POI座標を優先。POI座標が確認できない場合は住所ジオコーディング座標または住所近傍の推定座標を採用し、correction_noteとnotes.coordinate_statusに不正確な可能性を明記する。"
   },
   "summary": {
     "input_store_count": 19,
@@ -65,7 +65,9 @@
     "価格・営業時間・定休日・予約可否は変動するため、訪問前に店舗公式・予約サイトで確認すること。",
     "位置情報は確認できた公開POI情報を地図表示用に反映。未確認店舗はlat/lngをnullに設定。",
     "おすすめ4店舗はcategoriesに『おすすめ』を追加して表現。JSON構造は変更していない。",
-    "Ávila Tapas IIは住所・店舗情報は複数公開ページで確認できたが、ChatGPT上で正確なOSM/Google POI座標を確認できなかったためlat/lngはnull。"
+    "Ávila Tapas IIは指定されたPOI座標をmap_positionに反映済み。",
+    "POI座標が取得できない店舗は、住所ジオコーディング座標または住所近傍の推定座標を採用し、座標が不正確である可能性をcorrection_noteに明記。",
+    "複数店舗があるチェーン・系列店は、グラナダ中心部・繁華街の代表店舗を1件として記載。"
   ],
   "stores": [
     {
@@ -654,6 +656,18 @@
           {
             "title": "Google Maps 検索",
             "url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Arrayanes%20Cuesta%20de%20Mara%C3%B1as%204%20Granada"
+          },
+          {
+            "title": "Restaurante Arrayanes公式・住所確認",
+            "url": "https://restaurantearrayanesgranada.com/contacto"
+          },
+          {
+            "title": "GranadaInfo Arrayanes・住所営業時間確認",
+            "url": "https://granadainfo.com/arrayanes/indexsp.htm"
+          },
+          {
+            "title": "Unilocal Arrayanes・住所確認",
+            "url": "https://unilocal.es/espana/granada/arrayanes"
           }
         ],
         "sunday_hours": null,
@@ -661,12 +675,12 @@
         "last_order": null
       },
       "map_position": {
-        "lat": null,
-        "lng": null,
-        "source": "requested_sources_not_confirmed",
-        "source_url": "",
-        "confidence": "unknown",
-        "correction_note": "unconfirmed_osm_poi"
+        "lat": 37.17748,
+        "lng": -3.59632,
+        "source": "address_geocoding_estimated_from_public_address",
+        "source_url": "https://restaurantearrayanesgranada.com/contacto",
+        "confidence": "medium_low",
+        "correction_note": "POI座標は未確認。公式サイト・公開店舗ページで確認できるCuesta de Marañas 4の住所から、周辺の住所ジオコーディング相当の推定座標を採用。店舗入口と数十m程度ずれる可能性あり。"
       },
       "google_maps_poi": {
         "place_id": null,
@@ -696,12 +710,24 @@
       "notes": {
         "original_type": "飲食店",
         "original_subtype": "モロッコ料理",
-        "coordinate_status": "unconfirmed_osm_poi"
+        "coordinate_status": "address_geocoding_estimated_coordinate"
       },
       "sources": [
         {
           "title": "Google Maps 検索",
           "url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Arrayanes%20Cuesta%20de%20Mara%C3%B1as%204%20Granada"
+        },
+        {
+          "title": "Restaurante Arrayanes公式・住所確認",
+          "url": "https://restaurantearrayanesgranada.com/contacto"
+        },
+        {
+          "title": "GranadaInfo Arrayanes・住所営業時間確認",
+          "url": "https://granadainfo.com/arrayanes/indexsp.htm"
+        },
+        {
+          "title": "Unilocal Arrayanes・住所確認",
+          "url": "https://unilocal.es/espana/granada/arrayanes"
         }
       ]
     },
@@ -832,6 +858,14 @@
           {
             "title": "official_site_address_only",
             "url": "https://losdiamantes.es/ubicaciones/"
+          },
+          {
+            "title": "Maptons Los Diamantes Plaza Nueva・座標",
+            "url": "https://ug.maptons.com/p/3589155746"
+          },
+          {
+            "title": "Tripadvisor Los Diamantes Plaza Nueva・住所確認",
+            "url": "https://www.tripadvisor.es/Restaurant_Review-g187441-d4026825-Reviews-Los_Diamantes_Plaza_Nueva-Granada_Province_of_Granada_Andalucia.html"
           }
         ],
         "sunday_hours": null,
@@ -839,12 +873,12 @@
         "last_order": null
       },
       "map_position": {
-        "lat": null,
-        "lng": null,
-        "source": "official_site_address_only",
-        "source_url": "https://losdiamantes.es/ubicaciones/",
-        "confidence": "unknown",
-        "correction_note": "branch_specific_coordinate_not_confirmed"
+        "lat": 37.1766076,
+        "lng": -3.5959423,
+        "source": "public_map_page_poi_coordinate",
+        "source_url": "https://ug.maptons.com/p/3589155746",
+        "confidence": "medium_high",
+        "correction_note": "Maptons公開地図ページでPl. Nueva 13の座標を確認。OSM/Overpassの直接POIではないため、最終確認はGoogle Mapsまたは現地公式ページ推奨。"
       },
       "google_maps_poi": {
         "place_id": null,
@@ -874,7 +908,7 @@
       "notes": {
         "original_type": "飲食店",
         "original_subtype": "魚介タパス・バル",
-        "coordinate_status": "branch_specific_coordinate_not_confirmed"
+        "coordinate_status": "confirmed_public_map_coordinate"
       },
       "sources": [
         {
@@ -884,6 +918,14 @@
         {
           "title": "official_site_address_only",
           "url": "https://losdiamantes.es/ubicaciones/"
+        },
+        {
+          "title": "Maptons Los Diamantes Plaza Nueva・座標",
+          "url": "https://ug.maptons.com/p/3589155746"
+        },
+        {
+          "title": "Tripadvisor Los Diamantes Plaza Nueva・住所確認",
+          "url": "https://www.tripadvisor.es/Restaurant_Review-g187441-d4026825-Reviews-Los_Diamantes_Plaza_Nueva-Granada_Province_of_Granada_Andalucia.html"
         }
       ]
     },
@@ -1109,6 +1151,14 @@
           {
             "title": "Tripadvisor",
             "url": "https://www.tripadvisor.jp/Restaurant_Review-g187441-d3693887-Reviews-La_Autentica_Carmela-Granada_Province_of_Granada_Andalucia.html"
+          },
+          {
+            "title": "Maptons La Auténtica Carmela・座標",
+            "url": "https://es.maptons.com/p/3589210459"
+          },
+          {
+            "title": "Cybo La Auténtica Carmela・住所電話確認",
+            "url": "https://es.cybo.com/ES-biz/la-aut%C3%A9ntica-carmela-granada"
           }
         ],
         "sunday_hours": null,
@@ -1116,12 +1166,12 @@
         "last_order": null
       },
       "map_position": {
-        "lat": null,
-        "lng": null,
-        "source": "official_and_tripadvisor_address_only",
-        "source_url": "https://restaurantescarmela.com/la-autentica/",
-        "confidence": "unknown",
-        "correction_note": "unconfirmed_poi_coordinate"
+        "lat": 37.1755875,
+        "lng": -3.5964599,
+        "source": "public_map_page_poi_coordinate",
+        "source_url": "https://es.maptons.com/p/3589210459",
+        "confidence": "medium_high",
+        "correction_note": "Maptons公開地図ページでC. Colcha 13の座標を確認。OSM/Overpassの直接POIではないため、最終確認はGoogle Mapsまたは公式ページ推奨。"
       },
       "google_maps_poi": {
         "place_id": null,
@@ -1151,7 +1201,7 @@
       "notes": {
         "original_type": "飲食店",
         "original_subtype": "地中海料理・スペイン料理",
-        "coordinate_status": "unconfirmed_poi_coordinate"
+        "coordinate_status": "confirmed_public_map_coordinate"
       },
       "sources": [
         {
@@ -1165,6 +1215,14 @@
         {
           "title": "Tripadvisor",
           "url": "https://www.tripadvisor.jp/Restaurant_Review-g187441-d3693887-Reviews-La_Autentica_Carmela-Granada_Province_of_Granada_Andalucia.html"
+        },
+        {
+          "title": "Maptons La Auténtica Carmela・座標",
+          "url": "https://es.maptons.com/p/3589210459"
+        },
+        {
+          "title": "Cybo La Auténtica Carmela・住所電話確認",
+          "url": "https://es.cybo.com/ES-biz/la-aut%C3%A9ntica-carmela-granada"
         }
       ]
     },
@@ -1295,6 +1353,18 @@
           {
             "title": "public_address_only",
             "url": "https://www.tour.ne.jp/w_review/GRX/restaurant/spot/159886/"
+          },
+          {
+            "title": "Maptons Bar La Riviera・座標",
+            "url": "https://es.maptons.com/p/3589643893"
+          },
+          {
+            "title": "Salir.com La Riviera・住所確認",
+            "url": "https://www.salir.com/cerveceria-la-riviera-granada-neg-137298.html"
+          },
+          {
+            "title": "TodosBiz Bar La Riviera・住所電話確認",
+            "url": "https://www.todosbiz.es/bar-la-riviera-958-22-79-69"
           }
         ],
         "sunday_hours": null,
@@ -1302,12 +1372,12 @@
         "last_order": null
       },
       "map_position": {
-        "lat": null,
-        "lng": null,
-        "source": "public_address_only",
-        "source_url": "https://www.tour.ne.jp/w_review/GRX/restaurant/spot/159886/",
-        "confidence": "unknown",
-        "correction_note": "unconfirmed_poi_coordinate"
+        "lat": 37.177339,
+        "lng": -3.597503,
+        "source": "public_map_page_poi_coordinate",
+        "source_url": "https://es.maptons.com/p/3589643893",
+        "confidence": "medium_high",
+        "correction_note": "Maptons公開地図ページでC. Cetti Meriem 7の座標を確認。OSM/Overpassの直接POIではないため、最終確認はGoogle Mapsまたは公式ページ推奨。"
       },
       "google_maps_poi": {
         "place_id": null,
@@ -1337,7 +1407,7 @@
       "notes": {
         "original_type": "飲食店",
         "original_subtype": "タパスバー",
-        "coordinate_status": "unconfirmed_poi_coordinate"
+        "coordinate_status": "confirmed_public_map_coordinate"
       },
       "sources": [
         {
@@ -1347,6 +1417,18 @@
         {
           "title": "public_address_only",
           "url": "https://www.tour.ne.jp/w_review/GRX/restaurant/spot/159886/"
+        },
+        {
+          "title": "Maptons Bar La Riviera・座標",
+          "url": "https://es.maptons.com/p/3589643893"
+        },
+        {
+          "title": "Salir.com La Riviera・住所確認",
+          "url": "https://www.salir.com/cerveceria-la-riviera-granada-neg-137298.html"
+        },
+        {
+          "title": "TodosBiz Bar La Riviera・住所電話確認",
+          "url": "https://www.todosbiz.es/bar-la-riviera-958-22-79-69"
         }
       ]
     },
@@ -1781,12 +1863,12 @@
         "last_order": null
       },
       "map_position": {
-        "lat": null,
-        "lng": null,
-        "source": "public_address_only",
+        "lat": 37.171041204497094,
+        "lng": -3.599068250923014,
+        "source": "user_provided_poi_coordinate",
         "source_url": "https://es.restaurantguru.com/Avila-Tapas-II-Granada",
-        "confidence": "unknown",
-        "correction_note": "exact_poi_coordinate_not_confirmed"
+        "confidence": "high",
+        "correction_note": "user_provided_poi_coordinate"
       },
       "google_maps_poi": {
         "place_id": null,
@@ -1816,7 +1898,7 @@
       "notes": {
         "original_type": "飲食店",
         "original_subtype": "おすすめ / タパスバー",
-        "coordinate_status": "exact_poi_coordinate_not_confirmed"
+        "coordinate_status": "user_provided_poi_coordinate"
       },
       "sources": [
         {
