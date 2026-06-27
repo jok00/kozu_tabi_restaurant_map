@@ -1,0 +1,109 @@
+{
+  "dataset_name": "toledo_day7_landmarks",
+  "generated_at": "2026-06-26",
+  "language": "ja",
+  "region_id": "toledo",
+  "region_name": "トレド",
+  "title": "トレド終日観光予定地",
+  "landmarks": [
+    {
+      "id": "parador_de_toledo",
+      "name": "パラドール・デ・トレド / Parador de Toledo",
+      "type": "宿泊地",
+      "map_position": {
+        "lat": 39.84921356491728,
+        "lng": -4.023188440556128
+    }
+    },
+    {
+      "id": "mirador_del_valle",
+      "name": "ミラドール・デル・バイエ（谷の展望台） / Mirador del Valle",
+      "type": "展望台",
+      "map_position": {
+        "lat": 39.85522,
+        "lng": -4.02298
+      }
+    },
+    {
+      "id": "catedral_de_toledo",
+      "name": "トレド大聖堂 / Catedral Primada de Toledo",
+      "type": "観光",
+      "map_position": {
+        "lat": 39.85783,
+        "lng": -4.02389
+      }
+    },
+    {
+      "id": "catedral_mozarabic_chapel",
+      "name": "モサラベ礼拝堂 / Capilla Mozárabe",
+      "type": "ミサ・礼拝",
+      "map_position": {
+        "lat": 39.85783,
+        "lng": -4.02389
+      }
+    },
+    {
+      "id": "cuerho_martin_gamero",
+      "name": "クエーリョ マルティン・ガメロ店 / Cuerho Martín Gamero",
+      "type": "ショップ",
+      "map_position": {
+        "lat": 39.85845,
+        "lng": -4.02345
+      }
+    },
+    {
+      "id": "plaza_de_zocodover",
+      "name": "ソコドベール広場 / Plaza de Zocodover",
+      "type": "街歩き",
+      "map_position": {
+        "lat": 39.85962,
+        "lng": -4.02203
+      }
+    },
+    {
+      "id": "old_town_toledo",
+      "name": "トレド旧市街散策 / Casco Histórico de Toledo",
+      "type": "街歩き",
+      "map_position": {
+        "lat": 39.85805,
+        "lng": -4.02456
+      }
+    },
+    {
+      "id": "alcazar_de_toledo_museo_del_ejercito",
+      "name": "アルカサル（軍事博物館） / Alcázar de Toledo - Museo del Ejército",
+      "type": "観光",
+      "map_position": {
+        "lat": 39.8589,
+        "lng": -4.02032
+      }
+    },
+    {
+      "id": "iglesia_de_santo_tome",
+      "name": "サント・トメ教会（オルガス伯爵の埋葬） / Iglesia de Santo Tomé",
+      "type": "観光",
+      "map_position": {
+        "lat": 39.85655,
+        "lng": -4.02755
+      }
+    },
+    {
+      "id": "museo_del_greco",
+      "name": "エル・グレコ美術館 / Museo del Greco",
+      "type": "観光",
+      "map_position": {
+        "lat": 39.85652,
+        "lng": -4.02792
+      }
+    },
+    {
+      "id": "mazapan_santo_tome_zocodover",
+      "name": "マサパン・サント・トメ ソコドベール店 / Mazapán Santo Tomé Zocodover",
+      "type": "マサパン・土産",
+      "map_position": {
+        "lat": 39.85955,
+        "lng": -4.02185
+      }
+    }
+  ]
+}

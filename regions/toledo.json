@@ -1,0 +1,898 @@
+{
+  "dataset_name": "toledo_restaurants",
+  "generated_at": "2026-06-26",
+  "language": "ja",
+  "currency": "EUR",
+  "region_id": "toledo",
+  "region_name": "トレド",
+  "title": "トレド飲食店・カフェ・マサパンマップ",
+  "map_label": "トレド旧市街 + 飲食店ピン",
+  "map_center": {
+    "lat": 39.8589,
+    "lng": -4.0227,
+    "zoom": 15
+  },
+  "category_filters": {
+    "preferred_order": [
+      "夕食本命",
+      "郷土料理ランチ",
+      "シエスタ休憩本命",
+      "カフェ・軽食",
+      "マサパン"
+    ],
+    "pinned": [
+      "taberna_botero",
+      "la_abadia_toledo",
+      "el_foro_de_toledo",
+      "cafeteria_zocodover",
+      "mazapan_santo_tome_zocodover"
+    ],
+    "forced": []
+  },
+  "notes": {
+    "coordinate_format": "WGS84 decimal degrees",
+    "google_maps": "正式なGoogle Maps Place IDおよびGoogle Maps内部POI座標はAPIなしでは取得不可。各店舗にGoogle Maps検索URLを付与。",
+    "openstreetmap_overpass": "OSM由来のMapcartaでPOI座標が確認できた店舗はmap_positionに採用。",
+    "map_position_policy": "POI座標を優先。POI座標が確認できない場合は公式住所・公開住所からの住所近傍推定座標を採用し、correction_noteとnotes.coordinate_statusに不正確な可能性を明記。",
+    "representative_branch_policy": "複数店舗がある場合は、トレド旧市街中心部・Zocodover周辺で旅行動線に入りやすい1店舗を代表として採用。"
+  },
+  "summary": {
+    "input_store_count": 9,
+    "selected_store_count": 9,
+    "needs_confirmation_or_excluded_count": 1,
+    "best_fit_store_names": [
+      "Taberna Botero",
+      "La Abadía Cervecería Artesana",
+      "El Foro de Toledo",
+      "Mazapán Santo Tomé - Plaza de Zocodover",
+      "Parador de Toledo - Cafetería / Restaurante"
+    ],
+    "total_count": 9,
+    "by_conversation_category": [
+      {
+        "category": "夕食本命",
+        "count": 1
+      },
+      {
+        "category": "郷土料理ランチ",
+        "count": 1
+      },
+      {
+        "category": "カフェ・軽食・シエスタ休憩",
+        "count": 5
+      },
+      {
+        "category": "マサパン・土産",
+        "count": 2
+      }
+    ],
+    "likely_good_candidates_from_chat_context": [
+      "Taberna Botero",
+      "La Abadía Cervecería Artesana",
+      "El Foro de Toledo",
+      "Terraza Miradero",
+      "Parador de Toledo - Cafetería / Restaurante"
+    ],
+    "one_line_pop": "トレド旧市街では、昼はラ・アバディア、午後の暑さ避けはエル・フォロかパラドール、夜はエル・ボテロ、土産はマサパンで組むと無理が少ない。"
+  },
+  "important_notes": [
+    "営業時間・定休日・予約可否は変動するため、訪問前に公式サイトまたはGoogle Mapsで再確認すること。",
+    "Cafetería Zocodoverは午後早めに閉まる可能性があるため、15:30以降のシエスタ休憩本命にはしない。",
+    "Santo Toméは複数店舗があるため、中心繁華街のPlaza de Zocodover店を代表として記載。",
+    "Google Mapsの正式Place IDは未取得。必要ならGoogle Places APIまたは手動でGoogle Maps URLからPlace情報を取得する必要がある。",
+    "住所推定座標を用いた店舗は、map_position.correction_noteに不正確な可能性を明記済み。"
+  ],
+  "stores": [
+    {
+      "id": "la_abadia_toledo",
+      "store_name": "La Abadía Cervecería Artesana",
+      "categories": [
+        "郷土料理ランチ",
+        "クラフトビール",
+        "伝統料理・タパス"
+      ],
+      "basic_info": {
+        "address": "Plaza San Nicolás, 3, 45001 Toledo, Spain",
+        "area": "Casco Histórico / Zocodover・Alcázar周辺",
+        "genre": [
+          "マンチャ料理",
+          "タパス",
+          "クラフトビール"
+        ],
+        "google_map_query": "La Abadía Cervecería Artesana Plaza San Nicolás 3 Toledo",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€€",
+          "dinner": "€€",
+          "confidence": "medium"
+        },
+        "nearest_station_access": "Plaza de Zocodoverから徒歩圏。トレド旧市街観光中に寄りやすい。",
+        "closed_days": "要確認",
+        "phone": "+34 925 25 11 40",
+        "saturday_hours": null,
+        "saturday_hours_confidence": "medium",
+        "saturday_hours_note": "観光局情報では金土日祝は夜まで営業。訪問直前に公式・Google Mapsで確認推奨。",
+        "saturday_hours_last_checked": "2026-06-26",
+        "saturday_hours_sources": [
+          {
+            "title": "Toledo Turismo La Abadía",
+            "url": "https://turismo.toledo.es/recursos/id735-la-abadia.html"
+          },
+          {
+            "title": "Mapcarta OSM POI",
+            "url": "https://mapcarta.com/N2612876368"
+          },
+          {
+            "title": "Google Maps 検索",
+            "url": "https://www.google.com/maps/search/?api=1&query=La%20Abad%C3%ADa%20Cervecer%C3%ADa%20Artesana%20Plaza%20San%20Nicol%C3%A1s%203%20Toledo"
+          }
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": "medium",
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 39.85995,
+        "lng": -4.0229,
+        "source": "mapcarta_osm_poi",
+        "source_url": "https://mapcarta.com/N2612876368",
+        "confidence": "high",
+        "correction_note": "OSM由来のMapcartaでPOI座標を確認。"
+      },
+      "google_maps_poi": {
+        "place_id": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=La%20Abad%C3%ADa%20Cervecer%C3%ADa%20Artesana%20Plaza%20San%20Nicol%C3%A1s%203%20Toledo"
+      },
+      "representative_menu_and_prices": [],
+      "beer_price": null,
+      "store_features": [
+        "16世紀の建物・洞窟風空間",
+        "マンチャ地方の料理",
+        "クラフトビール"
+      ],
+      "review_trend_analysis": {
+        "summary": "洞窟風の雰囲気とマンチャ料理で、トレドらしい昼食を取りやすい定番店。"
+      },
+      "space": {},
+      "meta_scores": {},
+      "overall_fit_for_3_person_drinking": null,
+      "saturday_lunch_alcohol": {},
+      "sunday_alcohol_assumption": {},
+      "weekend_hours": {
+        "saturday": null,
+        "sunday": null,
+        "notes": "訪問前確認推奨"
+      },
+      "one_line_pop": "洞窟風の歴史空間で、トレドらしいマンチャ料理とクラフトビールを楽しめる一軒。",
+      "notes": {
+        "coordinate_status": "confirmed_osm_poi",
+        "representative_branch_policy": "単独店舗として記載。"
+      }
+    },
+    {
+      "id": "taberna_botero",
+      "store_name": "Taberna Botero",
+      "categories": [
+        "夕食本命",
+        "モダン・スペイン料理",
+        "タベルナ・カクテル"
+      ],
+      "basic_info": {
+        "address": "Calle de la Ciudad, 5, 45002 Toledo, Spain",
+        "area": "Casco Histórico / Catedral・Ayuntamiento周辺",
+        "genre": [
+          "創作スペイン料理",
+          "タパス",
+          "カクテル"
+        ],
+        "google_map_query": "Taberna Botero Calle de la Ciudad 5 Toledo",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€€€",
+          "dinner": "€€€",
+          "confidence": "medium"
+        },
+        "nearest_station_access": "大聖堂・市庁舎周辺。旧市街観光後の夕食向き。",
+        "closed_days": "要確認",
+        "phone": "+34 925 280 967",
+        "saturday_hours": null,
+        "saturday_hours_confidence": "medium",
+        "saturday_hours_note": "公式予約ページでは当日直前予約は電話、ランチ予約は15:00まで、ディナー予約は22:15まで。",
+        "saturday_hours_last_checked": "2026-06-26",
+        "saturday_hours_sources": [
+          {
+            "title": "Taberna Botero 公式予約",
+            "url": "https://tabernabotero.com/info-reservas"
+          },
+          {
+            "title": "Toledo Turismo Taberna Botero",
+            "url": "https://turismo.toledo.es/recursos/restaurantes-y-bares-en-el-casco-historico/id32842-taberna-botero.html"
+          },
+          {
+            "title": "Mapcarta OSM POI",
+            "url": "https://mapcarta.com/N6139933185"
+          },
+          {
+            "title": "Google Maps 検索",
+            "url": "https://www.google.com/maps/search/?api=1&query=Taberna%20Botero%20Calle%20de%20la%20Ciudad%205%20Toledo"
+          }
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": "medium",
+        "last_order": "予約受付上限目安：ランチ15:00 / ディナー22:15"
+      },
+      "map_position": {
+        "lat": 39.85635,
+        "lng": -4.02494,
+        "source": "mapcarta_osm_poi",
+        "source_url": "https://mapcarta.com/N6139933185",
+        "confidence": "high",
+        "correction_note": "OSM由来のMapcartaでPOI座標を確認。"
+      },
+      "google_maps_poi": {
+        "place_id": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Taberna%20Botero%20Calle%20de%20la%20Ciudad%205%20Toledo"
+      },
+      "representative_menu_and_prices": [],
+      "beer_price": null,
+      "store_features": [
+        "16世紀の建物",
+        "伝統ベースの現代料理",
+        "カクテル利用も可"
+      ],
+      "review_trend_analysis": {
+        "summary": "旧市街で少し特別な夕食にしたい時の本命候補。"
+      },
+      "space": {},
+      "meta_scores": {},
+      "overall_fit_for_3_person_drinking": null,
+      "saturday_lunch_alcohol": {},
+      "sunday_alcohol_assumption": {},
+      "weekend_hours": {
+        "saturday": null,
+        "sunday": null,
+        "notes": "予約推奨"
+      },
+      "one_line_pop": "伝統とモダンを合わせた料理で、トレドの夜を少し特別にできる夕食本命。",
+      "notes": {
+        "coordinate_status": "confirmed_osm_poi",
+        "representative_branch_policy": "単独店舗として記載。"
+      }
+    },
+    {
+      "id": "cafeteria_zocodover",
+      "store_name": "Cafetería Zocodover",
+      "categories": [
+        "カフェ・軽食",
+        "朝食・休憩"
+      ],
+      "basic_info": {
+        "address": "Calle Comercio, 11, 45001 Toledo, Spain",
+        "area": "Calle Comercio / Zocodover周辺",
+        "genre": [
+          "カフェ",
+          "軽食"
+        ],
+        "google_map_query": "Cafetería Zocodover Calle Comercio 11 Toledo",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€",
+          "dinner": null,
+          "confidence": "medium"
+        },
+        "nearest_station_access": "Plaza de Zocodoverからすぐ。",
+        "closed_days": "水曜休業の可能性あり。要確認。",
+        "phone": "+34 925 25 58 14",
+        "saturday_hours": "13:00-16:00",
+        "saturday_hours_confidence": "medium_low",
+        "saturday_hours_note": "公開店舗ページでは午後早め閉店傾向。シエスタ時間の休憩本命にはしない。",
+        "saturday_hours_last_checked": "2026-06-26",
+        "saturday_hours_sources": [
+          {
+            "title": "Mapcarta OSM POI",
+            "url": "https://mapcarta.com/N2724325755"
+          },
+          {
+            "title": "Cafeterisimos",
+            "url": "https://cafeterisimos.com/cafeteria-zocodover-toledo/"
+          },
+          {
+            "title": "Google Maps 検索",
+            "url": "https://www.google.com/maps/search/?api=1&query=Cafeter%C3%ADa%20Zocodover%20Calle%20Comercio%2011%20Toledo"
+          }
+        ],
+        "sunday_hours": "13:00-16:00",
+        "sunday_hours_confidence": "medium_low",
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 39.85859,
+        "lng": -4.02315,
+        "source": "mapcarta_osm_poi",
+        "source_url": "https://mapcarta.com/N2724325755",
+        "confidence": "high",
+        "correction_note": "OSM由来のMapcartaでPOI座標を確認。"
+      },
+      "google_maps_poi": {
+        "place_id": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Cafeter%C3%ADa%20Zocodover%20Calle%20Comercio%2011%20Toledo"
+      },
+      "representative_menu_and_prices": [],
+      "beer_price": null,
+      "store_features": [
+        "ソコドベール近く",
+        "軽食",
+        "短時間休憩向き"
+      ],
+      "review_trend_analysis": {
+        "summary": "立地は非常に便利だが、午後遅めの休憩には営業時間確認が必要。"
+      },
+      "space": {},
+      "meta_scores": {},
+      "overall_fit_for_3_person_drinking": null,
+      "saturday_lunch_alcohol": {},
+      "sunday_alcohol_assumption": {},
+      "weekend_hours": {
+        "saturday": "13:00-16:00",
+        "sunday": "13:00-16:00",
+        "notes": "公開ページベース。変動可能性あり。"
+      },
+      "one_line_pop": "ソコドベール近くで、観光中にさっと軽食・コーヒーを入れたい時の便利な休憩所。",
+      "notes": {
+        "coordinate_status": "confirmed_osm_poi",
+        "siesta_suitability": "low_to_medium"
+      }
+    },
+    {
+      "id": "el_foro_de_toledo",
+      "store_name": "El Foro de Toledo",
+      "categories": [
+        "カフェ・レストラン",
+        "シエスタ休憩本命",
+        "ソコドベール周辺"
+      ],
+      "basic_info": {
+        "address": "Plaza de Zocodover, 8, 45001 Toledo, Spain",
+        "area": "Plaza de Zocodover",
+        "genre": [
+          "カフェ",
+          "レストラン",
+          "軽食"
+        ],
+        "google_map_query": "El Foro de Toledo Plaza de Zocodover 8 Toledo",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€€",
+          "dinner": "€€",
+          "confidence": "medium"
+        },
+        "nearest_station_access": "Plaza de Zocodover正面。旧市街観光の中継地点。",
+        "closed_days": "要確認",
+        "phone": "+34 925 28 45 55",
+        "saturday_hours": null,
+        "saturday_hours_confidence": "medium",
+        "saturday_hours_note": "観光局情報では朝食・昼食・メリエンダ・夕食に使える店舗。シエスタ時間の休憩候補として有力。",
+        "saturday_hours_last_checked": "2026-06-26",
+        "saturday_hours_sources": [
+          {
+            "title": "Toledo Turismo El Foro de Toledo",
+            "url": "https://turismo.toledo.es/recursos/restaurantes-y-bares-en-el-casco-historico/id22970-el-foro-de-toledo.html"
+          },
+          {
+            "title": "Mapcarta OSM POI",
+            "url": "https://mapcarta.com/es/N13254674564"
+          },
+          {
+            "title": "Maptons public map coordinate",
+            "url": "https://es.maptons.com/p/3719418474"
+          },
+          {
+            "title": "Google Maps 検索",
+            "url": "https://www.google.com/maps/search/?api=1&query=El%20Foro%20de%20Toledo%20Plaza%20de%20Zocodover%208%20Toledo"
+          }
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": "medium",
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 39.8591682,
+        "lng": -4.0211755,
+        "source": "public_map_page_poi_coordinate",
+        "source_url": "https://es.maptons.com/p/3719418474",
+        "confidence": "medium_high",
+        "correction_note": "Maptons公開地図ページのPOI座標を採用。Mapcarta/OSMでは39.85917,-4.02121と近似。"
+      },
+      "google_maps_poi": {
+        "place_id": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=El%20Foro%20de%20Toledo%20Plaza%20de%20Zocodover%208%20Toledo"
+      },
+      "representative_menu_and_prices": [],
+      "beer_price": null,
+      "store_features": [
+        "ソコドベール広場",
+        "テラス・休憩",
+        "シエスタ時間候補"
+      ],
+      "review_trend_analysis": {
+        "summary": "旧市街中心で暑い午後に座って休みやすい、シエスタ休憩の本命候補。"
+      },
+      "space": {},
+      "meta_scores": {},
+      "overall_fit_for_3_person_drinking": null,
+      "saturday_lunch_alcohol": {},
+      "sunday_alcohol_assumption": {},
+      "weekend_hours": {
+        "saturday": null,
+        "sunday": null,
+        "notes": "観光局・Google Mapsで直前確認推奨。"
+      },
+      "one_line_pop": "ソコドベール広場で、暑い午後に座って涼む“シエスタ休憩”の最有力カフェ。",
+      "notes": {
+        "coordinate_status": "confirmed_public_map_coordinate",
+        "siesta_suitability": "high"
+      }
+    },
+    {
+      "id": "terraza_miradero",
+      "store_name": "Terraza Miradero",
+      "categories": [
+        "眺望カフェ",
+        "テラス",
+        "シエスタ休憩"
+      ],
+      "basic_info": {
+        "address": "Calle Gerardo Lobo / Paseo del Miradero, 45001 Toledo, Spain",
+        "area": "Miradero / Palacio de Congresos周辺",
+        "genre": [
+          "バー",
+          "カフェテリア",
+          "レストラン"
+        ],
+        "google_map_query": "Terraza Miradero Toledo Calle Gerardo Lobo",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€€",
+          "dinner": "€€",
+          "confidence": "medium"
+        },
+        "nearest_station_access": "Miradero展望エリア・エスカレーター周辺。",
+        "closed_days": "要確認",
+        "phone": null,
+        "saturday_hours": null,
+        "saturday_hours_confidence": "medium",
+        "saturday_hours_note": "観光局情報では通年営業、眺望テラスとして利用しやすい。",
+        "saturday_hours_last_checked": "2026-06-26",
+        "saturday_hours_sources": [
+          {
+            "title": "Toledo Turismo Terraza Miradero",
+            "url": "https://turismo.toledo.es/recursos/id723-terraza-miradero.html"
+          },
+          {
+            "title": "Mapcarta OSM POI",
+            "url": "https://mapcarta.com/N8796189217"
+          },
+          {
+            "title": "Google Maps 検索",
+            "url": "https://www.google.com/maps/search/?api=1&query=Terraza%20Miradero%20Toledo%20Calle%20Gerardo%20Lobo"
+          }
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": "medium",
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 39.86088,
+        "lng": -4.01992,
+        "source": "mapcarta_osm_poi",
+        "source_url": "https://mapcarta.com/N8796189217",
+        "confidence": "high",
+        "correction_note": "OSM由来のMapcartaでPOI座標を確認。"
+      },
+      "google_maps_poi": {
+        "place_id": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Terraza%20Miradero%20Toledo%20Calle%20Gerardo%20Lobo"
+      },
+      "representative_menu_and_prices": [],
+      "beer_price": null,
+      "store_features": [
+        "眺望",
+        "テラス",
+        "長めの休憩向き"
+      ],
+      "review_trend_analysis": {
+        "summary": "景色を見ながら休みたい時に使いやすい、旧市街東側の眺望カフェ。"
+      },
+      "space": {},
+      "meta_scores": {},
+      "overall_fit_for_3_person_drinking": null,
+      "saturday_lunch_alcohol": {},
+      "sunday_alcohol_assumption": {},
+      "weekend_hours": {
+        "saturday": null,
+        "sunday": null,
+        "notes": "訪問前確認推奨。"
+      },
+      "one_line_pop": "タホ川方面の眺めを楽しみながら、暑い午後をやり過ごせるテラス休憩スポット。",
+      "notes": {
+        "coordinate_status": "confirmed_osm_poi",
+        "siesta_suitability": "high"
+      }
+    },
+    {
+      "id": "parador_de_toledo_cafeteria",
+      "store_name": "Parador de Toledo - Cafetería / Restaurante",
+      "categories": [
+        "ホテルカフェ",
+        "眺望休憩",
+        "宿泊地"
+      ],
+      "basic_info": {
+        "address": "Cerro del Emperador, s/n, 45002 Toledo, Spain",
+        "area": "Cerro del Emperador / パラドール",
+        "genre": [
+          "ホテルカフェ",
+          "レストラン",
+          "眺望"
+        ],
+        "google_map_query": "Parador de Toledo Cafetería Cerro del Emperador",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€€€",
+          "dinner": "€€€",
+          "confidence": "medium"
+        },
+        "nearest_station_access": "旧市街からタクシー移動推奨。宿泊地内。",
+        "closed_days": "要確認",
+        "phone": "+34 925 22 18 50",
+        "saturday_hours": null,
+        "saturday_hours_confidence": "medium",
+        "saturday_hours_note": "宿泊地内のため、午後の本気休憩に最も安全。レストラン営業時間は別途要確認。",
+        "saturday_hours_last_checked": "2026-06-26",
+        "saturday_hours_sources": [
+          {
+            "title": "Paradores official / public GPS",
+            "url": "https://www.paradorsofspain.com/paradoresDetails.aspx?code=079"
+          },
+          {
+            "title": "Mapcarta OSM POI",
+            "url": "https://mapcarta.com/25739628"
+          },
+          {
+            "title": "Google Maps 検索",
+            "url": "https://www.google.com/maps/search/?api=1&query=Parador%20de%20Toledo%20Cerro%20del%20Emperador"
+          }
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": "medium",
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 39.850853,
+        "lng": -4.023142,
+        "source": "official_site_public_gps",
+        "source_url": "https://www.paradorsofspain.com/paradoresDetails.aspx?code=079",
+        "confidence": "high",
+        "correction_note": "公式系ページのGPS座標を採用。Mapcarta/OSMには39.84883,-4.02301の近似座標もあり、敷地内表示に差が出る可能性あり。"
+      },
+      "google_maps_poi": {
+        "place_id": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Parador%20de%20Toledo%20Cerro%20del%20Emperador"
+      },
+      "representative_menu_and_prices": [],
+      "beer_price": null,
+      "store_features": [
+        "宿泊地内",
+        "トレド旧市街の眺望",
+        "休憩・夕食に使いやすい"
+      ],
+      "review_trend_analysis": {
+        "summary": "観光で疲れたら旧市街で粘らず戻れる、眺望つきの安心休憩地点。"
+      },
+      "space": {},
+      "meta_scores": {},
+      "overall_fit_for_3_person_drinking": null,
+      "saturday_lunch_alcohol": {},
+      "sunday_alcohol_assumption": {},
+      "weekend_hours": {
+        "saturday": null,
+        "sunday": null,
+        "notes": "宿泊時にフロントで当日確認推奨。"
+      },
+      "one_line_pop": "旧市街を見下ろす眺望と涼しさを確保できる、夏のトレドで最も安全な休憩拠点。",
+      "notes": {
+        "coordinate_status": "official_hotel_gps_coordinate",
+        "siesta_suitability": "very_high"
+      }
+    },
+    {
+      "id": "cafeteria_la_pepa",
+      "store_name": "Cafetería La Pepa",
+      "categories": [
+        "カフェ・軽食",
+        "ソコドベール周辺",
+        "シエスタ予備"
+      ],
+      "basic_info": {
+        "address": "Calle de las Cadenas, 5, 45001 Toledo, Spain",
+        "area": "Calle Cadenas / Zocodover周辺",
+        "genre": [
+          "カフェ",
+          "軽食",
+          "地中海料理"
+        ],
+        "google_map_query": "Cafetería La Pepa Calle Cadenas 5 Toledo",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€",
+          "dinner": "€€",
+          "confidence": "medium"
+        },
+        "nearest_station_access": "Plaza de Zocodoverから徒歩約2分。",
+        "closed_days": "要確認",
+        "phone": "+34 925 67 29 62",
+        "saturday_hours": null,
+        "saturday_hours_confidence": "medium_low",
+        "saturday_hours_note": "公開情報では夜まで営業の記載もあるが、訪問直前にGoogle Mapsで確認推奨。",
+        "saturday_hours_last_checked": "2026-06-26",
+        "saturday_hours_sources": [
+          {
+            "title": "Toledo Turismo La Pepa Cafetería",
+            "url": "https://turismo.toledo.es/recursos/id717-la-pepa-cafeteria.html"
+          },
+          {
+            "title": "Mapcarta OSM POI",
+            "url": "https://mapcarta.com/es/N2648637539"
+          },
+          {
+            "title": "Near Place coordinate",
+            "url": "https://es.near-place.com/cafeteria-la-pepa-calle-cadenas-5-toledo/en"
+          },
+          {
+            "title": "Google Maps 検索",
+            "url": "https://www.google.com/maps/search/?api=1&query=Cafeter%C3%ADa%20La%20Pepa%20Calle%20Cadenas%205%20Toledo"
+          }
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": "medium_low",
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 39.8595,
+        "lng": -4.02299,
+        "source": "mapcarta_osm_poi",
+        "source_url": "https://mapcarta.com/es/N2648637539",
+        "confidence": "high",
+        "correction_note": "OSM由来のMapcartaでPOI座標を確認。Near Placeでは39.859558,-4.0229937。"
+      },
+      "google_maps_poi": {
+        "place_id": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Cafeter%C3%ADa%20La%20Pepa%20Calle%20Cadenas%205%20Toledo"
+      },
+      "representative_menu_and_prices": [],
+      "beer_price": null,
+      "store_features": [
+        "中心部",
+        "朝食・軽食",
+        "ソコドベール近く"
+      ],
+      "review_trend_analysis": {
+        "summary": "エル・フォロが混んでいる時の、ソコドベール近くの予備カフェ候補。"
+      },
+      "space": {},
+      "meta_scores": {},
+      "overall_fit_for_3_person_drinking": null,
+      "saturday_lunch_alcohol": {},
+      "sunday_alcohol_assumption": {},
+      "weekend_hours": {
+        "saturday": null,
+        "sunday": null,
+        "notes": "直前確認推奨。"
+      },
+      "one_line_pop": "ソコドベール近くで、朝食から軽食まで使える“予備に強い”中心部カフェ。",
+      "notes": {
+        "coordinate_status": "confirmed_osm_poi",
+        "siesta_suitability": "medium"
+      }
+    },
+    {
+      "id": "mazapan_santo_tome_zocodover",
+      "store_name": "Mazapán Santo Tomé - Plaza de Zocodover",
+      "categories": [
+        "マサパン",
+        "土産",
+        "甘味"
+      ],
+      "basic_info": {
+        "address": "Plaza de Zocodover, 7, 45001 Toledo, Spain",
+        "area": "Plaza de Zocodover",
+        "genre": [
+          "マサパン",
+          "菓子",
+          "土産"
+        ],
+        "google_map_query": "Mazapán Santo Tomé Plaza de Zocodover 7 Toledo",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": null,
+          "dinner": null,
+          "confidence": "medium"
+        },
+        "nearest_station_access": "Plaza de Zocodoverすぐ。観光途中の土産購入向き。",
+        "closed_days": "要確認",
+        "phone": null,
+        "saturday_hours": "09:00-22:00",
+        "saturday_hours_confidence": "medium",
+        "saturday_hours_note": "公式サイトではZocodover店は月〜日祝9:00-22:00。",
+        "saturday_hours_last_checked": "2026-06-26",
+        "saturday_hours_sources": [
+          {
+            "title": "Mazapán Santo Tomé公式 Contacto",
+            "url": "https://mazapan.com/contacto/"
+          },
+          {
+            "title": "Google Maps 検索",
+            "url": "https://www.google.com/maps/search/?api=1&query=Mazap%C3%A1n%20Santo%20Tom%C3%A9%20Plaza%20de%20Zocodover%207%20Toledo"
+          }
+        ],
+        "sunday_hours": "09:00-22:00",
+        "sunday_hours_confidence": "medium",
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 39.85922,
+        "lng": -4.02118,
+        "source": "address_geocoding_estimated_from_public_address",
+        "source_url": "https://mazapan.com/contacto/",
+        "confidence": "medium_low",
+        "correction_note": "Plaza de Zocodover 7の住所近傍推定座標。公式住所は確認済みだが、POI座標は未確認のため入口位置と数十mずれる可能性あり。"
+      },
+      "google_maps_poi": {
+        "place_id": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Mazap%C3%A1n%20Santo%20Tom%C3%A9%20Plaza%20de%20Zocodover%207%20Toledo"
+      },
+      "representative_menu_and_prices": [],
+      "beer_price": null,
+      "store_features": [
+        "トレド名物マサパン",
+        "1856年創業系の老舗ブランド",
+        "観光動線上で買いやすい"
+      ],
+      "review_trend_analysis": {
+        "summary": "トレド名物マサパンを、ソコドベール周辺で買いやすい王道土産店。"
+      },
+      "space": {},
+      "meta_scores": {},
+      "overall_fit_for_3_person_drinking": null,
+      "saturday_lunch_alcohol": {},
+      "sunday_alcohol_assumption": {},
+      "weekend_hours": {
+        "saturday": "09:00-22:00",
+        "sunday": "09:00-22:00",
+        "notes": "公式サイト記載。"
+      },
+      "one_line_pop": "トレド名物マサパンを旅の途中で買いやすい、ソコドベール広場の王道土産店。",
+      "notes": {
+        "coordinate_status": "address_geocoding_estimated_coordinate",
+        "representative_branch_policy": "複数店舗のうち中心繁華街・Zocodover店を代表として採用。"
+      }
+    },
+    {
+      "id": "san_telesforo_carlos_v",
+      "store_name": "San Telesforo - Cuesta de Carlos V",
+      "categories": [
+        "マサパン",
+        "土産",
+        "甘味"
+      ],
+      "basic_info": {
+        "address": "Cuesta de Carlos V, 4, 45001 Toledo, Spain",
+        "area": "Zocodover・Alcázar周辺",
+        "genre": [
+          "マサパン",
+          "菓子",
+          "土産"
+        ],
+        "google_map_query": "San Telesforo Cuesta de Carlos V 4 Toledo",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": null,
+          "dinner": null,
+          "confidence": "medium"
+        },
+        "nearest_station_access": "Plaza de Zocodoverから近い。アルカサル方面の動線上。",
+        "closed_days": "要確認",
+        "phone": "+34 925 22 78 36",
+        "saturday_hours": null,
+        "saturday_hours_confidence": "medium",
+        "saturday_hours_note": "公式・公開店舗情報で要確認。MapcartaではCuesta de Carlos V 4のPOIを確認。",
+        "saturday_hours_last_checked": "2026-06-26",
+        "saturday_hours_sources": [
+          {
+            "title": "Mapcarta OSM POI",
+            "url": "https://mapcarta.com/es/N2699260530"
+          },
+          {
+            "title": "San Telesforo公式",
+            "url": "https://mazapantoledo.com/"
+          },
+          {
+            "title": "Asociación de Comercio de Toledo",
+            "url": "https://bonocomerciotoledo.es/empresa/san-telesforo-s-l/"
+          },
+          {
+            "title": "Google Maps 検索",
+            "url": "https://www.google.com/maps/search/?api=1&query=San%20Telesforo%20Cuesta%20de%20Carlos%20V%204%20Toledo"
+          }
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": "medium",
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 39.85911,
+        "lng": -4.02101,
+        "source": "mapcarta_osm_poi",
+        "source_url": "https://mapcarta.com/es/N2699260530",
+        "confidence": "high",
+        "correction_note": "OSM由来のMapcartaでPOI座標を確認。"
+      },
+      "google_maps_poi": {
+        "place_id": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=San%20Telesforo%20Cuesta%20de%20Carlos%20V%204%20Toledo"
+      },
+      "representative_menu_and_prices": [],
+      "beer_price": null,
+      "store_features": [
+        "1806年創業系の老舗",
+        "マサパン・菓子土産",
+        "Zocodover周辺"
+      ],
+      "review_trend_analysis": {
+        "summary": "Santo Tomé以外の老舗マサパン候補として、甘味・土産の比較に入れたい店。"
+      },
+      "space": {},
+      "meta_scores": {},
+      "overall_fit_for_3_person_drinking": null,
+      "saturday_lunch_alcohol": {},
+      "sunday_alcohol_assumption": {},
+      "weekend_hours": {
+        "saturday": null,
+        "sunday": null,
+        "notes": "直前確認推奨。"
+      },
+      "one_line_pop": "老舗のマサパンをもう一つ試したい時に、ソコドベール近くで寄りやすい甘味店。",
+      "notes": {
+        "coordinate_status": "confirmed_osm_poi",
+        "representative_branch_policy": "中心繁華街・Zocodover/Alcázar近接店舗を代表として採用。"
+      }
+    }
+  ]
+}

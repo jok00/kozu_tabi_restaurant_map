@@ -42,6 +42,19 @@
         "lng": -3.5986,
         "zoom": 14
       }
+    },
+    {
+      "id": "toledo",
+      "name": "トレド",
+      "country": "Spain",
+      "description": "トレド旧市街周辺の飲食店候補",
+      "data_url": "regions/toledo.json",
+      "landmark_data_url": "landmarks/toledo.json",
+      "map_center": {
+        "lat": 39.8589,
+        "lng": -4.0227,
+        "zoom": 15
+      }
     }
   ]
 }

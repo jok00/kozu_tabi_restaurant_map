@@ -3,50 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="スペインの飲食店・宿泊地・予定地を都市別に切り替えて、地図と一覧で確認できる旅マップです。" />
-  <title>スペイン旅レストランマップ | 地域別データ</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <link rel="stylesheet" href="https://common-web-map.vercel.app/map_app.css?v=20260624-split" />
 </head>
 <body>
-  <header>
-    <div class="wrap hero">
-      <div class="heroText">
-      </div>
-      <div class="regionTabs" id="regionTabs" aria-label="地域を選択"></div>
-      <div class="filters" id="filters"></div>
-    </div>
-  </header>
-
-  <main class="wrap">
-    <section class="layout">
-      <section class="panel mapPanel">
-        <div id="map">
-          <div id="mapCanvas" class="mapFrame" aria-label="スペイン旅レストランマップ"></div>
-          <div id="restaurantLabelLayer" class="restaurantLabelLayer" aria-hidden="true"></div>
-          <div class="mapLabel" id="mapLabel">地域別店舗ピン</div>
-          <button class="locationButton" id="locationButton" type="button" aria-label="現在地を地図に表示">現在地</button>
-        </div>
-        <div class="mapFoot">
-          <p class="legend">スペインの飲食店ピンと予定地ピンを重ねて表示します。ピンまたはカードを選ぶと、選択中の地点が強調表示されます。</p>
-          <p class="mapStatus" id="mapStatus"></p>
-        </div>
-      </section>
-
-      <aside class="panel listPanel">
-        <div class="panelBody">
-          <div class="mobileCarouselWrap">
-          <div class="restaurantList" id="restaurantList"></div>
-          </div>
-        </div>
-      </aside>
-    </section>
-  </main>
-
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="https://common-web-map.vercel.app/map_app.js?v=20260624-split"></script>
+<script>
+  window.KOZU_TABI_MAP_PAGE={
+    commonAssetBase:'https://common-web-map.vercel.app/',
+    commonAssetVersion:'20260624-split'
+  };
+</script>
+<script src="./page_shell.js"></script>
 </body>
 </html>
