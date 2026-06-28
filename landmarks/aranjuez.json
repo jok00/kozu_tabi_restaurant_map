@@ -1,0 +1,82 @@
+{
+  "dataset_name": "aranjuez_day8_landmarks",
+  "generated_at": "2026-06-28",
+  "language": "ja",
+  "region_id": "aranjuez",
+  "region_name": "アランフェス",
+  "title": "アランフェス散策予定地",
+  "landmarks": [
+    {
+      "id": "estacion_de_autobuses_de_aranjuez",
+      "name": "アランフェス・バス停（トレドから到着） / Estación de Autobuses de Aranjuez",
+      "type": "交通",
+      "map_position": {
+        "lat": 40.03295,
+        "lng": -3.60455
+      }
+    },
+    {
+      "id": "plaza_de_santiago_rusinol",
+      "name": "サンティアゴ・ルシニョール広場 / Plaza de Santiago Rusiñol",
+      "type": "街歩き",
+      "map_position": {
+        "lat": 40.03474,
+        "lng": -3.60422
+      }
+    },
+    {
+      "id": "palacio_real_de_aranjuez",
+      "name": "アランフェス王宮 / Palacio Real de Aranjuez",
+      "type": "観光",
+      "map_position": {
+        "lat": 40.03636,
+        "lng": -3.60903
+      }
+    },
+    {
+      "id": "jardin_de_la_isla",
+      "name": "島の庭園 / Jardín de la Isla",
+      "type": "庭園",
+      "map_position": {
+        "lat": 40.0385,
+        "lng": -3.6075
+      }
+    },
+    {
+      "id": "rio_tajo_riverside_walk",
+      "name": "タホ川ほとり散歩区間 / Paseo junto al Río Tajo",
+      "type": "川沿い散歩",
+      "map_position": {
+        "lat": 40.03755,
+        "lng": -3.60065
+      }
+    },
+    {
+      "id": "jardin_del_principe",
+      "name": "王子の庭園 / Jardín del Príncipe",
+      "type": "庭園",
+      "map_position": {
+        "lat": 40.03695,
+        "lng": -3.59915
+      }
+    },
+    {
+      "id": "paseo_palacio_estacion_aranjuez",
+      "name": "王宮〜アランフェス駅の散歩道 / Paseo entre Palacio Real y Estación de Aranjuez",
+      "type": "散歩道",
+      "map_position": {
+        "lat": 40.03495,
+        "lng": -3.61355
+      }
+    },
+    {
+      "id": "estacion_de_aranjuez",
+      "name": "アランフェス駅（マドリード行き電車） / Estación de Aranjuez",
+      "type": "交通",
+      "map_position": {
+        "lat": 40.034875,
+        "lng": -3.618278
+      }
+    }
+  ]
+}

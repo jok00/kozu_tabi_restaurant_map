@@ -17,6 +17,8 @@
 - `madrid`: マドリード
 - `granada`: グラナダ
 - `toledo`: トレド
+- `segovia`: セゴビア
+- `aranjuez`: アランフェス
 
 ## ローカル確認
 

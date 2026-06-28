@@ -1,0 +1,46 @@
+{
+  "dataset_name": "segovia_day9_landmarks",
+  "generated_at": "2026-06-26",
+  "language": "ja",
+  "region_id": "segovia",
+  "region_name": "セゴビア",
+  "title": "セゴビア日帰り観光予定地",
+  "landmarks": [
+    {
+      "id": "restaurante_jose_maria",
+      "name": "ホセ・マリア / Restaurante José María",
+      "type": "食事",
+      "map_position": {
+        "lat": 40.95046,
+        "lng": -4.12274
+      }
+    },
+    {
+      "id": "acueducto_romano_de_segovia",
+      "name": "セゴビアのローマ水道橋 / Acueducto Romano de Segovia",
+      "type": "観光",
+      "map_position": {
+        "lat": 40.94829,
+        "lng": -4.11818
+      }
+    },
+    {
+      "id": "catedral_de_segovia",
+      "name": "セゴビア大聖堂 / Catedral de Segovia",
+      "type": "観光",
+      "map_position": {
+        "lat": 40.95,
+        "lng": -4.12528
+      }
+    },
+    {
+      "id": "alcazar_de_segovia",
+      "name": "アルカサル城（白雪姫の城のモデル） / Alcázar de Segovia",
+      "type": "観光",
+      "map_position": {
+        "lat": 40.9525725,
+        "lng": -4.1325378
+      }
+    }
+  ]
+}

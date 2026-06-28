@@ -1,0 +1,750 @@
+{
+  "dataset_name": "aranjuez_cafes",
+  "generated_at": "2026-06-28",
+  "language": "ja",
+  "currency": "EUR",
+  "region_id": "aranjuez",
+  "region_name": "アランフェス",
+  "title": "アランフェス散策ルート周辺カフェ・休憩スポット",
+  "map_label": "アランフェス王宮・タホ川・王子の庭園周辺カフェピン",
+  "map_center": {
+    "lat": 40.0356,
+    "lng": -3.6042,
+    "zoom": 15
+  },
+  "category_filters": {
+    "preferred_order": [
+      "川沿い休憩本命",
+      "地元料理・昼食",
+      "シエスタ休憩候補",
+      "カフェ・甘味",
+      "営業要確認"
+    ],
+    "pinned": [
+      "el_rana_verde",
+      "mas_real",
+      "restaurante_rusinol",
+      "coffee_and_cakes",
+      "la_farnesina"
+    ],
+    "forced": []
+  },
+  "notes": {
+    "coordinate_format": "WGS84 decimal degrees",
+    "google_maps": "正式なGoogle Maps Place IDおよびGoogle Maps内部POI座標はAPIなしでは取得不可。各店舗にGoogle Maps検索URLを付与。",
+    "openstreetmap_overpass": "OSM由来のMapcartaでPOI座標が確認できた店舗はmap_positionに採用。",
+    "map_position_policy": "POI座標を優先。POI座標が確認できない場合は公式住所・公開住所からの住所近傍推定座標を採用し、correction_noteとnotes.coordinate_statusに不正確な可能性を明記。",
+    "representative_branch_policy": "複数店舗がある場合は、アランフェス王宮・サンティアゴ・ルシニョール広場・王子の庭園に近い中心部の1店舗を代表として採用。",
+    "siesta_policy": "14:00〜17:00の休憩利用を想定し、カフェ専業店よりもカフェ・バル・レストラン兼用店を優先。営業時間は変動するため訪問前日にGoogle Mapsまたは公式ページで再確認すること。"
+  },
+  "summary": {
+    "input_store_count": 6,
+    "selected_store_count": 5,
+    "needs_confirmation_or_excluded_count": 1,
+    "best_fit_store_names": [
+      "Restaurante El Rana Verde",
+      "Más Real",
+      "Restaurante Rusiñol",
+      "Coffee & Cakes",
+      "La Farnesina"
+    ],
+    "total_count": 6,
+    "by_conversation_category": [
+      {
+        "category": "川沿い休憩本命",
+        "count": 1
+      },
+      {
+        "category": "地元料理・昼食",
+        "count": 2
+      },
+      {
+        "category": "カフェ・甘味・シエスタ休憩",
+        "count": 2
+      },
+      {
+        "category": "営業要確認",
+        "count": 1
+      }
+    ],
+    "likely_good_candidates_from_chat_context": [
+      "Restaurante El Rana Verde",
+      "Más Real",
+      "Restaurante Rusiñol",
+      "Coffee & Cakes"
+    ],
+    "one_line_pop": "アランフェスでは、川沿いの雰囲気ならエル・ラナ・ベルデ、王宮周辺の昼食ならマス・レアル、軽い甘味休憩ならCoffee & Cakesを押さえると歩きやすい。"
+  },
+  "important_notes": [
+    "営業時間・定休日・予約可否は変動するため、訪問前に公式サイトまたはGoogle Mapsで再確認すること。",
+    "La FarnesinaはMapcarta/OSM上にPOIがあり、店舗ページにも住所が残る一方、Google検索結果では閉業表示が出るため、営業確認が取れるまで本命にはしない。",
+    "El Rana Verdeはタホ川沿い散歩と相性が最も良いが、カフェ専業ではなくレストラン寄り。飲み物だけの利用可否は当日確認。",
+    "Más RealとRestaurante Real/Cafetería Realは名称・住所情報が混在しやすいため、ここでは公式に確認できるMás Realを代表として採用。",
+    "Restaurante Rusiñolは食事寄りの店。カフェ休憩だけよりも昼食・長めの休憩向き。",
+    "Coffee & CakesはOSM由来のPOI座標を確認できるが、シエスタ時間の営業は要確認。",
+    "住所推定座標を用いた店舗は、map_position.correction_noteに不正確な可能性を明記済み。"
+  ],
+  "stores": [
+    {
+      "id": "el_rana_verde",
+      "store_name": "Restaurante El Rana Verde",
+      "categories": [
+        "川沿い休憩本命",
+        "地元料理",
+        "タホ川沿い"
+      ],
+      "basic_info": {
+        "address": "Calle de la Reina, 1, 28300 Aranjuez, Madrid, Spain",
+        "area": "タホ川沿い / 王宮・島の庭園・王子の庭園周辺",
+        "genre": [
+          "伝統料理",
+          "レストラン",
+          "川沿いテラス"
+        ],
+        "google_map_query": "Restaurante El Rana Verde Calle de la Reina 1 Aranjuez",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€€",
+          "dinner": "€€",
+          "confidence": "medium"
+        },
+        "nearest_station_access": "アランフェス王宮・島の庭園・王子の庭園の間にあり、タホ川沿い散歩の途中で寄りやすい。",
+        "closed_days": "要確認",
+        "phone": "+34 918 01 15 71",
+        "saturday_hours": "09:00-00:00",
+        "saturday_hours_confidence": "medium",
+        "saturday_hours_note": "公開店舗ページでは月〜土9:00-00:00の記載あり。公式・Google Mapsで直前確認推奨。",
+        "saturday_hours_last_checked": "2026-06-28",
+        "saturday_hours_sources": [
+          {
+            "title": "El Rana Verde official",
+            "url": "https://www.elranaverde.com/"
+          },
+          {
+            "title": "Turismo de Aranjuez El Rana Verde",
+            "url": "https://visita.aranjuez.es/espacio/el-rana-verde/"
+          },
+          {
+            "title": "Mapcarta OSM POI",
+            "url": "https://mapcarta.com/es/W288081449"
+          },
+          {
+            "title": "Carta.menu El Rana Verde",
+            "url": "https://carta.menu/restaurants/aranjuez/el-rana-verde"
+          },
+          {
+            "title": "Google Maps 検索",
+            "url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20El%20Rana%20Verde%20Calle%20de%20la%20Reina%201%20Aranjuez"
+          }
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": "medium_low",
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 40.03653,
+        "lng": -3.60464,
+        "source": "mapcarta_osm_poi",
+        "source_url": "https://mapcarta.com/es/W288081449",
+        "confidence": "high",
+        "correction_note": "OSM由来のMapcartaでPOI座標を確認。"
+      },
+      "google_maps_poi": {
+        "place_id": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20El%20Rana%20Verde%20Calle%20de%20la%20Reina%201%20Aranjuez"
+      },
+      "representative_menu_and_prices": [],
+      "beer_price": null,
+      "store_features": [
+        "タホ川沿い",
+        "1903年創業系の伝統店",
+        "アランフェス名物のアスパラガス・イチゴ・郷土料理",
+        "王宮・庭園散策と相性が良い"
+      ],
+      "review_trend_analysis": {
+        "summary": "川沿いの景色と地元料理を同時に楽しめるため、今回の『タホ川ほとり散歩』に最も合う休憩候補。"
+      },
+      "space": {
+        "terrace": true,
+        "riverside": true,
+        "sit_down": true
+      },
+      "meta_scores": {
+        "local_character": 5,
+        "siesta_suitability": 4,
+        "route_fit": 5,
+        "riverside_fit": 5
+      },
+      "overall_fit_for_3_person_drinking": null,
+      "saturday_lunch_alcohol": {
+        "suitability": "high",
+        "note": "食事・ワイン・ビール利用向き。カフェのみ利用は当日確認。"
+      },
+      "sunday_alcohol_assumption": {
+        "suitability": "medium",
+        "note": "営業状況は直前確認推奨。"
+      },
+      "weekend_hours": {
+        "saturday": "09:00-00:00",
+        "sunday": null,
+        "notes": "公開ページベース。変動可能性あり。"
+      },
+      "one_line_pop": "タホ川の水辺で、アランフェスらしい郷土料理と旅情を一緒に味わえる本命休憩スポット。",
+      "notes": {
+        "coordinate_status": "confirmed_osm_poi",
+        "siesta_suitability": "high",
+        "representative_branch_policy": "単独店舗として記載。"
+      }
+    },
+    {
+      "id": "mas_real",
+      "store_name": "Más Real",
+      "categories": [
+        "地元料理・昼食",
+        "シエスタ休憩候補",
+        "王宮周辺"
+      ],
+      "basic_info": {
+        "address": "Calle de las Infantas, 6, 28300 Aranjuez, Madrid, Spain",
+        "area": "Calle de las Infantas / 王宮・サンティアゴ・ルシニョール広場周辺",
+        "genre": [
+          "伝統料理",
+          "レストラン",
+          "カフェ・バル"
+        ],
+        "google_map_query": "Más Real Calle de las Infantas 6 Aranjuez",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€€",
+          "dinner": "€€",
+          "confidence": "medium"
+        },
+        "nearest_station_access": "王宮・サンティアゴ・ルシニョール広場周辺から徒歩圏。バス到着後や王宮見学後に寄りやすい。",
+        "closed_days": "月曜休業の可能性あり。要確認。",
+        "phone": "+34 918 62 91 36",
+        "saturday_hours": null,
+        "saturday_hours_confidence": "medium",
+        "saturday_hours_note": "公式ページではCalle de las Infantas 6に位置し、地元食材を使うレストランとして紹介。営業時間は訪問前確認推奨。",
+        "saturday_hours_last_checked": "2026-06-28",
+        "saturday_hours_sources": [
+          {
+            "title": "Más Real official",
+            "url": "https://masreal.es/"
+          },
+          {
+            "title": "Hostal Real Aranjuez Restaurante",
+            "url": "https://www.hostalrealaranjuez.com/es/restaurante"
+          },
+          {
+            "title": "Mapcarta Hostal Real Aranjuez",
+            "url": "https://mapcarta.com/es/32265378"
+          },
+          {
+            "title": "TheFork Más Real",
+            "url": "https://www.thefork.es/restaurante/mas-real-r587987"
+          },
+          {
+            "title": "Google Maps 検索",
+            "url": "https://www.google.com/maps/search/?api=1&query=M%C3%A1s%20Real%20Calle%20de%20las%20Infantas%206%20Aranjuez"
+          }
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": "medium",
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 40.03496,
+        "lng": -3.60271,
+        "source": "mapcarta_osm_poi_nearby_hostal_real",
+        "source_url": "https://mapcarta.com/es/32265378",
+        "confidence": "medium_high",
+        "correction_note": "MapcartaでHostal Real AranjuezのPOI座標を確認。Más Real公式住所はCalle de las Infantas 6で、同一施設・近接施設として採用。入口位置とは数m〜十数mずれる可能性あり。"
+      },
+      "google_maps_poi": {
+        "place_id": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=M%C3%A1s%20Real%20Calle%20de%20las%20Infantas%206%20Aranjuez"
+      },
+      "representative_menu_and_prices": [],
+      "beer_price": null,
+      "store_features": [
+        "王宮周辺の中心動線",
+        "地元食材を使う伝統料理",
+        "昼食・長めの休憩向き",
+        "予約ページあり"
+      ],
+      "review_trend_analysis": {
+        "summary": "王宮見学後に、アランフェス中心部でしっかり座って昼食・休憩を取りたい時の使いやすい候補。"
+      },
+      "space": {
+        "terrace": true,
+        "riverside": false,
+        "sit_down": true
+      },
+      "meta_scores": {
+        "local_character": 4,
+        "siesta_suitability": 4,
+        "route_fit": 5,
+        "riverside_fit": 2
+      },
+      "overall_fit_for_3_person_drinking": null,
+      "saturday_lunch_alcohol": {
+        "suitability": "high",
+        "note": "昼食・食事休憩向き。"
+      },
+      "sunday_alcohol_assumption": {
+        "suitability": "medium",
+        "note": "営業状況は直前確認推奨。"
+      },
+      "weekend_hours": {
+        "saturday": null,
+        "sunday": null,
+        "notes": "TheForkまたはGoogle Mapsで直前確認推奨。"
+      },
+      "one_line_pop": "王宮周辺で、地元食材の伝統料理を落ち着いて楽しめる昼食・休憩の堅実候補。",
+      "notes": {
+        "coordinate_status": "confirmed_osm_poi_nearby_same_facility",
+        "siesta_suitability": "high",
+        "representative_branch_policy": "Restaurante Real/Cafetería Realと情報が混在しやすいため、公式ページのあるMás Realを代表として採用。"
+      }
+    },
+    {
+      "id": "restaurante_rusinol",
+      "store_name": "Restaurante Rusiñol",
+      "categories": [
+        "地元料理・昼食",
+        "王子の庭園周辺",
+        "食事休憩"
+      ],
+      "basic_info": {
+        "address": "Avenida de las Infantas, 24, 28300 Aranjuez, Madrid, Spain",
+        "area": "Avenida de las Infantas / 王子の庭園入口・王宮東側",
+        "genre": [
+          "カスティーリャ料理",
+          "アサドール",
+          "伝統料理"
+        ],
+        "google_map_query": "Restaurante Rusiñol Avenida de las Infantas 24 Aranjuez",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€€€",
+          "dinner": "€€€",
+          "confidence": "medium"
+        },
+        "nearest_station_access": "王宮から王子の庭園へ向かう導線上。庭園散策の前後の食事休憩に向く。",
+        "closed_days": "月曜休業の記載あり。要確認。",
+        "phone": "+34 918 39 15 91",
+        "saturday_hours": null,
+        "saturday_hours_confidence": "medium",
+        "saturday_hours_note": "Madrid a la Cartaでは火曜以降営業の記載あり。直前確認推奨。",
+        "saturday_hours_last_checked": "2026-06-28",
+        "saturday_hours_sources": [
+          {
+            "title": "Madrid a la Carta Rusiñol",
+            "url": "https://madridalacarta.com/en-madrid-restaurante/rusinol/"
+          },
+          {
+            "title": "Celebrarlo Restaurante Asador Rusiñol",
+            "url": "https://www.celebrarlo.com/restaurante/restaurante-asador-rusinol/"
+          },
+          {
+            "title": "Restaurantes Madrid Rusiñol",
+            "url": "https://www.restaurantesmadrid.info/restaurante-rusinol-Madrid-214189.html"
+          },
+          {
+            "title": "Google Maps 検索",
+            "url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Rusi%C3%B1ol%20Avenida%20de%20las%20Infantas%2024%20Aranjuez"
+          }
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": "medium",
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 40.03536,
+        "lng": -3.60145,
+        "source": "address_geocoding_estimated_from_public_address",
+        "source_url": "https://madridalacarta.com/en-madrid-restaurante/rusinol/",
+        "confidence": "medium_low",
+        "correction_note": "Avenida de las Infantas 24の公開住所からの住所近傍推定座標。POI座標未確認のため、入口位置と数十mずれる可能性あり。"
+      },
+      "google_maps_poi": {
+        "place_id": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Rusi%C3%B1ol%20Avenida%20de%20las%20Infantas%2024%20Aranjuez"
+      },
+      "representative_menu_and_prices": [],
+      "beer_price": null,
+      "store_features": [
+        "王子の庭園方面の導線に近い",
+        "カスティーリャ料理",
+        "アサドール",
+        "Santiago Rusiñolにちなむ店名・装飾"
+      ],
+      "review_trend_analysis": {
+        "summary": "カフェというより昼食・食事休憩向き。王子の庭園に向かう前後で、地元色のある落ち着いた食事に使いやすい。"
+      },
+      "space": {
+        "terrace": true,
+        "riverside": false,
+        "sit_down": true
+      },
+      "meta_scores": {
+        "local_character": 4,
+        "siesta_suitability": 3,
+        "route_fit": 4,
+        "riverside_fit": 2
+      },
+      "overall_fit_for_3_person_drinking": null,
+      "saturday_lunch_alcohol": {
+        "suitability": "high",
+        "note": "食事・ワイン・ビール利用向き。"
+      },
+      "sunday_alcohol_assumption": {
+        "suitability": "medium",
+        "note": "営業状況は直前確認推奨。"
+      },
+      "weekend_hours": {
+        "saturday": null,
+        "sunday": null,
+        "notes": "公開ページ・Google Mapsで直前確認推奨。"
+      },
+      "one_line_pop": "王子の庭園へ向かう前後に、カスティーリャ料理でしっかり休める食事寄りの地元店。",
+      "notes": {
+        "coordinate_status": "address_geocoding_estimated_coordinate",
+        "siesta_suitability": "medium",
+        "representative_branch_policy": "単独店舗として記載。"
+      }
+    },
+    {
+      "id": "coffee_and_cakes",
+      "store_name": "Coffee & Cakes",
+      "categories": [
+        "カフェ・甘味",
+        "軽食",
+        "シエスタ休憩候補"
+      ],
+      "basic_info": {
+        "address": "Aranjuez, 28300 Madrid, Spain",
+        "area": "San Antonio周辺 / Mercado de Abastos・Iglesia de San Antonio周辺",
+        "genre": [
+          "カフェ",
+          "菓子",
+          "軽食"
+        ],
+        "google_map_query": "Coffee & Cakes Aranjuez",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€",
+          "dinner": null,
+          "confidence": "medium_low"
+        },
+        "nearest_station_access": "王宮からアランフェス駅へ向かう散歩道やSan Antonio周辺の休憩候補。",
+        "closed_days": "要確認",
+        "phone": null,
+        "saturday_hours": null,
+        "saturday_hours_confidence": "low",
+        "saturday_hours_note": "Mapcarta/OSMでPOI座標は確認できるが、営業時間は要確認。",
+        "saturday_hours_last_checked": "2026-06-28",
+        "saturday_hours_sources": [
+          {
+            "title": "Mapcarta OSM POI",
+            "url": "https://mapcarta.com/es/N8638394058"
+          },
+          {
+            "title": "Tripadvisor cafes in Aranjuez",
+            "url": "https://www.tripadvisor.es/Restaurants-g562647-c8-Aranjuez.html"
+          },
+          {
+            "title": "Google Maps 検索",
+            "url": "https://www.google.com/maps/search/?api=1&query=Coffee%20%26%20Cakes%20Aranjuez"
+          }
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": "low",
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 40.03263,
+        "lng": -3.60545,
+        "source": "mapcarta_osm_poi",
+        "source_url": "https://mapcarta.com/es/N8638394058",
+        "confidence": "high",
+        "correction_note": "OSM由来のMapcartaでPOI座標を確認。"
+      },
+      "google_maps_poi": {
+        "place_id": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Coffee%20%26%20Cakes%20Aranjuez"
+      },
+      "representative_menu_and_prices": [],
+      "beer_price": null,
+      "store_features": [
+        "甘味・カフェ休憩向き",
+        "王宮〜駅方面の散歩道に組み込みやすい",
+        "San Antonio周辺"
+      ],
+      "review_trend_analysis": {
+        "summary": "しっかり食事よりも、コーヒーや甘いものを挟みたい時の軽めの休憩候補。"
+      },
+      "space": {
+        "terrace": null,
+        "riverside": false,
+        "sit_down": true
+      },
+      "meta_scores": {
+        "local_character": 3,
+        "siesta_suitability": 3,
+        "route_fit": 4,
+        "riverside_fit": 1
+      },
+      "overall_fit_for_3_person_drinking": null,
+      "saturday_lunch_alcohol": {
+        "suitability": "low",
+        "note": "アルコール目的ではなく、甘味・コーヒー休憩向き。"
+      },
+      "sunday_alcohol_assumption": {
+        "suitability": "low",
+        "note": "営業時間・提供内容は要確認。"
+      },
+      "weekend_hours": {
+        "saturday": null,
+        "sunday": null,
+        "notes": "営業時間はGoogle Mapsで直前確認推奨。"
+      },
+      "one_line_pop": "王宮から駅へ向かう散歩の途中で、甘いものとコーヒーを軽く挟める休憩候補。",
+      "notes": {
+        "coordinate_status": "confirmed_osm_poi",
+        "siesta_suitability": "medium",
+        "representative_branch_policy": "単独店舗として記載。"
+      }
+    },
+    {
+      "id": "la_farnesina",
+      "store_name": "La Farnesina cafe'.wine.bar",
+      "categories": [
+        "営業要確認",
+        "カフェ・ワインバー",
+        "王宮周辺"
+      ],
+      "basic_info": {
+        "address": "Calle de las Infantas, 25, 28300 Aranjuez, Madrid, Spain",
+        "area": "Calle de las Infantas / 王宮・王子の庭園方面",
+        "genre": [
+          "カフェ",
+          "ワインバー",
+          "朝食・ブランチ"
+        ],
+        "google_map_query": "La Farnesina cafe wine bar Calle de las Infantas 25 Aranjuez",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€€",
+          "dinner": "€€",
+          "confidence": "low"
+        },
+        "nearest_station_access": "王宮から王子の庭園方面へ向かう導線上。営業していれば非常に便利。",
+        "closed_days": "Google検索結果では閉業表示あり。要確認。",
+        "phone": "+34 918 91 67 36",
+        "saturday_hours": null,
+        "saturday_hours_confidence": "low",
+        "saturday_hours_note": "店舗ページには住所・電話が残るが、Google検索結果では閉業表示があるため、本命にはしない。",
+        "saturday_hours_last_checked": "2026-06-28",
+        "saturday_hours_sources": [
+          {
+            "title": "Mapcarta OSM POI",
+            "url": "https://mapcarta.com/es/N5799363453"
+          },
+          {
+            "title": "Madrid a la Carta Cafe La Farnesina",
+            "url": "https://madridalacarta.com/en-madrid-restaurante/cafe-la-farnesina/"
+          },
+          {
+            "title": "Firmania La Farnesina",
+            "url": "https://firmania.es/aranjuez/la-farnesina-cafewinebar-1597658"
+          },
+          {
+            "title": "Google Maps 検索",
+            "url": "https://www.google.com/maps/search/?api=1&query=La%20Farnesina%20cafe%20wine%20bar%20Calle%20de%20las%20Infantas%2025%20Aranjuez"
+          }
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": "low",
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 40.03532,
+        "lng": -3.60181,
+        "source": "mapcarta_osm_poi",
+        "source_url": "https://mapcarta.com/es/N5799363453",
+        "confidence": "high",
+        "correction_note": "OSM由来のMapcartaでPOI座標を確認。ただしGoogle検索結果では閉業表示があるため、営業状況は不確実。"
+      },
+      "google_maps_poi": {
+        "place_id": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=La%20Farnesina%20cafe%20wine%20bar%20Calle%20de%20las%20Infantas%2025%20Aranjuez"
+      },
+      "representative_menu_and_prices": [],
+      "beer_price": null,
+      "store_features": [
+        "王宮〜王子の庭園方面の導線上",
+        "カフェ・ワインバー",
+        "営業していれば立地は非常に良い"
+      ],
+      "review_trend_analysis": {
+        "summary": "立地と用途は今回の旅程に合うが、閉業表示の可能性があるため、現地で開いていれば入る予備候補に留める。"
+      },
+      "space": {
+        "terrace": null,
+        "riverside": false,
+        "sit_down": true
+      },
+      "meta_scores": {
+        "local_character": 3,
+        "siesta_suitability": 1,
+        "route_fit": 4,
+        "riverside_fit": 1
+      },
+      "overall_fit_for_3_person_drinking": null,
+      "saturday_lunch_alcohol": {
+        "suitability": "unknown",
+        "note": "営業要確認。"
+      },
+      "sunday_alcohol_assumption": {
+        "suitability": "unknown",
+        "note": "営業要確認。"
+      },
+      "weekend_hours": {
+        "saturday": null,
+        "sunday": null,
+        "notes": "Google検索結果で閉業表示があるため、訪問前に必ずGoogle Mapsで営業確認。"
+      },
+      "one_line_pop": "開いていれば王宮周辺で最も使いやすいカフェ・ワインバーだが、営業確認が必須の予備候補。",
+      "notes": {
+        "coordinate_status": "confirmed_osm_poi_but_business_status_uncertain",
+        "siesta_suitability": "unknown_due_to_possible_closure",
+        "representative_branch_policy": "単独店舗として記載。"
+      }
+    },
+    {
+      "id": "cafeteria_real_aranjuez",
+      "store_name": "Cafetería Real / Restaurante Real",
+      "categories": [
+        "住所確認要",
+        "シエスタ休憩予備",
+        "王宮周辺"
+      ],
+      "basic_info": {
+        "address": "Avenida de las Infantas / Calle Infantas, 28300 Aranjuez, Madrid, Spain",
+        "area": "Calle de las Infantas / 王宮周辺",
+        "genre": [
+          "カフェテリア",
+          "レストラン",
+          "伝統料理"
+        ],
+        "google_map_query": "Cafetería Real Aranjuez Avenida de las Infantas",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€€",
+          "dinner": "€€",
+          "confidence": "low"
+        },
+        "nearest_station_access": "王宮周辺。正確な店舗位置はGoogle Mapsで要確認。",
+        "closed_days": "要確認",
+        "phone": null,
+        "saturday_hours": null,
+        "saturday_hours_confidence": "low",
+        "saturday_hours_note": "Restaurant Guru等ではAv de las Infantas上の店舗として掲載されるが、正確な番地・POI座標は未確認。",
+        "saturday_hours_last_checked": "2026-06-28",
+        "saturday_hours_sources": [
+          {
+            "title": "Restaurant Guru Cafetería Real",
+            "url": "https://es.restaurantguru.com/Cafeteria-Real-Aranjuez"
+          },
+          {
+            "title": "Páginas Amarillas Restaurante Real",
+            "url": "https://www.paginasamarillas.es/f/aranjuez/restaurante-real_223593419_000000002.html"
+          },
+          {
+            "title": "Madrid a la Carta Real",
+            "url": "https://madridalacarta.com/en-madrid-restaurante/real-211/"
+          },
+          {
+            "title": "Google Maps 検索",
+            "url": "https://www.google.com/maps/search/?api=1&query=Cafeter%C3%ADa%20Real%20Aranjuez%20Avenida%20de%20las%20Infantas"
+          }
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": "low",
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 40.03496,
+        "lng": -3.60271,
+        "source": "nearby_poi_coordinate_estimated_from_hostal_real_area",
+        "source_url": "https://mapcarta.com/es/32265378",
+        "confidence": "low",
+        "correction_note": "Cafetería Real/Restaurante Realは公開情報でAv de las InfantasまたはCalle Infantas上とされるが、正確なPOI座標は未確認。近接するHostal Real/Más Real付近の座標を暫定採用しており、不正確な可能性がある。"
+      },
+      "google_maps_poi": {
+        "place_id": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Cafeter%C3%ADa%20Real%20Aranjuez%20Avenida%20de%20las%20Infantas"
+      },
+      "representative_menu_and_prices": [],
+      "beer_price": null,
+      "store_features": [
+        "王宮周辺の予備休憩候補",
+        "カフェテリア・レストラン系",
+        "正確な位置と営業状況は要確認"
+      ],
+      "review_trend_analysis": {
+        "summary": "シエスタ時間の避難先候補として名前は挙がるが、位置情報の精度が低いため、地図ピンとしては暫定扱い。"
+      },
+      "space": {
+        "terrace": null,
+        "riverside": false,
+        "sit_down": true
+      },
+      "meta_scores": {
+        "local_character": 2,
+        "siesta_suitability": 2,
+        "route_fit": 3,
+        "riverside_fit": 1
+      },
+      "overall_fit_for_3_person_drinking": null,
+      "saturday_lunch_alcohol": {
+        "suitability": "unknown",
+        "note": "営業・位置確認が必要。"
+      },
+      "sunday_alcohol_assumption": {
+        "suitability": "unknown",
+        "note": "営業・位置確認が必要。"
+      },
+      "weekend_hours": {
+        "saturday": null,
+        "sunday": null,
+        "notes": "Google Mapsで直前確認必須。"
+      },
+      "one_line_pop": "王宮周辺で困った時の予備候補だが、正確なPOIと営業状況の確認が必要。",
+      "notes": {
+        "coordinate_status": "nearby_estimated_coordinate",
+        "siesta_suitability": "unknown",
+        "representative_branch_policy": "Más Real/Restaurante Real/Cafetería Realの情報が混在するため、予備候補として分離記載。"
+      }
+    }
+  ]
+}

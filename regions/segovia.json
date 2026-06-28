@@ -1,0 +1,773 @@
+{
+  "dataset_name": "segovia_restaurants",
+  "generated_at": "2026-06-28",
+  "language": "ja",
+  "currency": "EUR",
+  "region_id": "segovia",
+  "region_name": "セゴビア",
+  "title": "セゴビア飲食店・カフェマップ",
+  "map_label": "セゴビア旧市街 + 飲食店・カフェピン",
+  "map_center": {
+    "lat": 40.9501,
+    "lng": -4.1237,
+    "zoom": 16
+  },
+  "category_filters": {
+    "preferred_order": [
+      "昼食本命",
+      "郷土料理ランチ",
+      "シエスタ休憩本命",
+      "カフェ・軽食",
+      "甘味・ジェラート",
+      "スペシャルティコーヒー"
+    ],
+    "pinned": [
+      "restaurante_jose_maria",
+      "pasteleria_limon_y_menta",
+      "la_concepcion_segovia",
+      "el_sitio_segovia",
+      "la_colonial_segovia"
+    ],
+    "forced": [
+      "restaurante_jose_maria",
+      "pasteleria_limon_y_menta"
+    ]
+  },
+  "notes": {
+    "coordinate_format": "WGS84 decimal degrees",
+    "google_maps": "正式なGoogle Maps Place IDおよびGoogle Maps内部POI座標はAPIなしでは取得不可。各店舗にGoogle Maps検索URLを付与。",
+    "openstreetmap_overpass": "OSM由来のMapcartaでPOI座標が確認できた店舗はmap_positionに採用。",
+    "map_position_policy": "POI座標を優先。POI座標が確認できない場合は公式住所・公開住所からの住所近傍推定座標を採用し、correction_noteとnotes.coordinate_statusに不正確な可能性を明記。",
+    "representative_branch_policy": "複数店舗がある場合は、セゴビア旧市街中心部・Plaza Mayor〜水道橋動線に入りやすい1店舗を代表として採用。",
+    "siesta_policy": "15:00前後でも休憩しやすい通し営業・カフェ営業・観光地中心部の店舗を優先。営業時間は季節・曜日で変動するため訪問直前にGoogle Mapsまたは公式で再確認すること。"
+  },
+  "summary": {
+    "input_store_count": 7,
+    "selected_store_count": 7,
+    "needs_confirmation_or_excluded_count": 3,
+    "best_fit_store_names": [
+      "Restaurante José María",
+      "Pastelería Limón y Menta",
+      "Restaurante La Concepción",
+      "El Sitio",
+      "La Colonial"
+    ],
+    "total_count": 7,
+    "by_conversation_category": [
+      {
+        "category": "昼食本命",
+        "count": 1
+      },
+      {
+        "category": "郷土料理ランチ",
+        "count": 2
+      },
+      {
+        "category": "カフェ・軽食・シエスタ休憩",
+        "count": 3
+      },
+      {
+        "category": "甘味・ジェラート",
+        "count": 1
+      }
+    ],
+    "likely_good_candidates_from_chat_context": [
+      "Restaurante José María",
+      "Pastelería Limón y Menta",
+      "Restaurante La Concepción",
+      "El Sitio",
+      "La Colonial",
+      "Pompi España Segovia"
+    ],
+    "one_line_pop": "セゴビアでは、昼はホセ・マリアでコチニージョ、午後の休憩はリモン・イ・メンタかラ・コンセプシオン、水道橋側ではラ・コロニアルを使うと動線がきれい。"
+  },
+  "important_notes": [
+    "営業時間・定休日・予約可否は変動するため、訪問前に公式サイトまたはGoogle Mapsで再確認すること。",
+    "Restaurante José Maríaはセゴビア名物コチニージョの本命候補で、昼食利用は予約推奨。",
+    "Pastelería Limón y Mentaはセゴビア市公式で平日9:00-20:30、土日9:00-21:00の通し営業として掲載されており、シエスタ休憩に向く。",
+    "La ConcepciónはPlaza Mayor・大聖堂前のクラシックなカフェ兼レストラン。水曜休みの可能性があるため要確認。",
+    "El Sitioは地元客と観光客が混じるセゴビア料理店。ホセ・マリアが満席の場合の郷土料理代替候補。",
+    "La Colonialは水道橋・バスターミナル側の実用休憩候補。到着直後または帰路前のカフェ休憩に向く。",
+    "Pompiは地元伝統店ではなくイタリア系甘味店だが、旧市街動線上で営業時間が長く、暑い午後のジェラート休憩に使いやすい。",
+    "Kofe Labは伝統店ではなく現代的なスペシャルティコーヒー店。コーヒー品質重視なら候補。",
+    "Google Mapsの正式Place IDは未取得。必要ならGoogle Places APIまたは手動でGoogle Maps URLからPlace情報を取得する必要がある。",
+    "住所推定座標を用いた店舗は、map_position.correction_noteに不正確な可能性を明記済み。"
+  ],
+  "stores": [
+    {
+      "id": "restaurante_jose_maria",
+      "store_name": "Restaurante José María",
+      "categories": [
+        "昼食本命",
+        "コチニージョ",
+        "セゴビア郷土料理"
+      ],
+      "basic_info": {
+        "address": "Calle Cronista Lecea, 11, 40001 Segovia, Spain",
+        "area": "Casco Histórico / Plaza Mayor・Catedral周辺",
+        "genre": [
+          "カスティーリャ料理",
+          "コチニージョ",
+          "伝統料理"
+        ],
+        "google_map_query": "Restaurante José María Calle Cronista Lecea 11 Segovia",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€€€",
+          "dinner": "€€€",
+          "confidence": "medium"
+        },
+        "nearest_station_access": "セゴビア大聖堂・Plaza Mayorから徒歩圏。バスターミナルから水道橋経由で旧市街を歩いた後の昼食に組み込みやすい。",
+        "closed_days": "要確認",
+        "phone": "+34 921 461 111",
+        "saturday_hours": "09:45-01:30",
+        "saturday_hours_confidence": "medium_high",
+        "saturday_hours_note": "Mapcarta/OSM掲載情報では金曜・土曜9:45-1:30、月〜木・日曜9:45-0:30。昼食予約推奨。",
+        "saturday_hours_last_checked": "2026-06-28",
+        "saturday_hours_sources": [
+          {
+            "title": "Mapcarta OSM POI - José María",
+            "url": "https://mapcarta.com/es/N4582867489"
+          },
+          {
+            "title": "Restaurante José María official",
+            "url": "https://www.restaurantejosemaria.com/"
+          },
+          {
+            "title": "Tripadvisor - Restaurante José María",
+            "url": "https://www.tripadvisor.jp/Restaurant_Review-g187494-d896995-Reviews-Restaurante_Jose_Maria-Segovia_Province_of_Segovia_Castile_and_Leon.html"
+          },
+          {
+            "title": "Google Maps 検索",
+            "url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Jos%C3%A9%20Mar%C3%ADa%20Calle%20Cronista%20Lecea%2011%20Segovia"
+          }
+        ],
+        "sunday_hours": "09:45-00:30",
+        "sunday_hours_confidence": "medium_high",
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 40.9505,
+        "lng": -4.12273,
+        "source": "mapcarta_osm_poi",
+        "source_url": "https://mapcarta.com/es/N4582867489",
+        "confidence": "high",
+        "correction_note": "OSM由来のMapcartaでPOI座標を確認。"
+      },
+      "google_maps_poi": {
+        "place_id": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20Jos%C3%A9%20Mar%C3%ADa%20Calle%20Cronista%20Lecea%2011%20Segovia"
+      },
+      "representative_menu_and_prices": [],
+      "beer_price": null,
+      "store_features": [
+        "セゴビア名物コチニージョの本命",
+        "Plaza Mayor・大聖堂近く",
+        "伝統的カスティーリャ料理",
+        "予約推奨"
+      ],
+      "review_trend_analysis": {
+        "summary": "セゴビアでコチニージョを食べる王道候補。観光動線上にあり、昼食の本命として最も組み込みやすい。"
+      },
+      "space": {},
+      "meta_scores": {},
+      "overall_fit_for_3_person_drinking": null,
+      "saturday_lunch_alcohol": {},
+      "sunday_alcohol_assumption": {},
+      "weekend_hours": {
+        "saturday": "09:45-01:30",
+        "sunday": "09:45-00:30",
+        "notes": "Mapcarta/OSM掲載情報ベース。訪問前確認推奨。"
+      },
+      "one_line_pop": "セゴビア名物コチニージョを王道の名店で食べるなら、昼食本命はここ。",
+      "notes": {
+        "coordinate_status": "confirmed_osm_poi",
+        "representative_branch_policy": "単独店舗として記載。",
+        "siesta_suitability": "restaurant_main_meal"
+      }
+    },
+    {
+      "id": "pasteleria_limon_y_menta",
+      "store_name": "Pastelería Limón y Menta",
+      "categories": [
+        "シエスタ休憩本命",
+        "カフェ・軽食",
+        "甘味"
+      ],
+      "basic_info": {
+        "address": "Calle Isabel la Católica, 2, 40001 Segovia, Spain",
+        "area": "Casco Histórico / Plaza Mayor・Catedral・José María周辺",
+        "genre": [
+          "パステレリア",
+          "カフェ",
+          "パン",
+          "チョコレート",
+          "甘味"
+        ],
+        "google_map_query": "Pastelería Limón y Menta Calle Isabel la Católica 2 Segovia",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€",
+          "dinner": null,
+          "confidence": "medium"
+        },
+        "nearest_station_access": "Plaza Mayor・セゴビア大聖堂・Restaurante José Maríaから徒歩すぐ。昼食前後の時間調整、食後のコーヒーに最適。",
+        "closed_days": "要確認",
+        "phone": "+34 921 462 141",
+        "saturday_hours": "09:00-21:00",
+        "saturday_hours_confidence": "high",
+        "saturday_hours_note": "セゴビア市公式サイトでは土日9:00-21:00、平日9:00-20:30。通し営業でシエスタ休憩向き。",
+        "saturday_hours_last_checked": "2026-06-28",
+        "saturday_hours_sources": [
+          {
+            "title": "Segovia official - Pastelería Limón y Menta",
+            "url": "https://segovia.es/servicios/observatorio-economico/establecimientos/pasteleria-limon-y-menta"
+          },
+          {
+            "title": "Maptons coordinate - Pastelería Limón y Menta",
+            "url": "https://es.maptons.com/p/3633527036"
+          },
+          {
+            "title": "Google Maps 検索",
+            "url": "https://www.google.com/maps/search/?api=1&query=Pasteler%C3%ADa%20Lim%C3%B3n%20y%20Menta%20Calle%20Isabel%20la%20Cat%C3%B3lica%202%20Segovia"
+          }
+        ],
+        "sunday_hours": "09:00-21:00",
+        "sunday_hours_confidence": "high",
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 40.9498882,
+        "lng": -4.1240271,
+        "source": "maptons_public_poi_coordinate",
+        "source_url": "https://es.maptons.com/p/3633527036",
+        "confidence": "medium_high",
+        "correction_note": "Maptons公開地図ページでPOI座標を確認。セゴビア市公式で住所・営業時間を確認。"
+      },
+      "google_maps_poi": {
+        "place_id": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Pasteler%C3%ADa%20Lim%C3%B3n%20y%20Menta%20Calle%20Isabel%20la%20Cat%C3%B3lica%202%20Segovia"
+      },
+      "representative_menu_and_prices": [],
+      "beer_price": null,
+      "store_features": [
+        "José Maríaと大聖堂に近い",
+        "通し営業で休憩しやすい",
+        "菓子・パン・チョコレート系",
+        "食後のコーヒー向き"
+      ],
+      "review_trend_analysis": {
+        "summary": "セゴビア旧市街の観光動線にぴったり合う、暑い午後の休憩本命。甘いものとコーヒーで短時間休憩しやすい。"
+      },
+      "space": {},
+      "meta_scores": {},
+      "overall_fit_for_3_person_drinking": null,
+      "saturday_lunch_alcohol": {},
+      "sunday_alcohol_assumption": {},
+      "weekend_hours": {
+        "saturday": "09:00-21:00",
+        "sunday": "09:00-21:00",
+        "notes": "セゴビア市公式サイト掲載。"
+      },
+      "one_line_pop": "ホセ・マリアや大聖堂のすぐ近くで、シエスタ時間にも甘味とコーヒーで涼める最有力カフェ。",
+      "notes": {
+        "coordinate_status": "confirmed_public_map_coordinate",
+        "representative_branch_policy": "単独店舗として記載。",
+        "siesta_suitability": "very_high"
+      }
+    },
+    {
+      "id": "la_concepcion_segovia",
+      "store_name": "Restaurante La Concepción",
+      "categories": [
+        "シエスタ休憩本命",
+        "カフェ・レストラン",
+        "クラシックカフェ"
+      ],
+      "basic_info": {
+        "address": "Plaza Mayor, 15, 40001 Segovia, Spain",
+        "area": "Plaza Mayor / Catedral周辺",
+        "genre": [
+          "カフェ",
+          "レストラン",
+          "カスティーリャ料理",
+          "テラス"
+        ],
+        "google_map_query": "Restaurante La Concepción Plaza Mayor 15 Segovia",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€€",
+          "dinner": "€€",
+          "confidence": "medium"
+        },
+        "nearest_station_access": "Plaza Mayorの大聖堂側。José María・セゴビア大聖堂から徒歩圏。",
+        "closed_days": "水曜休業の可能性あり。要確認。",
+        "phone": "+34 921 460 930",
+        "saturday_hours": null,
+        "saturday_hours_confidence": "medium",
+        "saturday_hours_note": "公式サイトではPlaza Mayorのクラシックカフェ・レストランとして掲載。予約ページで水曜休業の記載あり。営業時間は訪問直前確認推奨。",
+        "saturday_hours_last_checked": "2026-06-28",
+        "saturday_hours_sources": [
+          {
+            "title": "Restaurante La Concepción official",
+            "url": "https://www.restaurantelaconcepcion.com/"
+          },
+          {
+            "title": "Turismo de Segovia - La Concepción",
+            "url": "https://www.turismodesegovia.com/es/gastronomia/la-concepcion"
+          },
+          {
+            "title": "Segovia un buen plan - La Concepción",
+            "url": "https://www.segoviaunbuenplan.com/segovia-capital/restaurantes/la-concepcion/"
+          },
+          {
+            "title": "Google Maps 検索",
+            "url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20La%20Concepci%C3%B3n%20Plaza%20Mayor%2015%20Segovia"
+          }
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": "medium",
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 40.95023,
+        "lng": -4.12519,
+        "source": "address_geocoding_estimated_from_public_address",
+        "source_url": "https://www.segoviaunbuenplan.com/segovia-capital/restaurantes/la-concepcion/",
+        "confidence": "medium_low",
+        "correction_note": "Plaza Mayor 15の公開住所からの住所近傍推定座標。公式・観光局で店舗存在と場所は確認済みだが、入口位置と数十mずれる可能性あり。"
+      },
+      "google_maps_poi": {
+        "place_id": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Restaurante%20La%20Concepci%C3%B3n%20Plaza%20Mayor%2015%20Segovia"
+      },
+      "representative_menu_and_prices": [],
+      "beer_price": null,
+      "store_features": [
+        "Plaza Mayorのクラシックカフェ",
+        "大聖堂前のテラス",
+        "地元でLa Conchaとして知られる",
+        "朝食・アペリティーボ・カフェ休憩に使いやすい"
+      ],
+      "review_trend_analysis": {
+        "summary": "大聖堂前で座って休みたい時の有力候補。地元感のあるクラシックな雰囲気を重視するならLimón y Mentaよりこちら。"
+      },
+      "space": {},
+      "meta_scores": {},
+      "overall_fit_for_3_person_drinking": null,
+      "saturday_lunch_alcohol": {},
+      "sunday_alcohol_assumption": {},
+      "weekend_hours": {
+        "saturday": null,
+        "sunday": null,
+        "notes": "水曜休業の可能性あり。営業時間は公式またはGoogle Mapsで直前確認推奨。"
+      },
+      "one_line_pop": "大聖堂前のPlaza Mayorで、地元に愛される“ラ・コンチャ”のテラス休憩を楽しめる一軒。",
+      "notes": {
+        "coordinate_status": "address_geocoding_estimated_coordinate",
+        "representative_branch_policy": "単独店舗として記載。",
+        "siesta_suitability": "high"
+      }
+    },
+    {
+      "id": "el_sitio_segovia",
+      "store_name": "El Sitio",
+      "categories": [
+        "郷土料理ランチ",
+        "コチニージョ予備",
+        "地元色"
+      ],
+      "basic_info": {
+        "address": "Calle de la Infanta Isabel, 9, 40001 Segovia, Spain",
+        "area": "Casco Histórico / Plaza Mayor周辺",
+        "genre": [
+          "セゴビア料理",
+          "カスティーリャ料理",
+          "コチニージョ",
+          "バル・レストラン"
+        ],
+        "google_map_query": "El Sitio Calle de la Infanta Isabel 9 Segovia",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€€",
+          "dinner": "€€",
+          "confidence": "medium"
+        },
+        "nearest_station_access": "Plaza Mayorから徒歩約1分。José Maríaや大聖堂周辺の代替ランチ候補として使いやすい。",
+        "closed_days": "要確認",
+        "phone": "+34 921 460 996",
+        "saturday_hours": "12:00-03:00",
+        "saturday_hours_confidence": "medium",
+        "saturday_hours_note": "公式英語ページでは土曜12:00-3:00、日祝12:00-2:00。公開店舗ページでは曜日により表記差があるため直前確認推奨。",
+        "saturday_hours_last_checked": "2026-06-28",
+        "saturday_hours_sources": [
+          {
+            "title": "El Sitio official",
+            "url": "https://www.elsitiorestaurante.com/"
+          },
+          {
+            "title": "El Sitio official location",
+            "url": "https://www.elsitiorestaurante.com/en/location/"
+          },
+          {
+            "title": "Turismo de Segovia - El Sitio",
+            "url": "https://www.turismodesegovia.com/es/gastronomia/el-sitio"
+          },
+          {
+            "title": "Junta de Castilla y León - EL SITIO",
+            "url": "https://www.turismocastillayleon.com/en/services/eat/restaurants/sitio"
+          },
+          {
+            "title": "Google Maps 検索",
+            "url": "https://www.google.com/maps/search/?api=1&query=El%20Sitio%20Calle%20de%20la%20Infanta%20Isabel%209%20Segovia"
+          }
+        ],
+        "sunday_hours": "12:00-02:00",
+        "sunday_hours_confidence": "medium",
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 40.95003,
+        "lng": -4.12339,
+        "source": "address_geocoding_estimated_from_public_address",
+        "source_url": "https://www.elsitiorestaurante.com/",
+        "confidence": "medium_low",
+        "correction_note": "Calle de la Infanta Isabel 9の公式住所からの住所近傍推定座標。公式・観光局・Junta de Castilla y Leónで住所確認済みだが、POI座標未確認のため入口位置と数十mずれる可能性あり。"
+      },
+      "google_maps_poi": {
+        "place_id": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=El%20Sitio%20Calle%20de%20la%20Infanta%20Isabel%209%20Segovia"
+      },
+      "representative_menu_and_prices": [],
+      "beer_price": null,
+      "store_features": [
+        "地元客と観光客が混じる雰囲気",
+        "Plaza Mayorから近い",
+        "家庭的なセゴビア料理",
+        "ホセ・マリア満席時の代替候補"
+      ],
+      "review_trend_analysis": {
+        "summary": "ホセ・マリアほど格式張らず、地元のバル・レストランらしい雰囲気でセゴビア料理を食べたい時に向く。"
+      },
+      "space": {},
+      "meta_scores": {},
+      "overall_fit_for_3_person_drinking": null,
+      "saturday_lunch_alcohol": {},
+      "sunday_alcohol_assumption": {},
+      "weekend_hours": {
+        "saturday": "12:00-03:00",
+        "sunday": "12:00-02:00",
+        "notes": "公式英語ページベース。表記差があるため訪問前確認推奨。"
+      },
+      "one_line_pop": "ホセ・マリアが重い・満席の時に、地元感ある雰囲気でセゴビア料理を楽しめる有力な代替店。",
+      "notes": {
+        "coordinate_status": "address_geocoding_estimated_coordinate",
+        "representative_branch_policy": "単独店舗として記載。",
+        "siesta_suitability": "medium_to_high"
+      }
+    },
+    {
+      "id": "la_colonial_segovia",
+      "store_name": "La Colonial",
+      "categories": [
+        "カフェ・軽食",
+        "水道橋周辺",
+        "シエスタ休憩"
+      ],
+      "basic_info": {
+        "address": "Avenida del Acueducto, 19, 40001 Segovia, Spain",
+        "area": "Acueducto / Avenida del Acueducto周辺",
+        "genre": [
+          "カフェ",
+          "軽食",
+          "朝食"
+        ],
+        "google_map_query": "La Colonial Avenida del Acueducto 19 Segovia",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€",
+          "dinner": "€",
+          "confidence": "medium"
+        },
+        "nearest_station_access": "セゴビア・バスターミナルから水道橋へ向かう途中または水道橋観光前後に使いやすい。",
+        "closed_days": "要確認",
+        "phone": "+34 921 435 516",
+        "saturday_hours": "08:00-01:00",
+        "saturday_hours_confidence": "medium_low",
+        "saturday_hours_note": "公開店舗ページでは月〜金8:00-23:30、土日1:00までの広め営業とされるが、公式ではないため直前確認推奨。",
+        "saturday_hours_last_checked": "2026-06-28",
+        "saturday_hours_sources": [
+          {
+            "title": "Mapcarta OSM POI - Café La Colonial",
+            "url": "https://mapcarta.com/N2500539062"
+          },
+          {
+            "title": "Cafeterisimos - La Colonial",
+            "url": "https://cafeterisimos.com/la-colonial-segovia/"
+          },
+          {
+            "title": "Cafe El Siglo - La Colonial",
+            "url": "https://www.cafeelsiglo.es/cafeteria/la-colonial-segovia/"
+          },
+          {
+            "title": "Google Maps 検索",
+            "url": "https://www.google.com/maps/search/?api=1&query=La%20Colonial%20Avenida%20del%20Acueducto%2019%20Segovia"
+          }
+        ],
+        "sunday_hours": "08:00-01:00",
+        "sunday_hours_confidence": "medium_low",
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 40.94677,
+        "lng": -4.1191,
+        "source": "mapcarta_osm_poi",
+        "source_url": "https://mapcarta.com/N2500539062",
+        "confidence": "high",
+        "correction_note": "OSM由来のMapcartaでPOI座標を確認。"
+      },
+      "google_maps_poi": {
+        "place_id": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=La%20Colonial%20Avenida%20del%20Acueducto%2019%20Segovia"
+      },
+      "representative_menu_and_prices": [],
+      "beer_price": null,
+      "store_features": [
+        "水道橋近く",
+        "到着直後の休憩に便利",
+        "朝食・軽食向き",
+        "バスターミナルからの導線に近い"
+      ],
+      "review_trend_analysis": {
+        "summary": "セゴビア到着後、水道橋を見る前後に入れる実用性の高いカフェ。旧市街奥まで行く前の一服に向く。"
+      },
+      "space": {},
+      "meta_scores": {},
+      "overall_fit_for_3_person_drinking": null,
+      "saturday_lunch_alcohol": {},
+      "sunday_alcohol_assumption": {},
+      "weekend_hours": {
+        "saturday": "08:00-01:00",
+        "sunday": "08:00-01:00",
+        "notes": "公開店舗ページベース。公式ではないため直前確認推奨。"
+      },
+      "one_line_pop": "水道橋の前後で、バス到着直後にさっと座れる実用性重視のカフェ。",
+      "notes": {
+        "coordinate_status": "confirmed_osm_poi",
+        "representative_branch_policy": "単独店舗として記載。",
+        "siesta_suitability": "high"
+      }
+    },
+    {
+      "id": "pompi_espana_segovia",
+      "store_name": "Pompi España Segovia",
+      "categories": [
+        "甘味・ジェラート",
+        "カフェ・軽食",
+        "シエスタ休憩"
+      ],
+      "basic_info": {
+        "address": "Calle Juan Bravo, 18, 40001 Segovia, Spain",
+        "area": "Calle Juan Bravo / San Martín・旧市街メイン通り",
+        "genre": [
+          "ティラミス",
+          "ジェラート",
+          "菓子",
+          "カフェ"
+        ],
+        "google_map_query": "Pompi España Segovia Calle Juan Bravo 18",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€",
+          "dinner": null,
+          "confidence": "medium"
+        },
+        "nearest_station_access": "水道橋からPlaza Mayorへ向かう旧市街メイン動線上。San Martín広場周辺の休憩に使いやすい。",
+        "closed_days": "要確認",
+        "phone": null,
+        "saturday_hours": "10:00-23:00",
+        "saturday_hours_confidence": "high",
+        "saturday_hours_note": "Pompi公式ページでは日〜木10:00-22:00、金土10:00-23:00。",
+        "saturday_hours_last_checked": "2026-06-28",
+        "saturday_hours_sources": [
+          {
+            "title": "Pompi España Segovia official",
+            "url": "https://barpompi.it/pompi-espana-segovia/"
+          },
+          {
+            "title": "Pompi Spain official contact",
+            "url": "https://pompi.es/contacto/"
+          },
+          {
+            "title": "El País - Pompi Segovia",
+            "url": "https://elpais.com/gastronomia/2025-10-15/el-famoso-tiramisu-italiano-pompi-elige-segovia-para-abrir-su-primera-sucursal-en-espana.html"
+          },
+          {
+            "title": "Google Maps 検索",
+            "url": "https://www.google.com/maps/search/?api=1&query=Pompi%20Espa%C3%B1a%20Segovia%20Calle%20Juan%20Bravo%2018"
+          }
+        ],
+        "sunday_hours": "10:00-22:00",
+        "sunday_hours_confidence": "high",
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 40.94931,
+        "lng": -4.12321,
+        "source": "address_geocoding_estimated_from_public_address",
+        "source_url": "https://barpompi.it/pompi-espana-segovia/",
+        "confidence": "medium_low",
+        "correction_note": "Calle Juan Bravo 18の公式住所からの住所近傍推定座標。POI座標未確認のため入口位置と数十mずれる可能性あり。"
+      },
+      "google_maps_poi": {
+        "place_id": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Pompi%20Espa%C3%B1a%20Segovia%20Calle%20Juan%20Bravo%2018"
+      },
+      "representative_menu_and_prices": [],
+      "beer_price": null,
+      "store_features": [
+        "旧市街メイン通り沿い",
+        "ティラミスとジェラート",
+        "営業時間が長い",
+        "暑い午後の甘味休憩向き"
+      ],
+      "review_trend_analysis": {
+        "summary": "地元伝統店ではないが、旧市街散策中に甘いもの・冷たいものを取りたい時に非常に使いやすい。"
+      },
+      "space": {},
+      "meta_scores": {},
+      "overall_fit_for_3_person_drinking": null,
+      "saturday_lunch_alcohol": {},
+      "sunday_alcohol_assumption": {},
+      "weekend_hours": {
+        "saturday": "10:00-23:00",
+        "sunday": "10:00-22:00",
+        "notes": "Pompi公式ページ掲載。"
+      },
+      "one_line_pop": "旧市街メイン通りで、ティラミスやジェラートを使って真夏の午後を軽くリセットできる甘味休憩スポット。",
+      "notes": {
+        "coordinate_status": "address_geocoding_estimated_coordinate",
+        "representative_branch_policy": "セゴビア中心部の公式掲載店舗を採用。",
+        "siesta_suitability": "high"
+      }
+    },
+    {
+      "id": "kofe_lab_segovia",
+      "store_name": "Kofe Lab - Specialty Coffee",
+      "categories": [
+        "スペシャルティコーヒー",
+        "カフェ・軽食",
+        "現代カフェ"
+      ],
+      "basic_info": {
+        "address": "Bajada de la Canaleja, 5, 40001 Segovia, Spain",
+        "area": "Canaleja / 水道橋〜旧市街入口周辺",
+        "genre": [
+          "スペシャルティコーヒー",
+          "カフェ",
+          "ブランチ",
+          "焼き菓子"
+        ],
+        "google_map_query": "Kofe Lab Specialty Coffee Bajada de la Canaleja 5 Segovia",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€€",
+          "dinner": null,
+          "confidence": "medium"
+        },
+        "nearest_station_access": "水道橋から旧市街へ上がる途中のCanaleja周辺。コーヒー品質重視の休憩に向く。",
+        "closed_days": "要確認",
+        "phone": "+34 677 453 2xx",
+        "saturday_hours": null,
+        "saturday_hours_confidence": "medium_low",
+        "saturday_hours_note": "公式サイトは店舗コンセプト中心。営業時間はGoogle Mapsまたは店舗SNSで直前確認推奨。",
+        "saturday_hours_last_checked": "2026-06-28",
+        "saturday_hours_sources": [
+          {
+            "title": "Kofe Lab official",
+            "url": "https://kofelab.com/"
+          },
+          {
+            "title": "Kofe Lab English official",
+            "url": "https://kofelab.com/en/"
+          },
+          {
+            "title": "InTravel - Kofe Lab",
+            "url": "https://intravel.net/segovia/restaurants-cafes/kofe-lab"
+          },
+          {
+            "title": "Cylex - Kofe Lab",
+            "url": "https://www.cylex.es/segovia-segovia/kofe-lab---specialty-coffee-13525150.html"
+          },
+          {
+            "title": "Google Maps 検索",
+            "url": "https://www.google.com/maps/search/?api=1&query=Kofe%20Lab%20Specialty%20Coffee%20Bajada%20de%20la%20Canaleja%205%20Segovia"
+          }
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": "medium_low",
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 40.9477,
+        "lng": -4.12035,
+        "source": "address_geocoding_estimated_from_public_address",
+        "source_url": "https://intravel.net/segovia/restaurants-cafes/kofe-lab",
+        "confidence": "medium_low",
+        "correction_note": "Bajada de la Canaleja 5の公開住所からの住所近傍推定座標。Mirador de la Canaleja付近の推定であり、POI座標未確認のため入口位置と数十mずれる可能性あり。"
+      },
+      "google_maps_poi": {
+        "place_id": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Kofe%20Lab%20Specialty%20Coffee%20Bajada%20de%20la%20Canaleja%205%20Segovia"
+      },
+      "representative_menu_and_prices": [],
+      "beer_price": null,
+      "store_features": [
+        "スペシャルティコーヒー",
+        "水道橋から旧市街へ上がる途中に寄りやすい",
+        "現代的なカフェ",
+        "コーヒー品質重視"
+      ],
+      "review_trend_analysis": {
+        "summary": "伝統的な地元店ではないが、きちんとしたコーヒーを飲みたい時の候補。観光休憩というよりコーヒー目的で選びたい。"
+      },
+      "space": {},
+      "meta_scores": {},
+      "overall_fit_for_3_person_drinking": null,
+      "saturday_lunch_alcohol": {},
+      "sunday_alcohol_assumption": {},
+      "weekend_hours": {
+        "saturday": null,
+        "sunday": null,
+        "notes": "営業時間はGoogle Mapsまたは店舗SNSで直前確認推奨。"
+      },
+      "one_line_pop": "観光地カフェではなく、きちんとした一杯を飲みたい時に選びたいセゴビアの現代系コーヒースポット。",
+      "notes": {
+        "coordinate_status": "address_geocoding_estimated_coordinate",
+        "representative_branch_policy": "単独店舗として記載。",
+        "siesta_suitability": "medium"
+      }
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "dataset_name": "spain_restaurant_region_index",
-  "generated_at": "2026-06-20",
+  "generated_at": "2026-06-28",
   "language": "ja",
   "default_region_id": "barcelona",
   "regions": [
@@ -53,6 +53,32 @@
       "map_center": {
         "lat": 39.8589,
         "lng": -4.0227,
+        "zoom": 15
+      }
+    },
+    {
+      "id": "segovia",
+      "name": "セゴビア",
+      "country": "Spain",
+      "description": "セゴビア旧市街周辺の飲食店・カフェ候補",
+      "data_url": "regions/segovia.json",
+      "landmark_data_url": "landmarks/segovia.json",
+      "map_center": {
+        "lat": 40.9501,
+        "lng": -4.1237,
+        "zoom": 16
+      }
+    },
+    {
+      "id": "aranjuez",
+      "name": "アランフェス",
+      "country": "Spain",
+      "description": "アランフェス王宮・庭園周辺のカフェ・休憩スポット候補",
+      "data_url": "regions/aranjuez.json",
+      "landmark_data_url": "landmarks/aranjuez.json",
+      "map_center": {
+        "lat": 40.0356,
+        "lng": -3.6042,
         "zoom": 15
       }
     }

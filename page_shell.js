@@ -1,6 +1,6 @@
 (function(){
   const defaults={
-    title:'スペイン旅レストランマップ | 地域別データ',
+    title:'スペイン旅レストランマップ',
     description:'スペインの飲食店・宿泊地・予定地を都市別に切り替えて、地図と一覧で確認できる旅マップです。',
     mapAriaLabel:'スペイン旅レストランマップ',
     mapLabel:'地域別店舗ピン',
