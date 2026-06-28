@@ -14,11 +14,11 @@
 ## 現在の地域
 
 - `barcelona`: バルセロナ
-- `madrid`: マドリード
 - `granada`: グラナダ
 - `toledo`: トレド
-- `segovia`: セゴビア
 - `aranjuez`: アランフェス
+- `segovia`: セゴビア
+- `madrid`: マドリード
 
 ## ローカル確認
 
