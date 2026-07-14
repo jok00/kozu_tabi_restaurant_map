@@ -1,81 +1,63 @@
 {
-  "dataset_name": "madrid_restaurant_research",
+  "dataset_name": "barcelona_restaurant_research",
   "generated_at": "2026-07-15",
   "language": "ja",
   "currency": "EUR",
-  "region_id": "madrid",
-  "region_name": "マドリード",
-  "title": "マドリード飲食店マップ",
-  "map_label": "マドリード中心部 + 店舗ピン",
+  "region_id": "barcelona",
+  "region_name": "バルセロナ",
+  "title": "バルセロナ飲食店マップ",
+  "map_label": "バルセロナ + 店舗ピン",
   "map_center": {
-    "lat": 40.4169,
-    "lng": -3.7038,
-    "zoom": 15
+    "lat": 41.3902,
+    "lng": 2.17,
+    "zoom": 13
   },
   "category_filters": {
-    "preferred_order": [
-      "マドリード名物",
-      "老舗",
-      "タパス",
-      "魚介料理",
-      "カフェ・スイーツ",
-      "ヘルシー料理"
-    ],
-    "pinned": [
-      "カサ・ラブラ",
-      "ラ・カサ・デル・アブエロ",
-      "メソン・デル・チャンピニオン",
-      "チョコラテリア・サン・ヒネス"
-    ],
+    "preferred_order": [],
+    "pinned": [],
     "forced": []
   },
   "summary": {
-    "input_store_count": 14,
-    "selected_store_count": 13,
+    "input_store_count": 10,
+    "selected_store_count": 25,
     "needs_confirmation_or_excluded_count": 1,
     "best_fit_store_names": [
-      "カサ・ラブラ",
-      "ラ・カサ・デル・アブエロ",
-      "メソン・デル・チャンピニオン",
-      "ビニトゥス"
+      "Mont Bar",
+      "Paco Meralgo",
+      "Cal Pep",
+      "Tapeo",
+      "El Xampanyet"
     ],
-    "total_count": 14,
+    "total_count": 25,
     "by_conversation_category": [
       {
-        "category": "食事・タパス・バル",
-        "count": 11
+        "category": "旅行誌掲載",
+        "count": 17
       },
       {
-        "category": "カフェ・スイーツ",
-        "count": 3
+        "category": "既存候補",
+        "count": 8
       }
     ],
     "likely_good_candidates_from_chat_context": [
-      "ムセオ・デル・ハモン: ソル散策の途中、本場の生ハムを切りたてで頬張るマドリード入門の一軒。",
-      "マタドール: 闘牛写真に囲まれた小さな酒場で、生ハムと一杯にマドリードの夜を凝縮。",
-      "カサ・ラブラ: 揚げたてのタラと160年以上の空気を、ソルの路地でひと口から味わう。",
-      "ラ・カサ・デル・アブエロ: ぐつぐつのエビのアヒージョと甘口ワインで、老舗マドリードの王道を満喫。",
-      "ラ・リア: 選べる味付けのムール貝を山盛りで、ガリシアの海をソルの路地に呼び込む。",
-      "メソン・デル・チャンピニオン: 肉汁あふれる熱々マッシュルームを、マヨール広場脇の賑やかな名物店で。",
-      "メソン・デ・ラ・トルティーリャ: ふっくらトルティージャを主役に、マヨール広場の夜を素朴な一皿で締める。",
-      "メソン・デル・ボケロン: 爽やかなボケロネスと柔らかなタコで、マヨール広場にガリシアの海風を。",
-      "アナ・ラ・サンタ: サンタ・アナ広場を望む華やかな一軒――再開状況を確かめてから訪れたい。",
-      "ビニトゥス: 魚介も肉も欲張れる華やかなタパスを、グラン・ビアの熱気と一緒にシェア。",
-      "オネスト・グリーン: 旅の野菜不足を彩り豊かな一皿でリセットする、グラン・ビアの軽やかな休憩所。",
-      "チョコラテリア・サン・ヒネス: 1894年から続く濃厚チョコに揚げたてチュロスを浸す、マドリード必食の甘い儀式。",
-      "バロール: 老舗メーカーの濃厚チョコとチュロスを、カジャオ直近でゆったり味わう。",
-      "エル・リオハーノ: 王室ゆかりの菓子職人から続くクラシックなサロンで、マドリードの甘い歴史に浸る。"
+      "Mont Bar",
+      "Paco Meralgo",
+      "Tapeo",
+      "Cal Pep",
+      "El Xampanyet",
+      "Bar del Pla"
     ]
   },
   "important_notes": [
-    "海外店舗のため食べログ評価は原則null。google_rating_user_providedもユーザー提供値がないためnull。",
-    "予算はユーロ（€）での現地物価感またはガイドブック掲載価格をテキスト格納。",
-    "価格・営業時間・定休日・予約可否は変動するため、訪問前に店舗公式・Google Mapsで確認すること。",
-    "META評価は公開情報・店舗特性・口コミ傾向からの推定であり、実地確認ではない。",
-    "全14件の位置情報はGoogle Maps店舗POI URLの埋め込み座標で、住所ジオコーディングや住所近傍推定ではない。",
-    "Ana la Santaは営業状態に相反情報があるため、通常候補から除外し直接確認対象とした。"
+    "海外店舗のため食べログ評価は原則null。現地評価や口コミ傾向からデータを補完。",
+    "予算はユーロ（€）での現地物価感をベースにテキスト格納。",
+    "価格・営業時間・定休日・予約可否は変動するため、訪問前に店舗公式・予約サイトで確認すること。",
+    "META評価は公開情報と口コミ傾向からの推定であり、実地確認ではない。",
+    "位置情報（lat, lng）および詳細な番地・連絡先はGoogle Mapおよび公開POI情報を元に実測値を反映。",
+    "「旅行誌掲載」タグは、今回の画像で確認した17件に付与。既存登録済みのCal PepとTapeoにも付与した。",
+    "住所近傍推定座標のレコードはmap_position.correction_noteに精度上の注意を記載。"
   ],
-  "schema_note": "META評価は添付フォーマットの1〜5基準に合わせ、公開情報・口コミ傾向・店の特徴から推定。未確認情報はnullまたはconfidenceをlow/unknownに設定。各店舗のone_line_popに訪問訴求のある1行サマリを格納。",
+  "schema_note": "META評価は添付フォーマットの1〜5基準に合わせ、公開情報・口コミ傾向・店の特徴から推定。未確認情報はnullまたはconfidenceを低く設定。",
   "meta_score_scale": {
     "1": "かなり合わない",
     "2": "やや不安がある",
@@ -84,61 +66,52 @@
     "5": "とても良い"
   },
   "selection_policy": {
-    "purpose": "マドリード中心部の食事・バル巡り・カフェ休憩候補を、正確なGoogle Maps店舗POIとともに整理する。",
-    "assumed_saturday_lunch_window": "12:00〜16:00",
-    "included_statuses": [
-      "operating_listed"
-    ],
-    "excluded_logic": [
-      "閉店・長期休業の可能性が高く、2026年7月時点の営業確認が取れない店舗はneeds_confirmation_or_excludedへ移す。"
-    ],
-    "important_notes": [
-      "チェーン店は中心繁華街の指定店・創業店を代表採用。",
-      "営業可否と営業時間は訪問直前に再確認。"
-    ]
+    "purpose": null,
+    "assumed_saturday_lunch_window": null,
+    "included_statuses": [],
+    "excluded_logic": [],
+    "important_notes": []
   },
   "input_file": {
-    "filename": "madrid_restaurants_poi.json",
-    "dataset_name": "マドリード掲載店 POI・店舗情報",
-    "generated_at": "2026-07-15T06:36:30+09:00",
-    "store_count": 14
+    "filename": "Pasted code(11).json",
+    "dataset_name": "barcelona_restaurant_research",
+    "generated_at": "2026-06-13",
+    "store_count": 10
   },
-  "needs_confirmation_or_excluded": [
-    {
-      "store_id": "ana_la_santa_plaza_santa_ana_14",
-      "store_name": "アナ・ラ・サンタ / Ana La Santa",
-      "status": "needs_confirmation",
-      "reason": "Google MapsのPOI・住所・電話・公式リンクは残るが、営業時間が表示されない。公式グループページも残存。一方、公開店舗ページはPermanently Closedと表示し、入居ホテルは2025年に改装のため約1年間閉鎖と報道された。2026年7月の営業可否は訪問前の直接確認が必要。"
-    }
-  ],
+  "needs_confirmation_or_excluded": [],
   "field_completion_update": {
     "updated_at": "2026-07-15",
-    "scope": "all stores in stores[]",
-    "method": "Google Maps店舗POI、店舗公式サイト、Madrid Tourism、公開店舗ページを照合し、テンプレート既存フィールドへ格納。",
+    "scope": "stores[]の既存10件更新および旅行誌掲載15件追加",
+    "method": "旅行誌画像、既存POI初回調査JSON、公式サイト・公開POI情報をテンプレートへ統合。",
     "fields_added": [
-      "basic_info.*",
-      "map_position.*",
-      "google_maps_poi.*",
-      "representative_menu_and_prices",
-      "weekend_hours",
+      "categories: 旅行誌掲載",
       "one_line_pop",
+      "map_position",
+      "google_maps_poi",
+      "basic_info",
+      "representative_menu_and_prices",
+      "review_trend_analysis",
       "sources"
     ],
     "unconfirmed_store_ids": [
-      "ana_la_santa_plaza_santa_ana_14"
+      "d_picos_pardos",
+      "pincho_j",
+      "king_pinchos",
+      "la_placa_gastro_mercat",
+      "el_nacional_barcelona"
     ]
   },
   "poi_correction_notes": {
     "updated_at": "2026-07-15",
-    "method": "Google Maps店舗POI URLに埋め込まれた緯度・経度と場所トークンを取得し、公式住所と照合。",
-    "coordinate_precision_note": "店舗POIピンであり住所推定ではない。入口・建物中心・店舗区画との差として数m程度ずれる可能性はある。",
-    "google_maps_reference_policy": "Google Mapsの店舗POIを座標の一次情報とし、公式サイト・公的観光サイト・公開店舗ページで同一店舗を確認。",
-    "chain_policy": "複数店舗がある場合は中心繁華街の指定店舗、または歴史的な創業店を代表採用。"
+    "method": "OSM/Mapcarta由来POIを優先し、未取得時は掲載住所近傍の暫定座標を使用。",
+    "coordinate_precision_note": "map_position.confidence=low または correction_note があるレコードは、店舗入口と数十m程度ずれる可能性がある。",
+    "google_maps_reference_policy": "Google Maps検索URLをgoogle_maps_poi.google_maps_search_urlに格納。Place ID未取得項目はnullを維持。",
+    "chain_policy": "複数店舗・複合施設は旅行誌掲載住所または中心繁華街の代表施設を1件として登録。"
   },
   "saturday_hours_update": {
-    "updated_at": "2026-07-15",
+    "updated_at": "2026-06-13",
     "scope": "all stores in stores[]",
-    "method": "Google Mapsまたは店舗公式ページの公開営業時間を反映。",
+    "method": "Initial structuring from user template for Barcelona planning.",
     "fields_added": [
       "basic_info.saturday_hours",
       "basic_info.saturday_hours_confidence",
@@ -147,843 +120,795 @@
       "basic_info.saturday_hours_sources"
     ],
     "unconfirmed_store_ids": [
-      "ana_la_santa_plaza_santa_ana_14"
+      "cal_pep",
+      "bar_mut",
+      "cafe_de_la_pedrera",
+      "vinoteca_torres",
+      "tapas_24",
+      "de_tapa_madre",
+      "vila_viniteca",
+      "tapeo",
+      "bubo_barcelona",
+      "el_tropezon"
     ]
   },
   "stores": [
     {
-      "id": "museo_del_jamon_san_jeronimo",
-      "store_name": "ムセオ・デル・ハモン / Museo del Jamón",
+      "id": "cal_pep",
+      "store_name": "カルペップ / Cal Pep",
       "categories": [
-        "旅行誌掲載",
-        "生ハム専門店",
-        "タパス",
-        "バル"
+        "旅行誌掲載"
       ],
       "basic_info": {
-        "address": "Carrera de San Jerónimo, 6, Centro, 28014 Madrid, Spain",
-        "area": "ソル・カナレハス周辺",
+        "address": "Plaça de les Olles, 8, 08003 Barcelona, Spain",
+        "area": "エル・ボルン周辺",
         "genre": [
-          "生ハム専門店",
+          "バル",
           "タパス",
-          "バル"
+          "魚介料理"
         ],
-        "google_map_query": "Museo del Jamón Carrera de San Jerónimo Madrid",
+        "google_map_query": "Cal Pep Barcelona",
         "google_rating_user_provided": null,
         "tabelog_rating": null,
         "tabelog_review_count": null,
         "budget": {
-          "lunch": "€10〜20想定",
-          "dinner": "€10〜30想定",
+          "lunch": "€30〜50想定",
+          "dinner": "€40〜60想定",
           "confidence": "medium"
         },
-        "nearest_station_access": "ソル駅から徒歩3分",
-        "closed_days": "なし（公開情報上）",
-        "phone": "+34 915 21 03 46",
-        "saturday_hours": "09:00-00:30",
-        "saturday_hours_confidence": "high",
-        "saturday_hours_note": "Google Mapsまたは店舗公式ページの公開営業時間。臨時変更は訪問前に要確認。",
-        "saturday_hours_last_checked": "2026-07-15",
-        "saturday_hours_sources": [
-          "https://www.google.com/maps/search/?api=1&query=Museo%20del%20Jam%C3%B3n%20Carrera%20de%20San%20Jer%C3%B3nimo%206%20Madrid"
-        ],
-        "sunday_hours": "09:00-23:30",
-        "sunday_hours_confidence": "high",
+        "nearest_station_access": "エル・ボルン地区。地下鉄Jaume I駅またはBarceloneta駅から徒歩圏内。",
+        "closed_days": "要確認",
+        "phone": "+34 933 10 79 61",
+        "saturday_hours": "要確認",
+        "saturday_hours_confidence": "unknown",
+        "saturday_hours_note": "カウンター席中心の人気店のため並ぶ可能性高。通し営業か中休みありかは現地最新情報を要確認。",
+        "saturday_hours_last_checked": "2026-06-13",
+        "saturday_hours_sources": [],
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
         "last_order": null
       },
       "map_position": {
-        "lat": 40.416563,
-        "lng": -3.701547,
-        "source": "Google Maps店舗POI URL埋め込み座標",
-        "source_url": "https://www.google.com/maps/search/?api=1&query=Museo%20del%20Jam%C3%B3n%20Carrera%20de%20San%20Jer%C3%B3nimo%206%20Madrid",
+        "lat": 41.38394,
+        "lng": 2.18339,
+        "source": "OpenStreetMap POI via Mapcarta",
+        "source_url": "https://calpep.com/",
         "confidence": "high",
-        "correction_note": "Google Mapsの店舗POI座標。住所ジオコーディングではない。"
+        "correction_note": null
       },
       "google_maps_poi": {
-        "name": "Museo del Jamón Carrera de San Jerónimo",
-        "address": "Carrera de San Jerónimo, 6, Centro, 28014 Madrid, Spain",
+        "name": "Cal Pep",
+        "address": "Plaça de les Olles, 8, 08003 Barcelona, Spain",
         "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Museo%20del%20Jam%C3%B3n%20Carrera%20de%20San%20Jer%C3%B3nimo%206%20Madrid",
-        "google_maps_place_feature_id": "0xd422880eaf1de1f:0x4b6efe15ae279974",
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Cal%20Pep%2C%20Pla%C3%A7a%20de%20les%20Olles%208%2C%20Barcelona",
+        "google_maps_place_feature_id": null,
         "google_maps_redirect_place_path": null
       },
       "representative_menu_and_prices": [
         {
-          "name": "生ハムサンド",
+          "name": "魚介系タパス各種",
           "price_yen": null,
-          "price_text": "€5.80（ガイド掲載時）",
-          "note": "気軽に本場の生ハムを味わえる定番。"
-        },
-        {
-          "name": "昼定食",
-          "price_yen": null,
-          "price_text": "€12〜30（ガイド掲載時）",
-          "note": "肉料理やタパスを組み合わせやすい。"
+          "price_text": null,
+          "note": "その日の仕入れに合わせた新鮮なシーフードタパスが有名。"
         }
       ],
       "beer_price": {
-        "item": "Caña（生ビール小）",
+        "item": "Caña (生ビール小)",
         "price_yen": null,
         "confidence": "unknown",
-        "note": "価格は現地最新メニューで要確認。"
+        "note": "現地価格未確認。"
       },
       "store_features": [
-        "生ハム販売・立ち飲み・レストランを一度に楽しめる。",
-        "Puerta del Solから近く、食べ歩きの起点にしやすい。",
-        "複数店のうち中心繁華街のSan Jerónimo店を代表採用。"
+        "魚介系タパスで非常に有名なバルセロナ屈指の人気店。",
+        "活気のあるカウンター席の雰囲気が素晴らしい。",
+        "しっかりタパスを楽しみたい夕食向き。"
       ],
       "review_trend_analysis": {
-        "summary": "観光の合間に入りやすく、生ハムと一杯を短時間で楽しめる利便性が支持される一方、時間帯によっては混雑しやすい。",
+        "summary": "行列必至の名店。魚介の鮮度と目の前で調理されるライブ感が圧倒的な支持を得ている。観光時のしっかりとした夕食候補として最有力。",
         "positive_keywords": [
-          "生ハム",
-          "立ち飲み",
-          "好立地",
-          "気軽"
+          "魚介",
+          "カウンター",
+          "活気",
+          "人気店",
+          "目の前調理"
         ],
         "caution_keywords": [
-          "混雑",
-          "観光客が多い"
+          "大行列",
+          "待ち時間あり",
+          "予約不可（カウンター席）"
         ],
         "confidence": "medium"
       },
       "space": {
         "seat_count": null,
-        "size_impression": "中規模",
-        "comfort": "立ち飲みと着席を使い分けられるが、ピーク時は賑やか。",
+        "size_impression": "小〜中規模（主にカウンター席）",
+        "comfort": "活気があり賑やか。ゆっくり長居するよりは、美味しい料理をテンポよく楽しむ空間。",
         "confidence": "medium"
       },
       "meta_scores": {
-        "cuisine_genre": 4,
+        "cuisine_genre": 5,
         "signature_menu": 5,
-        "budget": 4,
-        "access": 5,
-        "reservation_ease": 4,
-        "food_quality": 4,
+        "budget": 3,
+        "access": 4,
+        "reservation_ease": 2,
+        "food_quality": 5,
         "food_variety": 4,
         "drink_variety": 3,
-        "atmosphere": 4,
+        "atmosphere": 5,
         "relaxation": 2,
         "noise_level": 2,
         "crowdedness": 2,
         "seat_comfort": 3,
         "table_spacing": 2,
         "space_balance": 3,
-        "staff_warmth": 3,
-        "service_quality": 3,
+        "staff_warmth": 4,
+        "service_quality": 4,
         "other_customers_mood": 4,
-        "intuition": 4,
-        "nostalgia": 4,
+        "intuition": 5,
+        "nostalgia": 3,
         "sound_impression": 3,
         "smell_impression": 5,
-        "concept_uniqueness": 4
+        "concept_uniqueness": 5
       },
-      "overall_fit_for_3_person_drinking": 4,
+      "overall_fit_for_3_person_drinking": 4.2,
       "saturday_lunch_alcohol": {
-        "status": "available_or_likely",
-        "available_from": "09:00",
-        "available_until": "00:30",
-        "assumed_lunch_window": "12:00〜16:00",
-        "basis": "公開営業時間と店舗業態から判断。",
-        "caveat": "酒類の提供開始時刻・在庫・臨時営業時間は訪問前に店舗へ確認。",
-        "confidence": "medium"
+        "status": null,
+        "available_from": null,
+        "available_until": null,
+        "assumed_lunch_window": null,
+        "basis": null,
+        "caveat": null,
+        "confidence": null
       },
-      "sunday_alcohol_assumption": "日曜営業時間内は酒類提供の可能性が高いが、提供開始時刻は要確認。",
+      "sunday_alcohol_assumption": null,
       "weekend_hours": {
-        "saturday": "09:00-00:30",
-        "sunday": "09:00-23:30",
-        "notes": "公開情報に基づく。祝日・臨時変更は反映されない場合がある。"
+        "saturday": null,
+        "sunday": null,
+        "notes": null
       },
-      "one_line_pop": "ソル散策の途中、本場の生ハムを切りたてで頬張るマドリード入門の一軒。",
+      "one_line_pop": "目の前で仕上がる新鮮魚介のタパスを、名物カウンターでライブ感ごと味わう。",
       "notes": [
-        "ガイドブック掲載時の特徴: 生ハム専門店。販売、立ち飲み、レストランを併設",
-        "ガイドブック掲載価格: 生ハムサンド €5.80、昼定食 €12〜30",
-        "複数店のうち、Puerta del SolとPlaza de Canalejasに近い中心繁華街のCarrera de San Jerónimo 6店を選定。"
+        "旅行誌掲載"
       ],
       "sources": [
-        {
-          "provider": "Google Maps",
-          "url": "https://www.google.com/maps/search/?api=1&query=Museo%20del%20Jam%C3%B3n%20Carrera%20de%20San%20Jer%C3%B3nimo%206%20Madrid",
-          "used_for": [
-            "poi",
-            "coordinates",
-            "address",
-            "phone",
-            "website",
-            "opening_hours",
-            "plus_code"
-          ]
-        },
-        {
-          "provider": "店舗公式サイト",
-          "url": "https://www.museodeljamon.com/en/museums/carrera-san-jeronimo/",
-          "used_for": [
-            "branch_identity",
-            "address",
-            "phone"
-          ]
-        }
+        "https://calpep.com/",
+        "OpenStreetMap POI via Mapcarta",
+        "https://www.google.com/maps/search/?api=1&query=Cal%20Pep%2C%20Pla%C3%A7a%20de%20les%20Olles%208%2C%20Barcelona"
       ]
     },
     {
-      "id": "matador_cruz_39",
-      "store_name": "マタドール / Matador",
-      "categories": [
-        "旅行誌掲載",
-        "ローカルバル",
-        "タパス",
-        "スペイン料理"
-      ],
+      "id": "bar_mut",
+      "store_name": "バル・ムッ / Bar Mut",
+      "categories": [],
       "basic_info": {
-        "address": "Calle de la Cruz, 39, Centro, 28012 Madrid, Spain",
-        "area": "ソル・バリオ・デ・ラス・レトラス周辺",
+        "address": "Carrer de Pau Claris, 192, L'Eixample, 08037 Barcelona, Spain",
+        "area": "グラシア通り・カサ・ミラ周辺",
         "genre": [
-          "ローカルバル",
-          "タパス",
-          "スペイン料理"
+          "バル",
+          "レストラン",
+          "モダン・タパス"
         ],
-        "google_map_query": "Matador Madrid",
+        "google_map_query": "Bar Mut Barcelona",
         "google_rating_user_provided": null,
         "tabelog_rating": null,
         "tabelog_review_count": null,
         "budget": {
-          "lunch": "€10〜20想定",
-          "dinner": "€10〜25想定",
+          "lunch": null,
+          "dinner": "€50〜80想定",
           "confidence": "medium"
         },
-        "nearest_station_access": "ソル駅から徒歩5分",
-        "closed_days": "なし（公開情報上）",
-        "phone": null,
-        "saturday_hours": "12:30-02:30",
-        "saturday_hours_confidence": "high",
-        "saturday_hours_note": "Google Mapsまたは店舗公式ページの公開営業時間。臨時変更は訪問前に要確認。",
-        "saturday_hours_last_checked": "2026-07-15",
-        "saturday_hours_sources": [
-          "https://www.google.com/maps/place/Matador/@40.4147474,-3.7028291,17z/data=!3m1!4b1!4m6!3m5!1s0xd42287fd89bac67:0x4a3d06b30aa9d2cd!8m2!3d40.4147474!4d-3.7028291!16s%2Fg%2F1tmxxx6m?ved=1t%3A314688",
-          "https://matador.davidmedel.es/"
-        ],
-        "sunday_hours": "12:30-02:00",
-        "sunday_hours_confidence": "high",
+        "nearest_station_access": "グラシア通り、カサ・ミラ周辺エリア。Diagonal駅近く。",
+        "closed_days": "要確認",
+        "phone": "+34 932 17 43 38",
+        "saturday_hours": "要確認",
+        "saturday_hours_confidence": "unknown",
+        "saturday_hours_note": "落ち着いた大人向けのバル・レストラン。ディナー帯は予約推奨。",
+        "saturday_hours_last_checked": "2026-06-13",
+        "saturday_hours_sources": [],
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
         "last_order": null
       },
       "map_position": {
-        "lat": 40.4147474,
-        "lng": -3.7028291,
-        "source": "Google Maps店舗POI URL埋め込み座標",
-        "source_url": "https://www.google.com/maps/place/Matador/@40.4147474,-3.7028291,17z/data=!3m1!4b1!4m6!3m5!1s0xd42287fd89bac67:0x4a3d06b30aa9d2cd!8m2!3d40.4147474!4d-3.7028291!16s%2Fg%2F1tmxxx6m?ved=1t%3A314688",
-        "confidence": "high",
-        "correction_note": "Google Mapsの店舗POI座標。住所ジオコーディングではない。"
+        "lat": 41.3965,
+        "lng": 2.1632,
+        "source": "Google Map / 街区POI推定",
+        "source_url": "https://barmut.com/",
+        "confidence": null,
+        "correction_note": null
       },
       "google_maps_poi": {
-        "name": "Matador",
-        "address": "Calle de la Cruz, 39, Centro, 28012 Madrid, Spain",
+        "name": null,
+        "address": null,
         "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Matador%20Calle%20de%20la%20Cruz%2039%20Madrid",
-        "google_maps_place_feature_id": "0xd42287fd89bac67:0x4a3d06b30aa9d2cd",
-        "google_maps_redirect_place_path": "/maps/place/Matador/@40.4147474,-3.7028291,17z/data=!3m1!4b1!4m6!3m5!1s0xd42287fd89bac67:0x4a3d06b30aa9d2cd!8m2!3d40.4147474!4d-3.7028291!16s%2Fg%2F1tmxxx6m"
+        "google_maps_search_url": null,
+        "google_maps_place_feature_id": null,
+        "google_maps_redirect_place_path": null
       },
       "representative_menu_and_prices": [
         {
-          "name": "生ハム",
+          "name": "旬の食材を使った黒板メニュー",
           "price_yen": null,
-          "price_text": "€6.50〜（ガイド掲載時）",
-          "note": "小さなバルで楽しむ定番。"
-        },
-        {
-          "name": "チョリソー",
-          "price_yen": null,
-          "price_text": "€4〜（ガイド掲載時）",
-          "note": "ビールやベルムットに合わせやすい。"
-        },
-        {
-          "name": "トルティージャ",
-          "price_yen": null,
-          "price_text": "€4.50（ガイド掲載時）",
-          "note": "気軽な一皿。"
+          "price_text": null,
+          "note": "定番だけでなく、その日の上質な食材を使った料理が中心。"
         }
       ],
       "beer_price": {
-        "item": "Caña（生ビール小）",
+        "item": "ビール / ワイン",
         "price_yen": null,
         "confidence": "unknown",
-        "note": "価格は現地最新メニューで要確認。"
+        "note": null
       },
       "store_features": [
-        "闘牛写真に囲まれた昔ながらのマドリードらしい内装。",
-        "小型店ならではの距離感と賑わい。",
-        "深夜まで営業するため、夜のバル巡りに組み込みやすい。"
+        "大人向けの落ち着いたシックな高級バル。",
+        "厳選されたワインとハイクオリティな料理が楽しめる。",
+        "カサ・ミラやグラシア通り観光後の、少し贅沢な夕食に最適。"
       ],
       "review_trend_analysis": {
-        "summary": "ローカル感のある活気と手頃なタパスが魅力。店内は小さく、混雑時は落ち着いて長居するより一杯向き。",
+        "summary": "洗練された料理とワインのペアリングが高評価。大人のバルセロナの夜を過ごすのにふさわしい、クオリティ重視の一軒。",
         "positive_keywords": [
-          "ローカル感",
-          "生ハム",
-          "活気",
-          "深夜営業"
+          "大人向け",
+          "落ち着いた雰囲気",
+          "厳選ワイン",
+          "洗練タパス",
+          "カサ・ミラ周辺"
         ],
         "caution_keywords": [
-          "小規模",
-          "混雑",
-          "騒がしい"
+          "価格帯は高め",
+          "カジュアルすぎない服装推奨"
         ],
         "confidence": "medium"
       },
       "space": {
         "seat_count": null,
-        "size_impression": "小規模",
-        "comfort": "賑やかな立ち飲み寄りの空間。短時間のバル利用向き。",
-        "confidence": "medium"
+        "size_impression": "中規模",
+        "comfort": "クラシックで落ち着きのある洗練されたインテリア。居心地が良い。",
+        "confidence": "high"
       },
       "meta_scores": {
-        "cuisine_genre": 4,
+        "cuisine_genre": 5,
         "signature_menu": 4,
-        "budget": 5,
+        "budget": 2,
         "access": 5,
         "reservation_ease": 3,
-        "food_quality": 4,
-        "food_variety": 3,
-        "drink_variety": 4,
+        "food_quality": 5,
+        "food_variety": 4,
+        "drink_variety": 5,
         "atmosphere": 5,
-        "relaxation": 2,
-        "noise_level": 2,
-        "crowdedness": 2,
-        "seat_comfort": 2,
-        "table_spacing": 2,
-        "space_balance": 3,
+        "relaxation": 4,
+        "noise_level": 4,
+        "crowdedness": 3,
+        "seat_comfort": 4,
+        "table_spacing": 4,
+        "space_balance": 4,
         "staff_warmth": 4,
         "service_quality": 4,
         "other_customers_mood": 5,
-        "intuition": 5,
-        "nostalgia": 5,
+        "intuition": 4,
+        "nostalgia": 4,
         "sound_impression": 4,
         "smell_impression": 4,
         "concept_uniqueness": 4
       },
-      "overall_fit_for_3_person_drinking": 4.1,
+      "overall_fit_for_3_person_drinking": 4.5,
       "saturday_lunch_alcohol": {
-        "status": "available_or_likely",
-        "available_from": "12:30",
-        "available_until": "02:30",
-        "assumed_lunch_window": "12:00〜16:00",
-        "basis": "公開営業時間と店舗業態から判断。",
-        "caveat": "酒類の提供開始時刻・在庫・臨時営業時間は訪問前に店舗へ確認。",
-        "confidence": "medium"
+        "status": null,
+        "available_from": null,
+        "available_until": null,
+        "assumed_lunch_window": null,
+        "basis": null,
+        "caveat": null,
+        "confidence": null
       },
-      "sunday_alcohol_assumption": "日曜営業時間内は酒類提供の可能性が高いが、提供開始時刻は要確認。",
+      "sunday_alcohol_assumption": null,
       "weekend_hours": {
-        "saturday": "12:30-02:30",
-        "sunday": "12:30-02:00",
-        "notes": "公開情報に基づく。祝日・臨時変更は反映されない場合がある。"
+        "saturday": null,
+        "sunday": null,
+        "notes": null
       },
-      "one_line_pop": "闘牛写真に囲まれた小さな酒場で、生ハムと一杯にマドリードの夜を凝縮。",
-      "notes": [
-        "ガイドブック掲載時の特徴: 地元客でにぎわう小さなバル。生ハム、チョリソー、トルティージャ",
-        "ガイドブック掲載価格: 生ハム €6.50〜、チョリソー €4〜、トルティージャ €4.50",
-        "指定住所の単独店舗POIを採用。",
-        "Google Mapsの公開表示では電話番号を確認できなかった。"
-      ],
-      "sources": [
-        {
-          "provider": "Google Maps",
-          "url": "https://www.google.com/maps/place/Matador/@40.4147474,-3.7028291,17z/data=!3m1!4b1!4m6!3m5!1s0xd42287fd89bac67:0x4a3d06b30aa9d2cd!8m2!3d40.4147474!4d-3.7028291!16s%2Fg%2F1tmxxx6m?ved=1t%3A314688",
-          "used_for": [
-            "poi",
-            "coordinates",
-            "address",
-            "opening_hours",
-            "plus_code"
-          ]
-        },
-        {
-          "provider": "店舗公式サイト",
-          "url": "https://matador.davidmedel.es/",
-          "used_for": [
-            "identity",
-            "address",
-            "opening_hours"
-          ]
-        }
-      ]
+      "one_line_pop": "グラシア通り散策の締めに、上質な料理とワインを大人の空間で。",
+      "notes": [],
+      "sources": []
     },
     {
-      "id": "casa_labra_tetuan_12",
-      "store_name": "カサ・ラブラ / Casa Labra",
-      "categories": [
-        "旅行誌掲載",
-        "老舗タベルナ",
-        "タラ料理",
-        "タパス"
-      ],
+      "id": "cafe_de_la_pedrera",
+      "store_name": "カフェ・デ・ラ・ペドレラ / Cafè de la Pedrera",
+      "categories": [],
       "basic_info": {
-        "address": "Calle de Tetuán, 12, Centro, 28013 Madrid, Spain",
-        "area": "プエルタ・デル・ソル周辺",
+        "address": "Passeig de Gràcia, 92, 08008 Barcelona, Spain",
+        "area": "カサ・ミラ内",
         "genre": [
-          "老舗タベルナ",
-          "タラ料理",
-          "タパス"
+          "カフェ",
+          "軽食"
         ],
-        "google_map_query": "Casa Labra Madrid",
+        "google_map_query": "Cafè de la Pedrera Barcelona",
         "google_rating_user_provided": null,
         "tabelog_rating": null,
         "tabelog_review_count": null,
         "budget": {
-          "lunch": "€10〜20想定",
-          "dinner": "€15〜30想定",
-          "confidence": "medium"
+          "lunch": "€10〜25想定",
+          "dinner": null,
+          "confidence": "high"
         },
-        "nearest_station_access": "ソル駅から徒歩1分",
-        "closed_days": "なし（公開情報上）",
-        "phone": "+34 915 31 06 16",
-        "saturday_hours": "11:30-15:30 / 18:30-23:30",
-        "saturday_hours_confidence": "high",
-        "saturday_hours_note": "Google Mapsまたは店舗公式ページの公開営業時間。臨時変更は訪問前に要確認。",
-        "saturday_hours_last_checked": "2026-07-15",
-        "saturday_hours_sources": [
-          "https://www.google.com/maps/place/%E3%82%AB%E3%82%B5+%E3%83%A9%E3%83%96%E3%83%A9/@40.4171724,-3.704593,17z"
-        ],
-        "sunday_hours": "11:30-15:30 / 18:30-23:30",
-        "sunday_hours_confidence": "high",
+        "nearest_station_access": "ガウディ建築「カサ・ミラ（ラ・ペドレラ）」の建物内（Provença通り側口）。",
+        "closed_days": "無休（施設に準ずる）",
+        "phone": null,
+        "saturday_hours": "要確認",
+        "saturday_hours_confidence": "unknown",
+        "saturday_hours_note": "観光施設内のため日中のカフェ利用・休憩がメイン。営業時間要確認。",
+        "saturday_hours_last_checked": "2026-06-13",
+        "saturday_hours_sources": [],
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
         "last_order": null
       },
       "map_position": {
-        "lat": 40.4171724,
-        "lng": -3.704593,
-        "source": "Google Maps店舗POI URL埋め込み座標",
-        "source_url": "https://www.google.com/maps/place/%E3%82%AB%E3%82%B5+%E3%83%A9%E3%83%96%E3%83%A9/@40.4171724,-3.704593,17z/data=!3m1!4b1!4m6!3m5!1s0xd42287e6e5aa3dd:0xefd5b3b55cbe9551!8m2!3d40.4171724!4d-3.704593!16s%2Fg%2F122sgmy5?ved=1t%3A314688",
-        "confidence": "high",
-        "correction_note": "Google Mapsの店舗POI座標。住所ジオコーディングではない。"
+        "lat": 41.39534,
+        "lng": 2.16175,
+        "source": "Google Map / カサ・ミラ構造物POI",
+        "source_url": "https://www.checkonsite.com/casa-mila-barcelona/",
+        "confidence": null,
+        "correction_note": null
       },
       "google_maps_poi": {
-        "name": "Casa Labra",
-        "address": "Calle de Tetuán, 12, Centro, 28013 Madrid, Spain",
+        "name": null,
+        "address": null,
         "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Casa%20Labra%20Calle%20de%20Tetu%C3%A1n%2012%20Madrid",
-        "google_maps_place_feature_id": "0xd42287e6e5aa3dd:0xefd5b3b55cbe9551",
-        "google_maps_redirect_place_path": "/maps/place/%E3%82%AB%E3%82%B5+%E3%83%A9%E3%83%96%E3%83%A9/@40.4171724,-3.704593,17z/data=!3m1!4b1!4m6!3m5!1s0xd42287e6e5aa3dd:0xefd5b3b55cbe9551!8m2!3d40.4171724!4d-3.704593!16s%2Fg%2F122sgmy5"
+        "google_maps_search_url": null,
+        "google_maps_place_feature_id": null,
+        "google_maps_redirect_place_path": null
       },
       "representative_menu_and_prices": [
         {
-          "name": "タラのコロッケ",
+          "name": "コーヒー / カフェラテ",
           "price_yen": null,
-          "price_text": "€1.40（ガイド掲載時）",
-          "note": "1860年創業の看板タパス。"
-        },
-        {
-          "name": "タラのフリッター",
-          "price_yen": null,
-          "price_text": "€2（ガイド掲載時）",
-          "note": "揚げたてを立ち飲みで楽しみたい名物。"
+          "price_text": null,
+          "note": "ガウディ独特の波打つ天井を眺めながら楽しめる。"
         }
       ],
       "beer_price": {
-        "item": "Caña（生ビール小）",
+        "item": "ドリンク各種",
         "price_yen": null,
         "confidence": "unknown",
-        "note": "立ち飲みカウンターで注文可能。価格は要確認。"
+        "note": null
       },
       "store_features": [
-        "1860年創業、タラ料理で知られるマドリードの歴史的タベルナ。",
-        "ソル駅至近で名物を一品から試しやすい。",
-        "立ち飲みと着席レストランの双方を備える。"
+        "ガウディ設計の本物の建築物（カサ・ミラ）の内部で休憩できる体験型カフェ。",
+        "インテリアや天井の造形など、空間そのものが観光価値を持つ。",
+        "カサ・ミラ観光前後の休憩や軽い朝食・昼食に便利。"
       ],
       "review_trend_analysis": {
-        "summary": "揚げたてのタラと歴史ある店内が高く評価される定番店。人気時間帯は行列や立ち飲みの混雑が起きやすい。",
+        "summary": "アートや建築好きにはたまらない贅沢な休憩スポット。味というよりは「ガウディの建物内で過ごす時間」への付加価値が非常に高い。",
         "positive_keywords": [
-          "タラ",
-          "コロッケ",
-          "歴史",
-          "老舗"
+          "ガウディ建築",
+          "カサ・ミラ",
+          "天井の造形",
+          "贅沢な休憩",
+          "雰囲気が最高"
         ],
         "caution_keywords": [
-          "行列",
-          "混雑",
-          "立ち飲み"
+          "観光地価格",
+          "時間帯により混雑"
         ],
         "confidence": "high"
       },
       "space": {
         "seat_count": null,
         "size_impression": "中規模",
-        "comfort": "タパスカウンターは活気があり、レストラン席は比較的落ち着く。",
+        "comfort": "天井が高く、独特の曲線に囲まれたモダンな空間。ゆったりとした時間が流れる。",
+        "confidence": "high"
+      },
+      "meta_scores": {
+        "cuisine_genre": 3,
+        "signature_menu": 3,
+        "budget": 3,
+        "access": 5,
+        "reservation_ease": 4,
+        "food_quality": 3,
+        "food_variety": 3,
+        "drink_variety": 4,
+        "atmosphere": 5,
+        "relaxation": 4,
+        "noise_level": 4,
+        "crowdedness": 3,
+        "seat_comfort": 4,
+        "table_spacing": 4,
+        "space_balance": 4,
+        "staff_warmth": 3,
+        "service_quality": 3,
+        "other_customers_mood": 4,
+        "intuition": 4,
+        "nostalgia": 3,
+        "sound_impression": 4,
+        "smell_impression": 3,
+        "concept_uniqueness": 5
+      },
+      "overall_fit_for_3_person_drinking": 2.8,
+      "saturday_lunch_alcohol": {
+        "status": null,
+        "available_from": null,
+        "available_until": null,
+        "assumed_lunch_window": null,
+        "basis": null,
+        "caveat": null,
+        "confidence": null
+      },
+      "sunday_alcohol_assumption": null,
+      "weekend_hours": {
+        "saturday": null,
+        "sunday": null,
+        "notes": null
+      },
+      "one_line_pop": "ガウディの曲線に包まれながら、カサ・ミラで特別なカフェ休憩を。",
+      "notes": [],
+      "sources": []
+    },
+    {
+      "id": "vinoteca_torres",
+      "store_name": "ヴィノテカ・トレース / Vinoteca Torres (La Vinoteca Torres)",
+      "categories": [],
+      "basic_info": {
+        "address": "Passeig de Gràcia, 78, 08008 Barcelona, Spain",
+        "area": "グラシア通り周辺",
+        "genre": [
+          "ワインバー",
+          "スペイン料理",
+          "ビストロ"
+        ],
+        "google_map_query": "La Vinoteca Torres Barcelona",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": null,
+          "dinner": "€30〜60想定",
+          "confidence": "medium"
+        },
+        "nearest_station_access": "グラシア通り沿い。ショッピングエリア中心部に位置。",
+        "closed_days": "要確認",
+        "phone": null,
+        "saturday_hours": null,
+        "saturday_hours_confidence": "unknown",
+        "saturday_hours_note": "ワイン系候補。名門Torres直営。営業状況や最新のメニュー構成は事前確認を推奨。",
+        "saturday_hours_last_checked": "2026-06-13",
+        "saturday_hours_sources": [],
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 41.3926,
+        "lng": 2.1648,
+        "source": "Google Map / 街区POI推定",
+        "source_url": "https://corkandcurve.com/spain/penedes/wine-bars/la-vinoteca-torres-barcelona/",
+        "confidence": null,
+        "correction_note": null
+      },
+      "google_maps_poi": {
+        "name": null,
+        "address": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": null,
+        "google_maps_place_feature_id": null,
+        "google_maps_redirect_place_path": null
+      },
+      "representative_menu_and_prices": [
+        {
+          "name": "Torresブランドワイン各種",
+          "price_yen": null,
+          "price_text": null,
+          "note": "スペインの大手ワイナリー「トレース（Torres）」のセレクション。"
+        }
+      ],
+      "beer_price": {
+        "item": "ワインメイン",
+        "price_yen": null,
+        "confidence": "unknown",
+        "note": null
+      },
+      "store_features": [
+        "ワインを中心に軽くつまむスタイルのバー・レストラン候補。",
+        "グラシア通りに面しておりアクセス抜群。"
+      ],
+      "review_trend_analysis": {
+        "summary": "グラシア通りの好立地。ブランド直営ならではの安心感があり、ワインの種類が豊富。テラス席でのサク飲みも人気。",
+        "positive_keywords": [
+          "ワイン重視",
+          "名門ワイナリー直営",
+          "グラシア通り沿い"
+        ],
+        "caution_keywords": [
+          "時間帯により観光客で賑わう"
+        ],
         "confidence": "medium"
+      },
+      "space": {
+        "seat_count": null,
+        "size_impression": "中規模",
+        "comfort": "スタイリッシュなワインバー空間。",
+        "confidence": "medium"
+      },
+      "meta_scores": {
+        "cuisine_genre": 3,
+        "signature_menu": 3,
+        "budget": 3,
+        "access": 5,
+        "reservation_ease": 3,
+        "food_quality": 4,
+        "food_variety": 3,
+        "drink_variety": 5,
+        "atmosphere": 4,
+        "relaxation": 3,
+        "noise_level": 3,
+        "crowdedness": 3,
+        "seat_comfort": 3,
+        "table_spacing": 3,
+        "space_balance": 3,
+        "staff_warmth": 3,
+        "service_quality": 3,
+        "other_customers_mood": 3,
+        "intuition": 3,
+        "nostalgia": 3,
+        "sound_impression": 3,
+        "smell_impression": 4,
+        "concept_uniqueness": 4
+      },
+      "overall_fit_for_3_person_drinking": 3.5,
+      "saturday_lunch_alcohol": {
+        "status": null,
+        "available_from": null,
+        "available_until": null,
+        "assumed_lunch_window": null,
+        "basis": null,
+        "caveat": null,
+        "confidence": null
+      },
+      "sunday_alcohol_assumption": null,
+      "weekend_hours": {
+        "saturday": null,
+        "sunday": null,
+        "notes": null
+      },
+      "one_line_pop": "名門トーレスのワインを、グラシア通りで気軽に飲み比べ。",
+      "notes": [],
+      "sources": []
+    },
+    {
+      "id": "tapas_24",
+      "store_name": "タパス24 / Tapas 24",
+      "categories": [],
+      "basic_info": {
+        "address": "Carrer de la Diputació, 269, 08007 Barcelona, Spain",
+        "area": "グラシア通り周辺",
+        "genre": [
+          "バル",
+          "タパス",
+          "カジュアル"
+        ],
+        "google_map_query": "Tapas 24 Barcelona",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€20〜35想定",
+          "dinner": "€25〜40想定",
+          "confidence": "high"
+        },
+        "nearest_station_access": "グラシア通り（Passeig de Gràcia）から一本入ったDiputació通り。",
+        "closed_days": "原則無休（要確認）",
+        "phone": "+34 934 88 09 77",
+        "saturday_hours": "要確認（通し営業の傾向あり）",
+        "saturday_hours_confidence": "medium",
+        "saturday_hours_note": "朝〜夜まで比較的フレキシブルに営業しており、使い勝手が非常に良い。",
+        "saturday_hours_last_checked": "2026-06-13",
+        "saturday_hours_sources": [],
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 41.3911,
+        "lng": 2.1671,
+        "source": "Google Map / 公開POIデータ",
+        "source_url": "https://tapas24.es/en/",
+        "confidence": null,
+        "correction_note": null
+      },
+      "google_maps_poi": {
+        "name": null,
+        "address": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": null,
+        "google_maps_place_feature_id": null,
+        "google_maps_redirect_place_path": null
+      },
+      "representative_menu_and_prices": [
+        {
+          "name": "ビキニ (Bikini)",
+          "price_yen": null,
+          "price_text": null,
+          "note": "トリュフが香る高級感のある生ハムチーズホットサンド（名物）。"
+        }
+      ],
+      "beer_price": {
+        "item": "Caña",
+        "price_yen": null,
+        "confidence": "unknown",
+        "note": null
+      },
+      "store_features": [
+        "有名シェフ（カルレス・アベリャン氏）が手掛けるカジュアルで洗練されたタパス店。",
+        "伝統的なタパスにひねりを加えたクオリティの高い料理。",
+        "昼食・夕食どちらの時間帯でも飛び込みやすく、抜群に使いやすい。"
+      ],
+      "review_trend_analysis": {
+        "summary": "バルセロナの定番バルとして安定した人気。営業時間が長く、変則的なスケジュールになりがちな観光中において「いつでもハズレのないタパスが食べられる店」として絶大な信頼感がある。",
+        "positive_keywords": [
+          "名物ビキニ",
+          "通し営業",
+          "有名シェフ",
+          "カジュアル",
+          "ハズレなし"
+        ],
+        "caution_keywords": [
+          "人気のためピーク時は並ぶ",
+          "やや観光客多め"
+        ],
+        "confidence": "high"
+      },
+      "space": {
+        "seat_count": null,
+        "size_impression": "中規模",
+        "comfort": "ポップでモダンなバル空間。賑やかで楽しく、活気がある。",
+        "confidence": "high"
       },
       "meta_scores": {
         "cuisine_genre": 5,
         "signature_menu": 5,
-        "budget": 5,
+        "budget": 4,
         "access": 5,
         "reservation_ease": 3,
-        "food_quality": 5,
-        "food_variety": 3,
-        "drink_variety": 3,
-        "atmosphere": 5,
+        "food_quality": 4,
+        "food_variety": 4,
+        "drink_variety": 4,
+        "atmosphere": 4,
         "relaxation": 3,
         "noise_level": 3,
-        "crowdedness": 2,
+        "crowdedness": 3,
         "seat_comfort": 3,
-        "table_spacing": 2,
+        "table_spacing": 3,
         "space_balance": 4,
         "staff_warmth": 4,
         "service_quality": 4,
         "other_customers_mood": 4,
         "intuition": 5,
-        "nostalgia": 5,
-        "sound_impression": 4,
-        "smell_impression": 5,
-        "concept_uniqueness": 5
+        "nostalgia": 2,
+        "sound_impression": 3,
+        "smell_impression": 4,
+        "concept_uniqueness": 4
       },
-      "overall_fit_for_3_person_drinking": 4.5,
+      "overall_fit_for_3_person_drinking": 4.4,
       "saturday_lunch_alcohol": {
-        "status": "available_or_likely",
-        "available_from": "11:30",
-        "available_until": "15:30",
-        "assumed_lunch_window": "12:00〜16:00",
-        "basis": "公開営業時間と店舗業態から判断。",
-        "caveat": "酒類の提供開始時刻・在庫・臨時営業時間は訪問前に店舗へ確認。",
-        "confidence": "medium"
+        "status": null,
+        "available_from": null,
+        "available_until": null,
+        "assumed_lunch_window": null,
+        "basis": null,
+        "caveat": null,
+        "confidence": null
       },
-      "sunday_alcohol_assumption": "日曜営業時間内は酒類提供の可能性が高いが、提供開始時刻は要確認。",
+      "sunday_alcohol_assumption": null,
       "weekend_hours": {
-        "saturday": "11:30-15:30 / 18:30-23:30",
-        "sunday": "11:30-15:30 / 18:30-23:30",
-        "notes": "公開情報に基づく。祝日・臨時変更は反映されない場合がある。"
+        "saturday": null,
+        "sunday": null,
+        "notes": null
       },
-      "one_line_pop": "揚げたてのタラと160年以上の空気を、ソルの路地でひと口から味わう。",
-      "notes": [
-        "ガイドブック掲載時の特徴: 1860年創業。タラ料理で有名な立ち飲みバル",
-        "ガイドブック掲載価格: タラのコロッケ €1.40、タラのフリッター €2",
-        "創業店かつ指定住所の店舗POIを採用。"
-      ],
-      "sources": [
-        {
-          "provider": "Google Maps",
-          "url": "https://www.google.com/maps/place/%E3%82%AB%E3%82%B5+%E3%83%A9%E3%83%96%E3%83%A9/@40.4171724,-3.704593,17z",
-          "used_for": [
-            "poi",
-            "coordinates",
-            "address",
-            "phone",
-            "website",
-            "opening_hours",
-            "plus_code"
-          ]
-        },
-        {
-          "provider": "店舗公式サイト",
-          "url": "https://www.casalabra.es/",
-          "used_for": [
-            "identity",
-            "address",
-            "specialty"
-          ]
-        },
-        {
-          "provider": "Madrid Tourism",
-          "url": "https://www.esmadrid.com/en/restaurants/casa-labra",
-          "used_for": [
-            "identity",
-            "history",
-            "address"
-          ]
-        }
-      ]
+      "one_line_pop": "名物ビキニをはじめ、観光途中に頼れる洗練タパスをいつでも。",
+      "notes": [],
+      "sources": []
     },
     {
-      "id": "la_casa_del_abuelo_victoria_12",
-      "store_name": "ラ・カサ・デル・アブエロ / La Casa del Abuelo",
-      "categories": [
-        "旅行誌掲載",
-        "老舗タベルナ",
-        "エビ料理",
-        "タパス"
-      ],
+      "id": "de_tapa_madre",
+      "store_name": "ダ・タパ・マドレ / De Tapa Madre",
+      "categories": [],
       "basic_info": {
-        "address": "Calle de la Victoria, 12, Centro, 28012 Madrid, Spain",
-        "area": "ソル・サンタ・アナ広場周辺",
+        "address": "Carrer de Mallorca, 301, 08037 Barcelona, Spain",
+        "area": "グラシア通り周辺",
         "genre": [
-          "老舗タベルナ",
-          "エビ料理",
-          "タパス"
+          "バル",
+          "タパス",
+          "カジュアル"
         ],
-        "google_map_query": "La Casa del Abuelo Madrid",
+        "google_map_query": "De Tapa Madre Barcelona",
         "google_rating_user_provided": null,
         "tabelog_rating": null,
         "tabelog_review_count": null,
         "budget": {
-          "lunch": "€10〜20想定",
-          "dinner": "€15〜30想定",
+          "lunch": "€20〜35想定",
+          "dinner": "€20〜35想定",
           "confidence": "medium"
         },
-        "nearest_station_access": "ソル駅から徒歩5分",
-        "closed_days": "なし（公開情報上）",
-        "phone": "+34 910 00 01 33",
-        "saturday_hours": "12:00-00:00",
-        "saturday_hours_confidence": "high",
-        "saturday_hours_note": "Google Mapsまたは店舗公式ページの公開営業時間。臨時変更は訪問前に要確認。",
-        "saturday_hours_last_checked": "2026-07-15",
-        "saturday_hours_sources": [
-          "https://www.google.com/maps/place/La+Casa+del+Abuelo/@40.4157557,-3.701604,17z"
-        ],
-        "sunday_hours": "12:00-00:00",
-        "sunday_hours_confidence": "high",
+        "nearest_station_access": "Mallorca通り沿い。カサ・ミラ等の主要観光スポットから徒歩数分圏内。",
+        "closed_days": "要確認",
+        "phone": null,
+        "saturday_hours": "要確認",
+        "saturday_hours_confidence": "unknown",
+        "saturday_hours_note": "気軽に入れるタパス店。観光途中での立ち寄りに適している。",
+        "saturday_hours_last_checked": "2026-06-13",
+        "saturday_hours_sources": [],
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
         "last_order": null
       },
       "map_position": {
-        "lat": 40.4157557,
-        "lng": -3.701604,
-        "source": "Google Maps店舗POI URL埋め込み座標",
-        "source_url": "https://www.google.com/maps/place/La+Casa+del+Abuelo/@40.4157557,-3.701604,17z/data=!3m1!4b1!4m6!3m5!1s0xd42288091f92477:0x2e0bfa76a492b5f0!8m2!3d40.4157557!4d-3.701604!16s%2Fg%2F11dx94q3pm?ved=1t%3A314688",
-        "confidence": "high",
-        "correction_note": "Google Mapsの店舗POI座標。住所ジオコーディングではない。"
+        "lat": 41.3961,
+        "lng": 2.1654,
+        "source": "Google Map / 街区POI推定",
+        "source_url": null,
+        "confidence": null,
+        "correction_note": null
       },
       "google_maps_poi": {
-        "name": "La Casa del Abuelo",
-        "address": "Calle de la Victoria, 12, Centro, 28012 Madrid, Spain",
+        "name": null,
+        "address": null,
         "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=La%20Casa%20del%20Abuelo%20Calle%20de%20la%20Victoria%2012%20Madrid",
-        "google_maps_place_feature_id": "0xd42288091f92477:0x2e0bfa76a492b5f0",
-        "google_maps_redirect_place_path": "/maps/place/La+Casa+del+Abuelo/@40.4157557,-3.701604,17z/data=!3m1!4b1!4m6!3m5!1s0xd42288091f92477:0x2e0bfa76a492b5f0!8m2!3d40.4157557!4d-3.701604!16s%2Fg%2F11dx94q3pm"
+        "google_maps_search_url": null,
+        "google_maps_place_feature_id": null,
+        "google_maps_redirect_place_path": null
       },
       "representative_menu_and_prices": [
         {
-          "name": "ガンバス・アル・アヒージョ",
+          "name": "定番タパス（パタタス・ブラバスなど）",
           "price_yen": null,
-          "price_text": "€9.90（ガイド掲載時）",
-          "note": "熱々の土鍋で提供される創業店の名物。"
-        },
-        {
-          "name": "自家製甘口ワイン",
-          "price_yen": null,
-          "price_text": "€2.50（ガイド掲載時）",
-          "note": "エビ料理と合わせたい店の定番。"
+          "price_text": null,
+          "note": "スペインバル定番 of 定番のメニューが幅広く揃う。"
         }
       ],
       "beer_price": {
-        "item": "Caña（生ビール小）",
+        "item": "ビール",
         "price_yen": null,
         "confidence": "unknown",
-        "note": "価格は現地最新メニューで要確認。"
+        "note": null
       },
       "store_features": [
-        "1906年創業のVictoria 12店を代表採用。",
-        "エビのアヒージョと甘口ワインという明快な名物がある。",
-        "ソル周辺の食べ歩きに組み込みやすい。"
+        "気取らずにサクッと入れるカジュアルなタパスバル。",
+        "グラシア通り・カサ・ミラ周辺でのショッピングや散策の合間に食事を挟むのに好立地。"
       ],
       "review_trend_analysis": {
-        "summary": "にんにくの香り立つ熱々のエビ料理が主役。老舗の雰囲気が魅力だが、観光ピークは混み合う。",
+        "summary": "定番タパスが網羅されており、観光客にとってもハードルが低く使いやすい。立地が良いため、旅程の隙間を埋める食事処として優秀。",
         "positive_keywords": [
-          "エビ",
-          "アヒージョ",
-          "老舗",
-          "甘口ワイン"
-        ],
-        "caution_keywords": [
-          "混雑",
-          "観光客が多い"
-        ],
-        "confidence": "high"
-      },
-      "space": {
-        "seat_count": null,
-        "size_impression": "小〜中規模",
-        "comfort": "昔ながらのタベルナらしい密度と活気。",
-        "confidence": "medium"
-      },
-      "meta_scores": {
-        "cuisine_genre": 5,
-        "signature_menu": 5,
-        "budget": 4,
-        "access": 5,
-        "reservation_ease": 3,
-        "food_quality": 5,
-        "food_variety": 3,
-        "drink_variety": 3,
-        "atmosphere": 5,
-        "relaxation": 3,
-        "noise_level": 3,
-        "crowdedness": 2,
-        "seat_comfort": 3,
-        "table_spacing": 2,
-        "space_balance": 3,
-        "staff_warmth": 4,
-        "service_quality": 4,
-        "other_customers_mood": 4,
-        "intuition": 5,
-        "nostalgia": 5,
-        "sound_impression": 4,
-        "smell_impression": 5,
-        "concept_uniqueness": 5
-      },
-      "overall_fit_for_3_person_drinking": 4.6,
-      "saturday_lunch_alcohol": {
-        "status": "available_or_likely",
-        "available_from": "12:00",
-        "available_until": "00:00",
-        "assumed_lunch_window": "12:00〜16:00",
-        "basis": "公開営業時間と店舗業態から判断。",
-        "caveat": "酒類の提供開始時刻・在庫・臨時営業時間は訪問前に店舗へ確認。",
-        "confidence": "medium"
-      },
-      "sunday_alcohol_assumption": "日曜営業時間内は酒類提供の可能性が高いが、提供開始時刻は要確認。",
-      "weekend_hours": {
-        "saturday": "12:00-00:00",
-        "sunday": "12:00-00:00",
-        "notes": "公開情報に基づく。祝日・臨時変更は反映されない場合がある。"
-      },
-      "one_line_pop": "ぐつぐつのエビのアヒージョと甘口ワインで、老舗マドリードの王道を満喫。",
-      "notes": [
-        "ガイドブック掲載時の特徴: エビ料理の老舗。ガンバス・アル・アヒージョと甘い自家製ワイン",
-        "ガイドブック掲載価格: アヒージョ €9.90、ワイン €2.50",
-        "複数店のうち、1906年創業の最初の店舗で中心繁華街にあるVictoria 12店を選定。"
-      ],
-      "sources": [
-        {
-          "provider": "Google Maps",
-          "url": "https://www.google.com/maps/place/La+Casa+del+Abuelo/@40.4157557,-3.701604,17z",
-          "used_for": [
-            "poi",
-            "coordinates",
-            "address",
-            "phone",
-            "website",
-            "opening_hours",
-            "plus_code"
-          ]
-        },
-        {
-          "provider": "店舗公式サイト",
-          "url": "https://lacasadelabuelo.es/9-calle-victoria-12-en",
-          "used_for": [
-            "branch_identity",
-            "address",
-            "phone"
-          ]
-        },
-        {
-          "provider": "Madrid Tourism",
-          "url": "https://www.esmadrid.com/en/restaurants/casa-abuelo",
-          "used_for": [
-            "branch_count",
-            "original_branch"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "la_ria_pasaje_matheu_1",
-      "store_name": "ラ・リア / La Ría",
-      "categories": [
-        "旅行誌掲載",
-        "ムール貝専門店",
-        "ガリシア料理",
-        "バル"
-      ],
-      "basic_info": {
-        "address": "Pasaje de Matheu, 1, Centro, 28012 Madrid, Spain",
-        "area": "ソル・Pasaje de Matheu周辺",
-        "genre": [
-          "ムール貝専門店",
-          "ガリシア料理",
-          "バル"
-        ],
-        "google_map_query": "Mejillonera El Pasaje. La Ría Madrid",
-        "google_rating_user_provided": null,
-        "tabelog_rating": null,
-        "tabelog_review_count": null,
-        "budget": {
-          "lunch": "€10〜20想定",
-          "dinner": "€15〜30想定",
-          "confidence": "medium"
-        },
-        "nearest_station_access": "ソル駅から徒歩2分",
-        "closed_days": "なし（公開情報上）",
-        "phone": "+34 915 21 51 55",
-        "saturday_hours": "12:30-16:30 / 19:30-00:30",
-        "saturday_hours_confidence": "high",
-        "saturday_hours_note": "Google Mapsまたは店舗公式ページの公開営業時間。臨時変更は訪問前に要確認。",
-        "saturday_hours_last_checked": "2026-07-15",
-        "saturday_hours_sources": [
-          "https://mejillonerialaria.eatbu.com/?lang=es"
-        ],
-        "sunday_hours": "12:00-16:30 / 19:00-23:30",
-        "sunday_hours_confidence": "high",
-        "last_order": null
-      },
-      "map_position": {
-        "lat": 40.4162135,
-        "lng": -3.7020141,
-        "source": "Google Maps店舗POI URL埋め込み座標",
-        "source_url": "https://www.google.com/maps/place/Mejillonera+El+Pasaje.+La+R%C3%ADa/@40.4162135,-3.7020141,17z/data=!3m1!4b1!4m6!3m5!1s0xd422880923d9f65:0x2bc5ba98dfb81d13!8m2!3d40.4162135!4d-3.7020141!16s%2Fg%2F1v6p5lqc?ved=1t%3A314688",
-        "confidence": "high",
-        "correction_note": "Google Mapsの店舗POI座標。住所ジオコーディングではない。"
-      },
-      "google_maps_poi": {
-        "name": "Mejillonera El Pasaje. La Ría",
-        "address": "Pasaje de Matheu, 1, Centro, 28012 Madrid, Spain",
-        "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=La%20R%C3%ADa%20Pasaje%20de%20Matheu%201%20Madrid",
-        "google_maps_place_feature_id": "0xd422880923d9f65:0x2bc5ba98dfb81d13",
-        "google_maps_redirect_place_path": "/maps/place/Mejillonera+El+Pasaje.+La+R%C3%ADa/@40.4162135,-3.7020141,17z/data=!3m1!4b1!4m6!3m5!1s0xd422880923d9f65:0x2bc5ba98dfb81d13!8m2!3d40.4162135!4d-3.7020141!16s%2Fg%2F1v6p5lqc"
-      },
-      "representative_menu_and_prices": [
-        {
-          "name": "ガリシア産ムール貝",
-          "price_yen": null,
-          "price_text": "€6〜8.20（ガイド掲載時）",
-          "note": "複数の味付けから選べる看板料理。"
-        },
-        {
-          "name": "タコ料理",
-          "price_yen": null,
-          "price_text": "価格要確認",
-          "note": "ガリシア料理の定番。"
-        }
-      ],
-      "beer_price": {
-        "item": "Caña（生ビール小）",
-        "price_yen": null,
-        "confidence": "unknown",
-        "note": "魚介と合わせる価格は要確認。"
-      },
-      "store_features": [
-        "ムール貝を主役にした分かりやすい専門性。",
-        "ソル駅近くの食べ歩き導線にある。",
-        "ガリシア料理と魚介を手頃に試しやすい。"
-      ],
-      "review_trend_analysis": {
-        "summary": "ムール貝の量と選べる味付けが魅力。細い通りの人気店で、混雑時はサービスや待ち時間にばらつきが出やすい。",
-        "positive_keywords": [
-          "ムール貝",
-          "魚介",
-          "ガリシア料理",
+          "気軽",
+          "観光途中",
+          "入りやすい",
+          "定番メニュー",
           "好立地"
         ],
         "caution_keywords": [
-          "混雑",
-          "サービスのばらつき"
+          "特出した個性よりは安定感重視"
         ],
         "confidence": "medium"
       },
       "space": {
         "seat_count": null,
-        "size_impression": "小〜中規模",
-        "comfort": "気取らない魚介バル。ピーク時は賑やか。",
+        "size_impression": "中規模",
+        "comfort": "典型的なスペインバルのスタイル。サクッと飲んで食べる用途に最適。",
         "confidence": "medium"
       },
       "meta_scores": {
-        "cuisine_genre": 5,
-        "signature_menu": 5,
+        "cuisine_genre": 4,
+        "signature_menu": 3,
         "budget": 4,
         "access": 5,
-        "reservation_ease": 3,
-        "food_quality": 4,
-        "food_variety": 3,
+        "reservation_ease": 4,
+        "food_quality": 3,
+        "food_variety": 4,
         "drink_variety": 3,
-        "atmosphere": 4,
+        "atmosphere": 3,
         "relaxation": 3,
         "noise_level": 3,
-        "crowdedness": 2,
+        "crowdedness": 3,
         "seat_comfort": 3,
-        "table_spacing": 2,
+        "table_spacing": 3,
         "space_balance": 3,
         "staff_warmth": 3,
         "service_quality": 3,
@@ -992,517 +917,1230 @@
         "nostalgia": 3,
         "sound_impression": 3,
         "smell_impression": 4,
+        "concept_uniqueness": 3
+      },
+      "overall_fit_for_3_person_drinking": 3.7,
+      "saturday_lunch_alcohol": {
+        "status": null,
+        "available_from": null,
+        "available_until": null,
+        "assumed_lunch_window": null,
+        "basis": null,
+        "caveat": null,
+        "confidence": null
+      },
+      "sunday_alcohol_assumption": null,
+      "weekend_hours": {
+        "saturday": null,
+        "sunday": null,
+        "notes": null
+      },
+      "one_line_pop": "カサ・ミラ散策の合間に、気取らない定番タパスでひと休み。",
+      "notes": [],
+      "sources": []
+    },
+    {
+      "id": "vila_viniteca",
+      "store_name": "ヴィラ・ヴィニテカ / Vila Viniteca",
+      "categories": [],
+      "basic_info": {
+        "address": "Carrer dels Agullers, 7, 08003 Barcelona, Spain",
+        "area": "エル・ボルン周辺",
+        "genre": [
+          "ワインショップ",
+          "高級食材店",
+          "テイスティングカウンター"
+        ],
+        "google_map_query": "Vila Viniteca Barcelona",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€15〜30 (イートインの場合)",
+          "dinner": "null",
+          "confidence": "medium"
+        },
+        "nearest_station_access": "エル・ボルン地区。地下鉄Barceloneta駅またはJaume I駅からすぐの歴史ある路地裏。",
+        "closed_days": "日曜日（要確認）",
+        "phone": "+34 932 68 32 27",
+        "saturday_hours": "要確認",
+        "saturday_hours_confidence": "unknown",
+        "saturday_hours_note": "基本はワイン・チーズ・生ハムの専門店。店内の小さなスペースや、向かいの店舗で試飲・試食が可能な場合あり。",
+        "saturday_hours_last_checked": "2026-06-13",
+        "saturday_hours_sources": [],
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 41.3831,
+        "lng": 2.1824,
+        "source": "Google Map / 公開住所POIベース",
+        "source_url": "https://barcelonayellow.com/bcn/shopping/wine-shops-barcelona/vila-vini-teca",
+        "confidence": null,
+        "correction_note": null
+      },
+      "google_maps_poi": {
+        "name": null,
+        "address": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": null,
+        "google_maps_place_feature_id": null,
+        "google_maps_redirect_place_path": null
+      },
+      "representative_menu_and_prices": [
+        {
+          "name": "厳選イベリコ豚生ハム・チーズ各種",
+          "price_yen": null,
+          "price_text": null,
+          "note": "スペイン最高峰のセレクトをその場でカットしてもらえる（量り売り・イートイン可能）。"
+        }
+      ],
+      "beer_price": {
+        "item": "グラスワイン各種",
+        "price_yen": null,
+        "confidence": "unknown",
+        "note": null
+      },
+      "store_features": [
+        "ワイン・チーズ・高級食材の超有名老舗専門店。",
+        "がっつり食事をするレストランではなく、極上の買い物環境と高品質なワイン体験が主目的。",
+        "お土産購入や、ワインとチーズ・生ハムをペアリングして軽くつまむ用途に最適。"
+      ],
+      "review_trend_analysis": {
+        "summary": "ワイン愛好家や美食家なら絶対に外せない聖地。圧倒的なワインの品揃えと、熟成チーズ、生ハムのクオリティは街一番と評される。",
+        "positive_keywords": [
+          "ワイン天国",
+          "高級食材",
+          "イベリコ生ハム",
+          "お土産選び",
+          "チーズの品揃え"
+        ],
+        "caution_keywords": [
+          "しっかりとした調理料理（パエリア等）はない",
+          "席数は極少"
+        ],
+        "confidence": "high"
+      },
+      "space": {
+        "seat_count": null,
+        "size_impression": "大規模（ショップとして。座席はごくわずか）",
+        "comfort": "基本は食材・ワインショップ。カウンターでサクッと至高の味をテイスティングするスタイル。",
+        "confidence": "high"
+      },
+      "meta_scores": {
+        "cuisine_genre": 3,
+        "signature_menu": 5,
+        "budget": 3,
+        "access": 4,
+        "reservation_ease": 2,
+        "food_quality": 5,
+        "food_variety": 5,
+        "drink_variety": 5,
+        "atmosphere": 5,
+        "relaxation": 3,
+        "noise_level": 4,
+        "crowdedness": 3,
+        "seat_comfort": 2,
+        "table_spacing": 2,
+        "space_balance": 3,
+        "staff_warmth": 4,
+        "service_quality": 5,
+        "other_customers_mood": 4,
+        "intuition": 5,
+        "nostalgia": 4,
+        "sound_impression": 3,
+        "smell_impression": 5,
         "concept_uniqueness": 5
       },
-      "overall_fit_for_3_person_drinking": 4,
+      "overall_fit_for_3_person_drinking": 3.4,
       "saturday_lunch_alcohol": {
-        "status": "available_or_likely",
-        "available_from": "12:30",
-        "available_until": "16:30",
-        "assumed_lunch_window": "12:00〜16:00",
-        "basis": "公開営業時間と店舗業態から判断。",
-        "caveat": "酒類の提供開始時刻・在庫・臨時営業時間は訪問前に店舗へ確認。",
-        "confidence": "medium"
+        "status": null,
+        "available_from": null,
+        "available_until": null,
+        "assumed_lunch_window": null,
+        "basis": null,
+        "caveat": null,
+        "confidence": null
       },
-      "sunday_alcohol_assumption": "日曜営業時間内は酒類提供の可能性が高いが、提供開始時刻は要確認。",
+      "sunday_alcohol_assumption": null,
       "weekend_hours": {
-        "saturday": "12:30-16:30 / 19:30-00:30",
-        "sunday": "12:00-16:30 / 19:00-23:30",
-        "notes": "公開情報に基づく。祝日・臨時変更は反映されない場合がある。"
+        "saturday": null,
+        "sunday": null,
+        "notes": null
       },
-      "one_line_pop": "選べる味付けのムール貝を山盛りで、ガリシアの海をソルの路地に呼び込む。",
+      "one_line_pop": "ワインとチーズ、生ハムの最高峰を探す美食家のための宝庫。",
+      "notes": [],
+      "sources": []
+    },
+    {
+      "id": "tapeo",
+      "store_name": "タペオ / Tapeo",
+      "categories": [
+        "旅行誌掲載"
+      ],
+      "basic_info": {
+        "address": "Carrer de Montcada, 29, 08003 Barcelona, Spain",
+        "area": "エル・ボルン周辺",
+        "genre": [
+          "バル",
+          "タパス",
+          "創作料理"
+        ],
+        "google_map_query": "Tapeo Barcelona",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€25〜40想定",
+          "dinner": "€30〜45想定",
+          "confidence": "high"
+        },
+        "nearest_station_access": "ピカソ美術館のあるモンカダ通り沿い。旧市街のど真ん中。",
+        "closed_days": "要確認",
+        "phone": "+34 933 10 16 07",
+        "saturday_hours": "要確認",
+        "saturday_hours_confidence": "unknown",
+        "saturday_hours_note": "非常に人気のバル。ピカソ美術館のすぐ近くなので、美術館開館・閉館時間と合わせた昼食・夕食ルートが組める。",
+        "saturday_hours_last_checked": "2026-06-13",
+        "saturday_hours_sources": [],
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 41.38458,
+        "lng": 2.18177,
+        "source": "OpenStreetMap POI via Mapcarta",
+        "source_url": "https://www.tapeoborn.cat/",
+        "confidence": "high",
+        "correction_note": null
+      },
+      "google_maps_poi": {
+        "name": "Tapeo del Born",
+        "address": "Carrer de Montcada, 29, 08003 Barcelona, Spain",
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Tapeo%20del%20Born%2C%20Carrer%20de%20Montcada%2029%2C%20Barcelona",
+        "google_maps_place_feature_id": null,
+        "google_maps_redirect_place_path": null
+      },
+      "representative_menu_and_prices": [
+        {
+          "name": "牛リブのハチミツ煮込みなど創作タパス",
+          "price_yen": null,
+          "price_text": null,
+          "note": "ひねりを加えた絶品モダンタパスが人気。"
+        }
+      ],
+      "beer_price": {
+        "item": "ビール / ワイン",
+        "price_yen": null,
+        "confidence": "unknown",
+        "note": null
+      },
+      "store_features": [
+        "エル・ボルン地区で絶大な支持を得る実力派タパス店。",
+        "伝統的なメニューから、シェフの技術が光るモダンな創作タパスまでクオリティが高い。",
+        "ピカソ美術館や旧市街の散策・観光と非常に相性が良い。"
+      ],
+      "review_trend_analysis": {
+        "summary": "旧市街で最も満足度の高いタパス店の一つ。一品一品の盛り付けや味の構成が非常に洗練されており、観光客だけでなく舌の肥えた地元民の評価も高い。",
+        "positive_keywords": [
+          "ピカソ美術館すぐ",
+          "創作タパス",
+          "絶品ディナー",
+          "洗練された味",
+          "旧市街観光"
+        ],
+        "caution_keywords": [
+          "店内がやや狭い",
+          "ピーク時は予約必須レベルで混雑"
+        ],
+        "confidence": "high"
+      },
+      "space": {
+        "seat_count": null,
+        "size_impression": "小〜中規模（細長いレイアウト）",
+        "comfort": "活気があり、少しタイトな空間ながらも、料理の美味しさで長居したくなる魅力がある。",
+        "confidence": "high"
+      },
+      "meta_scores": {
+        "cuisine_genre": 5,
+        "signature_menu": 5,
+        "budget": 3,
+        "access": 5,
+        "reservation_ease": 2,
+        "food_quality": 5,
+        "food_variety": 4,
+        "drink_variety": 4,
+        "atmosphere": 4,
+        "relaxation": 3,
+        "noise_level": 3,
+        "crowdedness": 2,
+        "seat_comfort": 3,
+        "table_spacing": 3,
+        "space_balance": 3,
+        "staff_warmth": 4,
+        "service_quality": 4,
+        "other_customers_mood": 4,
+        "intuition": 5,
+        "nostalgia": 3,
+        "sound_impression": 3,
+        "smell_impression": 4,
+        "concept_uniqueness": 4
+      },
+      "overall_fit_for_3_person_drinking": 4.3,
+      "saturday_lunch_alcohol": {
+        "status": null,
+        "available_from": null,
+        "available_until": null,
+        "assumed_lunch_window": null,
+        "basis": null,
+        "caveat": null,
+        "confidence": null
+      },
+      "sunday_alcohol_assumption": null,
+      "weekend_hours": {
+        "saturday": null,
+        "sunday": null,
+        "notes": null
+      },
+      "one_line_pop": "ピカソ美術館のすぐそばで、伝統をひねった珠玉の創作タパスを。",
       "notes": [
-        "ガイドブック掲載時の特徴: ガリシア産ムール貝の専門店。味付けを選べる",
-        "ガイドブック掲載価格: ムール貝 €6〜8.20",
-        "指定住所の店舗POIを採用。"
+        "旅行誌掲載"
       ],
       "sources": [
-        {
-          "provider": "Google Maps",
-          "url": "https://www.google.com/maps/place/Mejillonera+El+Pasaje.+La+R%C3%ADa/@40.4162135,-3.7020141,17z",
-          "used_for": [
-            "poi",
-            "coordinates",
-            "address",
-            "phone",
-            "website",
-            "plus_code"
-          ]
-        },
-        {
-          "provider": "店舗管理ページ",
-          "url": "https://mejillonerialaria.eatbu.com/?lang=es",
-          "used_for": [
-            "address",
-            "opening_hours"
-          ]
-        },
-        {
-          "provider": "Restaurant Guru",
-          "url": "https://restaurantguru.com/Pescados-y-mariscos-la-Ria-Madrid-2",
-          "used_for": [
-            "identity",
-            "recent_public_listing"
-          ]
-        }
+        "https://www.tapeoborn.cat/",
+        "OpenStreetMap POI via Mapcarta",
+        "https://www.google.com/maps/search/?api=1&query=Tapeo%20del%20Born%2C%20Carrer%20de%20Montcada%2029%2C%20Barcelona"
       ]
     },
     {
-      "id": "meson_del_champinon_cava_17",
-      "store_name": "メソン・デル・チャンピニオン / Mesón del Champiñón",
-      "categories": [
-        "旅行誌掲載",
-        "メソン",
-        "マッシュルーム料理",
-        "タパス"
-      ],
+      "id": "bubo_barcelona",
+      "store_name": "ブボ・バルセロナ / Bubó / Bubó Bar",
+      "categories": [],
       "basic_info": {
-        "address": "Cava de San Miguel, 17, Centro, 28005 Madrid, Spain",
-        "area": "マヨール広場・Cava de San Miguel周辺",
+        "address": "Carrer de les Caputxes, 10, 08003 Barcelona, Spain",
+        "area": "エル・ボルン周辺",
         "genre": [
-          "メソン",
-          "マッシュルーム料理",
-          "タパス"
+          "スイーツ",
+          "パティスリー",
+          "カフェ・バー"
         ],
-        "google_map_query": "Mesón del Champiñón Madrid",
+        "google_map_query": "Bubo Barcelona",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€5〜20想定",
+          "dinner": null,
+          "confidence": "high"
+        },
+        "nearest_station_access": "サンタ・マリア・デル・マール教会のすぐ近く。",
+        "closed_days": "原則無休（要確認）",
+        "phone": "+34 932 68 72 24",
+        "saturday_hours": "要確認",
+        "saturday_hours_confidence": "unknown",
+        "saturday_hours_note": "ショップにカフェ/バーが併設。極上のデザートや軽食をその場で楽しめる。",
+        "saturday_hours_last_checked": "2026-06-13",
+        "saturday_hours_sources": [],
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 41.3835,
+        "lng": 2.1821,
+        "source": "Google Map / 公開住所POIベース",
+        "source_url": "https://bubo.es/en/contact-us",
+        "confidence": null,
+        "correction_note": null
+      },
+      "google_maps_poi": {
+        "name": null,
+        "address": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": null,
+        "google_maps_place_feature_id": null,
+        "google_maps_redirect_place_path": null
+      },
+      "representative_menu_and_prices": [
+        {
+          "name": "シャビーナ (Xabina)",
+          "price_yen": null,
+          "price_text": null,
+          "note": "パティシエの世界大会で「世界一のチョコレートケーキ」を受賞した代表作。"
+        }
+      ],
+      "beer_price": {
+        "item": "コーヒー / カヴァ (スパークリングワイン)",
+        "price_yen": null,
+        "confidence": "unknown",
+        "note": null
+      },
+      "store_features": [
+        "スペインを代表する高級デザイナーズパティスリー。",
+        "美しく芸術的なチョコレートやケーキ、マカロンが並ぶ。",
+        "旧市街散策に疲れた際の優雅な休憩、デザートタイム、カフェ・バー利用に最適。"
+      ],
+      "review_trend_analysis": {
+        "summary": "世界的な評価を得るチョコレート・スイーツ店。味はもちろん、見た目の美しさと洗練されたパッケージでお土産・ギフト選びにも大人気。",
+        "positive_keywords": [
+          "世界一のケーキ",
+          "濃厚チョコレート",
+          "高級パティスリー",
+          "サンタ・マリア・デル・マール教会近く",
+          "贅沢カフェ"
+        ],
+        "caution_keywords": [
+          "イートインスペースは混み合う可能性あり"
+        ],
+        "confidence": "high"
+      },
+      "space": {
+        "seat_count": null,
+        "size_impression": "小〜中規模（モダンなブティックスタイル）",
+        "comfort": "洗練されたモダンでスタイリッシュな空間。デザートをじっくり味わう上品な雰囲気。",
+        "confidence": "high"
+      },
+      "meta_scores": {
+        "cuisine_genre": 3,
+        "signature_menu": 5,
+        "budget": 3,
+        "access": 5,
+        "reservation_ease": 3,
+        "food_quality": 5,
+        "food_variety": 4,
+        "drink_variety": 3,
+        "atmosphere": 5,
+        "relaxation": 4,
+        "noise_level": 4,
+        "crowdedness": 3,
+        "seat_comfort": 3,
+        "table_spacing": 3,
+        "space_balance": 4,
+        "staff_warmth": 4,
+        "service_quality": 4,
+        "other_customers_mood": 4,
+        "intuition": 5,
+        "nostalgia": 2,
+        "sound_impression": 4,
+        "smell_impression": 5,
+        "concept_uniqueness": 5
+      },
+      "overall_fit_for_3_person_drinking": 2.5,
+      "saturday_lunch_alcohol": {
+        "status": null,
+        "available_from": null,
+        "available_until": null,
+        "assumed_lunch_window": null,
+        "basis": null,
+        "caveat": null,
+        "confidence": null
+      },
+      "sunday_alcohol_assumption": null,
+      "weekend_hours": {
+        "saturday": null,
+        "sunday": null,
+        "notes": null
+      },
+      "one_line_pop": "宝石のようなチョコレートとケーキで、旧市街散策を甘く締めくくる。",
+      "notes": [],
+      "sources": []
+    },
+    {
+      "id": "el_tropezon",
+      "store_name": "エル・トロペソン / El Tropezón (Bar Tropezón Tapes)",
+      "categories": [],
+      "basic_info": {
+        "address": "Carrer del Regomir, 26, 08002 Barcelona, Spain",
+        "area": "ゴシック地区（旧市街）",
+        "genre": [
+          "バル",
+          "ローカル・タパス"
+        ],
+        "google_map_query": "Bar Tropezón Tapes Barcelona",
         "google_rating_user_provided": null,
         "tabelog_rating": null,
         "tabelog_review_count": null,
         "budget": {
           "lunch": "€10〜20想定",
           "dinner": "€15〜25想定",
-          "confidence": "medium"
+          "confidence": "low"
         },
-        "nearest_station_access": "ソル駅から徒歩5分",
-        "closed_days": "なし（公開情報上）",
-        "phone": "+34 915 59 67 90",
-        "saturday_hours": "11:00-02:00",
-        "saturday_hours_confidence": "high",
-        "saturday_hours_note": "Google Mapsまたは店舗公式ページの公開営業時間。臨時変更は訪問前に要確認。",
-        "saturday_hours_last_checked": "2026-07-15",
-        "saturday_hours_sources": [
-          "https://www.google.com/maps/place/Mes%C3%B3n+del+Champi%C3%B1%C3%B3n/@40.4150035,-3.7081634,17z",
-          "https://www.saborea-madrid.com/gastronomia/meson-del-champinon/"
-        ],
-        "sunday_hours": "11:00-01:00",
-        "sunday_hours_confidence": "high",
+        "nearest_station_access": "ゴシック地区の路地裏。地下鉄Jaume I駅周辺。",
+        "closed_days": "Permanently Closed（閉鎖確認済み）",
+        "phone": "+34 933 10 18 64",
+        "saturday_hours": "null",
+        "saturday_hours_confidence": "low",
+        "saturday_hours_note": "【注意】現地データにより恒久的な閉店（Permanently Closed）が確認されています。過去の記録・位置参照用のデータとして保持。",
+        "saturday_hours_last_checked": "2026-06-13",
+        "saturday_hours_sources": [],
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
         "last_order": null
       },
       "map_position": {
-        "lat": 40.4150035,
-        "lng": -3.7081634,
-        "source": "Google Maps店舗POI URL埋め込み座標",
-        "source_url": "https://www.google.com/maps/place/Mes%C3%B3n+del+Champi%C3%B1%C3%B3n/@40.4150035,-3.7081634,17z/data=!3m1!4b1!4m6!3m5!1s0xd422878d46ce4b3:0xbf7ac485a904a820!8m2!3d40.4150035!4d-3.7081634!16s%2Fg%2F1tv3p_7f?ved=1t%3A314688",
-        "confidence": "high",
-        "correction_note": "Google Mapsの店舗POI座標。住所ジオコーディングではない。"
+        "lat": 41.3815,
+        "lng": 2.1793,
+        "source": "Google Map / 過去営業時POIデータ（閉店）",
+        "source_url": "https://restaurantguru.com/Bar-El-Tropezon-Barcelona-2",
+        "confidence": null,
+        "correction_note": null
       },
       "google_maps_poi": {
-        "name": "Mesón del Champiñón",
-        "address": "Cava de San Miguel, 17, Centro, 28005 Madrid, Spain",
+        "name": null,
+        "address": null,
         "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Mes%C3%B3n%20del%20Champi%C3%B1%C3%B3n%20Cava%20de%20San%20Miguel%2017%20Madrid",
-        "google_maps_place_feature_id": "0xd422878d46ce4b3:0xbf7ac485a904a820",
-        "google_maps_redirect_place_path": "/maps/place/Mes%C3%B3n+del+Champi%C3%B1%C3%B3n/@40.4150035,-3.7081634,17z/data=!3m1!4b1!4m6!3m5!1s0xd422878d46ce4b3:0xbf7ac485a904a820!8m2!3d40.4150035!4d-3.7081634!16s%2Fg%2F1tv3p_7f"
+        "google_maps_search_url": null,
+        "google_maps_place_feature_id": null,
+        "google_maps_redirect_place_path": null
       },
       "representative_menu_and_prices": [
         {
-          "name": "マッシュルームの鉄板焼き",
+          "name": "伝統的な安旨タパス各種",
           "price_yen": null,
-          "price_text": "€7.90〜8.90（ガイド掲載時）",
-          "note": "肉汁と香りを楽しむ店の看板料理。"
+          "price_text": null,
+          "note": "昔ながらのサングリアや素朴な小皿料理。"
         }
       ],
       "beer_price": {
-        "item": "Caña（生ビール小）",
+        "item": "ビール / サングリア",
         "price_yen": null,
         "confidence": "unknown",
-        "note": "名物マッシュルームとの組み合わせ。価格は要確認。"
+        "note": null
       },
       "store_features": [
-        "1964年から続く名物マッシュルームの専門性。",
-        "マヨール広場脇で観光導線が非常に良い。",
-        "夜遅くまで営業し、バル巡りに向く。"
+        "かつて気取らない、地元に根付いた雰囲気を持っていたローカルバル。",
+        "バルセロナの昔ながらの居酒屋風情を残していた店（現在は閉店）。"
       ],
       "review_trend_analysis": {
-        "summary": "熱々のマッシュルームとライブ感のある店内が人気。演奏や混雑で賑やかなため、静かな食事より楽しい一杯向き。",
+        "summary": "現在は閉鎖されているため訪問不可。歴史的なゴシック地区バルの位置データとしてのみ有効。",
         "positive_keywords": [
-          "マッシュルーム",
-          "鉄板焼き",
-          "活気",
-          "音楽"
+          "地元感",
+          "レトロバル"
         ],
         "caution_keywords": [
-          "混雑",
-          "騒がしい"
+          "閉店済み"
         ],
-        "confidence": "high"
+        "confidence": "low"
       },
       "space": {
         "seat_count": null,
-        "size_impression": "中規模",
-        "comfort": "洞窟風の店内で賑やか。演奏が入る時間帯もある。",
-        "confidence": "medium"
+        "size_impression": "小規模",
+        "comfort": "昔ながらの賑やかな酒場スタイルであった。",
+        "confidence": "low"
       },
       "meta_scores": {
-        "cuisine_genre": 5,
-        "signature_menu": 5,
-        "budget": 4,
-        "access": 5,
-        "reservation_ease": 3,
-        "food_quality": 4,
+        "cuisine_genre": 4,
+        "signature_menu": 3,
+        "budget": 5,
+        "access": 3,
+        "reservation_ease": 1,
+        "food_quality": 3,
         "food_variety": 3,
         "drink_variety": 3,
-        "atmosphere": 5,
-        "relaxation": 2,
+        "atmosphere": 4,
+        "relaxation": 3,
         "noise_level": 2,
-        "crowdedness": 2,
-        "seat_comfort": 3,
+        "crowdedness": 1,
+        "seat_comfort": 2,
         "table_spacing": 2,
         "space_balance": 3,
         "staff_warmth": 4,
-        "service_quality": 4,
-        "other_customers_mood": 5,
-        "intuition": 5,
-        "nostalgia": 4,
-        "sound_impression": 5,
-        "smell_impression": 5,
-        "concept_uniqueness": 5
+        "service_quality": 3,
+        "other_customers_mood": 4,
+        "intuition": 1,
+        "nostalgia": 5,
+        "sound_impression": 3,
+        "smell_impression": 4,
+        "concept_uniqueness": 3
       },
-      "overall_fit_for_3_person_drinking": 4.4,
+      "overall_fit_for_3_person_drinking": 1,
       "saturday_lunch_alcohol": {
-        "status": "available_or_likely",
-        "available_from": "11:00",
-        "available_until": "02:00",
-        "assumed_lunch_window": "12:00〜16:00",
-        "basis": "公開営業時間と店舗業態から判断。",
-        "caveat": "酒類の提供開始時刻・在庫・臨時営業時間は訪問前に店舗へ確認。",
-        "confidence": "medium"
+        "status": null,
+        "available_from": null,
+        "available_until": null,
+        "assumed_lunch_window": null,
+        "basis": null,
+        "caveat": null,
+        "confidence": null
       },
-      "sunday_alcohol_assumption": "日曜営業時間内は酒類提供の可能性が高いが、提供開始時刻は要確認。",
+      "sunday_alcohol_assumption": null,
       "weekend_hours": {
-        "saturday": "11:00-02:00",
-        "sunday": "11:00-01:00",
-        "notes": "公開情報に基づく。祝日・臨時変更は反映されない場合がある。"
+        "saturday": null,
+        "sunday": null,
+        "notes": null
       },
-      "one_line_pop": "肉汁あふれる熱々マッシュルームを、マヨール広場脇の賑やかな名物店で。",
-      "notes": [
-        "ガイドブック掲載時の特徴: マッシュルームの鉄板焼きが名物",
-        "ガイドブック掲載価格: マッシュルーム €7.90〜8.90",
-        "指定住所の店舗POIを採用。",
-        "日曜の開始時刻はGoogle Mapsで11:00、Saborea Madridで12:00と表示が異なる。"
-      ],
-      "sources": [
-        {
-          "provider": "Google Maps",
-          "url": "https://www.google.com/maps/place/Mes%C3%B3n+del+Champi%C3%B1%C3%B3n/@40.4150035,-3.7081634,17z",
-          "used_for": [
-            "poi",
-            "coordinates",
-            "address",
-            "phone",
-            "website",
-            "opening_hours",
-            "plus_code"
-          ]
-        },
-        {
-          "provider": "店舗公式サイト",
-          "url": "https://mesondelchampinon.com/",
-          "used_for": [
-            "identity"
-          ]
-        },
-        {
-          "provider": "Saborea Madrid",
-          "url": "https://www.saborea-madrid.com/gastronomia/meson-del-champinon/",
-          "used_for": [
-            "address",
-            "phone",
-            "opening_hours",
-            "specialty"
-          ]
-        }
-      ]
+      "one_line_pop": "閉店済みのため訪問不可。旧市街のバル史を残す記録スポット。",
+      "notes": [],
+      "sources": []
     },
     {
-      "id": "meson_de_la_tortilla_cava_15",
-      "store_name": "メソン・デ・ラ・トルティーリャ / Mesón de la Tortilla",
+      "id": "mont_bar",
+      "store_name": "モン・バル / Mont Bar",
       "categories": [
-        "旅行誌掲載",
-        "メソン",
-        "トルティージャ",
-        "タパス"
+        "旅行誌掲載"
       ],
       "basic_info": {
-        "address": "Cava de San Miguel, 15, Centro, 28005 Madrid, Spain",
-        "area": "マヨール広場・Cava de San Miguel周辺",
+        "address": "Carrer de la Diputació, 220, 08011 Barcelona, Spain",
+        "area": "グラン・ビア／アシャンプラ",
         "genre": [
-          "メソン",
-          "トルティージャ",
-          "タパス"
+          "ガストロバー",
+          "創作タパス",
+          "ワイン"
         ],
-        "google_map_query": "Mesón de la Tortilla Madrid",
+        "google_map_query": "Mont Bar Barcelona",
         "google_rating_user_provided": null,
         "tabelog_rating": null,
         "tabelog_review_count": null,
         "budget": {
-          "lunch": "€10〜20想定",
-          "dinner": "€10〜25想定",
+          "lunch": "€60〜100想定",
+          "dinner": "€80〜140想定",
           "confidence": "medium"
         },
-        "nearest_station_access": "ソル駅から徒歩5分",
-        "closed_days": "なし（公開情報上）",
-        "phone": "+34 915 47 10 08",
-        "saturday_hours": "13:00-17:00 / 19:00-01:00",
-        "saturday_hours_confidence": "high",
-        "saturday_hours_note": "Google Mapsまたは店舗公式ページの公開営業時間。臨時変更は訪問前に要確認。",
+        "nearest_station_access": "地下鉄Universitat駅またはPasseig de Gràcia駅から徒歩圏内。",
+        "closed_days": "日曜・月曜（要最新確認）",
+        "phone": "+34 933 23 95 90",
+        "saturday_hours": "ランチ・ディナー営業（要最新確認）",
+        "saturday_hours_confidence": "medium",
+        "saturday_hours_note": "営業時間は変動し得るため、訪問前に公式情報またはGoogle Mapsで要確認。",
         "saturday_hours_last_checked": "2026-07-15",
         "saturday_hours_sources": [
-          "https://www.google.com/maps/place/Mes%C3%B3n+de+la+Tortilla/@40.4152023,-3.7082307,17z"
+          "https://montbar.com/",
+          "https://www.google.com/maps/search/?api=1&query=Mont%20Bar%2C%20Carrer%20de%20la%20Diputaci%C3%B3%20220%2C%20Barcelona"
         ],
-        "sunday_hours": "13:00-17:00 / 19:00-01:00",
-        "sunday_hours_confidence": "high",
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
         "last_order": null
       },
       "map_position": {
-        "lat": 40.4152023,
-        "lng": -3.7082307,
-        "source": "Google Maps店舗POI URL埋め込み座標",
-        "source_url": "https://www.google.com/maps/place/Mes%C3%B3n+de+la+Tortilla/@40.4152023,-3.7082307,17z/data=!3m1!4b1!4m6!3m5!1s0xd422878d5e61dd5:0x9136bb1249f0c50f!8m2!3d40.4152023!4d-3.7082307!16s%2Fg%2F1tdf2nsv?ved=1t%3A314688",
+        "lat": 41.38624,
+        "lng": 2.16182,
+        "source": "OpenStreetMap POI via Mapcarta",
+        "source_url": "https://montbar.com/",
         "confidence": "high",
-        "correction_note": "Google Mapsの店舗POI座標。住所ジオコーディングではない。"
+        "correction_note": null
       },
       "google_maps_poi": {
-        "name": "Mesón de la Tortilla",
-        "address": "Cava de San Miguel, 15, Centro, 28005 Madrid, Spain",
+        "name": "Mont Bar",
+        "address": "Carrer de la Diputació, 220, 08011 Barcelona, Spain",
         "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Mes%C3%B3n%20de%20la%20Tortilla%20Cava%20de%20San%20Miguel%2015%20Madrid",
-        "google_maps_place_feature_id": "0xd422878d5e61dd5:0x9136bb1249f0c50f",
-        "google_maps_redirect_place_path": "/maps/place/Mes%C3%B3n+de+la+Tortilla/@40.4152023,-3.7082307,17z/data=!3m1!4b1!4m6!3m5!1s0xd422878d5e61dd5:0x9136bb1249f0c50f!8m2!3d40.4152023!4d-3.7082307!16s%2Fg%2F1tdf2nsv"
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Mont%20Bar%2C%20Carrer%20de%20la%20Diputaci%C3%B3%20220%2C%20Barcelona",
+        "google_maps_place_feature_id": null,
+        "google_maps_redirect_place_path": null
       },
       "representative_menu_and_prices": [
         {
-          "name": "スペイン風オムレツ",
+          "name": "季節の創作タパス／テイスティング",
           "price_yen": null,
-          "price_text": "1人前 €8／2人前 €11（ガイド掲載時）",
-          "note": "店名どおりの主役料理。"
-        },
-        {
-          "name": "チョリソー",
-          "price_yen": null,
-          "price_text": "価格要確認",
-          "note": "酒に合わせやすい定番タパス。"
+          "price_text": "時価・コースは要確認",
+          "note": "地元食材を精緻な小皿料理に仕立てる。"
         }
       ],
       "beer_price": {
-        "item": "Caña（生ビール小）",
+        "item": "ビール / ワイン",
         "price_yen": null,
         "confidence": "unknown",
-        "note": "価格は現地最新メニューで要確認。"
+        "note": "現地価格は訪問前に要確認。"
       },
       "store_features": [
-        "トルティージャを目当てに選びやすい専門店。",
-        "マヨール広場周辺の3店舗を連続して食べ歩ける。",
-        "週末は昼営業もあり観光途中に使いやすい。"
+        "カジュアルなバルの雰囲気と高い料理技術を両立。",
+        "ワインの品揃えが豊富。",
+        "特別な食事として予約して訪れたい店。"
       ],
       "review_trend_analysis": {
-        "summary": "素朴で厚みのあるトルティージャと昔ながらの内装が好評。平日は夜中心のため訪問時間に注意。",
+        "summary": "創作性と食材の質、ワイン選びで高い評価を集める人気ガストロバー。",
         "positive_keywords": [
-          "トルティージャ",
-          "素朴",
-          "伝統的",
-          "手頃"
+          "創作タパス",
+          "ワイン",
+          "高品質",
+          "特別感"
         ],
         "caution_keywords": [
-          "平日昼は営業なし",
-          "混雑"
+          "価格帯高め",
+          "予約推奨"
         ],
         "confidence": "medium"
       },
       "space": {
         "seat_count": null,
         "size_impression": "小〜中規模",
-        "comfort": "木を基調にした昔ながらのメソン。",
+        "comfort": "洗練されつつ堅苦しくない。",
         "confidence": "medium"
       },
       "meta_scores": {
         "cuisine_genre": 5,
         "signature_menu": 5,
-        "budget": 5,
-        "access": 5,
+        "budget": 2,
+        "access": 4,
         "reservation_ease": 3,
-        "food_quality": 4,
-        "food_variety": 3,
-        "drink_variety": 3,
+        "food_quality": 5,
+        "food_variety": 5,
+        "drink_variety": 5,
+        "atmosphere": 5,
+        "relaxation": 4,
+        "noise_level": 3,
+        "crowdedness": 3,
+        "seat_comfort": 3,
+        "table_spacing": 3,
+        "space_balance": 3,
+        "staff_warmth": 4,
+        "service_quality": 4,
+        "other_customers_mood": 4,
+        "intuition": 5,
+        "nostalgia": 3,
+        "sound_impression": 3,
+        "smell_impression": 4,
+        "concept_uniqueness": 5
+      },
+      "overall_fit_for_3_person_drinking": 4.6,
+      "saturday_lunch_alcohol": {
+        "status": null,
+        "available_from": null,
+        "available_until": null,
+        "assumed_lunch_window": null,
+        "basis": null,
+        "caveat": "営業時間・提供条件は訪問前に要確認。",
+        "confidence": "unknown"
+      },
+      "sunday_alcohol_assumption": null,
+      "weekend_hours": {
+        "saturday": "ランチ・ディナー営業（要最新確認）",
+        "sunday": null,
+        "notes": "最新営業時間は公式情報またはGoogle Mapsで要確認。"
+      },
+      "one_line_pop": "バルの気軽さで、驚きに満ちた創作タパスと上質なワインを堪能。",
+      "notes": [
+        "旅行誌掲載",
+        "地元カタルーニャとスペイン産食材を使い、各国の食文化を取り入れた創作料理。"
+      ],
+      "sources": [
+        "https://montbar.com/",
+        "OpenStreetMap POI via Mapcarta",
+        "https://www.google.com/maps/search/?api=1&query=Mont%20Bar%2C%20Carrer%20de%20la%20Diputaci%C3%B3%20220%2C%20Barcelona"
+      ]
+    },
+    {
+      "id": "paco_meralgo",
+      "store_name": "パコ・メラルゴ / Paco Meralgo",
+      "categories": [
+        "旅行誌掲載"
+      ],
+      "basic_info": {
+        "address": "Carrer de Muntaner, 171, 08036 Barcelona, Spain",
+        "area": "アシャンプラ／新市街",
+        "genre": [
+          "タパス",
+          "シーフード",
+          "スペイン料理"
+        ],
+        "google_map_query": "Paco Meralgo Barcelona",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€35〜60想定",
+          "dinner": "€40〜70想定",
+          "confidence": "medium"
+        },
+        "nearest_station_access": "地下鉄Hospital Clínic駅またはDiagonal駅から徒歩圏内。",
+        "closed_days": "原則無休（要最新確認）",
+        "phone": "+34 934 30 90 27",
+        "saturday_hours": "昼〜夜営業（要最新確認）",
+        "saturday_hours_confidence": "medium",
+        "saturday_hours_note": "営業時間は変動し得るため、訪問前に公式情報またはGoogle Mapsで要確認。",
+        "saturday_hours_last_checked": "2026-07-15",
+        "saturday_hours_sources": [
+          "https://restaurantpacomeralgo.com/",
+          "https://www.google.com/maps/search/?api=1&query=Paco%20Meralgo%2C%20Carrer%20de%20Muntaner%20171%2C%20Barcelona"
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 41.39162,
+        "lng": 2.15248,
+        "source": "OpenStreetMap POI via Mapcarta",
+        "source_url": "https://restaurantpacomeralgo.com/",
+        "confidence": "high",
+        "correction_note": null
+      },
+      "google_maps_poi": {
+        "name": "Paco Meralgo",
+        "address": "Carrer de Muntaner, 171, 08036 Barcelona, Spain",
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Paco%20Meralgo%2C%20Carrer%20de%20Muntaner%20171%2C%20Barcelona",
+        "google_maps_place_feature_id": null,
+        "google_maps_redirect_place_path": null
+      },
+      "representative_menu_and_prices": [
+        {
+          "name": "ガンバス、貝類、旬の魚介タパス",
+          "price_yen": null,
+          "price_text": "皿ごとに異なる",
+          "note": "仕入れたての魚介をシンプルに味わう。"
+        }
+      ],
+      "beer_price": {
+        "item": "ビール / ワイン",
+        "price_yen": null,
+        "confidence": "unknown",
+        "note": "現地価格は訪問前に要確認。"
+      },
+      "store_features": [
+        "魚介・肉・野菜を幅広く楽しめる実力派タパス店。",
+        "カウンター席で活気を楽しめる。",
+        "その日のおすすめが狙い目。"
+      ],
+      "review_trend_analysis": {
+        "summary": "素材の鮮度と安定した調理で、地元客と旅行者の双方から支持される。",
+        "positive_keywords": [
+          "魚介",
+          "カウンター",
+          "豊富なタパス",
+          "活気"
+        ],
+        "caution_keywords": [
+          "混雑",
+          "人気メニューは売切れあり"
+        ],
+        "confidence": "medium"
+      },
+      "space": {
+        "seat_count": null,
+        "size_impression": "中規模",
+        "comfort": "モダンで活気があり、食事中心に楽しみやすい。",
+        "confidence": "medium"
+      },
+      "meta_scores": {
+        "cuisine_genre": 5,
+        "signature_menu": 5,
+        "budget": 3,
+        "access": 4,
+        "reservation_ease": 3,
+        "food_quality": 5,
+        "food_variety": 5,
+        "drink_variety": 4,
         "atmosphere": 4,
         "relaxation": 3,
         "noise_level": 3,
         "crowdedness": 3,
         "seat_comfort": 3,
-        "table_spacing": 2,
+        "table_spacing": 3,
+        "space_balance": 3,
+        "staff_warmth": 4,
+        "service_quality": 4,
+        "other_customers_mood": 4,
+        "intuition": 5,
+        "nostalgia": 3,
+        "sound_impression": 3,
+        "smell_impression": 4,
+        "concept_uniqueness": 4
+      },
+      "overall_fit_for_3_person_drinking": 4.5,
+      "saturday_lunch_alcohol": {
+        "status": null,
+        "available_from": null,
+        "available_until": null,
+        "assumed_lunch_window": null,
+        "basis": null,
+        "caveat": "営業時間・提供条件は訪問前に要確認。",
+        "confidence": "unknown"
+      },
+      "sunday_alcohol_assumption": null,
+      "weekend_hours": {
+        "saturday": "昼〜夜営業（要最新確認）",
+        "sunday": null,
+        "notes": "最新営業時間は公式情報またはGoogle Mapsで要確認。"
+      },
+      "one_line_pop": "旬の魚介から肉まで、バルセロナらしい上質タパスを一度に満喫。",
+      "notes": [
+        "旅行誌掲載",
+        "海鮮、肉、野菜とジャンルを問わず、仕入れたばかりの旬素材を使う。"
+      ],
+      "sources": [
+        "https://restaurantpacomeralgo.com/",
+        "OpenStreetMap POI via Mapcarta",
+        "https://www.google.com/maps/search/?api=1&query=Paco%20Meralgo%2C%20Carrer%20de%20Muntaner%20171%2C%20Barcelona"
+      ]
+    },
+    {
+      "id": "d_picos_pardos",
+      "store_name": "デ・ピコス・パルドス / D Picos Pardos",
+      "categories": [
+        "旅行誌掲載"
+      ],
+      "basic_info": {
+        "address": "Carrer de Blesa, 36, 08004 Barcelona, Spain",
+        "area": "ポブレセック／ブライ通り周辺",
+        "genre": [
+          "バル",
+          "ピンチョス",
+          "バスク・カタルーニャ料理"
+        ],
+        "google_map_query": "D Picos Pardos Barcelona",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€15〜30想定",
+          "dinner": "€20〜35想定",
+          "confidence": "low"
+        },
+        "nearest_station_access": "地下鉄Paral·lel駅から徒歩約5分。",
+        "closed_days": "月曜、火曜昼（旅行誌掲載時。要現状確認）",
+        "phone": "+34 932 69 50 25",
+        "saturday_hours": "12:00〜翌1:00（旅行誌掲載時。要現状確認）",
+        "saturday_hours_confidence": "low",
+        "saturday_hours_note": "営業時間は変動し得るため、訪問前に公式情報またはGoogle Mapsで要確認。",
+        "saturday_hours_last_checked": "2026-07-15",
+        "saturday_hours_sources": [
+          "https://www.google.com/maps/search/?api=1&query=D%20Picos%20Pardos%2C%20Carrer%20de%20Blesa%2036%2C%20Barcelona"
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 41.37292,
+        "lng": 2.16605,
+        "source": "掲載住所およびCarrer de Blai周辺POIからの住所近傍推定",
+        "source_url": "https://www.google.com/maps/search/?api=1&query=D%20Picos%20Pardos%2C%20Carrer%20de%20Blesa%2036%2C%20Barcelona",
+        "confidence": "low",
+        "correction_note": "当該店舗のOSM店舗POIを一意に確認できなかったため、住所近傍の暫定座標。店舗入口とずれる可能性がある。"
+      },
+      "google_maps_poi": {
+        "name": "D Picos Pardos",
+        "address": "Carrer de Blesa, 36, 08004 Barcelona, Spain",
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=D%20Picos%20Pardos%2C%20Carrer%20de%20Blesa%2036%2C%20Barcelona",
+        "google_maps_place_feature_id": null,
+        "google_maps_redirect_place_path": null
+      },
+      "representative_menu_and_prices": [
+        {
+          "name": "ベルムットと創作ピンチョス",
+          "price_yen": null,
+          "price_text": null,
+          "note": "バスクとカタルーニャの食文化を組み合わせた小皿。"
+        }
+      ],
+      "beer_price": {
+        "item": "ビール / ワイン",
+        "price_yen": null,
+        "confidence": "unknown",
+        "note": "現地価格は訪問前に要確認。"
+      },
+      "store_features": [
+        "ブライ通り西側の個性派バル。",
+        "ベルムットとピンチョスを気軽に楽しめる。"
+      ],
+      "review_trend_analysis": {
+        "summary": "旅行誌では人柄と創作ピンチョスが評価されているが、最新営業状況は要確認。",
+        "positive_keywords": [
+          "ベルムット",
+          "創作ピンチョス",
+          "ローカル感"
+        ],
+        "caution_keywords": [
+          "座標は住所近傍推定",
+          "営業状況要確認"
+        ],
+        "confidence": "low"
+      },
+      "space": {
+        "seat_count": null,
+        "size_impression": "小規模",
+        "comfort": "気さくなバルらしいカジュアルな空間。",
+        "confidence": "low"
+      },
+      "meta_scores": {
+        "cuisine_genre": 4,
+        "signature_menu": 4,
+        "budget": 4,
+        "access": 4,
+        "reservation_ease": 3,
+        "food_quality": 4,
+        "food_variety": 4,
+        "drink_variety": 4,
+        "atmosphere": 4,
+        "relaxation": 3,
+        "noise_level": 3,
+        "crowdedness": 3,
+        "seat_comfort": 3,
+        "table_spacing": 3,
         "space_balance": 3,
         "staff_warmth": 4,
         "service_quality": 4,
         "other_customers_mood": 4,
         "intuition": 4,
-        "nostalgia": 5,
+        "nostalgia": 3,
         "sound_impression": 3,
         "smell_impression": 4,
-        "concept_uniqueness": 5
+        "concept_uniqueness": 4
       },
-      "overall_fit_for_3_person_drinking": 4.1,
+      "overall_fit_for_3_person_drinking": 3.9,
       "saturday_lunch_alcohol": {
-        "status": "available_or_likely",
-        "available_from": "13:00",
-        "available_until": "17:00",
-        "assumed_lunch_window": "12:00〜16:00",
-        "basis": "公開営業時間と店舗業態から判断。",
-        "caveat": "酒類の提供開始時刻・在庫・臨時営業時間は訪問前に店舗へ確認。",
-        "confidence": "medium"
+        "status": null,
+        "available_from": null,
+        "available_until": null,
+        "assumed_lunch_window": null,
+        "basis": null,
+        "caveat": "営業時間・提供条件は訪問前に要確認。",
+        "confidence": "unknown"
       },
-      "sunday_alcohol_assumption": "日曜営業時間内は酒類提供の可能性が高いが、提供開始時刻は要確認。",
+      "sunday_alcohol_assumption": null,
       "weekend_hours": {
-        "saturday": "13:00-17:00 / 19:00-01:00",
-        "sunday": "13:00-17:00 / 19:00-01:00",
-        "notes": "公開情報に基づく。祝日・臨時変更は反映されない場合がある。"
+        "saturday": "12:00〜翌1:00（旅行誌掲載時。要現状確認）",
+        "sunday": null,
+        "notes": "最新営業時間は公式情報またはGoogle Mapsで要確認。"
       },
-      "one_line_pop": "ふっくらトルティージャを主役に、マヨール広場の夜を素朴な一皿で締める。",
+      "one_line_pop": "ベルムット片手に、バスク×カタルーニャの遊び心あるピンチョスを。",
       "notes": [
-        "ガイドブック掲載時の特徴: スペイン風オムレツ、トルティージャの専門店",
-        "ガイドブック掲載価格: 1人前 €8、2人前 €11",
-        "指定住所の店舗POIを採用。",
-        "公式サイトは確認できなかった。"
+        "旅行誌掲載",
+        "自慢のベルムットと、気さくなオーナー夫婦の接客が魅力。",
+        "当該店舗のOSM店舗POIを一意に確認できなかったため、住所近傍の暫定座標。店舗入口とずれる可能性がある。"
       ],
       "sources": [
-        {
-          "provider": "Google Maps",
-          "url": "https://www.google.com/maps/place/Mes%C3%B3n+de+la+Tortilla/@40.4152023,-3.7082307,17z",
-          "used_for": [
-            "poi",
-            "coordinates",
-            "address",
-            "phone",
-            "opening_hours",
-            "plus_code"
-          ]
-        },
-        {
-          "provider": "Restaurant Guru",
-          "url": "https://restaurantguru.com/Meson-de-la-Tortilla-Madrid",
-          "used_for": [
-            "identity",
-            "recent_public_listing"
-          ]
-        },
-        {
-          "provider": "Schlouk Map",
-          "url": "https://www.schlouk-map.com/en/places/meson-de-la-tortilla",
-          "used_for": [
-            "address",
-            "phone"
-          ]
-        }
+        "掲載住所およびCarrer de Blai周辺POIからの住所近傍推定",
+        "https://www.google.com/maps/search/?api=1&query=D%20Picos%20Pardos%2C%20Carrer%20de%20Blesa%2036%2C%20Barcelona"
       ]
     },
     {
-      "id": "meson_del_boqueron_cava_13",
-      "store_name": "メソン・デル・ボケロン / Mesón del Boquerón",
+      "id": "bardeni_el_meatbar",
+      "store_name": "バルデニ / Bardeni el Meatbar",
       "categories": [
-        "旅行誌掲載",
-        "メソン",
-        "ガリシア料理",
-        "魚介タパス"
+        "旅行誌掲載"
       ],
       "basic_info": {
-        "address": "Cava de San Miguel, 13, Centro, 28005 Madrid, Spain",
-        "area": "マヨール広場・Cava de San Miguel周辺",
+        "address": "Carrer de València, 454, 08013 Barcelona, Spain",
+        "area": "サグラダ・ファミリア周辺",
         "genre": [
-          "メソン",
-          "ガリシア料理",
-          "魚介タパス"
+          "肉料理",
+          "ミートバー",
+          "創作料理"
         ],
-        "google_map_query": "El Mesón del Boquerón Madrid",
+        "google_map_query": "Bardeni el Meatbar Barcelona",
         "google_rating_user_provided": null,
         "tabelog_rating": null,
         "tabelog_review_count": null,
         "budget": {
-          "lunch": "€10〜20想定",
-          "dinner": "€20〜35想定",
+          "lunch": "€35〜60想定",
+          "dinner": "€45〜75想定",
           "confidence": "medium"
         },
-        "nearest_station_access": "ソル駅から徒歩5分",
-        "closed_days": "火曜日",
-        "phone": "+34 648 88 44 60",
-        "saturday_hours": "13:00-17:00 / 19:30-00:00",
-        "saturday_hours_confidence": "high",
-        "saturday_hours_note": "Google Mapsまたは店舗公式ページの公開営業時間。臨時変更は訪問前に要確認。",
+        "nearest_station_access": "地下鉄Sagrada Família駅から徒歩約2〜5分。",
+        "closed_days": "日曜（要最新確認）",
+        "phone": null,
+        "saturday_hours": "ランチ・ディナー営業（要最新確認）",
+        "saturday_hours_confidence": "medium",
+        "saturday_hours_note": "営業時間は変動し得るため、訪問前に公式情報またはGoogle Mapsで要確認。",
         "saturday_hours_last_checked": "2026-07-15",
         "saturday_hours_sources": [
-          "https://www.google.com/maps/place/El+Mes%C3%B3n+del+Boquer%C3%B3n/@40.4152041,-3.7082424,17z"
+          "https://www.google.com/maps/search/?api=1&query=Bardeni%20el%20Meatbar%2C%20Carrer%20de%20Val%C3%A8ncia%20454%2C%20Barcelona"
         ],
-        "sunday_hours": "13:00-17:00 / 19:30-00:00",
-        "sunday_hours_confidence": "high",
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
         "last_order": null
       },
       "map_position": {
-        "lat": 40.4152041,
-        "lng": -3.7082424,
-        "source": "Google Maps店舗POI URL埋め込み座標",
-        "source_url": "https://www.google.com/maps/place/El+Mes%C3%B3n+del+Boquer%C3%B3n/@40.4152041,-3.7082424,17z/data=!3m1!4b1!4m6!3m5!1s0xd42290ca8dc029b:0x70504d787bb3d7d0!8m2!3d40.4152041!4d-3.7082424!16s%2Fg%2F1ptykd46m?ved=1t%3A314688",
+        "lat": 41.40295,
+        "lng": 2.17715,
+        "source": "OpenStreetMap POI via Mapcarta",
+        "source_url": "https://www.google.com/maps/search/?api=1&query=Bardeni%20el%20Meatbar%2C%20Carrer%20de%20Val%C3%A8ncia%20454%2C%20Barcelona",
         "confidence": "high",
-        "correction_note": "Google Mapsの店舗POI座標。住所ジオコーディングではない。"
+        "correction_note": null
       },
       "google_maps_poi": {
-        "name": "El Mesón del Boquerón",
-        "address": "Cava de San Miguel, 13, Centro, 28005 Madrid, Spain",
+        "name": "Bardeni el Meatbar",
+        "address": "Carrer de València, 454, 08013 Barcelona, Spain",
         "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Mes%C3%B3n%20del%20Boquer%C3%B3n%20Cava%20de%20San%20Miguel%2013%20Madrid",
-        "google_maps_place_feature_id": "0xd42290ca8dc029b:0x70504d787bb3d7d0",
-        "google_maps_redirect_place_path": "/maps/place/El+Mes%C3%B3n+del+Boquer%C3%B3n/@40.4152041,-3.7082424,17z/data=!3m1!4b1!4m6!3m5!1s0xd42290ca8dc029b:0x70504d787bb3d7d0!8m2!3d40.4152041!4d-3.7082424!16s%2Fg%2F1ptykd46m"
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Bardeni%20el%20Meatbar%2C%20Carrer%20de%20Val%C3%A8ncia%20454%2C%20Barcelona",
+        "google_maps_place_feature_id": null,
+        "google_maps_redirect_place_path": null
       },
       "representative_menu_and_prices": [
         {
-          "name": "ボケロネス（イワシの酢漬け）",
+          "name": "ステーキタルタル／アンガス牛料理",
           "price_yen": null,
-          "price_text": "€11（ガイド掲載時）",
-          "note": "店名を象徴する魚介タパス。"
-        },
-        {
-          "name": "タコ料理",
-          "price_yen": null,
-          "price_text": "€19（ガイド掲載時）",
-          "note": "ガリシア料理の定番。"
+          "price_text": null,
+          "note": "肉の味を生かすシンプルで精密な調理が看板。"
         }
       ],
       "beer_price": {
-        "item": "Caña（生ビール小）",
+        "item": "ビール / ワイン",
         "price_yen": null,
         "confidence": "unknown",
-        "note": "魚介タパスと合わせる価格は要確認。"
+        "note": "現地価格は訪問前に要確認。"
       },
       "store_features": [
-        "酢漬けイワシとガリシア料理を楽しめる。",
-        "隣接するメソン群と食べ比べしやすい。",
-        "昼夜の二部営業で食事利用に向く。"
+        "肉料理に特化したミートバー。",
+        "オーナーシェフの技術が光る。",
+        "サグラダ・ファミリア観光と組み合わせやすい。"
       ],
       "review_trend_analysis": {
-        "summary": "ボケロネスやタコなど魚介系の伝統料理が中心。店内は小さく、混雑時は予約や待ち時間を意識したい。",
+        "summary": "肉質と火入れ、とくにステーキタルタルが高く評価される実力店。",
         "positive_keywords": [
-          "ボケロネス",
-          "タコ",
-          "ガリシア料理",
-          "伝統"
+          "肉料理",
+          "ステーキタルタル",
+          "火入れ",
+          "実力派"
         ],
         "caution_keywords": [
-          "火曜定休",
-          "小規模"
+          "予約推奨",
+          "長居向きではない"
         ],
         "confidence": "medium"
       },
       "space": {
         "seat_count": null,
         "size_impression": "小規模",
-        "comfort": "昔ながらのメソンで席間は広くない。",
+        "comfort": "テーブル中心で食事に集中する落ち着いた空間。",
+        "confidence": "medium"
+      },
+      "meta_scores": {
+        "cuisine_genre": 5,
+        "signature_menu": 5,
+        "budget": 2,
+        "access": 4,
+        "reservation_ease": 3,
+        "food_quality": 5,
+        "food_variety": 3,
+        "drink_variety": 4,
+        "atmosphere": 4,
+        "relaxation": 3,
+        "noise_level": 3,
+        "crowdedness": 3,
+        "seat_comfort": 3,
+        "table_spacing": 3,
+        "space_balance": 3,
+        "staff_warmth": 4,
+        "service_quality": 4,
+        "other_customers_mood": 4,
+        "intuition": 5,
+        "nostalgia": 3,
+        "sound_impression": 3,
+        "smell_impression": 4,
+        "concept_uniqueness": 4
+      },
+      "overall_fit_for_3_person_drinking": 4.2,
+      "saturday_lunch_alcohol": {
+        "status": null,
+        "available_from": null,
+        "available_until": null,
+        "assumed_lunch_window": null,
+        "basis": null,
+        "caveat": "営業時間・提供条件は訪問前に要確認。",
+        "confidence": "unknown"
+      },
+      "sunday_alcohol_assumption": null,
+      "weekend_hours": {
+        "saturday": "ランチ・ディナー営業（要最新確認）",
+        "sunday": null,
+        "notes": "最新営業時間は公式情報またはGoogle Mapsで要確認。"
+      },
+      "one_line_pop": "サグラダ・ファミリアの近くで、肉の旨みを極めた一皿に出会う。",
+      "notes": [
+        "旅行誌掲載",
+        "アンガス牛やオックステールなどを、受賞歴のあるオーナーシェフが調理。"
+      ],
+      "sources": [
+        "OpenStreetMap POI via Mapcarta",
+        "https://www.google.com/maps/search/?api=1&query=Bardeni%20el%20Meatbar%2C%20Carrer%20de%20Val%C3%A8ncia%20454%2C%20Barcelona"
+      ]
+    },
+    {
+      "id": "bar_del_pla",
+      "store_name": "バル・デル・プラ / Bar del Pla",
+      "categories": [
+        "旅行誌掲載"
+      ],
+      "basic_info": {
+        "address": "Carrer de Montcada, 2, 08003 Barcelona, Spain",
+        "area": "エル・ボルン周辺",
+        "genre": [
+          "タパス",
+          "カタルーニャ料理",
+          "創作料理"
+        ],
+        "google_map_query": "Bar del Pla Barcelona",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€25〜45想定",
+          "dinner": "€30〜50想定",
+          "confidence": "medium"
+        },
+        "nearest_station_access": "地下鉄Jaume I駅から徒歩約3分。",
+        "closed_days": "日曜（要最新確認）",
+        "phone": "+34 932 68 30 03",
+        "saturday_hours": "昼〜夜営業（要最新確認）",
+        "saturday_hours_confidence": "medium",
+        "saturday_hours_note": "営業時間は変動し得るため、訪問前に公式情報またはGoogle Mapsで要確認。",
+        "saturday_hours_last_checked": "2026-07-15",
+        "saturday_hours_sources": [
+          "https://www.google.com/maps/search/?api=1&query=Bar%20del%20Pla%2C%20Carrer%20de%20Montcada%202%2C%20Barcelona"
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 41.3856,
+        "lng": 2.18002,
+        "source": "OpenStreetMap POI via Mapcarta",
+        "source_url": "https://www.google.com/maps/search/?api=1&query=Bar%20del%20Pla%2C%20Carrer%20de%20Montcada%202%2C%20Barcelona",
+        "confidence": "high",
+        "correction_note": null
+      },
+      "google_maps_poi": {
+        "name": "Bar del Pla",
+        "address": "Carrer de Montcada, 2, 08003 Barcelona, Spain",
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Bar%20del%20Pla%2C%20Carrer%20de%20Montcada%202%2C%20Barcelona",
+        "google_maps_place_feature_id": null,
+        "google_maps_redirect_place_path": null
+      },
+      "representative_menu_and_prices": [
+        {
+          "name": "季節の創作タパス",
+          "price_yen": null,
+          "price_text": null,
+          "note": "カタルーニャ料理に異国の要素を加えた遊び心ある小皿。"
+        }
+      ],
+      "beer_price": {
+        "item": "ビール / ワイン",
+        "price_yen": null,
+        "confidence": "unknown",
+        "note": "現地価格は訪問前に要確認。"
+      },
+      "store_features": [
+        "旧市街で使いやすい人気タパス店。",
+        "定番と創作のバランスが良い。",
+        "季節ごとにメニューが変わる。"
+      ],
+      "review_trend_analysis": {
+        "summary": "料理の完成度、雰囲気、立地のバランスが良く、旧市街散策の食事に適する。",
+        "positive_keywords": [
+          "創作タパス",
+          "旧市街",
+          "季節メニュー",
+          "使いやすい"
+        ],
+        "caution_keywords": [
+          "ピーク時混雑",
+          "予約推奨"
+        ],
+        "confidence": "medium"
+      },
+      "space": {
+        "seat_count": null,
+        "size_impression": "小〜中規模",
+        "comfort": "温かみのある賑やかなバル空間。",
         "confidence": "medium"
       },
       "meta_scores": {
@@ -1511,1157 +2149,1490 @@
         "budget": 3,
         "access": 5,
         "reservation_ease": 3,
+        "food_quality": 5,
+        "food_variety": 5,
+        "drink_variety": 4,
+        "atmosphere": 4,
+        "relaxation": 3,
+        "noise_level": 3,
+        "crowdedness": 3,
+        "seat_comfort": 3,
+        "table_spacing": 3,
+        "space_balance": 3,
+        "staff_warmth": 4,
+        "service_quality": 4,
+        "other_customers_mood": 4,
+        "intuition": 5,
+        "nostalgia": 3,
+        "sound_impression": 3,
+        "smell_impression": 4,
+        "concept_uniqueness": 4
+      },
+      "overall_fit_for_3_person_drinking": 4.5,
+      "saturday_lunch_alcohol": {
+        "status": null,
+        "available_from": null,
+        "available_until": null,
+        "assumed_lunch_window": null,
+        "basis": null,
+        "caveat": "営業時間・提供条件は訪問前に要確認。",
+        "confidence": "unknown"
+      },
+      "sunday_alcohol_assumption": null,
+      "weekend_hours": {
+        "saturday": "昼〜夜営業（要最新確認）",
+        "sunday": null,
+        "notes": "最新営業時間は公式情報またはGoogle Mapsで要確認。"
+      },
+      "one_line_pop": "旧市街の路地で、定番と創作が響き合うカタルーニャ・タパスを。",
+      "notes": [
+        "旅行誌掲載",
+        "カタルーニャ料理を中心に各国の食文化をミックス。"
+      ],
+      "sources": [
+        "OpenStreetMap POI via Mapcarta",
+        "https://www.google.com/maps/search/?api=1&query=Bar%20del%20Pla%2C%20Carrer%20de%20Montcada%202%2C%20Barcelona"
+      ]
+    },
+    {
+      "id": "pincho_j",
+      "store_name": "ピンチョ・ジェイ / Pincho J",
+      "categories": [
+        "旅行誌掲載"
+      ],
+      "basic_info": {
+        "address": "Carrer de Blai, 26, 08004 Barcelona, Spain",
+        "area": "ポブレセック／ブライ通り",
+        "genre": [
+          "ピンチョス",
+          "バル",
+          "カジュアル"
+        ],
+        "google_map_query": "Pincho J Barcelona",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€10〜25想定",
+          "dinner": "€15〜30想定",
+          "confidence": "low"
+        },
+        "nearest_station_access": "地下鉄Paral·lel駅から徒歩約5分。",
+        "closed_days": "原則無休（旅行誌掲載時。要現状確認）",
+        "phone": "+34 936 67 50 65",
+        "saturday_hours": "11:00〜24:00（旅行誌掲載時。要現状確認）",
+        "saturday_hours_confidence": "low",
+        "saturday_hours_note": "営業時間は変動し得るため、訪問前に公式情報またはGoogle Mapsで要確認。",
+        "saturday_hours_last_checked": "2026-07-15",
+        "saturday_hours_sources": [
+          "https://www.google.com/maps/search/?api=1&query=Pincho%20J%2C%20Carrer%20de%20Blai%2026%2C%20Barcelona"
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 41.37334,
+        "lng": 2.16453,
+        "source": "掲載住所とCarrer de Blai上の周辺POIからの住所近傍推定",
+        "source_url": "https://www.google.com/maps/search/?api=1&query=Pincho%20J%2C%20Carrer%20de%20Blai%2026%2C%20Barcelona",
+        "confidence": "low",
+        "correction_note": "店舗POIをOSM上で一意に確認できなかったため、住所近傍の暫定座標。"
+      },
+      "google_maps_poi": {
+        "name": "Pincho J",
+        "address": "Carrer de Blai, 26, 08004 Barcelona, Spain",
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Pincho%20J%2C%20Carrer%20de%20Blai%2026%2C%20Barcelona",
+        "google_maps_place_feature_id": null,
+        "google_maps_redirect_place_path": null
+      },
+      "representative_menu_and_prices": [
+        {
+          "name": "肉・魚介の豪快なピンチョス",
+          "price_yen": null,
+          "price_text": null,
+          "note": "種類豊富なピンチョスをセルフ感覚で選ぶ。"
+        }
+      ],
+      "beer_price": {
+        "item": "ビール / ワイン",
+        "price_yen": null,
+        "confidence": "unknown",
+        "note": "現地価格は訪問前に要確認。"
+      },
+      "store_features": [
+        "早い時間から行列ができる人気店として掲載。",
+        "豪快な具材のピンチョスが中心。"
+      ],
+      "review_trend_analysis": {
+        "summary": "賑やかなブライ通りで、見た目にも楽しいピンチョスを気軽に試せる。",
+        "positive_keywords": [
+          "行列店",
+          "豪快",
+          "ピンチョス",
+          "気軽"
+        ],
+        "caution_keywords": [
+          "店内狭め",
+          "座標は住所近傍推定",
+          "営業状況要確認"
+        ],
+        "confidence": "low"
+      },
+      "space": {
+        "seat_count": null,
+        "size_impression": "小規模",
+        "comfort": "混雑しやすく、短時間の食べ歩き向き。",
+        "confidence": "low"
+      },
+      "meta_scores": {
+        "cuisine_genre": 4,
+        "signature_menu": 4,
+        "budget": 4,
+        "access": 5,
+        "reservation_ease": 3,
         "food_quality": 4,
-        "food_variety": 3,
+        "food_variety": 5,
+        "drink_variety": 3,
+        "atmosphere": 4,
+        "relaxation": 2,
+        "noise_level": 3,
+        "crowdedness": 3,
+        "seat_comfort": 3,
+        "table_spacing": 3,
+        "space_balance": 3,
+        "staff_warmth": 4,
+        "service_quality": 4,
+        "other_customers_mood": 4,
+        "intuition": 4,
+        "nostalgia": 3,
+        "sound_impression": 3,
+        "smell_impression": 4,
+        "concept_uniqueness": 3
+      },
+      "overall_fit_for_3_person_drinking": 3.8,
+      "saturday_lunch_alcohol": {
+        "status": null,
+        "available_from": null,
+        "available_until": null,
+        "assumed_lunch_window": null,
+        "basis": null,
+        "caveat": "営業時間・提供条件は訪問前に要確認。",
+        "confidence": "unknown"
+      },
+      "sunday_alcohol_assumption": null,
+      "weekend_hours": {
+        "saturday": "11:00〜24:00（旅行誌掲載時。要現状確認）",
+        "sunday": null,
+        "notes": "最新営業時間は公式情報またはGoogle Mapsで要確認。"
+      },
+      "one_line_pop": "行列の先で待つ、肉も魚介も豪快なブライ通りの人気ピンチョス。",
+      "notes": [
+        "旅行誌掲載",
+        "早い時間から行列ができることがある。",
+        "店舗POIをOSM上で一意に確認できなかったため、住所近傍の暫定座標。"
+      ],
+      "sources": [
+        "掲載住所とCarrer de Blai上の周辺POIからの住所近傍推定",
+        "https://www.google.com/maps/search/?api=1&query=Pincho%20J%2C%20Carrer%20de%20Blai%2026%2C%20Barcelona"
+      ]
+    },
+    {
+      "id": "king_pinchos",
+      "store_name": "キング・ピンチョス / King Pinchos",
+      "categories": [
+        "旅行誌掲載"
+      ],
+      "basic_info": {
+        "address": "Carrer de Blai, 25-27, 08004 Barcelona, Spain",
+        "area": "ポブレセック／ブライ通り",
+        "genre": [
+          "ピンチョス",
+          "バル",
+          "カジュアル"
+        ],
+        "google_map_query": "King Pinchos Barcelona",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€10〜25想定",
+          "dinner": "€15〜30想定",
+          "confidence": "low"
+        },
+        "nearest_station_access": "地下鉄Paral·lel駅から徒歩約5分。",
+        "closed_days": "原則無休（旅行誌掲載時。要現状確認）",
+        "phone": "+34 930 42 97 79",
+        "saturday_hours": "10:00〜翌0:30（旅行誌掲載時。要現状確認）",
+        "saturday_hours_confidence": "low",
+        "saturday_hours_note": "営業時間は変動し得るため、訪問前に公式情報またはGoogle Mapsで要確認。",
+        "saturday_hours_last_checked": "2026-07-15",
+        "saturday_hours_sources": [
+          "https://www.google.com/maps/search/?api=1&query=King%20Pinchos%2C%20Carrer%20de%20Blai%2025-27%2C%20Barcelona"
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 41.37339,
+        "lng": 2.16442,
+        "source": "掲載住所とCarrer de Blai上の周辺POIからの住所近傍推定",
+        "source_url": "https://www.google.com/maps/search/?api=1&query=King%20Pinchos%2C%20Carrer%20de%20Blai%2025-27%2C%20Barcelona",
+        "confidence": "low",
+        "correction_note": "店舗POIをOSM上で一意に確認できなかったため、住所近傍の暫定座標。"
+      },
+      "google_maps_poi": {
+        "name": "King Pinchos",
+        "address": "Carrer de Blai, 25-27, 08004 Barcelona, Spain",
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=King%20Pinchos%2C%20Carrer%20de%20Blai%2025-27%2C%20Barcelona",
+        "google_maps_place_feature_id": null,
+        "google_maps_redirect_place_path": null
+      },
+      "representative_menu_and_prices": [
+        {
+          "name": "常時多数のピンチョス",
+          "price_yen": null,
+          "price_text": "旅行誌掲載時 €1〜1.85",
+          "note": "カウンターに並ぶ多彩なピンチョスから選ぶ。"
+        }
+      ],
+      "beer_price": {
+        "item": "ビール / ワイン",
+        "price_yen": null,
+        "confidence": "unknown",
+        "note": "現地価格は訪問前に要確認。"
+      },
+      "store_features": [
+        "品数の多さと手頃さが魅力。",
+        "テラス席も利用しやすい。"
+      ],
+      "review_trend_analysis": {
+        "summary": "ブライ通りで種類と価格を重視してピンチョスを楽しみたい時に向く。",
+        "positive_keywords": [
+          "種類豊富",
+          "手頃",
+          "テラス",
+          "食べ比べ"
+        ],
+        "caution_keywords": [
+          "座標は住所近傍推定",
+          "価格・営業状況要確認"
+        ],
+        "confidence": "low"
+      },
+      "space": {
+        "seat_count": null,
+        "size_impression": "中規模",
+        "comfort": "カジュアルで回転が速く、食べ比べ向き。",
+        "confidence": "low"
+      },
+      "meta_scores": {
+        "cuisine_genre": 3,
+        "signature_menu": 3,
+        "budget": 4,
+        "access": 5,
+        "reservation_ease": 3,
+        "food_quality": 3,
+        "food_variety": 5,
+        "drink_variety": 3,
+        "atmosphere": 3,
+        "relaxation": 3,
+        "noise_level": 3,
+        "crowdedness": 3,
+        "seat_comfort": 3,
+        "table_spacing": 3,
+        "space_balance": 3,
+        "staff_warmth": 4,
+        "service_quality": 4,
+        "other_customers_mood": 4,
+        "intuition": 3,
+        "nostalgia": 3,
+        "sound_impression": 3,
+        "smell_impression": 4,
+        "concept_uniqueness": 3
+      },
+      "overall_fit_for_3_person_drinking": 3.7,
+      "saturday_lunch_alcohol": {
+        "status": null,
+        "available_from": null,
+        "available_until": null,
+        "assumed_lunch_window": null,
+        "basis": null,
+        "caveat": "営業時間・提供条件は訪問前に要確認。",
+        "confidence": "unknown"
+      },
+      "sunday_alcohol_assumption": null,
+      "weekend_hours": {
+        "saturday": "10:00〜翌0:30（旅行誌掲載時。要現状確認）",
+        "sunday": null,
+        "notes": "最新営業時間は公式情報またはGoogle Mapsで要確認。"
+      },
+      "one_line_pop": "ずらりと並ぶピンチョスから、気になる一品を次々に食べ比べ。",
+      "notes": [
+        "旅行誌掲載",
+        "常時約50種類、テラス席あり。",
+        "店舗POIをOSM上で一意に確認できなかったため、住所近傍の暫定座標。"
+      ],
+      "sources": [
+        "掲載住所とCarrer de Blai上の周辺POIからの住所近傍推定",
+        "https://www.google.com/maps/search/?api=1&query=King%20Pinchos%2C%20Carrer%20de%20Blai%2025-27%2C%20Barcelona"
+      ]
+    },
+    {
+      "id": "blai_9",
+      "store_name": "ブライ・ノウ / Blai 9",
+      "categories": [
+        "旅行誌掲載"
+      ],
+      "basic_info": {
+        "address": "Carrer de Blai, 9, 08004 Barcelona, Spain",
+        "area": "ポブレセック／ブライ通り",
+        "genre": [
+          "ピンチョス",
+          "創作料理",
+          "バル"
+        ],
+        "google_map_query": "Blai 9 Barcelona",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€12〜25想定",
+          "dinner": "€15〜30想定",
+          "confidence": "medium"
+        },
+        "nearest_station_access": "地下鉄Paral·lel駅から徒歩約5分。",
+        "closed_days": "原則無休（要最新確認）",
+        "phone": "+34 933 29 73 65",
+        "saturday_hours": "12:00〜翌1:00（旅行誌掲載時。要最新確認）",
+        "saturday_hours_confidence": "medium",
+        "saturday_hours_note": "営業時間は変動し得るため、訪問前に公式情報またはGoogle Mapsで要確認。",
+        "saturday_hours_last_checked": "2026-07-15",
+        "saturday_hours_sources": [
+          "https://www.google.com/maps/search/?api=1&query=Blai%209%2C%20Carrer%20de%20Blai%209%2C%20Barcelona"
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 41.37307,
+        "lng": 2.16585,
+        "source": "OpenStreetMap POI via Mapcarta",
+        "source_url": "https://www.google.com/maps/search/?api=1&query=Blai%209%2C%20Carrer%20de%20Blai%209%2C%20Barcelona",
+        "confidence": "high",
+        "correction_note": null
+      },
+      "google_maps_poi": {
+        "name": "Blai 9",
+        "address": "Carrer de Blai, 9, 08004 Barcelona, Spain",
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Blai%209%2C%20Carrer%20de%20Blai%209%2C%20Barcelona",
+        "google_maps_place_feature_id": null,
+        "google_maps_redirect_place_path": null
+      },
+      "representative_menu_and_prices": [
+        {
+          "name": "バゲットを使わない創作ピンチョス",
+          "price_yen": null,
+          "price_text": null,
+          "note": "パンの代わりに多彩な土台を使った独創的なスタイル。"
+        }
+      ],
+      "beer_price": {
+        "item": "ビール / ワイン",
+        "price_yen": null,
+        "confidence": "unknown",
+        "note": "現地価格は訪問前に要確認。"
+      },
+      "store_features": [
+        "バゲットなしという個性的なピンチョス。",
+        "スイーツや軽食も楽しめる。"
+      ],
+      "review_trend_analysis": {
+        "summary": "ブライ通りの中でも独創性が際立ち、食べ歩きに変化をつけられる。",
+        "positive_keywords": [
+          "独創的",
+          "バゲットなし",
+          "食べ歩き",
+          "見た目"
+        ],
+        "caution_keywords": [
+          "夜は混雑",
+          "最新価格要確認"
+        ],
+        "confidence": "medium"
+      },
+      "space": {
+        "seat_count": null,
+        "size_impression": "小〜中規模",
+        "comfort": "カジュアルで賑やか。",
+        "confidence": "medium"
+      },
+      "meta_scores": {
+        "cuisine_genre": 4,
+        "signature_menu": 4,
+        "budget": 4,
+        "access": 5,
+        "reservation_ease": 3,
+        "food_quality": 4,
+        "food_variety": 4,
         "drink_variety": 3,
         "atmosphere": 4,
         "relaxation": 3,
         "noise_level": 3,
         "crowdedness": 3,
         "seat_comfort": 3,
-        "table_spacing": 2,
+        "table_spacing": 3,
         "space_balance": 3,
         "staff_warmth": 4,
         "service_quality": 4,
         "other_customers_mood": 4,
         "intuition": 4,
-        "nostalgia": 5,
+        "nostalgia": 3,
         "sound_impression": 3,
         "smell_impression": 4,
-        "concept_uniqueness": 4
+        "concept_uniqueness": 5
       },
-      "overall_fit_for_3_person_drinking": 4,
+      "overall_fit_for_3_person_drinking": 4.0,
       "saturday_lunch_alcohol": {
-        "status": "available_or_likely",
-        "available_from": "13:00",
-        "available_until": "17:00",
-        "assumed_lunch_window": "12:00〜16:00",
-        "basis": "公開営業時間と店舗業態から判断。",
-        "caveat": "酒類の提供開始時刻・在庫・臨時営業時間は訪問前に店舗へ確認。",
-        "confidence": "medium"
+        "status": null,
+        "available_from": null,
+        "available_until": null,
+        "assumed_lunch_window": null,
+        "basis": null,
+        "caveat": "営業時間・提供条件は訪問前に要確認。",
+        "confidence": "unknown"
       },
-      "sunday_alcohol_assumption": "日曜営業時間内は酒類提供の可能性が高いが、提供開始時刻は要確認。",
+      "sunday_alcohol_assumption": null,
       "weekend_hours": {
-        "saturday": "13:00-17:00 / 19:30-00:00",
-        "sunday": "13:00-17:00 / 19:30-00:00",
-        "notes": "公開情報に基づく。祝日・臨時変更は反映されない場合がある。"
+        "saturday": "12:00〜翌1:00（旅行誌掲載時。要最新確認）",
+        "sunday": null,
+        "notes": "最新営業時間は公式情報またはGoogle Mapsで要確認。"
       },
-      "one_line_pop": "爽やかなボケロネスと柔らかなタコで、マヨール広場にガリシアの海風を。",
+      "one_line_pop": "“パンなし”の驚き——具材が主役の創作ピンチョスを楽しむ。",
       "notes": [
-        "ガイドブック掲載時の特徴: イワシの酢漬けやガリシア料理",
-        "ガイドブック掲載価格: ボケロネス €11、タコ €19",
-        "指定住所の店舗POIを採用。",
-        "Google Mapsの電話番号は+34 648 88 44 60だが、古い公開店舗ページでは+34 915 48 26 16と表示される。"
+        "旅行誌掲載",
+        "具材をバゲットに載せず提供するスタイル。"
       ],
       "sources": [
-        {
-          "provider": "Google Maps",
-          "url": "https://www.google.com/maps/place/El+Mes%C3%B3n+del+Boquer%C3%B3n/@40.4152041,-3.7082424,17z",
-          "used_for": [
-            "poi",
-            "coordinates",
-            "address",
-            "phone",
-            "website",
-            "opening_hours",
-            "plus_code"
-          ]
-        },
-        {
-          "provider": "店舗管理ページ",
-          "url": "https://elmesondelboqueron.eatbu.com/",
-          "used_for": [
-            "identity",
-            "website"
-          ]
-        },
-        {
-          "provider": "Restaurant Guru",
-          "url": "https://restaurantguru.com/Meson-del-boqueron-Madrid",
-          "used_for": [
-            "recent_public_listing"
-          ]
-        }
+        "OpenStreetMap POI via Mapcarta",
+        "https://www.google.com/maps/search/?api=1&query=Blai%209%2C%20Carrer%20de%20Blai%209%2C%20Barcelona"
       ]
     },
     {
-      "id": "ana_la_santa_plaza_santa_ana_14",
-      "store_name": "アナ・ラ・サンタ / Ana La Santa",
+      "id": "la_esquinita_de_blai",
+      "store_name": "ラ・エスキニータ・デ・ブライ / La Esquinita de Blai",
       "categories": [
-        "旅行誌掲載",
-        "モダン・スペイン料理",
-        "バル",
-        "カフェ"
+        "旅行誌掲載"
       ],
       "basic_info": {
-        "address": "Plaza de Santa Ana, 14, Centro, 28012 Madrid, Spain",
-        "area": "サンタ・アナ広場",
+        "address": "Carrer del Poeta Cabanyes, 16, 08004 Barcelona, Spain",
+        "area": "ポブレセック／ブライ通り",
         "genre": [
-          "モダン・スペイン料理",
-          "バル",
-          "カフェ"
+          "ピンチョス",
+          "タパス",
+          "バル"
         ],
-        "google_map_query": "Ana la Santa Madrid",
+        "google_map_query": "La Esquinita de Blai Barcelona",
         "google_rating_user_provided": null,
         "tabelog_rating": null,
         "tabelog_review_count": null,
         "budget": {
-          "lunch": null,
-          "dinner": null,
-          "confidence": "low"
+          "lunch": "€12〜25想定",
+          "dinner": "€15〜30想定",
+          "confidence": "medium"
         },
-        "nearest_station_access": "ソル駅から徒歩3分",
-        "closed_days": "営業状態要確認（閉店・休業の相反情報あり）",
-        "phone": "+34 911 45 03 34",
-        "saturday_hours": null,
-        "saturday_hours_confidence": "unknown",
-        "saturday_hours_note": "Google MapsのPOI・住所・電話・公式リンクは残るが、営業時間が表示されない。公式グループページも残存。一方、公開店舗ページはPermanently Closedと表示し、入居ホテルは2025年に改装のため約1年間閉鎖と報道された。2026年7月の営業可否は訪問前の直接確認が必要。",
+        "nearest_station_access": "地下鉄Paral·lel駅から徒歩約5分。",
+        "closed_days": "原則無休（要最新確認）",
+        "phone": "+34 931 88 92 03",
+        "saturday_hours": "10:30〜翌1:00（旅行誌掲載時。要最新確認）",
+        "saturday_hours_confidence": "medium",
+        "saturday_hours_note": "営業時間は変動し得るため、訪問前に公式情報またはGoogle Mapsで要確認。",
         "saturday_hours_last_checked": "2026-07-15",
-        "saturday_hours_sources": [],
+        "saturday_hours_sources": [
+          "https://www.google.com/maps/search/?api=1&query=La%20Esquinita%20de%20Blai%2C%20Carrer%20del%20Poeta%20Cabanyes%2016%2C%20Barcelona"
+        ],
         "sunday_hours": null,
-        "sunday_hours_confidence": "unknown",
+        "sunday_hours_confidence": null,
         "last_order": null
       },
       "map_position": {
-        "lat": 40.4146145,
-        "lng": -3.7013906,
-        "source": "Google Maps店舗POI URL埋め込み座標",
-        "source_url": "https://www.google.com/maps/place/Ana+la+Santa/@40.4146145,-3.7013906,17z/data=!3m1!4b1!4m6!3m5!1s0xd42288043964471:0x15adc5e1fd66551d!8m2!3d40.4146145!4d-3.7013906!16s%2Fg%2F11b6mq12qh?ved=1t%3A314688",
+        "lat": 41.37346,
+        "lng": 2.16525,
+        "source": "OpenStreetMap POI via Mapcarta",
+        "source_url": "https://www.google.com/maps/search/?api=1&query=La%20Esquinita%20de%20Blai%2C%20Carrer%20del%20Poeta%20Cabanyes%2016%2C%20Barcelona",
         "confidence": "high",
-        "correction_note": "Google Mapsの店舗POI座標。営業状態にかかわらず、住所ジオコーディングではない。"
+        "correction_note": null
       },
       "google_maps_poi": {
-        "name": "Ana la Santa",
-        "address": "Plaza de Santa Ana, 14, Centro, 28012 Madrid, Spain",
+        "name": "La Esquinita de Blai",
+        "address": "Carrer del Poeta Cabanyes, 16, 08004 Barcelona, Spain",
         "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Ana%20La%20Santa%20Plaza%20de%20Santa%20Ana%2014%20Madrid",
-        "google_maps_place_feature_id": "0xd42288043964471:0x15adc5e1fd66551d",
-        "google_maps_redirect_place_path": "/maps/place/Ana+la+Santa/@40.4146145,-3.7013906,17z/data=!3m1!4b1!4m6!3m5!1s0xd42288043964471:0x15adc5e1fd66551d!8m2!3d40.4146145!4d-3.7013906!16s%2Fg%2F11b6mq12qh"
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=La%20Esquinita%20de%20Blai%2C%20Carrer%20del%20Poeta%20Cabanyes%2016%2C%20Barcelona",
+        "google_maps_place_feature_id": null,
+        "google_maps_redirect_place_path": null
       },
       "representative_menu_and_prices": [
         {
-          "name": "モダン・タパス各種",
+          "name": "50種類以上のピンチョスと定番タパス",
           "price_yen": null,
-          "price_text": "€7〜16（ガイド掲載時）",
-          "note": "営業再開・現行メニューを要確認。"
+          "price_text": null,
+          "note": "パタタス・ブラバスなども揃う。"
         }
       ],
       "beer_price": {
-        "item": "ビール／カクテル",
+        "item": "ビール / ワイン",
         "price_yen": null,
         "confidence": "unknown",
-        "note": "営業状態と現行価格を要確認。"
+        "note": "現地価格は訪問前に要確認。"
       },
       "store_features": [
-        "サンタ・アナ広場に面するホテル併設型の洗練された空間。",
-        "公式グループページは残るが、閉店表示とホテル改装情報がある。"
+        "ブライ通り中心部で種類豊富。",
+        "ピンチョス以外の定番タパスも選べる。"
       ],
       "review_trend_analysis": {
-        "summary": "広場を望むテラスとモダンな雰囲気が評価されていたが、2026年7月時点の営業可否は直接確認が必要。",
+        "summary": "グループで好みが分かれても選びやすい、品揃え重視の使いやすい店。",
         "positive_keywords": [
-          "テラス",
-          "サンタ・アナ広場",
-          "モダン"
+          "種類豊富",
+          "定番タパス",
+          "好立地",
+          "グループ向き"
         ],
         "caution_keywords": [
-          "営業状態要確認",
-          "ホテル改装"
+          "ピーク時混雑"
+        ],
+        "confidence": "medium"
+      },
+      "space": {
+        "seat_count": null,
+        "size_impression": "中規模",
+        "comfort": "明るく活気があり、初めてでも入りやすい。",
+        "confidence": "medium"
+      },
+      "meta_scores": {
+        "cuisine_genre": 4,
+        "signature_menu": 4,
+        "budget": 4,
+        "access": 5,
+        "reservation_ease": 3,
+        "food_quality": 4,
+        "food_variety": 5,
+        "drink_variety": 3,
+        "atmosphere": 3,
+        "relaxation": 3,
+        "noise_level": 3,
+        "crowdedness": 3,
+        "seat_comfort": 3,
+        "table_spacing": 3,
+        "space_balance": 3,
+        "staff_warmth": 4,
+        "service_quality": 4,
+        "other_customers_mood": 4,
+        "intuition": 4,
+        "nostalgia": 3,
+        "sound_impression": 3,
+        "smell_impression": 4,
+        "concept_uniqueness": 3
+      },
+      "overall_fit_for_3_person_drinking": 4.1,
+      "saturday_lunch_alcohol": {
+        "status": null,
+        "available_from": null,
+        "available_until": null,
+        "assumed_lunch_window": null,
+        "basis": null,
+        "caveat": "営業時間・提供条件は訪問前に要確認。",
+        "confidence": "unknown"
+      },
+      "sunday_alcohol_assumption": null,
+      "weekend_hours": {
+        "saturday": "10:30〜翌1:00（旅行誌掲載時。要最新確認）",
+        "sunday": null,
+        "notes": "最新営業時間は公式情報またはGoogle Mapsで要確認。"
+      },
+      "one_line_pop": "50種類超のピンチョスと定番タパスで、誰もが好きな一皿を発見。",
+      "notes": [
+        "旅行誌掲載",
+        "パタタス・ブラバスなど定番タパスも豊富。"
+      ],
+      "sources": [
+        "OpenStreetMap POI via Mapcarta",
+        "https://www.google.com/maps/search/?api=1&query=La%20Esquinita%20de%20Blai%2C%20Carrer%20del%20Poeta%20Cabanyes%2016%2C%20Barcelona"
+      ]
+    },
+    {
+      "id": "cerveceria_catalana",
+      "store_name": "セルベセリア・カタラナ / Cervecería Catalana",
+      "categories": [
+        "旅行誌掲載"
+      ],
+      "basic_info": {
+        "address": "Carrer de Mallorca, 236, 08008 Barcelona, Spain",
+        "area": "グラシア通り周辺",
+        "genre": [
+          "タパス",
+          "バル",
+          "スペイン料理"
+        ],
+        "google_map_query": "Cervecería Catalana Barcelona",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€20〜40想定",
+          "dinner": "€25〜45想定",
+          "confidence": "medium"
+        },
+        "nearest_station_access": "地下鉄Diagonal駅またはPasseig de Gràcia駅から徒歩約5分。",
+        "closed_days": "原則無休（要最新確認）",
+        "phone": "+34 932 16 03 68",
+        "saturday_hours": "朝〜深夜営業（要最新確認）",
+        "saturday_hours_confidence": "medium",
+        "saturday_hours_note": "営業時間は変動し得るため、訪問前に公式情報またはGoogle Mapsで要確認。",
+        "saturday_hours_last_checked": "2026-07-15",
+        "saturday_hours_sources": [
+          "https://www.google.com/maps/search/?api=1&query=Cervecer%C3%ADa%20Catalana%2C%20Carrer%20de%20Mallorca%20236%2C%20Barcelona"
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 41.3924,
+        "lng": 2.1609,
+        "source": "OpenStreetMap POI via Mapcarta",
+        "source_url": "https://www.google.com/maps/search/?api=1&query=Cervecer%C3%ADa%20Catalana%2C%20Carrer%20de%20Mallorca%20236%2C%20Barcelona",
+        "confidence": "high",
+        "correction_note": null
+      },
+      "google_maps_poi": {
+        "name": "Cervecería Catalana",
+        "address": "Carrer de Mallorca, 236, 08008 Barcelona, Spain",
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Cervecer%C3%ADa%20Catalana%2C%20Carrer%20de%20Mallorca%20236%2C%20Barcelona",
+        "google_maps_place_feature_id": null,
+        "google_maps_redirect_place_path": null
+      },
+      "representative_menu_and_prices": [
+        {
+          "name": "多彩なタパス／モンタディートス",
+          "price_yen": null,
+          "price_text": null,
+          "note": "カウンターに並ぶ豊富な料理を少量ずつ楽しめる。"
+        }
+      ],
+      "beer_price": {
+        "item": "ビール / ワイン",
+        "price_yen": null,
+        "confidence": "unknown",
+        "note": "現地価格は訪問前に要確認。"
+      },
+      "store_features": [
+        "地元客と観光客で常に賑わう大型人気バル。",
+        "営業時間が長く利用しやすい。",
+        "タパスの種類が非常に多い。"
+      ],
+      "review_trend_analysis": {
+        "summary": "行列はできやすいが、品数・立地・営業時間の使いやすさで定番人気。",
+        "positive_keywords": [
+          "種類豊富",
+          "長時間営業",
+          "定番人気",
+          "アクセス"
+        ],
+        "caution_keywords": [
+          "行列",
+          "非常に混雑"
+        ],
+        "confidence": "medium"
+      },
+      "space": {
+        "seat_count": null,
+        "size_impression": "大規模",
+        "comfort": "賑やかで活気があり、落ち着きより楽しさ重視。",
+        "confidence": "high"
+      },
+      "meta_scores": {
+        "cuisine_genre": 4,
+        "signature_menu": 4,
+        "budget": 4,
+        "access": 5,
+        "reservation_ease": 3,
+        "food_quality": 4,
+        "food_variety": 5,
+        "drink_variety": 4,
+        "atmosphere": 4,
+        "relaxation": 2,
+        "noise_level": 3,
+        "crowdedness": 3,
+        "seat_comfort": 3,
+        "table_spacing": 3,
+        "space_balance": 3,
+        "staff_warmth": 4,
+        "service_quality": 4,
+        "other_customers_mood": 4,
+        "intuition": 4,
+        "nostalgia": 3,
+        "sound_impression": 3,
+        "smell_impression": 4,
+        "concept_uniqueness": 3
+      },
+      "overall_fit_for_3_person_drinking": 4.3,
+      "saturday_lunch_alcohol": {
+        "status": null,
+        "available_from": null,
+        "available_until": null,
+        "assumed_lunch_window": null,
+        "basis": null,
+        "caveat": "営業時間・提供条件は訪問前に要確認。",
+        "confidence": "unknown"
+      },
+      "sunday_alcohol_assumption": null,
+      "weekend_hours": {
+        "saturday": "朝〜深夜営業（要最新確認）",
+        "sunday": null,
+        "notes": "最新営業時間は公式情報またはGoogle Mapsで要確認。"
+      },
+      "one_line_pop": "迷うほど並ぶタパスを、活気あふれる人気バルで少しずつ制覇。",
+      "notes": [
+        "旅行誌掲載",
+        "地元客と観光客の双方で賑わう。"
+      ],
+      "sources": [
+        "OpenStreetMap POI via Mapcarta",
+        "https://www.google.com/maps/search/?api=1&query=Cervecer%C3%ADa%20Catalana%2C%20Carrer%20de%20Mallorca%20236%2C%20Barcelona"
+      ]
+    },
+    {
+      "id": "la_placa_gastro_mercat",
+      "store_name": "ラ・プラサ・ガストロ・メルカット / La Plaça Gastro Mercat",
+      "categories": [
+        "旅行誌掲載"
+      ],
+      "basic_info": {
+        "address": "Plaça de Catalunya, 14, 08002 Barcelona, Spain",
+        "area": "カタルーニャ広場",
+        "genre": [
+          "フードコート",
+          "複合飲食施設",
+          "展望"
+        ],
+        "google_map_query": "La Plaça Gastro Mercat Barcelona",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€15〜35想定",
+          "dinner": "€20〜40想定",
+          "confidence": "low"
+        },
+        "nearest_station_access": "カタルーニャ広場のEl Corte Inglés館内上階。地下鉄Catalunya駅すぐ。",
+        "closed_days": "日曜（施設営業に準ずる・要確認）",
+        "phone": "+34 933 06 38 00",
+        "saturday_hours": "施設営業時間に準ずる（要最新確認）",
+        "saturday_hours_confidence": "low",
+        "saturday_hours_note": "営業時間は変動し得るため、訪問前に公式情報またはGoogle Mapsで要確認。",
+        "saturday_hours_last_checked": "2026-07-15",
+        "saturday_hours_sources": [
+          "https://www.google.com/maps/search/?api=1&query=La%20Pla%C3%A7a%20Gastro%20Mercat%2C%20Pla%C3%A7a%20de%20Catalunya%2014%2C%20Barcelona"
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 41.38716,
+        "lng": 2.16949,
+        "source": "El Corte Inglés Plaça de Catalunyaの建物代表座標（住所近傍推定）",
+        "source_url": "https://www.google.com/maps/search/?api=1&query=La%20Pla%C3%A7a%20Gastro%20Mercat%2C%20Pla%C3%A7a%20de%20Catalunya%2014%2C%20Barcelona",
+        "confidence": "low",
+        "correction_note": "施設は百貨店上階のフードコートであり、座標は建物代表点。館内入口や個別カウンターの位置とは一致しない。"
+      },
+      "google_maps_poi": {
+        "name": "La Plaça Gastro Mercat",
+        "address": "Plaça de Catalunya, 14, 08002 Barcelona, Spain",
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=La%20Pla%C3%A7a%20Gastro%20Mercat%2C%20Pla%C3%A7a%20de%20Catalunya%2014%2C%20Barcelona",
+        "google_maps_place_feature_id": null,
+        "google_maps_redirect_place_path": null
+      },
+      "representative_menu_and_prices": [
+        {
+          "name": "タパス、パエリア、魚料理など各カウンター料理",
+          "price_yen": null,
+          "price_text": null,
+          "note": "複数カウンターから選び、共用席で食べる形式。"
+        }
+      ],
+      "beer_price": {
+        "item": "ビール / ワイン",
+        "price_yen": null,
+        "confidence": "unknown",
+        "note": "現地価格は訪問前に要確認。"
+      },
+      "store_features": [
+        "観光途中の休憩や一人利用に便利。",
+        "カタルーニャ広場を望む立地。",
+        "複数ジャンルから選べる。"
+      ],
+      "review_trend_analysis": {
+        "summary": "立地と使い勝手に優れる一方、営業形態や名称は変更される可能性があるため現地確認推奨。",
+        "positive_keywords": [
+          "好立地",
+          "眺望",
+          "一人利用",
+          "選択肢"
+        ],
+        "caution_keywords": [
+          "座標は建物住所近傍",
+          "施設内店舗の入替あり"
         ],
         "confidence": "low"
       },
       "space": {
         "seat_count": null,
-        "size_impression": "中〜大規模（営業時）",
-        "comfort": "ホテルロビーと一体化した開放的な空間であった。",
-        "confidence": "low"
+        "size_impression": "大規模",
+        "comfort": "共用席のあるフードホール形式。",
+        "confidence": "medium"
       },
       "meta_scores": {
         "cuisine_genre": 3,
         "signature_menu": 3,
         "budget": 3,
         "access": 5,
-        "reservation_ease": 1,
+        "reservation_ease": 3,
         "food_quality": 3,
-        "food_variety": 4,
+        "food_variety": 5,
         "drink_variety": 4,
-        "atmosphere": 5,
-        "relaxation": 4,
+        "atmosphere": 3,
+        "relaxation": 3,
         "noise_level": 3,
         "crowdedness": 3,
-        "seat_comfort": 4,
-        "table_spacing": 4,
-        "space_balance": 4,
-        "staff_warmth": 3,
-        "service_quality": 3,
+        "seat_comfort": 3,
+        "table_spacing": 3,
+        "space_balance": 3,
+        "staff_warmth": 4,
+        "service_quality": 4,
         "other_customers_mood": 4,
-        "intuition": 1,
-        "nostalgia": 2,
-        "sound_impression": 4,
-        "smell_impression": 3,
-        "concept_uniqueness": 4
+        "intuition": 3,
+        "nostalgia": 3,
+        "sound_impression": 3,
+        "smell_impression": 4,
+        "concept_uniqueness": 3
       },
-      "overall_fit_for_3_person_drinking": 1.5,
+      "overall_fit_for_3_person_drinking": 3.5,
       "saturday_lunch_alcohol": {
-        "status": "unavailable_until_confirmed",
+        "status": null,
         "available_from": null,
         "available_until": null,
-        "assumed_lunch_window": "12:00〜16:00",
-        "basis": "カフェ・菓子店または営業状態未確認のため、飲酒目的の候補から外す。",
-        "caveat": "酒類の提供開始時刻・在庫・臨時営業時間は訪問前に店舗へ確認。",
-        "confidence": "low"
+        "assumed_lunch_window": null,
+        "basis": null,
+        "caveat": "営業時間・提供条件は訪問前に要確認。",
+        "confidence": "unknown"
       },
-      "sunday_alcohol_assumption": "飲酒目的の店舗ではないため対象外または要確認。",
+      "sunday_alcohol_assumption": null,
       "weekend_hours": {
-        "saturday": null,
+        "saturday": "施設営業時間に準ずる（要最新確認）",
         "sunday": null,
-        "notes": "Google MapsのPOI・住所・電話・公式リンクは残るが、営業時間が表示されない。公式グループページも残存。一方、公開店舗ページはPermanently Closedと表示し、入居ホテルは2025年に改装のため約1年間閉鎖と報道された。2026年7月の営業可否は訪問前の直接確認が必要。"
+        "notes": "最新営業時間は公式情報またはGoogle Mapsで要確認。"
       },
-      "one_line_pop": "サンタ・アナ広場を望む華やかな一軒――再開状況を確かめてから訪れたい。",
+      "one_line_pop": "カタルーニャ広場を眺めながら、好きな料理を気軽に選べる便利な食の休憩所。",
       "notes": [
-        "ガイドブック掲載時の特徴: サンタ・アナ広場に面する、カフェ風のおしゃれなバル",
-        "ガイドブック掲載価格: タパス €7〜16、予算 €15〜25",
-        "指定住所のPOIを採用。",
-        "公式グループページは存在するが、別の公開店舗ページは閉店表示。Google Mapsに営業時間表示がない。"
+        "旅行誌掲載",
+        "通路両側のカウンターで受け取り、まとめて精算する形式。",
+        "施設は百貨店上階のフードコートであり、座標は建物代表点。館内入口や個別カウンターの位置とは一致しない。"
       ],
       "sources": [
-        {
-          "provider": "Google Maps",
-          "url": "https://www.google.com/maps/place/Ana+la+Santa/@40.4146145,-3.7013906,17z",
-          "used_for": [
-            "poi",
-            "coordinates",
-            "address",
-            "phone",
-            "website",
-            "plus_code",
-            "missing_hours_signal"
-          ]
-        },
-        {
-          "provider": "Grupo Tragaluz",
-          "url": "https://grupotragaluz.com/restaurantes/ana-la-santa/",
-          "used_for": [
-            "official_page_still_present",
-            "address"
-          ]
-        },
-        {
-          "provider": "Postcard",
-          "url": "https://www.postcard.inc/places/ana-la-santa-madrid",
-          "used_for": [
-            "permanently_closed_signal"
-          ]
-        },
-        {
-          "provider": "Cinco Días",
-          "url": "https://cincodias.elpais.com/companias/2025-08-21/melia-pierde-uno-de-sus-hoteles-iconicos-de-madrid-y-vendera-su-mobiliario-a-partir-del-5-de-septiembre.html",
-          "used_for": [
-            "hotel_closure_context"
-          ]
-        }
+        "El Corte Inglés Plaça de Catalunyaの建物代表座標（住所近傍推定）",
+        "https://www.google.com/maps/search/?api=1&query=La%20Pla%C3%A7a%20Gastro%20Mercat%2C%20Pla%C3%A7a%20de%20Catalunya%2014%2C%20Barcelona"
       ]
     },
     {
-      "id": "vinitus_gran_via_4",
-      "store_name": "ビニトゥス / Vinitus",
+      "id": "el_nacional_barcelona",
+      "store_name": "エル・ナシオナル / El Nacional Barcelona",
       "categories": [
-        "旅行誌掲載",
-        "スペイン料理",
-        "タパス",
-        "魚介料理"
+        "旅行誌掲載"
       ],
       "basic_info": {
-        "address": "Gran Vía, 4, Centro, 28013 Madrid, Spain",
-        "area": "グラン・ビア・シベレス寄り",
+        "address": "Passeig de Gràcia, 24 Bis, 08007 Barcelona, Spain",
+        "area": "グラシア通り周辺",
         "genre": [
-          "スペイン料理",
+          "複合レストラン",
           "タパス",
-          "魚介料理"
+          "シーフード",
+          "肉料理"
         ],
-        "google_map_query": "Vinitus Gran Via Restaurant Madrid",
+        "google_map_query": "El Nacional Barcelona Barcelona",
         "google_rating_user_provided": null,
         "tabelog_rating": null,
         "tabelog_review_count": null,
         "budget": {
-          "lunch": "€20〜30想定",
-          "dinner": "€20〜35想定",
+          "lunch": "€25〜50想定",
+          "dinner": "€35〜70想定",
           "confidence": "medium"
         },
-        "nearest_station_access": "グラン・ビア駅から徒歩3分",
-        "closed_days": "なし（公開情報上）",
-        "phone": "+34 916 14 44 21",
-        "saturday_hours": "09:00-01:00",
-        "saturday_hours_confidence": "high",
-        "saturday_hours_note": "Google Mapsまたは店舗公式ページの公開営業時間。臨時変更は訪問前に要確認。",
+        "nearest_station_access": "Passeig de Gràcia駅から徒歩約2分。グラシア通りから路地を入る。",
+        "closed_days": "無休（要最新確認）",
+        "phone": "+34 935 18 50 53",
+        "saturday_hours": "昼〜深夜営業（要最新確認）",
+        "saturday_hours_confidence": "medium",
+        "saturday_hours_note": "営業時間は変動し得るため、訪問前に公式情報またはGoogle Mapsで要確認。",
         "saturday_hours_last_checked": "2026-07-15",
         "saturday_hours_sources": [
-          "https://www.google.com/maps/place/Vinitus+Gran+Via+Restaurant/@40.4193019,-3.6975913,17z"
+          "https://www.elnacionalbcn.com/",
+          "https://www.google.com/maps/search/?api=1&query=El%20Nacional%20Barcelona%2C%20Passeig%20de%20Gr%C3%A0cia%2024%20Bis%2C%20Barcelona"
         ],
-        "sunday_hours": "09:00-01:00",
-        "sunday_hours_confidence": "high",
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
         "last_order": null
       },
       "map_position": {
-        "lat": 40.4193019,
-        "lng": -3.6975913,
-        "source": "Google Maps店舗POI URL埋め込み座標",
-        "source_url": "https://www.google.com/maps/place/Vinitus+Gran+Via+Restaurant/@40.4193019,-3.6975913,17z/data=!3m1!4b1!4m6!3m5!1s0xd4229da4881c4fd:0xfd95dfdda11c0775!8m2!3d40.4193019!4d-3.6975913!16s%2Fg%2F11fmp2hnr2?ved=1t%3A314688",
-        "confidence": "high",
-        "correction_note": "Google Mapsの店舗POI座標。住所ジオコーディングではない。"
+        "lat": 41.39048,
+        "lng": 2.16869,
+        "source": "掲載住所およびPasseig de Gràcia 24 Bisの建物代表座標",
+        "source_url": "https://www.elnacionalbcn.com/",
+        "confidence": "low",
+        "correction_note": "複数店舗が入る大型施設のため、座標は施設建物の代表点。各レストラン区画の位置とは異なる。"
       },
       "google_maps_poi": {
-        "name": "Vinitus Gran Via Restaurant",
-        "address": "Gran Vía, 4, Centro, 28013 Madrid, Spain",
+        "name": "El Nacional Barcelona",
+        "address": "Passeig de Gràcia, 24 Bis, 08007 Barcelona, Spain",
         "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Vinitus%20Gran%20V%C3%ADa%204%20Madrid",
-        "google_maps_place_feature_id": "0xd4229da4881c4fd:0xfd95dfdda11c0775",
-        "google_maps_redirect_place_path": "/maps/place/Vinitus+Gran+Via+Restaurant/@40.4193019,-3.6975913,17z/data=!3m1!4b1!4m6!3m5!1s0xd4229da4881c4fd:0xfd95dfdda11c0775!8m2!3d40.4193019!4d-3.6975913!16s%2Fg%2F11fmp2hnr2"
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=El%20Nacional%20Barcelona%2C%20Passeig%20de%20Gr%C3%A0cia%2024%20Bis%2C%20Barcelona",
+        "google_maps_place_feature_id": null,
+        "google_maps_redirect_place_path": null
       },
       "representative_menu_and_prices": [
         {
-          "name": "魚介系タパス各種",
+          "name": "施設内各レストランの肉・魚介・タパス",
           "price_yen": null,
-          "price_text": "価格要確認",
-          "note": "鮮魚・貝・海老など選択肢が豊富。"
-        },
-        {
-          "name": "季節のスペイン料理",
-          "price_yen": null,
-          "price_text": "価格要確認",
-          "note": "小皿から食事まで幅広い。"
+          "price_text": null,
+          "note": "複数の専門エリアから目的に合わせて選べる。"
         }
       ],
       "beer_price": {
-        "item": "Caña（生ビール小）",
+        "item": "ビール / ワイン",
         "price_yen": null,
         "confidence": "unknown",
-        "note": "ワイン・カバも豊富。価格は要確認。"
+        "note": "現地価格は訪問前に要確認。"
       },
       "store_features": [
-        "魚介から肉料理、デザートまで品数が豊富。",
-        "Gran Vía 4の中心立地で朝から深夜まで使いやすい。",
-        "複数人で料理をシェアする食事に向く。"
+        "歴史的建築を改装した華やかな大型飲食施設。",
+        "バルから本格レストランまで選択肢が豊富。",
+        "観光の途中でもしっかりした食事でも使える。"
       ],
       "review_trend_analysis": {
-        "summary": "料理の種類と華やかな盛り付け、中心立地が支持される人気店。時間帯によっては待ち時間と店内の騒がしさがある。",
+        "summary": "空間の華やかさと選択肢の多さが魅力。観光客が多いが初訪問でも利用しやすい。",
         "positive_keywords": [
-          "魚介",
-          "品数豊富",
-          "華やか",
+          "豪華空間",
+          "複合施設",
+          "選択肢",
           "好立地"
         ],
         "caution_keywords": [
-          "行列",
-          "騒がしい",
-          "混雑"
+          "混雑",
+          "観光地価格",
+          "座標は住所近傍推定"
         ],
         "confidence": "medium"
       },
       "space": {
         "seat_count": null,
-        "size_impression": "大規模",
-        "comfort": "モダンで活気があり、グループ利用もしやすい。",
-        "confidence": "medium"
+        "size_impression": "非常に大規模",
+        "comfort": "天井が高く華やか。エリアごとに雰囲気が異なる。",
+        "confidence": "high"
       },
       "meta_scores": {
         "cuisine_genre": 4,
         "signature_menu": 4,
-        "budget": 3,
+        "budget": 2,
         "access": 5,
         "reservation_ease": 3,
         "food_quality": 4,
         "food_variety": 5,
         "drink_variety": 5,
         "atmosphere": 4,
-        "relaxation": 3,
-        "noise_level": 2,
-        "crowdedness": 2,
-        "seat_comfort": 4,
-        "table_spacing": 3,
-        "space_balance": 4,
-        "staff_warmth": 4,
-        "service_quality": 4,
-        "other_customers_mood": 5,
-        "intuition": 4,
-        "nostalgia": 2,
-        "sound_impression": 4,
-        "smell_impression": 4,
-        "concept_uniqueness": 3
-      },
-      "overall_fit_for_3_person_drinking": 4.4,
-      "saturday_lunch_alcohol": {
-        "status": "available_or_likely",
-        "available_from": "09:00",
-        "available_until": "01:00",
-        "assumed_lunch_window": "12:00〜16:00",
-        "basis": "公開営業時間と店舗業態から判断。",
-        "caveat": "酒類の提供開始時刻・在庫・臨時営業時間は訪問前に店舗へ確認。",
-        "confidence": "medium"
-      },
-      "sunday_alcohol_assumption": "日曜営業時間内は酒類提供の可能性が高いが、提供開始時刻は要確認。",
-      "weekend_hours": {
-        "saturday": "09:00-01:00",
-        "sunday": "09:00-01:00",
-        "notes": "公開情報に基づく。祝日・臨時変更は反映されない場合がある。"
-      },
-      "one_line_pop": "魚介も肉も欲張れる華やかなタパスを、グラン・ビアの熱気と一緒にシェア。",
-      "notes": [
-        "ガイドブック掲載時の特徴: バルセロナ発の人気バル。魚介や本格料理など種類が豊富",
-        "ガイドブック掲載価格なし。",
-        "複数店のうち、指定された中心繁華街のGran Vía 4店を選定。"
-      ],
-      "sources": [
-        {
-          "provider": "Google Maps",
-          "url": "https://www.google.com/maps/place/Vinitus+Gran+Via+Restaurant/@40.4193019,-3.6975913,17z",
-          "used_for": [
-            "poi",
-            "coordinates",
-            "address",
-            "phone",
-            "website",
-            "opening_hours",
-            "plus_code"
-          ]
-        },
-        {
-          "provider": "Grupo La Flauta",
-          "url": "https://www.laflautagroup.com/",
-          "used_for": [
-            "brand",
-            "Madrid_branch_presence"
-          ]
-        },
-        {
-          "provider": "Madrid a la Carta",
-          "url": "https://madridalacarta.com/en-madrid-restaurante/vinitus-madrid/",
-          "used_for": [
-            "address",
-            "phone",
-            "description"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "honest_greens_gran_via_7",
-      "store_name": "オネスト・グリーン / Honest Greens",
-      "categories": [
-        "旅行誌掲載",
-        "ヘルシー料理",
-        "カフェ",
-        "地中海料理"
-      ],
-      "basic_info": {
-        "address": "Gran Vía, 7, Centro, 28013 Madrid, Spain",
-        "area": "グラン・ビア・シベレス寄り",
-        "genre": [
-          "ヘルシー料理",
-          "カフェ",
-          "地中海料理"
-        ],
-        "google_map_query": "Honest Greens Gran Via 7 Madrid",
-        "google_rating_user_provided": null,
-        "tabelog_rating": null,
-        "tabelog_review_count": null,
-        "budget": {
-          "lunch": "€10〜20想定",
-          "dinner": "€10〜20想定",
-          "confidence": "medium"
-        },
-        "nearest_station_access": "グラン・ビア駅から徒歩3分",
-        "closed_days": "なし（公開情報上）",
-        "phone": "+34 931 22 76 64",
-        "saturday_hours": "09:30-00:00",
-        "saturday_hours_confidence": "high",
-        "saturday_hours_note": "Google Mapsまたは店舗公式ページの公開営業時間。臨時変更は訪問前に要確認。",
-        "saturday_hours_last_checked": "2026-07-15",
-        "saturday_hours_sources": [
-          "https://www.google.com/maps/place/Honest+Greens+Gran+Via+7/@40.4192969,-3.6988632,17z"
-        ],
-        "sunday_hours": "09:30-23:00",
-        "sunday_hours_confidence": "high",
-        "last_order": null
-      },
-      "map_position": {
-        "lat": 40.4192969,
-        "lng": -3.6988632,
-        "source": "Google Maps店舗POI URL埋め込み座標",
-        "source_url": "https://www.google.com/maps/place/Honest+Greens+Gran+Via+7/@40.4192969,-3.6988632,17z/data=!3m1!4b1!4m6!3m5!1s0xd42292d9f03be1b:0x1c704a8edcb48579!8m2!3d40.4192969!4d-3.6988632!16s%2Fg%2F11s414r346?ved=1t%3A314688",
-        "confidence": "high",
-        "correction_note": "Google Mapsの店舗POI座標。住所ジオコーディングではない。"
-      },
-      "google_maps_poi": {
-        "name": "Honest Greens Gran Via 7",
-        "address": "Gran Vía, 7, Centro, 28013 Madrid, Spain",
-        "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Honest%20Greens%20Gran%20V%C3%ADa%207%20Madrid",
-        "google_maps_place_feature_id": "0xd42292d9f03be1b:0x1c704a8edcb48579",
-        "google_maps_redirect_place_path": "/maps/place/Honest+Greens+Gran+Via+7/@40.4192969,-3.6988632,17z/data=!3m1!4b1!4m6!3m5!1s0xd42292d9f03be1b:0x1c704a8edcb48579!8m2!3d40.4192969!4d-3.6988632!16s%2Fg%2F11s414r346"
-      },
-      "representative_menu_and_prices": [
-        {
-          "name": "ピリピリチキン",
-          "price_yen": null,
-          "price_text": "€8.95（ガイド掲載時）",
-          "note": "野菜と合わせやすい人気の主菜。"
-        },
-        {
-          "name": "ドリンクバー",
-          "price_yen": null,
-          "price_text": "€2.65（ガイド掲載時）",
-          "note": "食事と組み合わせるセルフサービス。"
-        }
-      ],
-      "beer_price": {
-        "item": "ビール／ワイン",
-        "price_yen": null,
-        "confidence": "unknown",
-        "note": "アルコール取扱い・価格は現地最新メニューで要確認。"
-      },
-      "store_features": [
-        "野菜・果物・ハーブ・ナッツを多用する健康志向。",
-        "ベジタリアン、植物性、グルテンフリー等の選択肢がある。",
-        "Gran Vía 7の中心立地で朝食から夕食まで使いやすい。"
-      ],
-      "review_trend_analysis": {
-        "summary": "彩り豊かなボウルと食事制限への対応が好評。セルフサービス方式で、昼食時は行列ができやすい。",
-        "positive_keywords": [
-          "野菜",
-          "ヘルシー",
-          "ベジタリアン",
-          "アレルゲン対応"
-        ],
-        "caution_keywords": [
-          "行列",
-          "セルフサービス"
-        ],
-        "confidence": "high"
-      },
-      "space": {
-        "seat_count": null,
-        "size_impression": "大規模",
-        "comfort": "明るくカジュアル。回転は速いがピーク時は混雑。",
-        "confidence": "medium"
-      },
-      "meta_scores": {
-        "cuisine_genre": 5,
-        "signature_menu": 4,
-        "budget": 4,
-        "access": 5,
-        "reservation_ease": 5,
-        "food_quality": 4,
-        "food_variety": 5,
-        "drink_variety": 3,
-        "atmosphere": 4,
         "relaxation": 4,
         "noise_level": 3,
-        "crowdedness": 2,
-        "seat_comfort": 4,
+        "crowdedness": 3,
+        "seat_comfort": 3,
         "table_spacing": 3,
-        "space_balance": 4,
+        "space_balance": 3,
         "staff_warmth": 4,
         "service_quality": 4,
         "other_customers_mood": 4,
         "intuition": 4,
-        "nostalgia": 1,
+        "nostalgia": 3,
         "sound_impression": 3,
         "smell_impression": 4,
-        "concept_uniqueness": 4
+        "concept_uniqueness": 5
       },
-      "overall_fit_for_3_person_drinking": 3.2,
+      "overall_fit_for_3_person_drinking": 4.4,
       "saturday_lunch_alcohol": {
-        "status": "not_primary_or_unconfirmed",
+        "status": null,
         "available_from": null,
         "available_until": null,
-        "assumed_lunch_window": "12:00〜16:00",
-        "basis": "カフェ・菓子店または営業状態未確認のため、飲酒目的の候補から外す。",
-        "caveat": "酒類の提供開始時刻・在庫・臨時営業時間は訪問前に店舗へ確認。",
-        "confidence": "low"
+        "assumed_lunch_window": null,
+        "basis": null,
+        "caveat": "営業時間・提供条件は訪問前に要確認。",
+        "confidence": "unknown"
       },
-      "sunday_alcohol_assumption": "飲酒目的の店舗ではないため対象外または要確認。",
+      "sunday_alcohol_assumption": null,
       "weekend_hours": {
-        "saturday": "09:30-00:00",
-        "sunday": "09:30-23:00",
-        "notes": "公開情報に基づく。祝日・臨時変更は反映されない場合がある。"
+        "saturday": "昼〜深夜営業（要最新確認）",
+        "sunday": null,
+        "notes": "最新営業時間は公式情報またはGoogle Mapsで要確認。"
       },
-      "one_line_pop": "旅の野菜不足を彩り豊かな一皿でリセットする、グラン・ビアの軽やかな休憩所。",
+      "one_line_pop": "圧巻の歴史的空間で、肉・魚介・タパスを気分に合わせて選ぶ。",
       "notes": [
-        "ガイドブック掲載時の特徴: 野菜、果物、ハーブ、ナッツを多く使う健康志向のカフェ",
-        "ガイドブック掲載価格: ピリピリチキン €8.95、ドリンクバー €2.65",
-        "複数店のうち、指定された中心繁華街のGran Vía 7店を選定。"
+        "旅行誌掲載",
+        "倉庫・駐車場だった建物を利用した飲食店街。",
+        "複数店舗が入る大型施設のため、座標は施設建物の代表点。各レストラン区画の位置とは異なる。"
       ],
       "sources": [
-        {
-          "provider": "Google Maps",
-          "url": "https://www.google.com/maps/place/Honest+Greens+Gran+Via+7/@40.4192969,-3.6988632,17z",
-          "used_for": [
-            "poi",
-            "coordinates",
-            "address",
-            "phone",
-            "website",
-            "opening_hours",
-            "plus_code"
-          ]
-        },
-        {
-          "provider": "店舗公式サイト",
-          "url": "https://www.honestgreens.com/en/restaurants/gv7-en/",
-          "used_for": [
-            "branch_identity",
-            "address",
-            "concept"
-          ]
-        },
-        {
-          "provider": "Restaurant Guru",
-          "url": "https://restaurantguru.com/Honest-Greens-Gran-Via-7-Madrid",
-          "used_for": [
-            "recent_public_listing"
-          ]
-        }
+        "https://www.elnacionalbcn.com/",
+        "掲載住所およびPasseig de Gràcia 24 Bisの建物代表座標",
+        "https://www.google.com/maps/search/?api=1&query=El%20Nacional%20Barcelona%2C%20Passeig%20de%20Gr%C3%A0cia%2024%20Bis%2C%20Barcelona"
       ]
     },
     {
-      "id": "chocolateria_san_gines_pasadizo_5",
-      "store_name": "チョコラテリア・サン・ヒネス / Chocolatería San Ginés",
+      "id": "el_xampanyet",
+      "store_name": "チャンパニェット / El Xampanyet",
       "categories": [
-        "旅行誌掲載",
-        "チュロス",
-        "チョコレートカフェ",
-        "老舗"
+        "旅行誌掲載"
       ],
       "basic_info": {
-        "address": "Pasadizo de San Ginés, 5, Centro, 28013 Madrid, Spain",
-        "area": "ソル・サン・ヒネス周辺",
+        "address": "Carrer de Montcada, 22, 08003 Barcelona, Spain",
+        "area": "エル・ボルン周辺",
         "genre": [
-          "チュロス",
-          "チョコレートカフェ",
-          "老舗"
+          "老舗バル",
+          "カヴァ",
+          "カタルーニャ料理"
         ],
-        "google_map_query": "Chocolatería San Ginés Madrid",
+        "google_map_query": "El Xampanyet Barcelona",
         "google_rating_user_provided": null,
         "tabelog_rating": null,
         "tabelog_review_count": null,
         "budget": {
-          "lunch": "€5〜10想定",
-          "dinner": "€5〜10想定",
+          "lunch": "€20〜40想定",
+          "dinner": "€25〜45想定",
           "confidence": "medium"
         },
-        "nearest_station_access": "ソル駅から徒歩3分",
-        "closed_days": "なし（24時間営業表示）",
-        "phone": "+34 913 65 65 46",
-        "saturday_hours": "24時間営業",
-        "saturday_hours_confidence": "high",
-        "saturday_hours_note": "Google Mapsまたは店舗公式ページの公開営業時間。臨時変更は訪問前に要確認。",
+        "nearest_station_access": "地下鉄Jaume I駅から徒歩約5分。ピカソ美術館近く。",
+        "closed_days": "日曜（要最新確認）",
+        "phone": "+34 933 19 70 03",
+        "saturday_hours": "昼・夜営業（要最新確認）",
+        "saturday_hours_confidence": "medium",
+        "saturday_hours_note": "営業時間は変動し得るため、訪問前に公式情報またはGoogle Mapsで要確認。",
         "saturday_hours_last_checked": "2026-07-15",
         "saturday_hours_sources": [
-          "https://www.google.com/maps/search/?api=1&query=Chocolater%C3%ADa%20San%20Gin%C3%A9s%20Pasadizo%20de%20San%20Gin%C3%A9s%205%20Madrid"
+          "https://elxampanyet.com/",
+          "https://www.google.com/maps/search/?api=1&query=El%20Xampanyet%2C%20Carrer%20de%20Montcada%2022%2C%20Barcelona"
         ],
-        "sunday_hours": "24時間営業",
-        "sunday_hours_confidence": "high",
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
         "last_order": null
       },
       "map_position": {
-        "lat": 40.4167385,
-        "lng": -3.7069356,
-        "source": "Google Maps店舗POI URL埋め込み座標",
-        "source_url": "https://www.google.com/maps/search/?api=1&query=Chocolater%C3%ADa%20San%20Gin%C3%A9s%20Pasadizo%20de%20San%20Gin%C3%A9s%205%20Madrid",
+        "lat": 41.38451,
+        "lng": 2.18168,
+        "source": "OpenStreetMap POI via Mapcarta",
+        "source_url": "https://elxampanyet.com/",
         "confidence": "high",
-        "correction_note": "Google Mapsの店舗POI座標。住所ジオコーディングではない。"
+        "correction_note": null
       },
       "google_maps_poi": {
-        "name": "Chocolatería San Ginés",
-        "address": "Pasadizo de San Ginés, 5, Centro, 28013 Madrid, Spain",
+        "name": "El Xampanyet",
+        "address": "Carrer de Montcada, 22, 08003 Barcelona, Spain",
         "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Chocolater%C3%ADa%20San%20Gin%C3%A9s%20Pasadizo%20de%20San%20Gin%C3%A9s%205%20Madrid",
-        "google_maps_place_feature_id": "0xd42287ebe5ee41d:0x6895d6342c12c3d5",
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=El%20Xampanyet%2C%20Carrer%20de%20Montcada%2022%2C%20Barcelona",
+        "google_maps_place_feature_id": null,
         "google_maps_redirect_place_path": null
       },
       "representative_menu_and_prices": [
         {
-          "name": "チュロス・コン・チョコラーテ",
+          "name": "自家製スパークリングワインとアンチョビ、保存食タパス",
           "price_yen": null,
-          "price_text": "価格要確認",
-          "note": "濃厚なホットチョコレートに揚げたてチュロスを浸す名物。"
+          "price_text": null,
+          "note": "老舗らしい定番小皿を微発泡ワインと楽しむ。"
         }
       ],
       "beer_price": {
-        "item": null,
+        "item": "ビール / ワイン",
         "price_yen": null,
         "confidence": "unknown",
-        "note": "チュロスとチョコレートが主目的のためアルコール情報は対象外。"
+        "note": "現地価格は訪問前に要確認。"
       },
       "store_features": [
-        "1894年創業のマドリードを代表するチュロス店。",
-        "24時間営業表示で早朝・深夜にも組み込みやすい。",
-        "Pasadizo de San Ginés 5の創業地店舗を代表採用。"
+        "80年以上の歴史を持つ老舗。",
+        "タイル張りの店内と樽・ボトルが並ぶ雰囲気。",
+        "名物の微発泡ワインとカタルーニャ料理。"
       ],
       "review_trend_analysis": {
-        "summary": "濃厚なチョコレートと揚げたてチュロス、歴史的な雰囲気が圧倒的に人気。常に行列ができやすい。",
+        "summary": "混雑していても訪れる価値がある、雰囲気と味の両方で人気の歴史的バル。",
         "positive_keywords": [
-          "チュロス",
-          "ホットチョコレート",
           "老舗",
-          "24時間"
+          "カヴァ",
+          "アンチョビ",
+          "歴史的雰囲気"
         ],
         "caution_keywords": [
-          "大行列",
-          "混雑",
-          "観光客が多い"
+          "行列",
+          "立ち飲みになる場合あり"
         ],
-        "confidence": "high"
+        "confidence": "medium"
       },
       "space": {
         "seat_count": null,
-        "size_impression": "中規模・周辺複数区画",
-        "comfort": "歴史的で活気がある。静かな休憩より名物体験重視。",
-        "confidence": "medium"
+        "size_impression": "小規模",
+        "comfort": "活気が強く、短時間で一杯楽しむのに向く。",
+        "confidence": "high"
       },
       "meta_scores": {
         "cuisine_genre": 5,
         "signature_menu": 5,
-        "budget": 5,
+        "budget": 3,
         "access": 5,
-        "reservation_ease": 4,
+        "reservation_ease": 3,
         "food_quality": 5,
-        "food_variety": 2,
-        "drink_variety": 2,
+        "food_variety": 4,
+        "drink_variety": 5,
         "atmosphere": 5,
         "relaxation": 2,
-        "noise_level": 2,
-        "crowdedness": 1,
-        "seat_comfort": 3,
-        "table_spacing": 2,
-        "space_balance": 3,
-        "staff_warmth": 3,
-        "service_quality": 4,
-        "other_customers_mood": 5,
-        "intuition": 5,
-        "nostalgia": 5,
-        "sound_impression": 4,
-        "smell_impression": 5,
-        "concept_uniqueness": 5
-      },
-      "overall_fit_for_3_person_drinking": 2,
-      "saturday_lunch_alcohol": {
-        "status": "not_primary_or_unconfirmed",
-        "available_from": null,
-        "available_until": null,
-        "assumed_lunch_window": "12:00〜16:00",
-        "basis": "カフェ・菓子店または営業状態未確認のため、飲酒目的の候補から外す。",
-        "caveat": "酒類の提供開始時刻・在庫・臨時営業時間は訪問前に店舗へ確認。",
-        "confidence": "low"
-      },
-      "sunday_alcohol_assumption": "飲酒目的の店舗ではないため対象外または要確認。",
-      "weekend_hours": {
-        "saturday": "24時間営業",
-        "sunday": "24時間営業",
-        "notes": "公開情報に基づく。祝日・臨時変更は反映されない場合がある。"
-      },
-      "one_line_pop": "1894年から続く濃厚チョコに揚げたてチュロスを浸す、マドリード必食の甘い儀式。",
-      "notes": [
-        "ガイドブック掲載時の特徴: 1894年創業。マドリードを代表するチュロス店",
-        "ガイドブック掲載価格なし。",
-        "複数地域に展開する現在も、1894年創業のマドリード中心部Pasadizo de San Ginés 5店を代表として選定。"
-      ],
-      "sources": [
-        {
-          "provider": "Google Maps",
-          "url": "https://www.google.com/maps/search/?api=1&query=Chocolater%C3%ADa%20San%20Gin%C3%A9s%20Pasadizo%20de%20San%20Gin%C3%A9s%205%20Madrid",
-          "used_for": [
-            "poi",
-            "coordinates",
-            "address",
-            "phone",
-            "website",
-            "opening_hours",
-            "plus_code"
-          ]
-        },
-        {
-          "provider": "店舗公式サイト",
-          "url": "https://chocolateriasangines.com/",
-          "used_for": [
-            "identity",
-            "history",
-            "address"
-          ]
-        },
-        {
-          "provider": "店舗公式問い合わせページ",
-          "url": "https://chocolateriasangines.com/contacto/",
-          "used_for": [
-            "exact_address"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "chocolateria_valor_postigo_7",
-      "store_name": "バロール / Valor",
-      "categories": [
-        "旅行誌掲載",
-        "チョコレートカフェ",
-        "チュロス",
-        "スイーツ"
-      ],
-      "basic_info": {
-        "address": "Calle del Postigo de San Martín, 7, Centro, 28013 Madrid, Spain",
-        "area": "カジャオ・グラン・ビア周辺",
-        "genre": [
-          "チョコレートカフェ",
-          "チュロス",
-          "スイーツ"
-        ],
-        "google_map_query": "Chocolatería Valor Madrid",
-        "google_rating_user_provided": null,
-        "tabelog_rating": null,
-        "tabelog_review_count": null,
-        "budget": {
-          "lunch": "€5〜10想定",
-          "dinner": "€5〜10想定",
-          "confidence": "medium"
-        },
-        "nearest_station_access": "カジャオ駅から徒歩1分",
-        "closed_days": "なし（公開情報上）",
-        "phone": "+34 915 22 92 88",
-        "saturday_hours": "09:00-01:00",
-        "saturday_hours_confidence": "high",
-        "saturday_hours_note": "Google Mapsまたは店舗公式ページの公開営業時間。臨時変更は訪問前に要確認。",
-        "saturday_hours_last_checked": "2026-07-15",
-        "saturday_hours_sources": [
-          "https://www.google.com/maps/place/Chocolater%C3%ADa+Valor/@40.4191978,-3.7061875,17z"
-        ],
-        "sunday_hours": "09:00-22:30",
-        "sunday_hours_confidence": "high",
-        "last_order": null
-      },
-      "map_position": {
-        "lat": 40.4191978,
-        "lng": -3.7061875,
-        "source": "Google Maps店舗POI URL埋め込み座標",
-        "source_url": "https://www.google.com/maps/place/Chocolater%C3%ADa+Valor/@40.4191978,-3.7061875,17z/data=!3m1!4b1!4m6!3m5!1s0xd42287c47dc921d:0x8bc324c3353c693d!8m2!3d40.4191978!4d-3.7061875!16s%2Fg%2F1hc5byvgh?ved=1t%3A314688",
-        "confidence": "high",
-        "correction_note": "Google Mapsの店舗POI座標。住所ジオコーディングではない。"
-      },
-      "google_maps_poi": {
-        "name": "Chocolatería Valor",
-        "address": "Calle del Postigo de San Martín, 7, Centro, 28013 Madrid, Spain",
-        "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Chocolater%C3%ADa%20Valor%20Postigo%20de%20San%20Mart%C3%ADn%207%20Madrid",
-        "google_maps_place_feature_id": "0xd42287c47dc921d:0x8bc324c3353c693d",
-        "google_maps_redirect_place_path": "/maps/place/Chocolater%C3%ADa+Valor/@40.4191978,-3.7061875,17z/data=!3m1!4b1!4m6!3m5!1s0xd42287c47dc921d:0x8bc324c3353c693d!8m2!3d40.4191978!4d-3.7061875!16s%2Fg%2F1hc5byvgh"
-      },
-      "representative_menu_and_prices": [
-        {
-          "name": "チュロス・コン・チョコラーテ",
-          "price_yen": null,
-          "price_text": "€5.90（ガイド掲載時）",
-          "note": "老舗チョコレートメーカーの定番セット。"
-        },
-        {
-          "name": "チョコレート製品各種",
-          "price_yen": null,
-          "price_text": "価格要確認",
-          "note": "店内購入・土産にも使える。"
-        }
-      ],
-      "beer_price": {
-        "item": null,
-        "price_yen": null,
-        "confidence": "unknown",
-        "note": "チョコレートカフェのためアルコール情報は対象外。"
-      },
-      "store_features": [
-        "1881年創業メーカーの直営チョコレートカフェ。",
-        "Callao駅近くで休憩や買い物に便利。",
-        "複数店のうち中心繁華街Postigo de San Martín店を代表採用。"
-      ],
-      "review_trend_analysis": {
-        "summary": "濃厚なチョコレートとアクセスの良さが魅力。San Ginésより落ち着いて座りたい場合の候補になりやすい。",
-        "positive_keywords": [
-          "チョコレート",
-          "チュロス",
-          "好立地",
-          "土産"
-        ],
-        "caution_keywords": [
-          "混雑",
-          "時間帯でサービス差"
-        ],
-        "confidence": "medium"
-      },
-      "space": {
-        "seat_count": null,
-        "size_impression": "中〜大規模・複数階",
-        "comfort": "カフェ席があり、甘味休憩に使いやすい。",
-        "confidence": "medium"
-      },
-      "meta_scores": {
-        "cuisine_genre": 5,
-        "signature_menu": 5,
-        "budget": 5,
-        "access": 5,
-        "reservation_ease": 5,
-        "food_quality": 4,
-        "food_variety": 4,
-        "drink_variety": 4,
-        "atmosphere": 4,
-        "relaxation": 4,
         "noise_level": 3,
         "crowdedness": 3,
-        "seat_comfort": 4,
+        "seat_comfort": 3,
         "table_spacing": 3,
-        "space_balance": 4,
-        "staff_warmth": 3,
-        "service_quality": 3,
-        "other_customers_mood": 4,
-        "intuition": 4,
-        "nostalgia": 4,
-        "sound_impression": 3,
-        "smell_impression": 5,
-        "concept_uniqueness": 4
-      },
-      "overall_fit_for_3_person_drinking": 2.1,
-      "saturday_lunch_alcohol": {
-        "status": "not_primary_or_unconfirmed",
-        "available_from": null,
-        "available_until": null,
-        "assumed_lunch_window": "12:00〜16:00",
-        "basis": "カフェ・菓子店または営業状態未確認のため、飲酒目的の候補から外す。",
-        "caveat": "酒類の提供開始時刻・在庫・臨時営業時間は訪問前に店舗へ確認。",
-        "confidence": "low"
-      },
-      "sunday_alcohol_assumption": "飲酒目的の店舗ではないため対象外または要確認。",
-      "weekend_hours": {
-        "saturday": "09:00-01:00",
-        "sunday": "09:00-22:30",
-        "notes": "公開情報に基づく。祝日・臨時変更は反映されない場合がある。"
-      },
-      "one_line_pop": "老舗メーカーの濃厚チョコとチュロスを、カジャオ直近でゆったり味わう。",
-      "notes": [
-        "ガイドブック掲載時の特徴: 1881年創業のチョコレートメーカー直営カフェ",
-        "ガイドブック掲載価格: チュロス・コン・チョコラーテ €5.90",
-        "複数店のうち、Callao近くの中心繁華街Postigo de San Martín 7店を選定。"
-      ],
-      "sources": [
-        {
-          "provider": "Google Maps",
-          "url": "https://www.google.com/maps/place/Chocolater%C3%ADa+Valor/@40.4191978,-3.7061875,17z",
-          "used_for": [
-            "poi",
-            "coordinates",
-            "address",
-            "phone",
-            "website",
-            "opening_hours",
-            "plus_code"
-          ]
-        },
-        {
-          "provider": "Valor公式サイト",
-          "url": "https://www.valor.es/busca-tu-chocolateria/",
-          "used_for": [
-            "brand",
-            "store_locator"
-          ]
-        },
-        {
-          "provider": "Madrid Tourism",
-          "url": "https://www.esmadrid.com/en/nightlife/chocolateria-valor-postigo-de-san-martin",
-          "used_for": [
-            "branch_identity",
-            "address",
-            "description"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "el_riojano_mayor_10",
-      "store_name": "エル・リオハーノ / El Riojano",
-      "categories": [
-        "旅行誌掲載",
-        "老舗菓子店",
-        "カフェ",
-        "伝統菓子"
-      ],
-      "basic_info": {
-        "address": "Calle Mayor, 10, Centro, 28013 Madrid, Spain",
-        "area": "ソル・Calle Mayor周辺",
-        "genre": [
-          "老舗菓子店",
-          "カフェ",
-          "伝統菓子"
-        ],
-        "google_map_query": "El Riojano Madrid",
-        "google_rating_user_provided": null,
-        "tabelog_rating": null,
-        "tabelog_review_count": null,
-        "budget": {
-          "lunch": "€5〜15想定",
-          "dinner": "€5〜15想定",
-          "confidence": "medium"
-        },
-        "nearest_station_access": "ソル駅から徒歩1分",
-        "closed_days": "要確認（Google Mapsと公式サイトで日曜営業情報が不一致）",
-        "phone": "+34 913 66 44 82",
-        "saturday_hours": "09:00-20:30",
-        "saturday_hours_confidence": "high",
-        "saturday_hours_note": "Google Mapsまたは店舗公式ページの公開営業時間。臨時変更は訪問前に要確認。",
-        "saturday_hours_last_checked": "2026-07-15",
-        "saturday_hours_sources": [
-          "https://www.google.com/maps/place/El+Riojano/@40.4164843,-3.7059749,17z",
-          "https://www.pasteleriaelriojano.com/"
-        ],
-        "sunday_hours": "定休日",
-        "sunday_hours_confidence": "high",
-        "last_order": null
-      },
-      "map_position": {
-        "lat": 40.4164843,
-        "lng": -3.7059749,
-        "source": "Google Maps店舗POI URL埋め込み座標",
-        "source_url": "https://www.google.com/maps/place/El+Riojano/@40.4164843,-3.7059749,17z/data=!3m1!4b1!4m6!3m5!1s0xd42287ef2efc18f:0x30ad7a72c79c03d6!8m2!3d40.4164843!4d-3.7059749!16s%2Fg%2F1tgq7zgb?ved=1t%3A314688",
-        "confidence": "high",
-        "correction_note": "Google Mapsの店舗POI座標。住所ジオコーディングではない。"
-      },
-      "google_maps_poi": {
-        "name": "El Riojano",
-        "address": "Calle Mayor, 10, Centro, 28013 Madrid, Spain",
-        "google_maps_short_url": null,
-        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=El%20Riojano%20Calle%20Mayor%2010%20Madrid",
-        "google_maps_place_feature_id": "0xd42287ef2efc18f:0x30ad7a72c79c03d6",
-        "google_maps_redirect_place_path": "/maps/place/El+Riojano/@40.4164843,-3.7059749,17z/data=!3m1!4b1!4m6!3m5!1s0xd42287ef2efc18f:0x30ad7a72c79c03d6!8m2!3d40.4164843!4d-3.7059749!16s%2Fg%2F1tgq7zgb"
-      },
-      "representative_menu_and_prices": [
-        {
-          "name": "伝統ケーキ各種",
-          "price_yen": null,
-          "price_text": "€4.60〜5.50（ガイド掲載時）",
-          "note": "クラシックなサロンで味わう。"
-        },
-        {
-          "name": "マドリード伝統菓子",
-          "price_yen": null,
-          "price_text": "価格要確認",
-          "note": "季節菓子や焼き菓子を選べる。"
-        }
-      ],
-      "beer_price": {
-        "item": null,
-        "price_yen": null,
-        "confidence": "unknown",
-        "note": "菓子・カフェ利用が主目的のためアルコール情報は対象外。"
-      },
-      "store_features": [
-        "公式情報では1855年創業の歴史的菓子店。",
-        "奥にクラシックで落ち着いたティールームがある。",
-        "Calle Mayor 10でソルからのアクセスが良い。"
-      ],
-      "review_trend_analysis": {
-        "summary": "伝統菓子と保存された歴史的内装が高く評価され、観光途中に落ち着いて休憩しやすい。営業時間情報には差異がある。",
-        "positive_keywords": [
-          "伝統菓子",
-          "歴史的内装",
-          "ティールーム",
-          "落ち着く"
-        ],
-        "caution_keywords": [
-          "営業時間要確認",
-          "日曜情報不一致"
-        ],
-        "confidence": "high"
-      },
-      "space": {
-        "seat_count": null,
-        "size_impression": "中規模",
-        "comfort": "店舗奥のティールームはクラシックで比較的落ち着く。",
-        "confidence": "high"
-      },
-      "meta_scores": {
-        "cuisine_genre": 5,
-        "signature_menu": 4,
-        "budget": 4,
-        "access": 5,
-        "reservation_ease": 5,
-        "food_quality": 5,
-        "food_variety": 5,
-        "drink_variety": 4,
-        "atmosphere": 5,
-        "relaxation": 5,
-        "noise_level": 5,
-        "crowdedness": 4,
-        "seat_comfort": 4,
-        "table_spacing": 4,
-        "space_balance": 5,
+        "space_balance": 3,
         "staff_warmth": 4,
         "service_quality": 4,
         "other_customers_mood": 4,
         "intuition": 5,
-        "nostalgia": 5,
-        "sound_impression": 4,
-        "smell_impression": 5,
+        "nostalgia": 3,
+        "sound_impression": 3,
+        "smell_impression": 4,
         "concept_uniqueness": 5
       },
-      "overall_fit_for_3_person_drinking": 2.3,
+      "overall_fit_for_3_person_drinking": 4.5,
       "saturday_lunch_alcohol": {
-        "status": "not_primary_or_unconfirmed",
+        "status": null,
         "available_from": null,
         "available_until": null,
-        "assumed_lunch_window": "12:00〜16:00",
-        "basis": "カフェ・菓子店または営業状態未確認のため、飲酒目的の候補から外す。",
-        "caveat": "酒類の提供開始時刻・在庫・臨時営業時間は訪問前に店舗へ確認。",
-        "confidence": "low"
+        "assumed_lunch_window": null,
+        "basis": null,
+        "caveat": "営業時間・提供条件は訪問前に要確認。",
+        "confidence": "unknown"
       },
-      "sunday_alcohol_assumption": "飲酒目的の店舗ではないため対象外または要確認。",
+      "sunday_alcohol_assumption": null,
       "weekend_hours": {
-        "saturday": "09:00-20:30",
-        "sunday": "定休日",
-        "notes": "公開情報に基づく。祝日・臨時変更は反映されない場合がある。"
+        "saturday": "昼・夜営業（要最新確認）",
+        "sunday": null,
+        "notes": "最新営業時間は公式情報またはGoogle Mapsで要確認。"
       },
-      "one_line_pop": "王室ゆかりの菓子職人から続くクラシックなサロンで、マドリードの甘い歴史に浸る。",
+      "one_line_pop": "老舗のタイル空間で、自家製の泡と絶品アンチョビを一杯。",
       "notes": [
-        "ガイドブック掲載時の特徴: 1885年創業の老舗菓子店。伝統菓子とケーキ",
-        "ガイドブック掲載価格: ケーキ €4.60〜5.50",
-        "指定住所の歴史的店舗POIを採用。",
-        "営業時間はGoogle Mapsで日曜定休・土曜20:30まで、公式サイトで毎日21:00までと異なる。訪問直前の確認が必要。",
-        "ガイドブックでは1885年創業とあるが、公式サイトとMadrid Tourismは1855年創業としている。"
+        "旅行誌掲載",
+        "80年以上の歴史を誇る老舗。"
       ],
       "sources": [
-        {
-          "provider": "Google Maps",
-          "url": "https://www.google.com/maps/place/El+Riojano/@40.4164843,-3.7059749,17z",
-          "used_for": [
-            "poi",
-            "coordinates",
-            "address",
-            "phone",
-            "website",
-            "opening_hours",
-            "plus_code"
-          ]
+        "https://elxampanyet.com/",
+        "OpenStreetMap POI via Mapcarta",
+        "https://www.google.com/maps/search/?api=1&query=El%20Xampanyet%2C%20Carrer%20de%20Montcada%2022%2C%20Barcelona"
+      ]
+    },
+    {
+      "id": "mercat_sant_josep_boqueria",
+      "store_name": "サン・ジョセップ市場（ラ・ボケリア） / Mercat de Sant Josep de la Boqueria",
+      "categories": [
+        "旅行誌掲載"
+      ],
+      "basic_info": {
+        "address": "La Rambla, 91, 08001 Barcelona, Spain",
+        "area": "ランブラス通り",
+        "genre": [
+          "市場",
+          "フードマーケット",
+          "食べ歩き"
+        ],
+        "google_map_query": "Mercat de Sant Josep de la Boqueria Barcelona",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€10〜35想定",
+          "dinner": null,
+          "confidence": "medium"
         },
+        "nearest_station_access": "地下鉄Liceu駅から徒歩約2分。ランブラス通り沿い。",
+        "closed_days": "日曜・祝日（要最新確認）",
+        "phone": "+34 934 13 23 03",
+        "saturday_hours": "8:00〜20:30前後（店舗ごとに異なる・要最新確認）",
+        "saturday_hours_confidence": "medium",
+        "saturday_hours_note": "営業時間は変動し得るため、訪問前に公式情報またはGoogle Mapsで要確認。",
+        "saturday_hours_last_checked": "2026-07-15",
+        "saturday_hours_sources": [
+          "https://www.boqueria.barcelona/",
+          "https://www.google.com/maps/search/?api=1&query=Mercat%20de%20Sant%20Josep%20de%20la%20Boqueria%2C%20La%20Rambla%2091%2C%20Barcelona"
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 41.38214,
+        "lng": 2.17217,
+        "source": "OpenStreetMap/GeoNames facility POI via Mapcarta",
+        "source_url": "https://www.boqueria.barcelona/",
+        "confidence": "high",
+        "correction_note": null
+      },
+      "google_maps_poi": {
+        "name": "Mercat de Sant Josep de la Boqueria",
+        "address": "La Rambla, 91, 08001 Barcelona, Spain",
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Mercat%20de%20Sant%20Josep%20de%20la%20Boqueria%2C%20La%20Rambla%2091%2C%20Barcelona",
+        "google_maps_place_feature_id": null,
+        "google_maps_redirect_place_path": null
+      },
+      "representative_menu_and_prices": [
         {
-          "provider": "店舗公式サイト",
-          "url": "https://www.pasteleriaelriojano.com/",
-          "used_for": [
-            "identity",
-            "address",
-            "phone",
-            "opening_hours"
-          ]
-        },
-        {
-          "provider": "Madrid Tourism",
-          "url": "https://www.esmadrid.com/en/shopping/el-riojano",
-          "used_for": [
-            "history",
-            "identity"
-          ]
+          "name": "生鮮魚介、ハモン、果物、場内バル料理",
+          "price_yen": null,
+          "price_text": null,
+          "note": "市場内の各店舗・バルで購入する。"
         }
+      ],
+      "beer_price": {
+        "item": "ビール / ワイン",
+        "price_yen": null,
+        "confidence": "unknown",
+        "note": "現地価格は訪問前に要確認。"
+      },
+      "store_features": [
+        "バルセロナを代表する巨大市場。",
+        "食材見学・食べ歩き・場内バルを一度に楽しめる。",
+        "店舗ごとに営業時間が異なる。"
+      ],
+      "review_trend_analysis": {
+        "summary": "観光客で混雑するが、色彩と食材の多様さは圧巻。朝〜昼の訪問が向く。",
+        "positive_keywords": [
+          "市場",
+          "食べ歩き",
+          "魚介",
+          "色彩豊か"
+        ],
+        "caution_keywords": [
+          "混雑",
+          "スリ注意",
+          "店舗ごとに営業差"
+        ],
+        "confidence": "medium"
+      },
+      "space": {
+        "seat_count": null,
+        "size_impression": "非常に大規模",
+        "comfort": "通路は混雑しやすい。目的の店を決めて回ると効率的。",
+        "confidence": "high"
+      },
+      "meta_scores": {
+        "cuisine_genre": 4,
+        "signature_menu": 4,
+        "budget": 4,
+        "access": 5,
+        "reservation_ease": 3,
+        "food_quality": 4,
+        "food_variety": 5,
+        "drink_variety": 4,
+        "atmosphere": 4,
+        "relaxation": 2,
+        "noise_level": 3,
+        "crowdedness": 3,
+        "seat_comfort": 3,
+        "table_spacing": 3,
+        "space_balance": 3,
+        "staff_warmth": 4,
+        "service_quality": 4,
+        "other_customers_mood": 4,
+        "intuition": 4,
+        "nostalgia": 3,
+        "sound_impression": 3,
+        "smell_impression": 4,
+        "concept_uniqueness": 5
+      },
+      "overall_fit_for_3_person_drinking": 3.8,
+      "saturday_lunch_alcohol": {
+        "status": null,
+        "available_from": null,
+        "available_until": null,
+        "assumed_lunch_window": null,
+        "basis": null,
+        "caveat": "営業時間・提供条件は訪問前に要確認。",
+        "confidence": "unknown"
+      },
+      "sunday_alcohol_assumption": null,
+      "weekend_hours": {
+        "saturday": "8:00〜20:30前後（店舗ごとに異なる・要最新確認）",
+        "sunday": null,
+        "notes": "最新営業時間は公式情報またはGoogle Mapsで要確認。"
+      },
+      "one_line_pop": "色と香りがあふれる食の迷宮で、バルセロナの旬を食べ歩く。",
+      "notes": [
+        "旅行誌掲載",
+        "野菜、果物、魚介、肉、惣菜など多彩な店舗が集まる。"
+      ],
+      "sources": [
+        "https://www.boqueria.barcelona/",
+        "OpenStreetMap/GeoNames facility POI via Mapcarta",
+        "https://www.google.com/maps/search/?api=1&query=Mercat%20de%20Sant%20Josep%20de%20la%20Boqueria%2C%20La%20Rambla%2091%2C%20Barcelona"
+      ]
+    },
+    {
+      "id": "mercat_santa_caterina",
+      "store_name": "サンタ・カテリーナ市場 / Mercat de Santa Caterina",
+      "categories": [
+        "旅行誌掲載"
+      ],
+      "basic_info": {
+        "address": "Avinguda de Francesc Cambó, 16, 08003 Barcelona, Spain",
+        "area": "エル・ボルン／旧市街",
+        "genre": [
+          "市場",
+          "フードマーケット",
+          "ローカル"
+        ],
+        "google_map_query": "Mercat de Santa Caterina Barcelona",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€10〜30想定",
+          "dinner": null,
+          "confidence": "medium"
+        },
+        "nearest_station_access": "地下鉄Jaume I駅から徒歩約4分。",
+        "closed_days": "日曜（要最新確認）",
+        "phone": "+34 933 19 57 40",
+        "saturday_hours": "午前〜午後（店舗ごとに異なる・要最新確認）",
+        "saturday_hours_confidence": "medium",
+        "saturday_hours_note": "営業時間は変動し得るため、訪問前に公式情報またはGoogle Mapsで要確認。",
+        "saturday_hours_last_checked": "2026-07-15",
+        "saturday_hours_sources": [
+          "https://www.mercatsantacaterina.com/",
+          "https://www.google.com/maps/search/?api=1&query=Mercat%20de%20Santa%20Caterina%2C%20Avinguda%20de%20Francesc%20Camb%C3%B3%2016%2C%20Barcelona"
+        ],
+        "sunday_hours": null,
+        "sunday_hours_confidence": null,
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 41.38615,
+        "lng": 2.17852,
+        "source": "OpenStreetMap facility POI via Mapcarta",
+        "source_url": "https://www.mercatsantacaterina.com/",
+        "confidence": "high",
+        "correction_note": null
+      },
+      "google_maps_poi": {
+        "name": "Mercat de Santa Caterina",
+        "address": "Avinguda de Francesc Cambó, 16, 08003 Barcelona, Spain",
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Mercat%20de%20Santa%20Caterina%2C%20Avinguda%20de%20Francesc%20Camb%C3%B3%2016%2C%20Barcelona",
+        "google_maps_place_feature_id": null,
+        "google_maps_redirect_place_path": null
+      },
+      "representative_menu_and_prices": [
+        {
+          "name": "肉・野菜・チーズ・魚介・場内飲食",
+          "price_yen": null,
+          "price_text": null,
+          "note": "地元向けの食材店と飲食店が集まる。"
+        }
+      ],
+      "beer_price": {
+        "item": "ビール / ワイン",
+        "price_yen": null,
+        "confidence": "unknown",
+        "note": "現地価格は訪問前に要確認。"
+      },
+      "store_features": [
+        "波打つカラフルな屋根が特徴。",
+        "ボケリアよりローカルな雰囲気。",
+        "旧市街散策と組み合わせやすい。"
+      ],
+      "review_trend_analysis": {
+        "summary": "建築と市場文化を落ち着いて楽しみたい人に向く、地元感のある市場。",
+        "positive_keywords": [
+          "モダン建築",
+          "ローカル",
+          "市場",
+          "落ち着き"
+        ],
+        "caution_keywords": [
+          "日曜休業が多い",
+          "午後早めに閉まる店あり"
+        ],
+        "confidence": "medium"
+      },
+      "space": {
+        "seat_count": null,
+        "size_impression": "大規模",
+        "comfort": "比較的歩きやすく、地元の日常を感じられる。",
+        "confidence": "high"
+      },
+      "meta_scores": {
+        "cuisine_genre": 4,
+        "signature_menu": 4,
+        "budget": 4,
+        "access": 4,
+        "reservation_ease": 3,
+        "food_quality": 4,
+        "food_variety": 4,
+        "drink_variety": 3,
+        "atmosphere": 3,
+        "relaxation": 4,
+        "noise_level": 3,
+        "crowdedness": 3,
+        "seat_comfort": 3,
+        "table_spacing": 3,
+        "space_balance": 3,
+        "staff_warmth": 4,
+        "service_quality": 4,
+        "other_customers_mood": 4,
+        "intuition": 4,
+        "nostalgia": 3,
+        "sound_impression": 3,
+        "smell_impression": 4,
+        "concept_uniqueness": 5
+      },
+      "overall_fit_for_3_person_drinking": 3.5,
+      "saturday_lunch_alcohol": {
+        "status": null,
+        "available_from": null,
+        "available_until": null,
+        "assumed_lunch_window": null,
+        "basis": null,
+        "caveat": "営業時間・提供条件は訪問前に要確認。",
+        "confidence": "unknown"
+      },
+      "sunday_alcohol_assumption": null,
+      "weekend_hours": {
+        "saturday": "午前〜午後（店舗ごとに異なる・要最新確認）",
+        "sunday": null,
+        "notes": "最新営業時間は公式情報またはGoogle Mapsで要確認。"
+      },
+      "one_line_pop": "カラフルな屋根の下で、観光地化しすぎないバルセロナの日常を味わう。",
+      "notes": [
+        "旅行誌掲載",
+        "1848年開業。肉、野菜、チーズなど60以上の店が集まる。"
+      ],
+      "sources": [
+        "https://www.mercatsantacaterina.com/",
+        "OpenStreetMap facility POI via Mapcarta",
+        "https://www.google.com/maps/search/?api=1&query=Mercat%20de%20Santa%20Caterina%2C%20Avinguda%20de%20Francesc%20Camb%C3%B3%2016%2C%20Barcelona"
       ]
     }
   ]

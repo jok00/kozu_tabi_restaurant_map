@@ -1,6 +1,6 @@
 {
   "dataset_name": "toledo_restaurants",
-  "generated_at": "2026-06-26",
+  "generated_at": "2026-07-15",
   "language": "ja",
   "currency": "EUR",
   "region_id": "toledo",
@@ -21,6 +21,7 @@
       "マサパン"
     ],
     "pinned": [
+      "adolfo_restaurante",
       "taberna_botero",
       "la_abadia_toledo",
       "el_foro_de_toledo",
@@ -31,27 +32,28 @@
   },
   "notes": {
     "coordinate_format": "WGS84 decimal degrees",
-    "google_maps": "正式なGoogle Maps Place IDおよびGoogle Maps内部POI座標はAPIなしでは取得不可。各店舗にGoogle Maps検索URLを付与。",
+    "google_maps": "各店舗にGoogle Maps検索URLを付与。トレド市観光局のGoogle MapsリンクからPOI座標を抽出できた店舗はmap_positionに採用。",
     "openstreetmap_overpass": "OSM由来のMapcartaでPOI座標が確認できた店舗はmap_positionに採用。",
     "map_position_policy": "POI座標を優先。POI座標が確認できない場合は公式住所・公開住所からの住所近傍推定座標を採用し、correction_noteとnotes.coordinate_statusに不正確な可能性を明記。",
     "representative_branch_policy": "複数店舗がある場合は、トレド旧市街中心部・Zocodover周辺で旅行動線に入りやすい1店舗を代表として採用。"
   },
   "summary": {
-    "input_store_count": 9,
-    "selected_store_count": 9,
+    "input_store_count": 10,
+    "selected_store_count": 10,
     "needs_confirmation_or_excluded_count": 1,
     "best_fit_store_names": [
+      "Adolfo Restaurante",
       "Taberna Botero",
       "La Abadía Cervecería Artesana",
       "El Foro de Toledo",
       "Mazapán Santo Tomé - Plaza de Zocodover",
       "Parador de Toledo - Cafetería / Restaurante"
     ],
-    "total_count": 9,
+    "total_count": 10,
     "by_conversation_category": [
       {
         "category": "夕食本命",
-        "count": 1
+        "count": 2
       },
       {
         "category": "郷土料理ランチ",
@@ -64,23 +66,29 @@
       {
         "category": "マサパン・土産",
         "count": 2
+      },
+      {
+        "category": "旅行誌掲載",
+        "count": 4
       }
     ],
     "likely_good_candidates_from_chat_context": [
+      "Adolfo Restaurante",
       "Taberna Botero",
       "La Abadía Cervecería Artesana",
       "El Foro de Toledo",
       "Terraza Miradero",
       "Parador de Toledo - Cafetería / Restaurante"
     ],
-    "one_line_pop": "トレド旧市街では、昼はラ・アバディア、午後の暑さ避けはエル・フォロかパラドール、夜はエル・ボテロ、土産はマサパンで組むと無理が少ない。"
+    "one_line_pop": "記念の食事はアドルフォ、洞窟空間の昼食はラ・アバディア、創作料理とカクテルはエル・ボテロ、気軽な昼食はソコドベールと、旅の時間に合わせてトレドの味を選べる。"
   },
   "important_notes": [
     "営業時間・定休日・予約可否は変動するため、訪問前に公式サイトまたはGoogle Mapsで再確認すること。",
     "Cafetería Zocodoverは午後早めに閉まる可能性があるため、15:30以降のシエスタ休憩本命にはしない。",
     "Santo Toméは複数店舗があるため、中心繁華街のPlaza de Zocodover店を代表として記載。",
     "Google Mapsの正式Place IDは未取得。必要ならGoogle Places APIまたは手動でGoogle Maps URLからPlace情報を取得する必要がある。",
-    "住所推定座標を用いた店舗は、map_position.correction_noteに不正確な可能性を明記済み。"
+    "住所推定座標を用いた店舗は、map_position.correction_noteに不正確な可能性を明記済み。",
+    "今回追加・更新したAdolfo Restaurante、La Abadía Cervecería Artesana、Taberna Botero、Cafetería Zocodoverには、categories配列に「旅行誌掲載」タグを付与。"
   ],
   "stores": [
     {
@@ -89,7 +97,8 @@
       "categories": [
         "郷土料理ランチ",
         "クラフトビール",
-        "伝統料理・タパス"
+        "伝統料理・タパス",
+        "旅行誌掲載"
       ],
       "basic_info": {
         "address": "Plaza San Nicolás, 3, 45001 Toledo, Spain",
@@ -106,19 +115,23 @@
         "budget": {
           "lunch": "€€",
           "dinner": "€€",
-          "confidence": "medium"
+          "confidence": "high"
         },
         "nearest_station_access": "Plaza de Zocodoverから徒歩圏。トレド旧市街観光中に寄りやすい。",
-        "closed_days": "要確認",
-        "phone": "+34 925 25 11 40",
-        "saturday_hours": null,
-        "saturday_hours_confidence": "medium",
-        "saturday_hours_note": "観光局情報では金土日祝は夜まで営業。訪問直前に公式・Google Mapsで確認推奨。",
-        "saturday_hours_last_checked": "2026-06-26",
+        "closed_days": "なし（トレド市観光局では毎日営業）",
+        "phone": "+34 925 19 22 51",
+        "saturday_hours": "12:00-24:00",
+        "saturday_hours_confidence": "high",
+        "saturday_hours_note": "トレド市観光局では土日祝12:00-24:00。公式サイトとGoogle Mapsで当日の営業状況を再確認推奨。",
+        "saturday_hours_last_checked": "2026-07-15",
         "saturday_hours_sources": [
           {
             "title": "Toledo Turismo La Abadía",
             "url": "https://turismo.toledo.es/recursos/id735-la-abadia.html"
+          },
+          {
+            "title": "Cervecería Abadía 公式メニュー",
+            "url": "https://abadiatoledo.com/para-comer/"
           },
           {
             "title": "Mapcarta OSM POI",
@@ -129,44 +142,182 @@
             "url": "https://www.google.com/maps/search/?api=1&query=La%20Abad%C3%ADa%20Cervecer%C3%ADa%20Artesana%20Plaza%20San%20Nicol%C3%A1s%203%20Toledo"
           }
         ],
-        "sunday_hours": null,
-        "sunday_hours_confidence": "medium",
+        "sunday_hours": "12:00-24:00",
+        "sunday_hours_confidence": "high",
         "last_order": null
       },
       "map_position": {
-        "lat": 39.85995,
-        "lng": -4.0229,
-        "source": "mapcarta_osm_poi",
-        "source_url": "https://mapcarta.com/N2612876368",
+        "lat": 39.859900,
+        "lng": -4.022940,
+        "source": "google_maps_poi_via_toledo_turismo",
+        "source_url": "https://turismo.toledo.es/recursos/id735-la-abadia.html",
         "confidence": "high",
-        "correction_note": "OSM由来のMapcartaでPOI座標を確認。"
+        "correction_note": "トレド市観光局の「Google Mapsで見る」リンクに埋め込まれた座標を採用。MapcartaのOSM店舗POI（39.85995, -4.02290）とも数m範囲で一致。"
       },
       "google_maps_poi": {
         "place_id": null,
         "google_maps_short_url": null,
         "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=La%20Abad%C3%ADa%20Cervecer%C3%ADa%20Artesana%20Plaza%20San%20Nicol%C3%A1s%203%20Toledo"
       },
-      "representative_menu_and_prices": [],
+      "representative_menu_and_prices": [
+        {
+          "item": "Selección de Tapas",
+          "price": "€19",
+          "description": "モンテス・デ・トレドの食材を使った定番タパス6品。"
+        },
+        {
+          "item": "Menú Montes de Toledo",
+          "price": "€26",
+          "description": "マンチェゴ風焼き野菜、ジビエパテ、マンチェゴチーズ、クロケタ、鱈、鹿肉、マサパン風味のトリハ。ミネラルウォーター込み。"
+        }
+      ],
       "beer_price": null,
       "store_features": [
         "16世紀の建物・洞窟風空間",
         "マンチャ地方の料理",
-        "クラフトビール"
+        "クラフトビール",
+        "ソコドベールから徒歩約2分"
       ],
       "review_trend_analysis": {
         "summary": "洞窟風の雰囲気とマンチャ料理で、トレドらしい昼食を取りやすい定番店。"
       },
       "space": {},
       "meta_scores": {},
-      "overall_fit_for_3_person_drinking": null,
-      "saturday_lunch_alcohol": {},
-      "sunday_alcohol_assumption": {},
+      "overall_fit_for_3_person_drinking": "high_for_craft_beer_lunch",
+      "saturday_lunch_alcohol": {
+        "status": "confirmed",
+        "confidence": "high",
+        "evidence": "公式にクラフトビール店として案内され、土曜昼に営業。"
+      },
+      "sunday_alcohol_assumption": {
+        "status": "confirmed",
+        "confidence": "high",
+        "evidence": "日曜昼に営業し、クラフトビールと地元ワインを提供。"
+      },
       "weekend_hours": {
-        "saturday": null,
-        "sunday": null,
-        "notes": "訪問前確認推奨"
+        "saturday": "12:00-24:00",
+        "sunday": "12:00-24:00",
+        "notes": "トレド市観光局掲載。訪問当日は公式・Google Mapsでも確認推奨。"
       },
       "one_line_pop": "洞窟風の歴史空間で、トレドらしいマンチャ料理とクラフトビールを楽しめる一軒。",
+      "notes": {
+        "coordinate_status": "confirmed_google_maps_poi",
+        "representative_branch_policy": "単独店舗として記載。"
+      }
+    },
+    {
+      "id": "adolfo_restaurante",
+      "store_name": "Adolfo Restaurante",
+      "categories": [
+        "夕食本命",
+        "記念ディナー",
+        "モダン・スペイン料理",
+        "旅行誌掲載"
+      ],
+      "basic_info": {
+        "address": "Calle del Hombre de Palo, 7, 45001 Toledo, Spain",
+        "area": "Casco Histórico / Catedral周辺",
+        "genre": [
+          "モダン・スペイン料理",
+          "地中海料理",
+          "季節のテイスティングメニュー"
+        ],
+        "google_map_query": "Adolfo Restaurante Calle del Hombre de Palo 7 Toledo",
+        "google_rating_user_provided": null,
+        "tabelog_rating": null,
+        "tabelog_review_count": null,
+        "budget": {
+          "lunch": "€€€€",
+          "dinner": "€€€€",
+          "confidence": "high"
+        },
+        "nearest_station_access": "トレド大聖堂から徒歩数分。旧市街中心部。",
+        "closed_days": "月曜日",
+        "phone": "+34 925 22 73 21",
+        "saturday_hours": "13:00-16:00 / 20:00-22:00",
+        "saturday_hours_confidence": "high",
+        "saturday_hours_note": "Tripadvisorの店舗管理ページ表示。季節のコースは公式予約ページで事前予約推奨。",
+        "saturday_hours_last_checked": "2026-07-15",
+        "saturday_hours_sources": [
+          {
+            "title": "Restaurante Adolfo 公式サイト",
+            "url": "https://adolforestaurante.com/"
+          },
+          {
+            "title": "Restaurante Adolfo 公式メニュー",
+            "url": "https://adolforestaurante.com/en/menu/"
+          },
+          {
+            "title": "Mapcarta OSM POI",
+            "url": "https://mapcarta.com/es/N6410390586"
+          },
+          {
+            "title": "Tripadvisor Adolfo Restaurante",
+            "url": "https://www.tripadvisor.com/Restaurant_Review-g187489-d985959-Reviews-Adolfo_Restaurante-Toledo_Province_of_Toledo_Castile_La_Mancha.html"
+          },
+          {
+            "title": "Google Maps 検索",
+            "url": "https://www.google.com/maps/search/?api=1&query=Adolfo%20Restaurante%20Calle%20del%20Hombre%20de%20Palo%207%20Toledo"
+          }
+        ],
+        "sunday_hours": "13:00-15:30",
+        "sunday_hours_confidence": "high",
+        "last_order": null
+      },
+      "map_position": {
+        "lat": 39.858390,
+        "lng": -4.024340,
+        "source": "mapcarta_osm_poi",
+        "source_url": "https://mapcarta.com/es/N6410390586",
+        "confidence": "high",
+        "correction_note": "Google Mapsで名称・住所が一致する店舗POIを確認。公開ページから座標値を抽出できないため、同名・同住所のOSM店舗POIノードを採用。住所ジオコーディングや近傍推定ではない。"
+      },
+      "google_maps_poi": {
+        "place_id": null,
+        "google_maps_short_url": null,
+        "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Adolfo%20Restaurante%20Calle%20del%20Hombre%20de%20Palo%207%20Toledo"
+      },
+      "representative_menu_and_prices": [
+        {
+          "item": "Menú de temporada",
+          "price": "€88/人",
+          "description": "前菜3品、スターター3品、魚1品、肉1品、デザート2品。VAT込み、飲料別。"
+        },
+        {
+          "item": "Menú infantil",
+          "price": "€49.50",
+          "description": "13歳未満向け。アペタイザー、スターター、メイン、デザート。VAT込み。"
+        }
+      ],
+      "beer_price": null,
+      "store_features": [
+        "地域産の旬食材を使う現代的なコース料理",
+        "歴史ある地下ワインセラー",
+        "ミシュランガイド掲載",
+        "大聖堂に近い旧市街中心部"
+      ],
+      "review_trend_analysis": {
+        "summary": "季節感のあるコース、丁寧なサービス、ソムリエの案内と地下セラー体験が魅力の記念ディナー候補。"
+      },
+      "space": {},
+      "meta_scores": {},
+      "overall_fit_for_3_person_drinking": "high_for_wine_dinner",
+      "saturday_lunch_alcohol": {
+        "status": "confirmed",
+        "confidence": "high",
+        "evidence": "土曜昼営業があり、店舗情報にWine and Beer / Serves Alcoholを掲載。"
+      },
+      "sunday_alcohol_assumption": {
+        "status": "confirmed",
+        "confidence": "high",
+        "evidence": "日曜昼営業があり、ワインペアリングとセラーを公式に案内。"
+      },
+      "weekend_hours": {
+        "saturday": "13:00-16:00 / 20:00-22:00",
+        "sunday": "13:00-15:30",
+        "notes": "季節のテイスティングメニューは事前予約推奨。"
+      },
+      "one_line_pop": "トレドの旬と名ワインを歴史ある邸宅で味わう、旅の記念日にふさわしい一軒。",
       "notes": {
         "coordinate_status": "confirmed_osm_poi",
         "representative_branch_policy": "単独店舗として記載。"
@@ -178,7 +329,8 @@
       "categories": [
         "夕食本命",
         "モダン・スペイン料理",
-        "タベルナ・カクテル"
+        "タベルナ・カクテル",
+        "旅行誌掲載"
       ],
       "basic_info": {
         "address": "Calle de la Ciudad, 5, 45002 Toledo, Spain",
@@ -195,19 +347,23 @@
         "budget": {
           "lunch": "€€€",
           "dinner": "€€€",
-          "confidence": "medium"
+          "confidence": "high"
         },
         "nearest_station_access": "大聖堂・市庁舎周辺。旧市街観光後の夕食向き。",
-        "closed_days": "要確認",
+        "closed_days": "なし（公開店舗情報では毎日営業）",
         "phone": "+34 925 280 967",
-        "saturday_hours": null,
-        "saturday_hours_confidence": "medium",
-        "saturday_hours_note": "公式予約ページでは当日直前予約は電話、ランチ予約は15:00まで、ディナー予約は22:15まで。",
-        "saturday_hours_last_checked": "2026-06-26",
+        "saturday_hours": "12:00-翌02:00",
+        "saturday_hours_confidence": "high",
+        "saturday_hours_note": "公開店舗ページでは土曜12:00-翌02:00。公式予約ページの予約上限はランチ15:00、ディナー22:15。",
+        "saturday_hours_last_checked": "2026-07-15",
         "saturday_hours_sources": [
           {
             "title": "Taberna Botero 公式予約",
             "url": "https://tabernabotero.com/info-reservas"
+          },
+          {
+            "title": "Taberna Botero 公式タベルナメニュー",
+            "url": "https://tabernabotero.com/taberna"
           },
           {
             "title": "Toledo Turismo Taberna Botero",
@@ -222,46 +378,76 @@
             "url": "https://www.google.com/maps/search/?api=1&query=Taberna%20Botero%20Calle%20de%20la%20Ciudad%205%20Toledo"
           }
         ],
-        "sunday_hours": null,
-        "sunday_hours_confidence": "medium",
+        "sunday_hours": "12:00-翌02:00",
+        "sunday_hours_confidence": "high",
         "last_order": "予約受付上限目安：ランチ15:00 / ディナー22:15"
       },
       "map_position": {
-        "lat": 39.85635,
-        "lng": -4.02494,
-        "source": "mapcarta_osm_poi",
-        "source_url": "https://mapcarta.com/N6139933185",
+        "lat": 39.856420,
+        "lng": -4.024976,
+        "source": "google_maps_poi_via_toledo_turismo",
+        "source_url": "https://turismo.toledo.es/recursos/restaurantes-y-bares-en-el-casco-historico/id32842-taberna-botero.html",
         "confidence": "high",
-        "correction_note": "OSM由来のMapcartaでPOI座標を確認。"
+        "correction_note": "トレド市観光局の「Google Mapsで見る」リンクに埋め込まれたPOI座標を小数第6位で採用。住所座標の公開値とも同一建物範囲で一致。"
       },
       "google_maps_poi": {
         "place_id": null,
         "google_maps_short_url": null,
         "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Taberna%20Botero%20Calle%20de%20la%20Ciudad%205%20Toledo"
       },
-      "representative_menu_and_prices": [],
+      "representative_menu_and_prices": [
+        {
+          "item": "Carbón de Bacalao",
+          "price": "€8",
+          "description": "鱈、ディルのアイオリ、モホ・ピコン。"
+        },
+        {
+          "item": "Dumpling de Pato（6個）",
+          "price": "€18",
+          "description": "マンゴー海鮮醤、ライムマヨ、ピコ・デ・ガヨ。"
+        },
+        {
+          "item": "Las Carcamusas de Botero",
+          "price": "€19",
+          "description": "豚ほほ肉を使ったボテロ流カルカムサ。"
+        },
+        {
+          "item": "Lomo bajo de Vaca madurada 350g",
+          "price": "€38",
+          "description": "熟成牛、チミチュリ、ポテト、パドロン唐辛子。"
+        }
+      ],
       "beer_price": null,
       "store_features": [
         "16世紀の建物",
         "伝統ベースの現代料理",
-        "カクテル利用も可"
+        "カクテル利用も可",
+        "1階タベルナと上階レストラン"
       ],
       "review_trend_analysis": {
-        "summary": "旧市街で少し特別な夕食にしたい時の本命候補。"
+        "summary": "創意あるタパス、美しい盛り付け、カクテルとワインが評価される、旧市街の特別な夕食候補。"
       },
       "space": {},
       "meta_scores": {},
-      "overall_fit_for_3_person_drinking": null,
-      "saturday_lunch_alcohol": {},
-      "sunday_alcohol_assumption": {},
-      "weekend_hours": {
-        "saturday": null,
-        "sunday": null,
-        "notes": "予約推奨"
+      "overall_fit_for_3_person_drinking": "high_for_cocktail_wine_dinner",
+      "saturday_lunch_alcohol": {
+        "status": "confirmed",
+        "confidence": "high",
+        "evidence": "土曜12:00開店で、店舗情報にFull Bar / Wine and Beer / Serves Alcoholを掲載。"
       },
-      "one_line_pop": "伝統とモダンを合わせた料理で、トレドの夜を少し特別にできる夕食本命。",
+      "sunday_alcohol_assumption": {
+        "status": "confirmed",
+        "confidence": "high",
+        "evidence": "日曜12:00開店で、カクテル、ワイン、ビールを提供。"
+      },
+      "weekend_hours": {
+        "saturday": "12:00-翌02:00",
+        "sunday": "12:00-翌02:00",
+        "notes": "食事利用は予約推奨。予約上限目安はランチ15:00、ディナー22:15。"
+      },
+      "one_line_pop": "大聖堂そばの16世紀建築で、トレド伝統を遊び心ある一皿とカクテルに変える名タベルナ。",
       "notes": {
-        "coordinate_status": "confirmed_osm_poi",
+        "coordinate_status": "confirmed_google_maps_poi",
         "representative_branch_policy": "単独店舗として記載。"
       }
     },
@@ -270,7 +456,8 @@
       "store_name": "Cafetería Zocodover",
       "categories": [
         "カフェ・軽食",
-        "朝食・休憩"
+        "朝食・休憩",
+        "旅行誌掲載"
       ],
       "basic_info": {
         "address": "Calle Comercio, 11, 45001 Toledo, Spain",
@@ -286,15 +473,15 @@
         "budget": {
           "lunch": "€",
           "dinner": null,
-          "confidence": "medium"
+          "confidence": "high"
         },
         "nearest_station_access": "Plaza de Zocodoverからすぐ。",
-        "closed_days": "水曜休業の可能性あり。要確認。",
+        "closed_days": "水曜日（公開店舗ページ）",
         "phone": "+34 925 25 58 14",
-        "saturday_hours": "13:00-16:00",
-        "saturday_hours_confidence": "medium_low",
-        "saturday_hours_note": "公開店舗ページでは午後早め閉店傾向。シエスタ時間の休憩本命にはしない。",
-        "saturday_hours_last_checked": "2026-06-26",
+        "saturday_hours": "13:00-16:30 / 19:30-22:00",
+        "saturday_hours_confidence": "medium_high",
+        "saturday_hours_note": "Restaurant Guru掲載。別の2026年6月更新ページでは夜22:30までのため、当日のGoogle Maps確認推奨。",
+        "saturday_hours_last_checked": "2026-07-15",
         "saturday_hours_sources": [
           {
             "title": "Mapcarta OSM POI",
@@ -305,17 +492,25 @@
             "url": "https://cafeterisimos.com/cafeteria-zocodover-toledo/"
           },
           {
+            "title": "Restaurant Guru",
+            "url": "https://es.restaurantguru.com/Cafeteria-Zocodover-Toledo-Castile-La-Mancha"
+          },
+          {
+            "title": "Firmania",
+            "url": "https://firmania.es/toledo/cafeter%C3%ADa-zocodover-1705248"
+          },
+          {
             "title": "Google Maps 検索",
             "url": "https://www.google.com/maps/search/?api=1&query=Cafeter%C3%ADa%20Zocodover%20Calle%20Comercio%2011%20Toledo"
           }
         ],
-        "sunday_hours": "13:00-16:00",
-        "sunday_hours_confidence": "medium_low",
+        "sunday_hours": "13:00-16:30",
+        "sunday_hours_confidence": "medium_high",
         "last_order": null
       },
       "map_position": {
-        "lat": 39.85859,
-        "lng": -4.02315,
+        "lat": 39.858590,
+        "lng": -4.023150,
         "source": "mapcarta_osm_poi",
         "source_url": "https://mapcarta.com/N2724325755",
         "confidence": "high",
@@ -326,30 +521,60 @@
         "google_maps_short_url": null,
         "google_maps_search_url": "https://www.google.com/maps/search/?api=1&query=Cafeter%C3%ADa%20Zocodover%20Calle%20Comercio%2011%20Toledo"
       },
-      "representative_menu_and_prices": [],
+      "representative_menu_and_prices": [
+        {
+          "item": "Pincho de tortilla",
+          "price": null,
+          "description": "スペイン風オムレツの軽食。公開レビューで繰り返し言及。"
+        },
+        {
+          "item": "Chorizo",
+          "price": null,
+          "description": "ビールと合わせやすい定番タパス。"
+        },
+        {
+          "item": "Aros de calamar",
+          "price": null,
+          "description": "イカリング。公開レビューで推奨例あり。"
+        },
+        {
+          "item": "Platos combinados",
+          "price": "店舗全体で概ね€10-20/人",
+          "description": "肉・魚と付け合わせを組み合わせた手軽なセット皿。"
+        }
+      ],
       "beer_price": null,
       "store_features": [
         "ソコドベール近く",
         "軽食",
-        "短時間休憩向き"
+        "短時間休憩向き",
+        "トルティージャやセット皿"
       ],
       "review_trend_analysis": {
-        "summary": "立地は非常に便利だが、午後遅めの休憩には営業時間確認が必要。"
+        "summary": "トルティージャ、チョリソー、イカなどの定番料理を手頃に楽しめる、観光動線上の小さなカフェテリア。"
       },
       "space": {},
       "meta_scores": {},
-      "overall_fit_for_3_person_drinking": null,
-      "saturday_lunch_alcohol": {},
-      "sunday_alcohol_assumption": {},
-      "weekend_hours": {
-        "saturday": "13:00-16:00",
-        "sunday": "13:00-16:00",
-        "notes": "公開ページベース。変動可能性あり。"
+      "overall_fit_for_3_person_drinking": "medium_for_casual_lunch",
+      "saturday_lunch_alcohol": {
+        "status": "confirmed",
+        "confidence": "medium_high",
+        "evidence": "土曜昼営業があり、公開店舗ページと利用例でビール提供を確認。"
       },
-      "one_line_pop": "ソコドベール近くで、観光中にさっと軽食・コーヒーを入れたい時の便利な休憩所。",
+      "sunday_alcohol_assumption": {
+        "status": "likely_available",
+        "confidence": "medium",
+        "evidence": "日曜昼営業と通常のビール提供情報から利用可能性が高い。"
+      },
+      "weekend_hours": {
+        "saturday": "13:00-16:30 / 19:30-22:00",
+        "sunday": "13:00-16:30",
+        "notes": "2026年6月更新の公開店舗ページベース。訪問当日はGoogle Mapsでも確認推奨。"
+      },
+      "one_line_pop": "ソコドベール散策の途中に、トルティージャやセット皿を手頃に楽しめる街角カフェテリア。",
       "notes": {
         "coordinate_status": "confirmed_osm_poi",
-        "siesta_suitability": "low_to_medium"
+        "siesta_suitability": "lunch_high"
       }
     },
     {
