@@ -7,6 +7,8 @@
 - `index.html`: 本番用HTML。共通ページシェルに `https://common-web-map.vercel.app/` の `map_app.css` / `map_app.js` を参照する設定を渡します。
 - `index_dev.html`: ローカル開発用HTML。共通ページシェルに `../common_web_map/` の `map_app.css` / `map_app.js` を参照する設定を渡します。
 - `page_shell.js`: `index.html` と `index_dev.html` の共通ページ構造、CSS、Leaflet、共通アプリJSの読み込みを管理します。
+- `trip_features.js`: 都市別の旅メモ、店舗のお気に入り、店舗メモの保存と画面連携を管理します。
+- `trip_features.css`: 旅メモ・お気に入り・店舗メモの表示スタイルです。
 - `store_data.json`: 地域一覧と、地域別JSON・ランドマークJSONへの参照を管理します。
 - `regions/*.json`: 地域ごとの店舗データ本体です。
 - `landmarks/*.json`: 宿泊地・観光地など、店舗以外の予定地データです。
@@ -19,6 +21,10 @@
 - `aranjuez`: アランフェス
 - `segovia`: セゴビア
 - `madrid`: マドリード
+
+## 個人用の旅メモ機能
+
+都市別の旅メモ、店舗のお気に入り、店舗メモはブラウザの `localStorage` に保存します。保存内容は同じブラウザでは再読み込み後も残りますが、別の端末やブラウザとは同期されません。
 
 ## ローカル確認
 
@@ -81,4 +87,5 @@ python -m json.tool store_data.json >/tmp/kozu_store_data_check.json
 for f in regions/*.json landmarks/*.json; do python -m json.tool "$f" >/tmp/"$(basename "$f")".check; done
 node --check /root/restaurant_map/common_web_map/map_app.js
 node --check page_shell.js
+node --check trip_features.js
 ```

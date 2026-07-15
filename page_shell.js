@@ -6,11 +6,13 @@
     mapLabel:'地域別店舗ピン',
     legend:'スペインの飲食店ピンと予定地ピンを重ねて表示します。ピンまたはカードを選ぶと、選択中の地点が強調表示されます。',
     commonAssetBase:'https://common-web-map.vercel.app/',
-    commonAssetVersion:'20260624-split'
+    commonAssetVersion:'20260624-split',
+    personalFeatureVersion:'20260715-trip-notes'
   };
   const config={...defaults,...(window.KOZU_TABI_MAP_PAGE || {})};
   const commonAssetBase=config.commonAssetBase.endsWith('/') ? config.commonAssetBase : `${config.commonAssetBase}/`;
   const versionSuffix=config.commonAssetVersion ? `?v=${encodeURIComponent(config.commonAssetVersion)}` : '';
+  const personalFeatureVersionSuffix=config.personalFeatureVersion ? `?v=${encodeURIComponent(config.personalFeatureVersion)}` : '';
 
   function setMetaDescription(){
     let description=document.querySelector('meta[name="description"]');
@@ -53,6 +55,7 @@
     });
     addLink({rel:'stylesheet',href:'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css'});
     addLink({rel:'stylesheet',href:`${commonAssetBase}map_app.css${versionSuffix}`});
+    addLink({rel:'stylesheet',href:`./trip_features.css${personalFeatureVersionSuffix}`});
   }
 
   function renderBody(){
@@ -63,6 +66,7 @@
       </div>
       <div class="regionTabs" id="regionTabs" aria-label="地域を選択"></div>
       <div class="filters" id="filters"></div>
+      <div class="tripJournalMount" id="tripJournalMount"></div>
     </div>
   </header>
 
@@ -97,6 +101,7 @@
     renderBody();
     await loadScript('https://unpkg.com/leaflet@1.9.4/dist/leaflet.js');
     await loadScript(`${commonAssetBase}map_app.js${versionSuffix}`);
+    await loadScript(`./trip_features.js${personalFeatureVersionSuffix}`);
   }
 
   start().catch(error=>{
