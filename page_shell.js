@@ -53,6 +53,8 @@
     });
     addLink({rel:'stylesheet',href:'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css'});
     addLink({rel:'stylesheet',href:`${commonAssetBase}map_app.css${versionSuffix}`});
+    addLink({rel:'stylesheet',href:'./tag_overrides.css'});
+    addLink({rel:'stylesheet',href:'./personal_features.css'});
   }
 
   function renderBody(){
@@ -97,6 +99,8 @@
     renderBody();
     await loadScript('https://unpkg.com/leaflet@1.9.4/dist/leaflet.js');
     await loadScript(`${commonAssetBase}map_app.js${versionSuffix}`);
+    await loadScript('./tag_overrides.js');
+    await loadScript('./personal_features.js');
   }
 
   start().catch(error=>{

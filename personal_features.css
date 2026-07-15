@@ -1,0 +1,227 @@
+.cityNotesPanel{
+  width:100%;
+  border:1px solid rgba(229,216,197,.9);
+  border-radius:16px;
+  background:rgba(255,255,255,.78);
+  padding:12px;
+  box-shadow:0 8px 18px rgba(55,38,20,.06);
+}
+
+.cityNotesHead{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:8px;
+}
+
+.cityNotesTitle,
+.personalMemoTitle{
+  margin:0;
+  color:var(--ink);
+  font-size:13px;
+  font-weight:800;
+}
+
+.cityNoteCount{
+  color:var(--muted);
+  font-size:12px;
+  font-weight:700;
+  white-space:nowrap;
+}
+
+.cityNoteForm{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:8px;
+  align-items:start;
+}
+
+.cityNoteInput,
+.personalMemoInput{
+  width:100%;
+  min-width:0;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#fff;
+  color:var(--ink);
+  font:inherit;
+  font-size:13px;
+  line-height:1.55;
+  resize:vertical;
+  box-sizing:border-box;
+}
+
+.cityNoteInput{
+  min-height:42px;
+  padding:9px 10px;
+}
+
+.cityNoteSubmit,
+.personalMemoSave{
+  border:1px solid var(--accent-2);
+  border-radius:12px;
+  background:var(--accent-2);
+  color:#fff;
+  cursor:pointer;
+  font-family:inherit;
+  font-size:13px;
+  font-weight:800;
+  white-space:nowrap;
+}
+
+.cityNoteSubmit{
+  min-height:42px;
+  padding:8px 14px;
+}
+
+.cityNoteList{
+  display:grid;
+  gap:6px;
+  max-height:132px;
+  overflow:auto;
+  margin-top:10px;
+  padding-right:2px;
+}
+
+.cityNoteItem{
+  border:1px solid rgba(229,216,197,.85);
+  border-radius:12px;
+  background:#fffdf8;
+  padding:8px 10px;
+}
+
+.cityNoteTime{
+  display:block;
+  margin-bottom:3px;
+  color:var(--muted);
+  font-size:11px;
+  font-weight:800;
+}
+
+.cityNoteText{
+  margin:0;
+  color:var(--ink);
+  font-size:13px;
+  line-height:1.55;
+  white-space:pre-wrap;
+}
+
+.favoriteBtn{
+  display:inline-grid;
+  place-items:center;
+  width:34px;
+  height:34px;
+  flex:0 0 auto;
+  border:1px solid #f0dbc5;
+  border-radius:999px;
+  background:#fff;
+  color:#b46a24;
+  cursor:pointer;
+  font-size:19px;
+  line-height:1;
+  box-shadow:0 4px 10px rgba(55,38,20,.08);
+}
+
+.restaurantCard .cardTop{
+  min-width:0;
+}
+
+.restaurantCard .cardText{
+  flex:1 1 auto;
+  min-width:0;
+}
+
+.restaurantCard .favoriteBtn,
+.restaurantCard .rating{
+  flex:0 0 auto;
+}
+
+.favoriteBtn.active{
+  border-color:#d89a2b;
+  background:#fff7dc;
+  color:#d28a00;
+}
+
+.favoriteFilterBtn.active{
+  background:#fff7dc;
+  border-color:#d89a2b;
+  color:#7a4e2e;
+}
+
+.tag.favoriteTag{
+  border-color:#d89a2b;
+  background:#fff7dc;
+  color:#7a4e2e;
+}
+
+.personalMemoBox{
+  grid-column:1 / -1;
+  display:grid;
+  gap:7px;
+  margin-top:8px;
+  padding:10px;
+  border:1px solid rgba(229,216,197,.85);
+  border-radius:14px;
+  background:#fffdf8;
+}
+
+.personalMemoHead{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+}
+
+.personalMemoStatus{
+  color:var(--muted);
+  font-size:11px;
+  font-weight:700;
+  min-height:1em;
+}
+
+.personalMemoInput{
+  min-height:54px;
+  padding:8px 9px;
+}
+
+.personalMemoActions{
+  display:flex;
+  justify-content:flex-end;
+}
+
+.personalMemoSave{
+  min-height:32px;
+  padding:6px 12px;
+}
+
+.favoriteEmptyState{
+  width:100%;
+  margin:0;
+  padding:18px 12px;
+  color:var(--muted);
+  font-size:13px;
+  font-weight:700;
+  text-align:center;
+}
+
+@media(max-width:640px){
+  .cityNotesPanel{
+    border-radius:14px;
+    padding:10px;
+  }
+
+  .cityNoteForm{
+    grid-template-columns:1fr;
+  }
+
+  .cityNoteSubmit{
+    width:100%;
+  }
+
+  .favoriteBtn{
+    width:32px;
+    height:32px;
+    font-size:18px;
+  }
+}

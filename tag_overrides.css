@@ -1,0 +1,56 @@
+.filters{
+  display:flex;
+  flex-wrap:nowrap!important;
+  max-width:100%;
+  overflow-x:auto;
+  overflow-y:hidden;
+  padding-bottom:4px;
+  scroll-snap-type:x proximity;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;
+}
+
+.filterBtn{
+  flex:0 0 auto;
+  scroll-snap-align:start;
+  white-space:nowrap;
+}
+
+.restaurantCard .tags{
+  display:flex;
+  flex-wrap:nowrap!important;
+  gap:6px;
+  max-width:100%;
+  min-width:0;
+  overflow-x:auto!important;
+  overflow-y:hidden!important;
+  padding:0 2px 4px 0;
+  scroll-snap-type:x proximity;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;
+}
+
+.restaurantCard .tags::after{
+  content:"";
+  flex:0 0 2px;
+}
+
+.restaurantCard .tag{
+  flex:0 0 auto;
+  max-width:min(72vw, 220px);
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  scroll-snap-align:start;
+}
+
+@media(max-width:640px){
+  .restaurantCard .tags{
+    padding-bottom:3px;
+    scrollbar-width:none;
+  }
+
+  .restaurantCard .tags::-webkit-scrollbar{
+    display:none;
+  }
+}
