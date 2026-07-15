@@ -84,15 +84,17 @@
       panel=document.createElement('section');
       panel.className='cityNotesPanel';
       panel.innerHTML=`
-        <div class="cityNotesHead">
-          <h2 class="cityNotesTitle">都市の感想</h2>
-          <span class="cityNoteCount">0件</span>
-        </div>
         <form class="cityNoteForm">
-          <textarea class="cityNoteInput" rows="1" placeholder="この都市の感想を投稿"></textarea>
-          <button class="cityNoteSubmit" type="submit">投稿</button>
+          <textarea class="cityNoteInput" rows="1" placeholder="感想を投稿"></textarea>
+          <button class="cityNoteSubmit" type="submit" aria-label="投稿">➤</button>
         </form>
-        <div class="cityNoteList" aria-live="polite"></div>`;
+        <details class="cityNotesDetails">
+          <summary class="cityNotesSummary">
+            <span>投稿内容</span>
+            <span class="cityNoteCount">0件</span>
+          </summary>
+          <div class="cityNoteList" aria-live="polite"></div>
+        </details>`;
       filters.insertAdjacentElement('afterend', panel);
       panel.querySelector('.cityNoteForm').addEventListener('submit', event=>{
         event.preventDefault();
@@ -244,7 +246,7 @@
     const list=document.getElementById('restaurantList');
     document.querySelectorAll('.restaurantCard').forEach(card=>{
       const visible=!favoriteFilterActive || isFavorite(getCardId(card));
-      card.hidden=!visible;
+      if(card.hidden===visible) card.hidden=!visible;
       if(visible) visibleCount+=1;
     });
     let empty=document.querySelector('.favoriteEmptyState');
@@ -270,10 +272,10 @@
   function scheduleEnhance(){
     if(scheduled) return;
     scheduled=true;
-    requestAnimationFrame(()=>{
+    setTimeout(()=>{
       scheduled=false;
       enhance();
-    });
+    },0);
   }
 
   scheduleEnhance();

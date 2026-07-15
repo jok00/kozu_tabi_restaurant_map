@@ -7,15 +7,6 @@
   box-shadow:0 8px 18px rgba(55,38,20,.06);
 }
 
-.cityNotesHead{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:12px;
-  margin-bottom:8px;
-}
-
-.cityNotesTitle,
 .personalMemoTitle{
   margin:0;
   color:var(--ink);
@@ -32,7 +23,7 @@
 
 .cityNoteForm{
   display:grid;
-  grid-template-columns:minmax(0,1fr) auto;
+  grid-template-columns:minmax(0,1fr) max-content;
   gap:8px;
   align-items:start;
 }
@@ -71,8 +62,49 @@
 }
 
 .cityNoteSubmit{
+  display:inline-grid;
+  place-items:center;
+  width:42px;
   min-height:42px;
-  padding:8px 14px;
+  padding:0;
+  font-size:15px;
+}
+
+.cityNotesDetails{
+  margin-top:8px;
+}
+
+.cityNotesSummary{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  color:var(--muted);
+  cursor:pointer;
+  font-size:12px;
+  font-weight:800;
+  list-style:none;
+}
+
+.cityNotesSummary::-webkit-details-marker{
+  display:none;
+}
+
+.cityNotesSummary::before{
+  content:"›";
+  flex:0 0 auto;
+  color:var(--accent-2);
+  font-size:16px;
+  line-height:1;
+  transition:transform .16s ease;
+}
+
+.cityNotesDetails[open] .cityNotesSummary::before{
+  transform:rotate(90deg);
+}
+
+.cityNotesDetails:not([open]) .cityNoteList{
+  display:none;
 }
 
 .cityNoteList{
@@ -123,7 +155,14 @@
   box-shadow:0 4px 10px rgba(55,38,20,.08);
 }
 
+.restaurantCard{
+  min-width:0;
+  box-sizing:border-box;
+  contain:layout style;
+}
+
 .restaurantCard .cardTop{
+  width:100%;
   min-width:0;
 }
 
@@ -135,6 +174,10 @@
 .restaurantCard .favoriteBtn,
 .restaurantCard .rating{
   flex:0 0 auto;
+}
+
+.restaurantCard .favoriteTag{
+  max-width:96px;
 }
 
 .favoriteBtn.active{
@@ -211,12 +254,8 @@
     padding:10px;
   }
 
-  .cityNoteForm{
-    grid-template-columns:1fr;
-  }
-
   .cityNoteSubmit{
-    width:100%;
+    width:40px;
   }
 
   .favoriteBtn{
