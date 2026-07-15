@@ -1,0 +1,296 @@
+.tripJournalMount{
+  width:100%;
+}
+
+.tripJournal{
+  overflow:hidden;
+  border:1px solid rgba(37,94,101,.2);
+  border-radius:16px;
+  background:rgba(255,255,255,.82);
+  box-shadow:0 8px 22px rgba(55,38,20,.06);
+}
+
+.tripJournalSummary{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:11px 14px;
+  color:var(--accent-2);
+  font-size:13px;
+  font-weight:800;
+  cursor:pointer;
+  list-style:none;
+}
+
+.tripJournalSummary::-webkit-details-marker{
+  display:none;
+}
+
+.tripJournalSummary::after{
+  content:'＋';
+  font-size:18px;
+  line-height:1;
+}
+
+.tripJournal[open] .tripJournalSummary::after{
+  content:'−';
+}
+
+.tripJournalSummaryMeta{
+  color:var(--muted);
+  font-size:11px;
+  font-weight:700;
+}
+
+.tripJournalBody{
+  display:grid;
+  grid-template-columns:minmax(240px,.8fr) minmax(300px,1.2fr);
+  gap:14px;
+  padding:0 14px 14px;
+  border-top:1px solid rgba(229,216,197,.8);
+}
+
+.tripJournalForm{
+  display:grid;
+  gap:8px;
+  align-content:start;
+  padding-top:14px;
+}
+
+.tripJournalLabel,
+.storeMemoLabel{
+  color:var(--ink);
+  font-size:12px;
+  font-weight:800;
+}
+
+.tripJournalTextarea,
+.storeMemoTextarea{
+  width:100%;
+  resize:vertical;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#fff;
+  color:var(--ink);
+  font:inherit;
+  line-height:1.6;
+  outline:none;
+  transition:border-color .16s ease,box-shadow .16s ease;
+}
+
+.tripJournalTextarea{
+  min-height:92px;
+  padding:10px 12px;
+  font-size:13px;
+}
+
+.tripJournalTextarea:focus,
+.storeMemoTextarea:focus{
+  border-color:var(--accent-2);
+  box-shadow:0 0 0 3px rgba(37,94,101,.12);
+}
+
+.tripJournalActions{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+}
+
+.tripJournalHint,
+.storeMemoStatus{
+  margin:0;
+  color:var(--muted);
+  font-size:10px;
+  line-height:1.5;
+}
+
+.tripJournalSubmit{
+  min-height:34px;
+  border:1px solid var(--accent-2);
+  border-radius:999px;
+  background:var(--accent-2);
+  color:#fff;
+  padding:6px 13px;
+  font-family:inherit;
+  font-size:12px;
+  font-weight:800;
+  cursor:pointer;
+}
+
+.tripJournalSubmit:disabled{
+  cursor:not-allowed;
+  opacity:.55;
+}
+
+.tripJournalPosts{
+  display:grid;
+  gap:8px;
+  max-height:230px;
+  overflow:auto;
+  padding-top:14px;
+}
+
+.tripJournalEmpty{
+  margin:0;
+  padding:12px;
+  border:1px dashed var(--line);
+  border-radius:12px;
+  color:var(--muted);
+  font-size:12px;
+  text-align:center;
+}
+
+.tripJournalPost{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:6px 10px;
+  padding:10px 11px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#fff;
+}
+
+.tripJournalPostText{
+  grid-column:1 / -1;
+  margin:0;
+  color:var(--ink);
+  font-size:12px;
+  line-height:1.65;
+  white-space:pre-wrap;
+  overflow-wrap:anywhere;
+}
+
+.tripJournalTime{
+  color:var(--muted);
+  font-size:10px;
+  font-weight:700;
+}
+
+.tripJournalDelete{
+  border:0;
+  background:transparent;
+  color:#a43b24;
+  padding:0;
+  font-family:inherit;
+  font-size:10px;
+  font-weight:800;
+  cursor:pointer;
+}
+
+.favoriteButton{
+  display:inline-grid;
+  width:34px;
+  height:34px;
+  place-items:center;
+  margin-top:7px;
+  border:1px solid #e2d8c9;
+  border-radius:50%;
+  background:#fff;
+  color:#aaa097;
+  font-family:inherit;
+  font-size:20px;
+  line-height:1;
+  cursor:pointer;
+  transition:transform .15s ease,background .15s ease,color .15s ease,border-color .15s ease;
+}
+
+.favoriteButton:hover{
+  transform:scale(1.06);
+}
+
+.favoriteButton[aria-pressed="true"]{
+  border-color:#d99d34;
+  background:#fff7dc;
+  color:#e2a326;
+  box-shadow:0 5px 12px rgba(226,163,38,.18);
+}
+
+.favoriteFilterButton::before{
+  content:'★';
+  margin-right:4px;
+  color:#e2a326;
+}
+
+.favoriteFilterButton.active::before{
+  color:#ffe295;
+}
+
+.favoriteEmptyState{
+  padding:18px 12px;
+  border:1px dashed var(--line);
+  border-radius:14px;
+  color:var(--muted);
+  font-size:12px;
+  text-align:center;
+}
+
+.storeMemoEditor{
+  display:grid;
+  gap:6px;
+  margin-top:10px;
+  padding:9px 10px;
+  border:1px solid rgba(37,94,101,.16);
+  border-radius:12px;
+  background:#f7fcfc;
+}
+
+.storeMemoHeading{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+}
+
+.storeMemoTextarea{
+  min-height:64px;
+  padding:8px 9px;
+  font-size:12px;
+}
+
+.restaurantCard.favoriteFilteredOut{
+  display:none!important;
+}
+
+@media(max-width:640px){
+  .tripJournalMount{
+    order:4;
+  }
+
+  .tripJournal{
+    border-radius:13px;
+    background:#fff;
+  }
+
+  .tripJournalSummary{
+    padding:9px 11px;
+    font-size:12px;
+  }
+
+  .tripJournalBody{
+    grid-template-columns:1fr;
+    gap:10px;
+    padding:0 10px 10px;
+  }
+
+  .tripJournalForm,
+  .tripJournalPosts{
+    padding-top:10px;
+  }
+
+  .tripJournalPosts{
+    max-height:180px;
+  }
+
+  .favoriteButton{
+    width:31px;
+    height:31px;
+    margin-top:5px;
+    font-size:18px;
+  }
+
+  .storeMemoEditor{
+    margin-top:8px;
+  }
+}
