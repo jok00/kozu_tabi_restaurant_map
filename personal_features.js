@@ -123,6 +123,11 @@
     else localStorage.removeItem(key);
   }
 
+  function setFavoriteFilter(active){
+    favoriteFilterActive=active;
+    applyFavoriteFilter();
+  }
+
   function ensureFavoriteFilter(){
     const filters=document.getElementById('filters');
     if(!filters) return;
@@ -134,8 +139,7 @@
       button.textContent='★ お気に入り';
       button.addEventListener('click', event=>{
         event.stopPropagation();
-        favoriteFilterActive=!favoriteFilterActive;
-        applyFavoriteFilter();
+        setFavoriteFilter(!favoriteFilterActive);
       });
       filters.insertBefore(button, filters.children[1] || null);
     }
@@ -153,6 +157,25 @@
       row.insertBefore(tag, row.firstChild);
     }else if(!active && tag){
       tag.remove();
+    }
+    if(tag){
+      tag.setAttribute('role','button');
+      tag.setAttribute('tabindex','0');
+      tag.setAttribute('aria-label','お気に入りで絞り込む');
+    }
+    if(tag && !tag.dataset.favoriteTagBound){
+      tag.dataset.favoriteTagBound='1';
+      tag.addEventListener('click', event=>{
+        event.preventDefault();
+        event.stopPropagation();
+        setFavoriteFilter(true);
+      });
+      tag.addEventListener('keydown', event=>{
+        if(event.key!=='Enter' && event.key!==' ') return;
+        event.preventDefault();
+        event.stopPropagation();
+        setFavoriteFilter(true);
+      });
     }
   }
 

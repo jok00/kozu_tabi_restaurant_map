@@ -196,6 +196,12 @@
   border-color:#d89a2b;
   background:#fff7dc;
   color:#7a4e2e;
+  cursor:pointer;
+}
+
+.tag.favoriteTag:focus-visible{
+  outline:2px solid var(--accent-2);
+  outline-offset:2px;
 }
 
 .personalMemoBox{
