@@ -12,10 +12,16 @@ const backend={
 
 const markup=`<!doctype html><body>
   <header><div class="hero"><div id="regionTabs"><button class="regionBtn active">バルセロナ</button></div><div id="filters"></div></div></header>
-  <main><div id="restaurantList"><article class="restaurantCard" id="restaurant-card-cal_pep">
-    <div class="cardTop"><div class="cardText"><div class="tags"></div></div><div class="rating">★ 4.5</div></div>
-    <div class="actions"></div>
-  </article></div></main>
+  <main><div id="restaurantList">
+    <article class="restaurantCard" id="restaurant-card-cal_pep">
+      <div class="cardTop"><div class="cardText"><div class="tags"></div></div><div class="rating">★ 4.5</div></div>
+      <div class="actions"></div>
+    </article>
+    <article class="restaurantCard" id="restaurant-card-not-favorite">
+      <div class="cardTop"><div class="cardText"><div class="tags"></div></div><div class="rating">★ 4.0</div></div>
+      <div class="actions"></div>
+    </article>
+  </div></main>
 </body>`;
 
 const dom=new JSDOM(markup,{
@@ -75,10 +81,22 @@ assert.equal(window.localStorage.getItem('kozuTabiCommunity:v1:legacyMigrated:ba
 assert.equal(document.querySelector('.cityNoteText').textContent,'既存の共有投稿');
 assert.equal(document.querySelector('main').lastElementChild.className,'cityNotesPanel');
 assert.equal(document.querySelector('.cityNoteInput').placeholder,'街の感想');
-assert.equal(document.querySelector('.personalMemoTitle').textContent,'メモ');
+assert.equal(document.querySelector('.cityNoteMeta').textContent.includes('グループで共有'),false);
+assert.equal(document.querySelector('.personalMemoTitle'),null);
 assert.equal(document.querySelector('.personalMemoInput').placeholder,'メモを入力');
 assert.equal(document.querySelector('.personalMemoInput').value,'既存の共有メモ');
 assert.equal(document.querySelector('.favoriteBtn').getAttribute('aria-pressed'),'true');
+
+document.querySelector('.favoriteFilterBtn').click();
+await wait();
+assert.equal(document.querySelector('#restaurant-card-cal_pep').hidden,false);
+assert.equal(document.querySelector('#restaurant-card-cal_pep').classList.contains('favoriteFilteredOut'),false);
+assert.equal(document.querySelector('#restaurant-card-not-favorite').hidden,true);
+assert.equal(document.querySelector('#restaurant-card-not-favorite').classList.contains('favoriteFilteredOut'),true);
+document.querySelector('.favoriteFilterBtn').click();
+await wait();
+assert.equal(document.querySelector('#restaurant-card-not-favorite').hidden,false);
+assert.equal(document.querySelector('#restaurant-card-not-favorite').classList.contains('favoriteFilteredOut'),false);
 
 document.querySelector('.favoriteBtn').click();
 await wait();

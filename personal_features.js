@@ -225,7 +225,6 @@
           <button class="cityNoteSubmit" type="submit" aria-label="投稿">➤</button>
         </form>
         <div class="cityNoteMeta" aria-live="polite">
-          <span>グループで共有</span>
           <span class="cityNoteStatus"></span>
         </div>
         <details class="cityNotesDetails">
@@ -413,12 +412,9 @@
       box=document.createElement('section');
       box.className='personalMemoBox';
       box.innerHTML=`
-        <div class="personalMemoHead">
-          <h4 class="personalMemoTitle">メモ</h4>
-          <span class="personalMemoStatus" aria-live="polite"></span>
-        </div>
         <textarea class="personalMemoInput" rows="2" maxlength="2000" placeholder="メモを入力"></textarea>
         <div class="personalMemoActions">
+          <span class="personalMemoStatus" aria-live="polite"></span>
           <button class="personalMemoSave" type="button">共有保存</button>
         </div>`;
       const actions=card.querySelector('.actions');
@@ -453,6 +449,7 @@
     document.querySelectorAll('.restaurantCard').forEach(card=>{
       const visible=!favoriteFilterActive || isFavorite(getCardId(card));
       card.hidden=!visible;
+      card.classList.toggle('favoriteFilteredOut',!visible);
       if(visible) visibleCount+=1;
     });
     let empty=document.querySelector('.favoriteEmptyState');

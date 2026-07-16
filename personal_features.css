@@ -14,13 +14,6 @@ main.wrap{
   box-shadow:0 8px 18px rgba(55,38,20,.06);
 }
 
-.personalMemoTitle{
-  margin:0;
-  color:var(--ink);
-  font-size:13px;
-  font-weight:800;
-}
-
 .cityNoteCount{
   color:var(--muted);
   font-size:12px;
@@ -31,7 +24,7 @@ main.wrap{
 .cityNoteMeta{
   display:flex;
   align-items:center;
-  justify-content:space-between;
+  justify-content:flex-end;
   gap:10px;
   min-height:18px;
   margin-top:5px;
@@ -207,6 +200,10 @@ main.wrap{
   contain:layout style;
 }
 
+.restaurantCard.favoriteFilteredOut{
+  display:none!important;
+}
+
 .restaurantCard .cardTop{
   width:100%;
   min-width:0;
@@ -255,17 +252,6 @@ main.wrap{
   display:grid;
   gap:7px;
   margin-top:8px;
-  padding:10px;
-  border:1px solid rgba(229,216,197,.85);
-  border-radius:14px;
-  background:#fffdf8;
-}
-
-.personalMemoHead{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:8px;
 }
 
 .personalMemoStatus{
@@ -282,7 +268,9 @@ main.wrap{
 
 .personalMemoActions{
   display:flex;
-  justify-content:flex-end;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
 }
 
 .personalMemoSave{
