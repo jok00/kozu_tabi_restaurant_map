@@ -7,6 +7,9 @@
 - `index.html`: 本番用HTML。共通ページシェルに `https://common-web-map.vercel.app/` の `map_app.css` / `map_app.js` を参照する設定を渡します。
 - `index_dev.html`: ローカル開発用HTML。共通ページシェルに `../common_web_map/` の `map_app.css` / `map_app.js` を参照する設定を渡します。
 - `page_shell.js`: `index.html` と `index_dev.html` の共通ページ構造、CSS、Leaflet、共通アプリJSの読み込みを管理します。
+- `personal_features.js`: 都市投稿・共有店舗メモ・共有お気に入りを `/api/community` 経由で読み書きします。
+- `api/community.js`: Neonへ接続するVercel Serverless Functionです。接続文字列はブラウザへ公開しません。
+- `database/schema.sql`: 共有機能用のNeonテーブル定義です。
 - `store_data.json`: 地域一覧と、地域別JSON・ランドマークJSONへの参照を管理します。
 - `regions/*.json`: 地域ごとの店舗データ本体です。
 - `landmarks/*.json`: 宿泊地・観光地など、店舗以外の予定地データです。
@@ -22,11 +25,13 @@
 
 ## ローカル確認
 
-`fetch()` でJSONを読み込むため、HTMLを直接開かずHTTPサーバー経由で確認します。
+共有APIを含めて確認するため、同梱のローカル開発サーバーを使用します。
 
 ```bash
 cd /root/restaurant_map/kozu_tabi_restaurant_map
-python3 -m http.server 8300 --bind 0.0.0.0
+npm install
+source ~/.bashrc
+npm run dev -- --listen 8300
 ```
 
 ブラウザで開きます。
@@ -50,6 +55,25 @@ http://192.168.1.2:8300/index_dev.html
 ```text
 http://192.168.1.2:8300/index.html
 ```
+
+## Neon共有データ
+
+初回のみ、Neonへ共有テーブルを作成します。
+
+```bash
+source ~/.bashrc
+psql "$KOZUTABI_DATABASE_URL" -v ON_ERROR_STOP=1 -f database/schema.sql
+```
+
+作成されるテーブルは次の3つです。
+
+- `kozu_city_posts`: 都市ごとの共有投稿
+- `kozu_store_memos`: 店舗ごとに1件の共有メモ
+- `kozu_favorites`: 店舗ごとの共有お気に入りON/OFF
+
+既存のブラウザに `localStorage` 保存されている内容は、都市を初めて表示したときに1回だけNeonへ移行されます。店舗メモの移行時にNeon側に同じ店舗のメモがすでにある場合は、共有中の内容を上書きしません。
+
+Vercelへデプロイするときは、Project SettingsのEnvironment Variablesに `KOZUTABI_DATABASE_URL` または `DATABASE_URL` を登録してから再デプロイしてください。接続文字列をHTMLやJavaScriptへ直接記載しないでください。
 
 ## 店舗データ形式
 
@@ -80,5 +104,7 @@ http://192.168.1.2:8300/index.html
 python -m json.tool store_data.json >/tmp/kozu_store_data_check.json
 for f in regions/*.json landmarks/*.json; do python -m json.tool "$f" >/tmp/"$(basename "$f")".check; done
 node --check /root/restaurant_map/common_web_map/map_app.js
-node --check page_shell.js
+npm run check
+npm run test:frontend
+source ~/.bashrc && npm run test:integration
 ```

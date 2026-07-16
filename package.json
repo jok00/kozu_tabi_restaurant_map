@@ -1,0 +1,21 @@
+{
+  "name": "kozu-tabi-restaurant-map",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "check": "node --check page_shell.js && node --check personal_features.js && node --check api/community.js && node --check scripts/dev-server.mjs && node --check test/community-api.mjs && node --check test/personal-features.mjs",
+    "dev": "node scripts/dev-server.mjs",
+    "test:frontend": "node test/personal-features.mjs",
+    "test:integration": "node test/community-api.mjs"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.1.0"
+  },
+  "devDependencies": {
+    "jsdom": "^29.1.1"
+  }
+}

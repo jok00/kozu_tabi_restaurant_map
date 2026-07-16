@@ -21,6 +21,29 @@
   white-space:nowrap;
 }
 
+.cityNoteMeta{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  min-height:18px;
+  margin-top:5px;
+  color:var(--muted);
+  font-size:11px;
+  font-weight:700;
+}
+
+.cityNoteStatus,
+.personalMemoStatus{
+  overflow-wrap:anywhere;
+}
+
+.cityNoteStatus.error,
+.personalMemoStatus.error,
+.communityMessage.error{
+  color:#a33d32;
+}
+
 .cityNoteForm{
   display:grid;
   grid-template-columns:minmax(0,1fr) max-content;
@@ -68,6 +91,13 @@
   min-height:42px;
   padding:0;
   font-size:15px;
+}
+
+.cityNoteSubmit:disabled,
+.personalMemoSave:disabled,
+.favoriteBtn:disabled{
+  cursor:wait;
+  opacity:.58;
 }
 
 .cityNotesDetails{
@@ -137,6 +167,15 @@
   font-size:13px;
   line-height:1.55;
   white-space:pre-wrap;
+}
+
+.communityMessage{
+  margin:0;
+  padding:8px 4px;
+  color:var(--muted);
+  font-size:12px;
+  font-weight:700;
+  line-height:1.5;
 }
 
 .favoriteBtn{
