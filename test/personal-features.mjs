@@ -4,6 +4,7 @@ import { JSDOM } from 'jsdom';
 
 const source=await readFile(new URL('../personal_features.js',import.meta.url),'utf8');
 const requests=[];
+const favoriteFilterEvents=[];
 const backend={
   cityPosts:[{id:'1',text:'既存の共有投稿',createdAt:'2026-07-16T00:00:00.000Z'}],
   storeMemos:[{storeId:'cal_pep',text:'既存の共有メモ',updatedAt:'2026-07-16T00:00:00.000Z'}],
@@ -31,6 +32,7 @@ const dom=new JSDOM(markup,{
 
 const {window}=dom;
 window.KOZU_TABI_MAP_PAGE={communityApiUrl:'/api/community'};
+window.document.addEventListener('kozu:favorite-filter-change',event=>favoriteFilterEvents.push(event.detail));
 window.localStorage.setItem('kozuTabiPersonal:v1:cityNotes:バルセロナ','[{"text":"旧投稿"}]');
 window.localStorage.setItem('kozuTabiCommunity:v1:legacyMigrated:barcelona','1');
 window.fetch=async (url,options={})=>{
@@ -89,12 +91,16 @@ assert.equal(document.querySelector('.favoriteBtn').getAttribute('aria-pressed')
 
 document.querySelector('.favoriteFilterBtn').click();
 await wait();
+assert.equal(favoriteFilterEvents.at(-1).active,true);
+assert.deepEqual(Array.from(favoriteFilterEvents.at(-1).storeIds),['cal_pep']);
 assert.equal(document.querySelector('#restaurant-card-cal_pep').hidden,false);
 assert.equal(document.querySelector('#restaurant-card-cal_pep').classList.contains('favoriteFilteredOut'),false);
 assert.equal(document.querySelector('#restaurant-card-not-favorite').hidden,true);
 assert.equal(document.querySelector('#restaurant-card-not-favorite').classList.contains('favoriteFilteredOut'),true);
 document.querySelector('.favoriteFilterBtn').click();
 await wait();
+assert.equal(favoriteFilterEvents.at(-1).active,false);
+assert.deepEqual(Array.from(favoriteFilterEvents.at(-1).storeIds),[]);
 assert.equal(document.querySelector('#restaurant-card-not-favorite').hidden,false);
 assert.equal(document.querySelector('#restaurant-card-not-favorite').classList.contains('favoriteFilteredOut'),false);
 
@@ -114,10 +120,12 @@ assert.equal(document.querySelector('.cityNoteText').textContent,'新しい共�
 const memoInput=document.querySelector('.personalMemoInput');
 memoInput.value='更新した共有メモ';
 memoInput.dispatchEvent(new window.Event('input',{bubbles:true}));
-document.querySelector('.personalMemoSave').click();
-await wait();
+assert.equal(document.querySelector('.personalMemoSave'),null);
+assert.equal(document.querySelector('.personalMemoStatus').textContent,'入力中…');
+await wait(700);
 assert.equal(requests.at(-1).action,'save_store_memo');
 assert.equal(requests.at(-1).text,'更新した共有メモ');
+assert.equal(document.querySelector('.personalMemoStatus').textContent,'自動保存済み');
 
 window.close();
 

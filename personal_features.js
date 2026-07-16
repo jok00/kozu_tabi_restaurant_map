@@ -2,6 +2,7 @@
   const obsoleteStoragePrefixes=['kozuTabiPersonal:v1:','kozuTabiCommunity:v1:'];
   const apiUrl=(window.KOZU_TABI_MAP_PAGE && window.KOZU_TABI_MAP_PAGE.communityApiUrl) || './api/community';
   const refreshIntervalMs=20000;
+  const memoSaveDelayMs=600;
   let regionIndexPromise=null;
   let activeRegion=null;
   let loadToken=0;
@@ -10,6 +11,7 @@
   let scheduled=false;
   const pendingFavorites=new Set();
   const pendingMemos=new Set();
+  const memoSaveTimers=new Map();
   let communityState=createState('');
 
   function createState(regionId){
@@ -121,6 +123,7 @@
         if(token!==loadToken || !activeRegion || activeRegion.id!==regionId) return;
         applyCommunityPayload(payload);
         renderSharedFeatures();
+        if(favoriteFilterActive) dispatchFavoriteFilter();
       })
       .catch(error=>{
         if(token!==loadToken || !activeRegion || activeRegion.id!==regionId) return;
@@ -146,8 +149,11 @@
     activeRegion=region;
     loadToken+=1;
     refreshPromise=null;
+    memoSaveTimers.forEach(timer=>clearTimeout(timer));
+    memoSaveTimers.clear();
     communityState=createState(region.id);
     renderSharedFeatures();
+    if(favoriteFilterActive) dispatchFavoriteFilter();
     await refreshCommunity();
   }
 
@@ -249,6 +255,15 @@
     return communityState.favoriteStoreIds.has(id);
   }
 
+  function dispatchFavoriteFilter(){
+    document.dispatchEvent(new CustomEvent('kozu:favorite-filter-change',{
+      detail:{
+        active:favoriteFilterActive,
+        storeIds:favoriteFilterActive ? Array.from(communityState.favoriteStoreIds) : []
+      }
+    }));
+  }
+
   async function changeFavorite(id,active){
     if(!activeRegion || pendingFavorites.has(id)) return;
     const regionId=activeRegion.id;
@@ -258,6 +273,7 @@
     else communityState.favoriteStoreIds.delete(id);
     decorateCards();
     applyFavoriteFilter();
+    if(favoriteFilterActive) dispatchFavoriteFilter();
     showSharedStatus('お気に入りを更新中…');
     try{
       await requestJson({
@@ -273,6 +289,7 @@
         if(previous) communityState.favoriteStoreIds.add(id);
         else communityState.favoriteStoreIds.delete(id);
         showSharedStatus(error.message,true);
+        if(favoriteFilterActive) dispatchFavoriteFilter();
       }
     }finally{
       pendingFavorites.delete(id);
@@ -284,6 +301,7 @@
   function setFavoriteFilter(active){
     favoriteFilterActive=active;
     applyFavoriteFilter();
+    dispatchFavoriteFilter();
   }
 
   function ensureFavoriteFilter(){
@@ -370,15 +388,28 @@
     return memo ? memo.text : '';
   }
 
+  function scheduleMemoSave(id,box,delay=memoSaveDelayMs){
+    const currentTimer=memoSaveTimers.get(id);
+    if(currentTimer) clearTimeout(currentTimer);
+    const timer=setTimeout(()=>{
+      memoSaveTimers.delete(id);
+      saveMemo(id,box);
+    },delay);
+    memoSaveTimers.set(id,timer);
+  }
+
   async function saveMemo(id,box){
-    if(!activeRegion || pendingMemos.has(id)) return;
+    if(!activeRegion) return;
+    if(pendingMemos.has(id)){
+      scheduleMemoSave(id,box);
+      return;
+    }
     const regionId=activeRegion.id;
     const input=box.querySelector('.personalMemoInput');
-    const button=box.querySelector('.personalMemoSave');
     const status=box.querySelector('.personalMemoStatus');
     const text=input.value.trim();
+    let completed=false;
     pendingMemos.add(id);
-    button.disabled=true;
     status.textContent='保存中…';
     status.classList.remove('error');
     try{
@@ -387,20 +418,25 @@
         body:{action:'save_store_memo',regionId,storeId:id,text}
       });
       if(!activeRegion || activeRegion.id!==regionId) return;
+      completed=true;
       if(payload.memo) communityState.storeMemos.set(id,payload.memo);
       else communityState.storeMemos.delete(id);
-      input.value=payload.memo ? payload.memo.text : '';
-      input.dataset.dirty='0';
-      status.textContent='共有済み';
+      if(input.value.trim()===text){
+        input.value=payload.memo ? payload.memo.text : '';
+        input.dataset.dirty='0';
+      }
+      status.textContent='自動保存済み';
       setTimeout(()=>{
-        if(status.textContent==='共有済み') status.textContent='';
+        if(status.textContent==='自動保存済み') status.textContent='';
       },1400);
     }catch(error){
       status.textContent=error.message;
       status.classList.add('error');
     }finally{
       pendingMemos.delete(id);
-      button.disabled=false;
+      if(completed && activeRegion && activeRegion.id===regionId && input.dataset.dirty==='1'){
+        scheduleMemoSave(id,box);
+      }
     }
   }
 
@@ -413,26 +449,27 @@
       box.className='personalMemoBox';
       box.innerHTML=`
         <textarea class="personalMemoInput" rows="2" maxlength="2000" placeholder="メモを入力"></textarea>
-        <div class="personalMemoActions">
-          <span class="personalMemoStatus" aria-live="polite"></span>
-          <button class="personalMemoSave" type="button">共有保存</button>
-        </div>`;
+        <span class="personalMemoStatus" aria-live="polite"></span>`;
       const actions=card.querySelector('.actions');
       if(actions) actions.insertAdjacentElement('beforebegin',box);
       else card.appendChild(box);
       box.addEventListener('click',event=>event.stopPropagation());
       const input=box.querySelector('.personalMemoInput');
-      input.addEventListener('input',()=>{input.dataset.dirty='1';});
-      box.querySelector('.personalMemoSave').addEventListener('click',event=>{
-        event.preventDefault();
-        event.stopPropagation();
+      input.addEventListener('input',()=>{
+        input.dataset.dirty='1';
+        box.querySelector('.personalMemoStatus').textContent='入力中…';
+        scheduleMemoSave(id,box);
+      });
+      input.addEventListener('blur',()=>{
+        if(input.dataset.dirty!=='1') return;
+        const timer=memoSaveTimers.get(id);
+        if(timer) clearTimeout(timer);
+        memoSaveTimers.delete(id);
         saveMemo(id,box);
       });
     }
     const input=box.querySelector('.personalMemoInput');
     if(document.activeElement!==input && input.dataset.dirty!=='1') input.value=getMemo(id);
-    const button=box.querySelector('.personalMemoSave');
-    button.disabled=pendingMemos.has(id);
   }
 
   function decorateCards(){

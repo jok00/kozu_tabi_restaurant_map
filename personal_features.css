@@ -71,8 +71,7 @@ main.wrap{
   padding:9px 10px;
 }
 
-.cityNoteSubmit,
-.personalMemoSave{
+.cityNoteSubmit{
   border:1px solid var(--accent-2);
   border-radius:12px;
   background:var(--accent-2);
@@ -94,7 +93,6 @@ main.wrap{
 }
 
 .cityNoteSubmit:disabled,
-.personalMemoSave:disabled,
 .favoriteBtn:disabled{
   cursor:wait;
   opacity:.58;
@@ -255,27 +253,17 @@ main.wrap{
 }
 
 .personalMemoStatus{
+  display:block;
   color:var(--muted);
   font-size:11px;
   font-weight:700;
   min-height:1em;
+  text-align:right;
 }
 
 .personalMemoInput{
   min-height:54px;
   padding:8px 9px;
-}
-
-.personalMemoActions{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:8px;
-}
-
-.personalMemoSave{
-  min-height:32px;
-  padding:6px 12px;
 }
 
 .favoriteEmptyState{
