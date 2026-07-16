@@ -289,8 +289,8 @@
   }
 
   function ensureCityNotesPanel(){
-    const filters=document.getElementById('filters');
-    if(!filters) return;
+    const main=document.querySelector('main');
+    if(!main) return;
     let panel=document.querySelector('.cityNotesPanel');
     if(!panel){
       panel=document.createElement('section');
@@ -311,13 +311,13 @@
           </summary>
           <div class="cityNoteList" aria-live="polite"></div>
         </details>`;
-      filters.insertAdjacentElement('afterend',panel);
+      main.appendChild(panel);
       panel.querySelector('.cityNoteForm').addEventListener('submit',event=>{
         event.preventDefault();
         submitCityPost(panel);
       });
-    }else if(panel.previousElementSibling!==filters){
-      filters.insertAdjacentElement('afterend',panel);
+    }else if(panel.parentElement!==main || panel!==main.lastElementChild){
+      main.appendChild(panel);
     }
     renderCityNoteList(panel);
   }

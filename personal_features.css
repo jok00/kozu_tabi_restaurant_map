@@ -1,5 +1,12 @@
+main.wrap{
+  flex-direction:column;
+}
+
 .cityNotesPanel{
   width:100%;
+  box-sizing:border-box;
+  flex:0 0 auto;
+  margin-top:20px;
   border:1px solid rgba(229,216,197,.9);
   border-radius:16px;
   background:rgba(255,255,255,.78);
