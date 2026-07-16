@@ -162,6 +162,8 @@
     if(!status) return;
     status.textContent=message || '';
     status.classList.toggle('error',Boolean(isError));
+    const meta=status.closest('.cityNoteMeta');
+    if(meta) meta.hidden=!message;
   }
 
   function renderCityNoteList(panel){
@@ -230,12 +232,12 @@
           <textarea class="cityNoteInput" rows="1" maxlength="1000" placeholder="街の感想"></textarea>
           <button class="cityNoteSubmit" type="submit" aria-label="投稿">➤</button>
         </form>
-        <div class="cityNoteMeta" aria-live="polite">
+        <div class="cityNoteMeta" aria-live="polite" hidden>
           <span class="cityNoteStatus"></span>
         </div>
         <details class="cityNotesDetails">
           <summary class="cityNotesSummary">
-            <span>投稿内容</span>
+            <span>感想内容</span>
             <span class="cityNoteCount">—</span>
           </summary>
           <div class="cityNoteList" aria-live="polite"></div>

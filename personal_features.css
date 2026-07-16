@@ -33,6 +33,10 @@ main.wrap{
   font-weight:700;
 }
 
+.cityNoteMeta[hidden]{
+  display:none;
+}
+
 .cityNoteStatus,
 .personalMemoStatus{
   overflow-wrap:anywhere;

@@ -84,6 +84,8 @@ assert.equal(document.querySelector('.cityNoteText').textContent,'既存の共�
 assert.equal(document.querySelector('main').lastElementChild.className,'cityNotesPanel');
 assert.equal(document.querySelector('.cityNoteInput').placeholder,'街の感想');
 assert.equal(document.querySelector('.cityNoteMeta').textContent.includes('グループで共有'),false);
+assert.equal(document.querySelector('.cityNoteMeta').hidden,true);
+assert.equal(document.querySelector('.cityNotesSummary span').textContent,'感想内容');
 assert.equal(document.querySelector('.personalMemoTitle'),null);
 assert.equal(document.querySelector('.personalMemoInput').placeholder,'メモを入力');
 assert.equal(document.querySelector('.personalMemoInput').value,'既存の共有メモ');
