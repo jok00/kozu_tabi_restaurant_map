@@ -1,6 +1,5 @@
 (function(){
-  const legacyStoragePrefix='kozuTabiPersonal:v1';
-  const communityStoragePrefix='kozuTabiCommunity:v1';
+  const obsoleteStoragePrefixes=['kozuTabiPersonal:v1:','kozuTabiCommunity:v1:'];
   const apiUrl=(window.KOZU_TABI_MAP_PAGE && window.KOZU_TABI_MAP_PAGE.communityApiUrl) || './api/community';
   const refreshIntervalMs=20000;
   let regionIndexPromise=null;
@@ -20,8 +19,7 @@
       storeMemos:new Map(),
       favoriteStoreIds:new Set(),
       loading:Boolean(regionId),
-      loaded:false,
-      error:''
+      loaded:false
     };
   }
 
@@ -47,39 +45,21 @@
     }).format(date);
   }
 
-  function safeStorageGet(key){
-    try{return localStorage.getItem(key);}catch(error){return null;}
-  }
-
-  function safeStorageSet(key,value){
-    try{localStorage.setItem(key,value);}catch(error){/* 保存不可でも共有機能は継続する */}
-  }
-
-  function loadJson(key,fallback){
+  function discardObsoleteStorage(){
     try{
-      const value=safeStorageGet(key);
-      return value ? JSON.parse(value) : fallback;
+      const obsoleteKeys=[];
+      for(let index=0;index<localStorage.length;index+=1){
+        const key=localStorage.key(index) || '';
+        if(obsoleteStoragePrefixes.some(prefix=>key.startsWith(prefix))) obsoleteKeys.push(key);
+      }
+      obsoleteKeys.forEach(key=>localStorage.removeItem(key));
     }catch(error){
-      return fallback;
+      console.warn('旧バージョンのブラウザ保存データを削除できませんでした。',error);
     }
   }
 
   function getCardId(card){
     return card && card.id ? card.id.replace(/^restaurant-card-/,'') : '';
-  }
-
-  function getClientId(){
-    const key=`${communityStoragePrefix}:clientId`;
-    const current=safeStorageGet(key);
-    if(current) return current;
-    const id=window.crypto && typeof window.crypto.randomUUID==='function'
-      ? window.crypto.randomUUID()
-      : 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,char=>{
-          const value=Math.random()*16|0;
-          return (char==='x' ? value : (value&0x3)|0x8).toString(16);
-        });
-    safeStorageSet(key,id);
-    return id;
   }
 
   async function requestJson(options={}){
@@ -115,53 +95,6 @@
     });
   }
 
-  function collectLegacyData(region){
-    const cityKey=`${legacyStoragePrefix}:cityNotes:${region.name}`;
-    const cityPosts=loadJson(cityKey,[])
-      .filter(item=>item && String(item.text || '').trim())
-      .map(item=>({
-        text:String(item.text).trim().slice(0,1000),
-        createdAt:item.createdAt || null
-      }));
-    const memoPrefix=`${legacyStoragePrefix}:memo:${region.name}:`;
-    const favoritePrefix=`${legacyStoragePrefix}:favorite:${region.name}:`;
-    const storeMemos=[];
-    const favoriteStoreIds=[];
-    try{
-      for(let index=0;index<localStorage.length;index+=1){
-        const key=localStorage.key(index) || '';
-        if(key.startsWith(memoPrefix)){
-          const text=String(localStorage.getItem(key) || '').trim();
-          if(text) storeMemos.push({storeId:key.slice(memoPrefix.length),text:text.slice(0,2000)});
-        }else if(key.startsWith(favoritePrefix) && localStorage.getItem(key)==='1'){
-          favoriteStoreIds.push(key.slice(favoritePrefix.length));
-        }
-      }
-    }catch(error){
-      return {cityPosts,storeMemos:[],favoriteStoreIds:[]};
-    }
-    return {cityPosts,storeMemos,favoriteStoreIds};
-  }
-
-  async function migrateLegacyData(region){
-    const marker=`${communityStoragePrefix}:legacyMigrated:${region.id}`;
-    if(safeStorageGet(marker)==='1') return;
-    const legacy=collectLegacyData(region);
-    const hasData=legacy.cityPosts.length || legacy.storeMemos.length || legacy.favoriteStoreIds.length;
-    if(hasData){
-      await requestJson({
-        method:'POST',
-        body:{
-          action:'import_legacy',
-          regionId:region.id,
-          clientId:getClientId(),
-          ...legacy
-        }
-      });
-    }
-    safeStorageSet(marker,'1');
-  }
-
   function applyCommunityPayload(payload){
     communityState.cityPosts=Array.isArray(payload.cityPosts) ? payload.cityPosts : [];
     communityState.storeMemos=new Map(
@@ -173,7 +106,6 @@
     );
     communityState.loading=false;
     communityState.loaded=true;
-    communityState.error='';
   }
 
   async function refreshCommunity({silent=false}={}){
@@ -193,7 +125,7 @@
       .catch(error=>{
         if(token!==loadToken || !activeRegion || activeRegion.id!==regionId) return;
         communityState.loading=false;
-        communityState.error=error.message;
+        console.warn('共有データを読み込めませんでした。',error);
         renderSharedFeatures();
       })
       .finally(()=>{
@@ -216,11 +148,6 @@
     refreshPromise=null;
     communityState=createState(region.id);
     renderSharedFeatures();
-    try{
-      await migrateLegacyData(region);
-    }catch(error){
-      showSharedStatus(`旧データを移行できませんでした: ${error.message}`,true);
-    }
     await refreshCommunity();
   }
 
@@ -242,8 +169,6 @@
     let html='';
     if(communityState.loading && !communityState.loaded){
       html='<p class="communityMessage">共有投稿を読み込み中…</p>';
-    }else if(communityState.error && !communityState.loaded){
-      html=`<p class="communityMessage error">${escapeHtml(communityState.error)}</p>`;
     }else if(posts.length){
       html=posts.map(post=>`
         <article class="cityNoteItem">
@@ -276,7 +201,6 @@
       if(!activeRegion || activeRegion.id!==regionId) return;
       communityState.cityPosts.unshift(payload.post);
       communityState.loaded=true;
-      communityState.error='';
       input.value='';
       renderCityNoteList(panel);
       showSharedStatus('共有しました');
@@ -297,7 +221,7 @@
       panel.className='cityNotesPanel';
       panel.innerHTML=`
         <form class="cityNoteForm">
-          <textarea class="cityNoteInput" rows="1" maxlength="1000" placeholder="都市について共有投稿"></textarea>
+          <textarea class="cityNoteInput" rows="1" maxlength="1000" placeholder="街の感想"></textarea>
           <button class="cityNoteSubmit" type="submit" aria-label="投稿">➤</button>
         </form>
         <div class="cityNoteMeta" aria-live="polite">
@@ -490,10 +414,10 @@
       box.className='personalMemoBox';
       box.innerHTML=`
         <div class="personalMemoHead">
-          <h4 class="personalMemoTitle">共有店舗メモ</h4>
+          <h4 class="personalMemoTitle">メモ</h4>
           <span class="personalMemoStatus" aria-live="polite"></span>
         </div>
-        <textarea class="personalMemoInput" rows="2" maxlength="2000" placeholder="グループで共有する店舗メモ"></textarea>
+        <textarea class="personalMemoInput" rows="2" maxlength="2000" placeholder="メモを入力"></textarea>
         <div class="personalMemoActions">
           <button class="personalMemoSave" type="button">共有保存</button>
         </div>`;
@@ -561,12 +485,13 @@
       renderSharedFeatures();
       synchronizeRegion().catch(error=>{
         communityState.loading=false;
-        communityState.error=error.message;
+        console.warn('共有機能の初期化に失敗しました。',error);
         renderSharedFeatures();
       });
     },0);
   }
 
+  discardObsoleteStorage();
   scheduleEnhance();
   new MutationObserver(scheduleEnhance).observe(document.body,{childList:true,subtree:true});
   window.setInterval(()=>{

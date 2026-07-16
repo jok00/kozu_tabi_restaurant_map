@@ -71,7 +71,7 @@ psql "$KOZUTABI_DATABASE_URL" -v ON_ERROR_STOP=1 -f database/schema.sql
 - `kozu_store_memos`: 店舗ごとに1件の共有メモ
 - `kozu_favorites`: 店舗ごとの共有お気に入りON/OFF
 
-既存のブラウザに `localStorage` 保存されている内容は、都市を初めて表示したときに1回だけNeonへ移行されます。店舗メモの移行時にNeon側に同じ店舗のメモがすでにある場合は、共有中の内容を上書きしません。
+旧バージョンで `localStorage` に保存されていた投稿・店舗メモ・お気に入りは移行せず、ページ読み込み時に破棄します。
 
 Vercelへデプロイするときは、Project SettingsのEnvironment Variablesに `KOZUTABI_DATABASE_URL` または `DATABASE_URL` を登録してから再デプロイしてください。接続文字列をHTMLやJavaScriptへ直接記載しないでください。
 

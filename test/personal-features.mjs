@@ -10,19 +10,23 @@ const backend={
   favoriteStoreIds:['cal_pep']
 };
 
-const dom=new JSDOM(`<!doctype html><body>
+const markup=`<!doctype html><body>
   <header><div class="hero"><div id="regionTabs"><button class="regionBtn active">バルセロナ</button></div><div id="filters"></div></div></header>
   <main><div id="restaurantList"><article class="restaurantCard" id="restaurant-card-cal_pep">
     <div class="cardTop"><div class="cardText"><div class="tags"></div></div><div class="rating">★ 4.5</div></div>
     <div class="actions"></div>
   </article></div></main>
-</body>`,{
+</body>`;
+
+const dom=new JSDOM(markup,{
   url:'http://localhost:8300/index.html',
   runScripts:'outside-only'
 });
 
 const {window}=dom;
 window.KOZU_TABI_MAP_PAGE={communityApiUrl:'/api/community'};
+window.localStorage.setItem('kozuTabiPersonal:v1:cityNotes:バルセロナ','[{"text":"旧投稿"}]');
+window.localStorage.setItem('kozuTabiCommunity:v1:legacyMigrated:barcelona','1');
 window.fetch=async (url,options={})=>{
   const target=String(url);
   if(target.includes('store_data.json')){
@@ -47,7 +51,6 @@ window.fetch=async (url,options={})=>{
     backend.favoriteStoreIds=body.active ? [body.storeId] : [];
     return response({storeId:body.storeId,active:body.active});
   }
-  if(body.action==='import_legacy') return response({imported:{}});
   return response({error:'unknown action'},400);
 };
 
@@ -67,7 +70,13 @@ window.eval(source);
 await wait(80);
 
 const document=window.document;
+assert.equal(window.localStorage.getItem('kozuTabiPersonal:v1:cityNotes:バルセロナ'),null);
+assert.equal(window.localStorage.getItem('kozuTabiCommunity:v1:legacyMigrated:barcelona'),null);
 assert.equal(document.querySelector('.cityNoteText').textContent,'既存の共有投稿');
+assert.equal(document.querySelector('main').lastElementChild.className,'cityNotesPanel');
+assert.equal(document.querySelector('.cityNoteInput').placeholder,'街の感想');
+assert.equal(document.querySelector('.personalMemoTitle').textContent,'メモ');
+assert.equal(document.querySelector('.personalMemoInput').placeholder,'メモを入力');
 assert.equal(document.querySelector('.personalMemoInput').value,'既存の共有メモ');
 assert.equal(document.querySelector('.favoriteBtn').getAttribute('aria-pressed'),'true');
 
@@ -93,4 +102,21 @@ assert.equal(requests.at(-1).action,'save_store_memo');
 assert.equal(requests.at(-1).text,'更新した共有メモ');
 
 window.close();
+
+const errorDom=new JSDOM(markup,{
+  url:'http://localhost:8300/index.html',
+  runScripts:'outside-only'
+});
+const errorWindow=errorDom.window;
+errorWindow.KOZU_TABI_MAP_PAGE={communityApiUrl:'/api/community'};
+errorWindow.console.warn=()=>{};
+errorWindow.fetch=async url=>String(url).includes('store_data.json')
+  ? response({regions:[{id:'barcelona',name:'バルセロナ'}]})
+  : response({error:'共有データの処理に失敗しました。'},503);
+errorWindow.eval(source);
+await new Promise(resolve=>setTimeout(resolve,80));
+assert.equal(errorWindow.document.body.textContent.includes('共有データの処理に失敗しました。'),false);
+assert.equal(errorWindow.document.querySelector('.communityMessage').textContent,'投稿はまだありません。');
+errorWindow.close();
+
 console.log('personal features DOM test: ok');

@@ -4,13 +4,28 @@ create table if not exists kozu_city_posts (
   id bigint generated always as identity primary key,
   region_id text not null,
   body text not null,
-  import_key text unique,
   created_at timestamptz not null default now(),
   constraint kozu_city_posts_region_id_check
     check (region_id ~ '^[a-z0-9][a-z0-9_-]{0,63}$'),
   constraint kozu_city_posts_body_check
     check (char_length(btrim(body)) between 1 and 1000)
 );
+
+do $$
+begin
+  if exists (
+    select 1
+    from information_schema.columns
+    where table_schema='public'
+      and table_name='kozu_city_posts'
+      and column_name='import_key'
+  ) then
+    delete from kozu_city_posts where import_key is not null;
+  end if;
+end
+$$;
+
+alter table kozu_city_posts drop column if exists import_key;
 
 create index if not exists kozu_city_posts_region_created_idx
   on kozu_city_posts (region_id, created_at desc, id desc);
